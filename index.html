@@ -522,7 +522,8 @@ footer.foot a{color:var(--text3)}
         </div>
       </div>
       <div class="pg-actions">
-        <span class="pg-hint" id="pg-hint">DeepSeek 通常 5-10 秒返回</span>
+        <span class="pg-hint" id="pg-hint">首次使用先设置 DeepSeek API Key</span>
+        <button class="pg-btn ghost" id="pg-keybtn" title="设置或更换 DeepSeek API Key（仅保存在你本机浏览器）">🔑 设置 API Key</button>
         <button class="pg-btn ghost" id="pg-clear">清空</button>
         <button class="pg-btn primary" id="pg-submit">生成 PUSH ↓</button>
       </div>
@@ -949,11 +950,82 @@ function renderLibTable(){
 }
 $('#lib-search-input').addEventListener('input',e=>{libSearch=e.target.value;renderLibTable()});
 
-// ========== PUSH GENERATOR ==========
+// ========== PUSH GENERATOR (browser-direct DeepSeek, key in localStorage) ==========
 const PG_FIELDS=['event','ta','lifecycle','goal','tone','points','notes'];
+const PG_KEY_LS='moomoo_pg_dskey';
+const PG_SYS=`你是 Moomoo 增长团队的资深 PUSH 文案专家。严格遵守下面所有品牌规则与硬性约束。
+
+# 公司定位
+Mission: Make investing a viable option for people to achieve their financial goals.
+Vision: Together, we build a world where smarter investing is within reach for all.
+Why: Everyone deserves access to smarter, more intelligent investing.
+How: 我们去除阻碍用户成为更聪明、更自信投资者的所有壁垒。
+
+# 核心价值（写文案时必须自然渗透其中至少一条）
+- Smart：科技驱动 / 数据洞察 / 智能工具帮用户做更聪明决策
+- Accessible：降低门槛 / 简洁直觉 / 平价开放 / 让所有人都能交易
+- User-Centric：说用户能听懂的话 / 解决真实痛点 / 本地化语境
+
+# 三大写作原则
+- Real and Personal：像朋友说话，贴近用户生活和投资习惯
+- Clear and Focused：信息核心化，删冗余，一条 PUSH 只讲一件事
+- Emotional and Contextual：用市场情境制造时机感和共鸣，禁止空喊口号
+
+# 用户分层（TA）—— 必须完全贴合所选层级
+- TA1 Explorer（投资经验少 / 入门客）：占存量 70%。降门槛、用 ETF / 入门概念、强调"先迈第一步"、新客奖励、首笔交易引导
+- TA2 Investor（长期配置型）：新加坡最大客群、市占仅 9%。强调资产规模增长、SRS / CPF / CDP、基金类、稳健配置、长期复利
+- TA3 Trader（活跃交易者）：贡献 58% 收入，年化 ARPU 2864 SGD。直接谈美股 / 期权 / Crypto、高级工具、策略玩法、波动机会
+
+# 生命周期阶段
+- 新客（download / register / open）：核心目标 = 促开户入金，强调"新客专属"
+- 老客 - 待入金：转化首入金奖励
+- 老客 - 待首交：引导完成首笔交易
+- 活跃用户：提升 ARPU、复杂产品（期权 / 美股 / Crypto）渗透
+- 沉默 / 流失召回：唤醒，强调久未操作的市场新机会 + 限时回归奖励
+
+# 硬性规则（违反任何一条都视为不合格输出）
+1. 标题 ≤ 18 字（中文 / 英文 / 数字 / 标点 / emoji 都按 1 字符算；优先 ≤15 字）
+2. 正文 ≤ 50 字，必须以一个明确 CTA 结尾，CTA 用 ">>" 结尾（如"立即查看 >>"、"先到先得 >>"、"立即行动 >>"）
+3. 严禁夸张承诺与收益保证，禁用词：必涨 / 稳赚 / 保本 / 暴富 / 翻倍 / 100% / 稳赢 / 包赚 / 零风险
+4. 涉及具体奖励金额必须带 \`*\` 号脚标（写法：\`S$30*\`、\`S$1,100*\`）
+5. 品牌名拼写：产品 / 功能名一律 \`Moomoo\`（首字母大写），禁止 \`moomoo\` 全小写或 \`MOOMOO\` 全大写
+6. 不得编造具体数字（涨跌幅 / 估值 / 点位 / 股价），可用"结构性机会"、"低位"、"波动"等定性表达
+7. 标题与正文风格独立，正文不要重复标题已说的话
+
+# 风格范例（学这个调性）
+1. 标题：SpaceX 上市在即，聚焦万亿太空产业链｜正文：新客入金抢先布局，专属限时加赠 S$30 SpaceX 股票* 等你来领，先到先得 >>
+2. 标题：CPI 今夜揭晓，科技股回调布局正当时｜正文：新客入金立领 S$1,100*，趁低位提前卡位结构性机会，立即查看 >>
+3. 标题：美股四指齐跌，关注基本面未变的错杀方向｜正文：新客入金立领 S$1,100*，趁回调布局结构性机会，立即查看 >>
+4. 标题：🚀 AI 狂潮推升全球股市，STI 站上历史新高｜正文：紧跟 AI 时代的新加坡蓝筹行情，实时行情、K 线、盘口一站看全，决策快人一步 立即查看 >>
+5. 标题：您的专属奖励即将失效！｜正文：完成当前任务，即可解锁限量期权手册，助您把握市场机遇！立即行动 >>
+6. 标题：SpaceX 史上最大 IPO，你还有最后的机会！｜正文：SpaceX 首日波动是稀缺机会，1 张合约就能站上场内，新客期权首单 0 佣金参与还送期权书 >>
+7. 标题：持仓怕回调？1 张 Put 上保险｜正文：期权买方亏损封顶，明牌进场，安心睡觉不盯盘 >>
+
+# 输出格式（严格 JSON，不要任何额外文字）
+{
+  "title": "标题（≤18 字）",
+  "body": "正文（≤50 字，含 CTA >>）",
+  "notes": "1 句话说明这条 PUSH 的设计思路：针对哪类用户的什么心理、用了什么钩子（≤45 字）"
+}`;
+
 function pgGet(k){return $('#pg-'+k)?.value.trim()||''}
 function pgSet(k,v){const el=$('#pg-'+k);if(el)el.value=v||''}
 function pgCharCount(s){return [...(s||'')].length}
+function pgGetKey(){return localStorage.getItem(PG_KEY_LS)||''}
+function pgSaveKey(k){if(k)localStorage.setItem(PG_KEY_LS,k);else localStorage.removeItem(PG_KEY_LS);pgRefreshKeyUI()}
+function pgRefreshKeyUI(){
+  const has=!!pgGetKey();
+  const btn=$('#pg-keybtn');if(btn){btn.textContent=has?'🔑 已设置 ✓':'🔑 设置 API Key';btn.style.opacity=has?'.7':'1'}
+  const hint=$('#pg-hint');if(hint&&!hint.dataset.busy)hint.textContent=has?'DeepSeek 通常 5-10 秒返回':'首次使用先点 🔑 设置 API Key';
+}
+function pgPromptKey(){
+  const cur=pgGetKey();
+  const placeholder=cur?`当前已保存（${cur.slice(0,7)}…）。粘贴新 Key 替换；留空+确定可清除。`:'粘贴你的 DeepSeek API Key（以 sk- 开头）。Key 仅保存在你本机浏览器，不会上传任何服务器。';
+  const v=prompt(placeholder,'');
+  if(v===null)return false;
+  pgSaveKey(v.trim());
+  return !!v.trim();
+}
 function pgRenderResult(data,payload){
   const tlen=data?.meta?.title_len??pgCharCount(data?.title||'');
   const blen=data?.meta?.body_len??pgCharCount(data?.body||'');
@@ -987,22 +1059,61 @@ function pgRenderError(msg){$('#pg-output').innerHTML=`<div class="pg-error">⚠
 async function pgSubmit(){
   const event=pgGet('event');
   if(!event){pgRenderError('请填写「触发事件 / 主题」');$('#pg-event').focus();return}
+  let key=pgGetKey();
+  if(!key){
+    const ok=pgPromptKey();
+    if(!ok){pgRenderError('需要先设置 DeepSeek API Key 才能生成。点击 🔑 按钮粘贴你的 Key（仅保存在本机浏览器）。');return}
+    key=pgGetKey();
+  }
   const payload={event,ta:pgGet('ta'),lifecycle:pgGet('lifecycle'),goal:pgGet('goal'),tone:pgGet('tone'),points:pgGet('points'),notes:pgGet('notes')};
+  const userMsg=`请基于以下输入生成一条 PUSH：
+
+- 触发事件 / 主题：${payload.event}
+- 目标用户分层（TA）：${payload.ta||'不限'}
+- 生命周期阶段：${payload.lifecycle||'不限'}
+- 核心信息点：${payload.points||'无具体限定，由你判断'}
+- 转化目标：${payload.goal||'不限'}
+- 语气倾向：${payload.tone||'专业冷静'}
+- 额外备注：${payload.notes||'无'}
+
+请按 system 中规则与风格输出 JSON。`;
   const btn=$('#pg-submit');const hint=$('#pg-hint');
-  btn.disabled=true;btn.textContent='生成中…';hint.textContent='DeepSeek 正在按 Moomoo 品牌指南生成…';
+  btn.disabled=true;btn.textContent='生成中…';hint.dataset.busy='1';hint.textContent='DeepSeek 正在按 Moomoo 品牌指南生成…';
   $('#pg-output').innerHTML='';
   try{
-    const r=await fetch('/api/push',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    const data=await r.json().catch(()=>({error:'响应解析失败'}));
-    if(!r.ok){pgRenderError(data.error||('请求失败 HTTP '+r.status)+(data.detail?' · '+data.detail:''));return}
-    pgRenderResult(data,payload);
+    const r=await fetch('https://api.deepseek.com/chat/completions',{
+      method:'POST',
+      headers:{'Content-Type':'application/json',Authorization:'Bearer '+key},
+      body:JSON.stringify({
+        model:'deepseek-chat',
+        messages:[{role:'system',content:PG_SYS},{role:'user',content:userMsg}],
+        response_format:{type:'json_object'},
+        max_tokens:600,
+        temperature:0.85
+      })
+    });
+    if(!r.ok){
+      const detail=await r.text().catch(()=>'');
+      if(r.status===401||r.status===403){pgRenderError('API Key 无效或已过期，点 🔑 重新设置。');return}
+      pgRenderError('DeepSeek 请求失败 HTTP '+r.status+(detail?' · '+detail.slice(0,200):''));return;
+    }
+    const data=await r.json();
+    const content=data.choices?.[0]?.message?.content||'{}';
+    let parsed;try{parsed=JSON.parse(content)}catch{pgRenderError('AI 返回的不是合法 JSON，重试一次');return}
+    const out={title:parsed.title||'',body:parsed.body||'',notes:parsed.notes||'',meta:{title_len:[...(parsed.title||'')].length,body_len:[...(parsed.body||'')].length}};
+    pgRenderResult(out,payload);
     document.querySelector('#pg-output')?.scrollIntoView({behavior:'smooth',block:'center'});
-  }catch(e){pgRenderError('网络错误：'+(e.message||String(e))+'。本地预览模式无法调用 /api/push，请在 Vercel 部署后使用。');
-  }finally{btn.disabled=false;btn.textContent='生成 PUSH ↓';hint.textContent='DeepSeek 通常 5-10 秒返回';}
+  }catch(e){
+    pgRenderError('网络错误：'+(e.message||String(e))+'。可能原因：① 浏览器拦截了 DeepSeek（CORS/广告拦截器）② 网络不通 ③ Key 没设置。');
+  }finally{
+    btn.disabled=false;btn.textContent='生成 PUSH ↓';delete hint.dataset.busy;pgRefreshKeyUI();
+  }
 }
 $('#pg-submit').addEventListener('click',pgSubmit);
 $('#pg-clear').addEventListener('click',()=>{PG_FIELDS.forEach(k=>pgSet(k,''));$('#pg-output').innerHTML='';$('#pg-event').focus()});
+$('#pg-keybtn').addEventListener('click',pgPromptKey);
 $('#pg-event').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.ctrlKey||e.metaKey))pgSubmit()});
+pgRefreshKeyUI();
 
 // ========== NAV: SCROLL PROGRESS + ACTIVE SECTION ==========
 const NAV_SECTIONS=['today','news','forecast','calendar','super','list','library','push-gen'];
