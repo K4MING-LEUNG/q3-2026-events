@@ -1,180 +1,196 @@
 {
-  "updated_at": "2026-06-11T11:57:03+08:00",
+  "updated_at": "2026-06-11T13:54:49+08:00",
   "items": [
+    {
+      "source": "Bloomberg",
+      "title": "Roebuck: Another Phase In the Messy Ceasefire In Iran",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-11/roebuck-another-phase-in-the-messy-ceasefire-in-iran-video",
+      "published_at": "2026-06-11T05:24:19+00:00",
+      "summary": "美国连续第二天对伊朗发动新一轮打击，伊朗则袭击了美国在科威特、巴林和约旦的空军基地作为报复。",
+      "category": "地缘政治",
+      "angle": "梳理中东冲突升级对原油期权波动率的影响，制作伊朗局势升级情景下的期权策略对照表。"
+    },
     {
       "source": "CNBC",
       "title": "Kuwait closes airspace, Israel warns of launches from Lebanon after U.S strikes in Iran",
       "url": "https://www.cnbc.com/2026/06/10/trump-iran-war-attacks-deal.html",
-      "published_at": "2026-06-11T03:50:27+00:00",
-      "summary": "科威特宣布关闭领空，以色列警告来自黎巴嫩的发射，此前美国对伊朗发动空袭。",
+      "published_at": "2026-06-11T05:00:34+00:00",
+      "summary": "科威特关闭领空，以色列警告来自黎巴嫩的袭击，此前美国恢复对伊朗的打击。",
       "category": "地缘政治",
-      "angle": "梳理中东冲突升级对原油供应链的潜在影响，制作相关ETF期权策略对照表。"
+      "angle": "科普地缘政治风险对航空及国防板块ETF的传导机制，引导用户关注相关期权策略。"
+    },
+    {
+      "source": "CNBC",
+      "title": "Investors brace for a 'long grind' as Iran war escalation dims hopes of an early end",
+      "url": "https://www.cnbc.com/2026/06/11/iran-war-us-trump-strikes-centcom-oil-investors.html",
+      "published_at": "2026-06-11T05:13:15+00:00",
+      "summary": "随着美伊持续交火，投资者担忧冲突可能长期化，市场面临漫长煎熬。",
+      "category": "地缘政治",
+      "angle": "做一篇“地缘冲突长期化下的资产配置指南”，重点推荐避险资产ETF及期权对冲策略。"
     },
     {
       "source": "FT",
-      "title": "US tech stocks sink as volatility flares up on Wall Street",
-      "url": "https://www.ft.com/content/bbc8c712-23fe-4cad-b2ee-39dec0e0f3ca",
-      "published_at": "2026-06-10T20:51:17+00:00",
-      "summary": "美国科技股下跌，市场波动加剧，SpaceX即将迎来历史性上市。",
-      "category": "科技",
-      "angle": "科普SpaceX上市对太空板块ETF的带动效应，结合科技股波动提供期权对冲策略。"
+      "title": "Iran war tightens ‘super-squeeze’ in metals markets",
+      "url": "https://www.ft.com/content/44d4b188-45ed-4e7e-a5eb-278da62ac601",
+      "published_at": "2026-06-11T04:00:26+00:00",
+      "summary": "伊朗战争加剧了金属市场的“超级挤压”，铜和铝此前因中东冲突影响供应而上涨。",
+      "category": "能源",
+      "angle": "梳理铜、铝等基本金属期货及ETF的期权交易机会，结合地缘风险做波动率分析。"
+    },
+    {
+      "source": "CNBC",
+      "title": "Oil jumps as U.S. strikes in Iran raise worries of extended disruption to energy flows",
+      "url": "https://www.cnbc.com/2026/06/11/brent-wti-oil-prices-us-launches-fresh-strikes-on-iran-.html",
+      "published_at": "2026-06-11T03:57:39+00:00",
+      "summary": "美国对伊朗发动新一轮军事打击后，油价上涨，市场担忧能源供应持续中断。",
+      "category": "能源",
+      "angle": "制作原油ETF（如USO）的期权策略指南，重点讲解如何利用地缘事件做波动率交易。"
+    },
+    {
+      "source": "Bloomberg",
+      "title": "US Asks to Drop Iran Sanctions Case Against Turkish Halkbank",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-11/us-asks-to-drop-iran-sanctions-case-against-turkey-s-halkbank",
+      "published_at": "2026-06-11T02:05:52+00:00",
+      "summary": "美国司法部请求法官允许撤销对土耳其国有银行Halkbank因涉嫌违反伊朗制裁而提起的长期刑事案件。",
+      "category": "金融",
+      "angle": "科普美国制裁合规对跨国银行的影响，引导用户关注相关金融股期权及ETF。"
     },
     {
       "source": "NYT Business",
       "title": "Oil Prices Rise as U.S. Launches New Attack on Iran",
       "url": "https://www.nytimes.com/2026/06/10/business/oil-gas-price-iran.html",
       "published_at": "2026-06-11T01:49:17+00:00",
-      "summary": "美国对伊朗发动新攻击后，油价上涨。",
+      "summary": "美伊连续第二天交火，油价上涨，市场担忧两国可能重回公开冲突。",
       "category": "能源",
-      "angle": "拆解地缘冲突与油价联动机制，引导用户关注原油ETF期权交易机会。"
-    },
-    {
-      "source": "CNBC",
-      "title": "Oil jumps as U.S. fresh strikes on Iran raise worries of extended disruption to energy flows",
-      "url": "https://www.cnbc.com/2026/06/11/brent-wti-oil-prices-us-launches-fresh-strikes-on-iran-.html",
-      "published_at": "2026-06-11T00:28:27+00:00",
-      "summary": "美国对伊朗新一轮打击引发能源供应中断担忧，油价上涨。",
-      "category": "能源",
-      "angle": "做中东局势与能源板块标的关联图谱，推荐相关ETF期权布局。"
+      "angle": "做“美伊冲突升级对能源板块ETF的影响”专题，推荐使用期权对冲油价波动风险。"
     },
     {
       "source": "MarketWatch",
       "title": "Oracle’s stock slides after earnings, as the steep price of AI spooks investors",
       "url": "https://www.marketwatch.com/story/oracles-stock-slides-after-earnings-as-the-steep-price-of-ai-spooks-investors-0653b309?mod=mw_rss_topstories",
       "published_at": "2026-06-10T23:17:00+00:00",
-      "summary": "甲骨文财报超预期，合同管道增至6380亿美元，但AI成本上升令投资者担忧，股价下跌。",
+      "summary": "甲骨文财报超预期，合同管道增至6380亿美元，但华尔街担忧其AI成本上升，股价下跌。",
       "category": "财报",
-      "angle": "对比甲骨文与同行AI投入成本，制作科技股财报后期权策略指南。"
-    },
-    {
-      "source": "Bloomberg",
-      "title": "Gold Whipsaws in Choppy Trading as US Completes New Iran Strikes",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-10/gold-falls-for-third-day-as-us-launches-fresh-strikes-on-iran",
-      "published_at": "2026-06-10T22:39:12+00:00",
-      "summary": "美国完成对伊朗新一轮打击后，黄金价格波动剧烈。",
-      "category": "地缘政治",
-      "angle": "科普黄金作为避险资产在地缘冲突中的表现，引导用户配置黄金ETF期权。"
-    },
-    {
-      "source": "Bloomberg",
-      "title": "Global Stocks Hit One-Month Low, Oil Gains on Iran: Markets Wrap",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-10/stock-market-today-dow-s-p-live-updates",
-      "published_at": "2026-06-10T22:04:43+00:00",
-      "summary": "全球股市跌至一个多月低点，科技股领跌，伊朗冲突持续，油价上涨。",
-      "category": "大盘走势",
-      "angle": "梳理全球股市下跌中的防御性板块，推荐相关ETF期权组合。"
+      "angle": "拆解甲骨文财报中的AI成本与收入结构，对比其他科技巨头，制作期权策略参考。"
     },
     {
       "source": "Bloomberg",
       "title": "Oil Climbs as Fresh US Strikes on Iran Threaten Fragile Truce",
       "url": "https://www.bloomberg.com/news/articles/2026-06-10/latest-oil-market-news-and-analysis-for-june-11",
       "published_at": "2026-06-10T22:03:24+00:00",
-      "summary": "美国对伊朗第二轮打击后油价上涨，伊朗宣布暂停所有船只通过霍尔木兹海峡，脆弱的停火面临压力。",
+      "summary": "美国对伊朗新一轮打击后油价上涨，伊朗宣布暂停所有船只通过霍尔木兹海峡，脆弱的停火面临压力。",
       "category": "能源",
-      "angle": "拆解霍尔木兹海峡封锁对全球油运的影响，制作能源ETF期权策略。"
-    },
-    {
-      "source": "CNBC",
-      "title": "Analysis: Trump said he loves inflation. Why that should be music to Kevin Warsh's ears",
-      "url": "https://www.cnbc.com/2026/06/10/trump-inflation-fed-chair-kevin-warsh-analysis.html",
-      "published_at": "2026-06-10T21:52:56+00:00",
-      "summary": "特朗普表示对4.2%的通胀率感到满意，这可能对新任美联储主席沃什有利。",
-      "category": "政策",
-      "angle": "科普通胀数据与美联储政策的关系，引导用户关注利率期货期权。"
+      "angle": "科普霍尔木兹海峡封锁对全球油运的影响，引导用户关注航运ETF及原油期权。"
     }
   ],
   "sectors": [
     {
       "name": "国防军工",
       "tickers": "LMT, NOC, GD, ITA",
-      "thesis": "中东冲突升级推动国防开支预期",
+      "thesis": "美伊冲突升级，全球军备需求持续增长。",
       "drivers": [
-        "美国对伊朗发动新一轮空袭，地缘紧张加剧",
-        "科威特关闭领空，以色列警告来自黎巴嫩发射"
+        "美国连续对伊朗发动打击，伊朗报复袭击美军基地。",
+        "科威特关闭领空，以色列警告黎巴嫩袭击，中东局势紧张。",
+        "投资者担忧冲突长期化，国防预算预期增加。"
       ],
       "evidence": [
         {
           "i": 0,
-          "point": "科威特关闭领空，以色列警告黎巴嫩发射",
+          "point": "美伊互相打击，冲突升级。",
+          "source": "Bloomberg",
+          "title": "Roebuck: Another Phase In the Messy Ceasefire In Iran",
+          "url": "https://www.bloomberg.com/news/videos/2026-06-11/roebuck-another-phase-in-the-messy-ceasefire-in-iran-video"
+        },
+        {
+          "i": 1,
+          "point": "科威特关闭领空，地区紧张。",
           "source": "CNBC",
           "title": "Kuwait closes airspace, Israel warns of launches from Lebanon after U.S strikes in Iran",
           "url": "https://www.cnbc.com/2026/06/10/trump-iran-war-attacks-deal.html"
         },
         {
           "i": 2,
-          "point": "美国对伊朗新攻击，油价上涨",
-          "source": "NYT Business",
-          "title": "Oil Prices Rise as U.S. Launches New Attack on Iran",
-          "url": "https://www.nytimes.com/2026/06/10/business/oil-gas-price-iran.html"
-        },
-        {
-          "i": 7,
-          "point": "美国第二轮打击，伊朗暂停船只通过霍尔木兹",
-          "source": "Bloomberg",
-          "title": "Oil Climbs as Fresh US Strikes on Iran Threaten Fragile Truce",
-          "url": "https://www.bloomberg.com/news/articles/2026-06-10/latest-oil-market-news-and-analysis-for-june-11"
+          "point": "投资者担忧冲突长期化。",
+          "source": "CNBC",
+          "title": "Investors brace for a 'long grind' as Iran war escalation dims hopes of an early end",
+          "url": "https://www.cnbc.com/2026/06/11/iran-war-us-trump-strikes-centcom-oil-investors.html"
         }
       ],
-      "risk": "停火谈判可能缓解冲突，国防订单不及预期"
+      "risk": "停火协议可能达成，冲突缓解降低需求预期。"
     },
     {
       "name": "能源·石油",
       "tickers": "XOM, CVX, OXY, USO",
-      "thesis": "中东供应中断风险推高油价",
+      "thesis": "霍尔木兹海峡受阻，油价上涨利好能源股。",
       "drivers": [
-        "美国对伊朗打击引发能源供应中断担忧",
-        "伊朗宣布暂停所有船只通过霍尔木兹海峡"
+        "美国打击伊朗后油价上涨，市场担忧供应中断。",
+        "伊朗宣布暂停所有船只通过霍尔木兹海峡。",
+        "美伊冲突持续，能源供应风险溢价上升。"
       ],
       "evidence": [
         {
-          "i": 2,
-          "point": "油价上涨，美国对伊朗新攻击",
+          "i": 4,
+          "point": "油价因美伊冲突上涨。",
+          "source": "CNBC",
+          "title": "Oil jumps as U.S. strikes in Iran raise worries of extended disruption to energy flows",
+          "url": "https://www.cnbc.com/2026/06/11/brent-wti-oil-prices-us-launches-fresh-strikes-on-iran-.html"
+        },
+        {
+          "i": 6,
+          "point": "油价因新打击上涨。",
           "source": "NYT Business",
           "title": "Oil Prices Rise as U.S. Launches New Attack on Iran",
           "url": "https://www.nytimes.com/2026/06/10/business/oil-gas-price-iran.html"
         },
         {
-          "i": 3,
-          "point": "油价跳涨，担忧能源流动中断",
-          "source": "CNBC",
-          "title": "Oil jumps as U.S. fresh strikes on Iran raise worries of extended disruption to energy flows",
-          "url": "https://www.cnbc.com/2026/06/11/brent-wti-oil-prices-us-launches-fresh-strikes-on-iran-.html"
-        },
-        {
-          "i": 7,
-          "point": "伊朗暂停霍尔木兹海峡船只通行",
+          "i": 8,
+          "point": "伊朗暂停霍尔木兹海峡通行。",
           "source": "Bloomberg",
           "title": "Oil Climbs as Fresh US Strikes on Iran Threaten Fragile Truce",
           "url": "https://www.bloomberg.com/news/articles/2026-06-10/latest-oil-market-news-and-analysis-for-june-11"
         }
       ],
-      "risk": "OPEC+增产或需求疲软可能压制油价"
+      "risk": "OPEC+增产或停火协议可能打压油价。"
     },
     {
-      "name": "黄金·避险",
-      "tickers": "GLD, IAU, NEM, GOLD",
-      "thesis": "地缘冲突与市场波动支撑避险需求",
+      "name": "金属·铜铝",
+      "tickers": "FCX, AA, SCCO, COPX",
+      "thesis": "中东冲突加剧金属供应紧张，价格上行。",
       "drivers": [
-        "美国完成对伊朗新一轮打击后黄金波动",
-        "全球股市跌至一个月低点，科技股领跌"
+        "伊朗战争加剧金属市场'超级挤压'。",
+        "铜铝此前因中东冲突影响供应而上涨。",
+        "能源成本上升推高金属生产成本。"
       ],
       "evidence": [
         {
-          "i": 5,
-          "point": "美国完成伊朗打击后黄金价格波动",
-          "source": "Bloomberg",
-          "title": "Gold Whipsaws in Choppy Trading as US Completes New Iran Strikes",
-          "url": "https://www.bloomberg.com/news/articles/2026-06-10/gold-falls-for-third-day-as-us-launches-fresh-strikes-on-iran"
-        },
-        {
-          "i": 6,
-          "point": "全球股市跌至一个多月低点",
-          "source": "Bloomberg",
-          "title": "Global Stocks Hit One-Month Low, Oil Gains on Iran: Markets Wrap",
-          "url": "https://www.bloomberg.com/news/articles/2026-06-10/stock-market-today-dow-s-p-live-updates"
+          "i": 3,
+          "point": "伊朗战争加剧金属市场挤压。",
+          "source": "FT",
+          "title": "Iran war tightens ‘super-squeeze’ in metals markets",
+          "url": "https://www.ft.com/content/44d4b188-45ed-4e7e-a5eb-278da62ac601"
         }
       ],
-      "risk": "避险情绪消退或美元走强打压金价"
+      "risk": "全球经济放缓可能抑制金属需求。"
+    },
+    {
+      "name": "AI算力·数据中心",
+      "tickers": "NVDA, AVGO, SMH, ORCL",
+      "thesis": "AI资本开支高企，算力需求结构性增长。",
+      "drivers": [
+        "Oracle合同管道增至6380亿美元，AI需求强劲。",
+        "华尔街担忧AI成本上升，但长期需求确定。",
+        "科技巨头持续加大AI基础设施投资。"
+      ],
+      "evidence": [
+        {
+          "i": 7,
+          "point": "Oracle合同管道增长，AI需求强劲。",
+          "source": "MarketWatch",
+          "title": "Oracle’s stock slides after earnings, as the steep price of AI spooks investors",
+          "url": "https://www.marketwatch.com/story/oracles-stock-slides-after-earnings-as-the-steep-price-of-ai-spooks-investors-0653b309?mod=mw_rss_topstories"
+        }
+      ],
+      "risk": "AI成本上升可能压缩利润率，短期股价波动。"
     }
   ]
 }
