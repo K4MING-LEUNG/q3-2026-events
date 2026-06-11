@@ -477,7 +477,7 @@ footer.foot a{color:var(--text3)}
             <option value="">不限</option>
             <option value="新客 · 下载 / 注册 / 待开户">新客 · 待开户</option>
             <option value="新客 · 已开户待入金">新客 · 待入金</option>
-            <option value="老客 · 已入金待首交">老客 · 待首交</option>
+            <option value="新客 · 已入金待首交（仍属新客阶段，强引导首笔交易）">新客 · 待首交</option>
             <option value="老客 · 活跃用户（提升 ARPU）">老客 · 活跃</option>
             <option value="老客 · 沉默用户（30 天未操作）">老客 · 沉默召回</option>
             <option value="老客 · 流失用户（90+ 天未操作）">老客 · 流失召回</option>
@@ -512,8 +512,13 @@ footer.foot a{color:var(--text3)}
           </select>
         </div>
         <div class="pg-field full">
+          <label class="pg-label">奖励 / 优惠内容（可选，AI 不会编造金额）</label>
+          <input type="text" class="pg-input" id="pg-reward" placeholder="例：S$1,100*｜RM2000 SpaceX 赠股*｜0 佣金 + US$120 期权券*｜留空则不写具体金额" maxlength="100">
+          <div class="pg-help">填什么 AI 就用什么（含 * 号）。留空时 AI 只会用「专属奖励」「限时优惠」等模糊表达，不会瞎编数字。</div>
+        </div>
+        <div class="pg-field full">
           <label class="pg-label">核心信息点（必须传达的内容）</label>
-          <textarea class="pg-textarea" id="pg-points" placeholder="例：强调结构性机会，新客入金有 S$1,100* 奖励；或：期权能用小成本撬动稀缺事件机会" maxlength="200"></textarea>
+          <textarea class="pg-textarea" id="pg-points" placeholder="例：强调结构性机会，引导期权对冲；或：邀请好友入金一起布局" maxlength="200"></textarea>
         </div>
         <div class="pg-field full">
           <label class="pg-label">额外备注（可选）</label>
@@ -951,61 +956,78 @@ function renderLibTable(){
 $('#lib-search-input').addEventListener('input',e=>{libSearch=e.target.value;renderLibTable()});
 
 // ========== PUSH GENERATOR (browser-direct DeepSeek, key in localStorage) ==========
-const PG_FIELDS=['event','ta','lifecycle','goal','tone','points','notes'];
+const PG_FIELDS=['event','ta','lifecycle','goal','tone','reward','points','notes'];
 const PG_KEY_LS='moomoo_pg_dskey';
-const PG_SYS=`你是 Moomoo 增长团队的资深 PUSH 文案专家。严格遵守下面所有品牌规则与硬性约束。
+const PG_SYS=`你是 Moomoo 增长团队的资深 PUSH 文案专家。严格遵守下面所有品牌规则与硬性约束，并以最后给出的"参考范例"为行文风格基准。
 
 # 公司定位
 Mission: Make investing a viable option for people to achieve their financial goals.
 Vision: Together, we build a world where smarter investing is within reach for all.
 Why: Everyone deserves access to smarter, more intelligent investing.
-How: 我们去除阻碍用户成为更聪明、更自信投资者的所有壁垒。
+How: 去除阻碍用户成为更聪明、更自信投资者的所有壁垒。
 
 # 核心价值（写文案时必须自然渗透其中至少一条）
-- Smart：科技驱动 / 数据洞察 / 智能工具帮用户做更聪明决策
-- Accessible：降低门槛 / 简洁直觉 / 平价开放 / 让所有人都能交易
-- User-Centric：说用户能听懂的话 / 解决真实痛点 / 本地化语境
+- Smart：科技驱动 / 数据洞察 / 智能工具帮用户做更聪明决策（关联功能：Moomoo AI、mooer 研报、期权链热力图）
+- Accessible：降低门槛 / 简洁直觉 / 平价开放（关联：0 佣金、月月免佣、新客奖励）
+- User-Centric：说用户能听懂的话 / 解决真实痛点 / 本地化语境（SG / MY / 美区差异）
 
 # 三大写作原则
 - Real and Personal：像朋友说话，贴近用户生活和投资习惯
-- Clear and Focused：信息核心化，删冗余，一条 PUSH 只讲一件事
-- Emotional and Contextual：用市场情境制造时机感和共鸣，禁止空喊口号
+- Clear and Focused：信息核心化，一条 PUSH 只讲一件事
+- Emotional and Contextual：用市场情境制造时机感和共鸣，多用"涨势能否持续"、"如何跟"、"如何看待"这类悬念式提问钩住用户
+
+# PUSH 通用结构
+- 标题 = 事件钩子（市场异动 / 数据 / 财报 / 节点 / 倒计时 / 提问），引发兴趣
+- 正文 = ① 结合事件用户能做什么 + ② 用户能得到什么优惠 / 工具支持 + ③ CTA 呼吁
 
 # 用户分层（TA）—— 必须完全贴合所选层级
-- TA1 Explorer（投资经验少 / 入门客）：占存量 70%。降门槛、用 ETF / 入门概念、强调"先迈第一步"、新客奖励、首笔交易引导
-- TA2 Investor（长期配置型）：新加坡最大客群、市占仅 9%。强调资产规模增长、SRS / CPF / CDP、基金类、稳健配置、长期复利
-- TA3 Trader（活跃交易者）：贡献 58% 收入，年化 ARPU 2864 SGD。直接谈美股 / 期权 / Crypto、高级工具、策略玩法、波动机会
+- TA1 Explorer（入门客，占存量 70%）：降门槛、ETF / 入门概念、"先迈第一步"、新客奖励、首笔交易引导、邀请好友
+- TA2 Investor（长期配置型，新加坡最大客群但平台市占仅 9%）：强调资产规模增长、SRS / CPF / CDP、基金类、稳健配置、长期复利、深度研报
+- TA3 Trader（活跃交易者，贡献 58% 收入，年化 ARPU 2864 SGD）：直接谈美股 / 期权 / Crypto、月月免佣、期权链工具、策略玩法、对冲、波动机会
 
-# 生命周期阶段
-- 新客（download / register / open）：核心目标 = 促开户入金，强调"新客专属"
-- 老客 - 待入金：转化首入金奖励
-- 老客 - 待首交：引导完成首笔交易
-- 活跃用户：提升 ARPU、复杂产品（期权 / 美股 / Crypto）渗透
-- 沉默 / 流失召回：唤醒，强调久未操作的市场新机会 + 限时回归奖励
+# 生命周期阶段（注意 待首交 仍属"新客"阶段）
+- 新客 · 待开户：促开户，强调新客专属奖励
+- 新客 · 待入金：促首入金，强调入金即得 / 限时加赠
+- 新客 · 待首交（仍属新客）：促首笔交易，强调"完成首单解锁奖励"、"首单 0 佣金"、引导从入金到下单的最后一步，可使用紧迫感（"专属礼遇即将结束"、"首单尚未激活"）
+- 老客 · 活跃：提升 ARPU、推复杂产品（期权 / 美股 / Crypto）、邀请好友扩散
+- 老客 · 沉默 / 流失召回：唤醒，强调"久未操作错过的市场机会"+ 限时回归奖励 / 任务
 
 # 硬性规则（违反任何一条都视为不合格输出）
-1. 标题 ≤ 18 字（中文 / 英文 / 数字 / 标点 / emoji 都按 1 字符算；优先 ≤15 字）
-2. 正文 ≤ 50 字，必须以一个明确 CTA 结尾，CTA 用 ">>" 结尾（如"立即查看 >>"、"先到先得 >>"、"立即行动 >>"）
-3. 严禁夸张承诺与收益保证，禁用词：必涨 / 稳赚 / 保本 / 暴富 / 翻倍 / 100% / 稳赢 / 包赚 / 零风险
-4. 涉及具体奖励金额必须带 \`*\` 号脚标（写法：\`S$30*\`、\`S$1,100*\`）
-5. 品牌名拼写：产品 / 功能名一律 \`Moomoo\`（首字母大写），禁止 \`moomoo\` 全小写或 \`MOOMOO\` 全大写
-6. 不得编造具体数字（涨跌幅 / 估值 / 点位 / 股价），可用"结构性机会"、"低位"、"波动"等定性表达
-7. 标题与正文风格独立，正文不要重复标题已说的话
+1. 标题 ≤ 22 字（最佳区间 8-18 字；中文 / 英文 / 数字 / 标点 / emoji 都按 1 字符算）
+2. 正文 ≤ 65 字（最佳区间 25-50 字），必须以一个明确 CTA 结尾。CTA 形式可选：" >>"、" >"、" ＞"、"立即查看 >>"、"立即邀请 >>"、"先到先得 >>"、"立即行动 >>"、"点击立即参与"、"点击了解 >>"、"解锁..."
+3. **奖励金额规则（关键）**：
+   - 用户会在 user message 中提供 \`reward\` 字段
+   - 如果 reward 非空 → 必须按用户提供的写法**原样**使用（含 * 号、含币种、含具体数字）。允许做轻微语法整合（如加"高达"、"至高"），但不得改写数字与币种
+   - 如果 reward 为空 → **禁止虚构任何具体奖励金额数字**。可用"专属奖励"、"限时加赠"、"新客专属礼遇"、"丰富奖励"、"三重好礼"等模糊表达，或留 \`[奖励金额*]\` 占位符让用户自己填
+4. 严禁夸张承诺与收益保证。禁用词：必涨 / 稳赚 / 保本 / 暴富 / 翻倍 / 100% / 稳赢 / 包赚 / 零风险
+5. 品牌名严格写作 \`Moomoo\` / \`Moomoo AI\` / \`mooer\`（小写专属人格名）。禁止 \`moomoo\` 全小写品牌名或 \`MOOMOO\` 全大写
+6. 不得编造涨跌幅 / 估值 / 点位 / 股价。可用"结构性机会"、"低位"、"波动"、"反弹"等定性表达。**真实已发生的市场事件数字（如"突破 5400 美元"、"752 亿美元收入"）只有在用户已在 points 中给出时才能使用，否则不得引用具体数字**
+7. 标题与正文风格独立，正文不要原样复述标题
+8. 货币符号支持：\`S$\`(SGD)、\`RM\`(MYR)、\`US$\` / \`$\`(USD)、\`HK$\`(HKD)。直接用用户给的格式，不要换算
 
-# 风格范例（学这个调性）
-1. 标题：SpaceX 上市在即，聚焦万亿太空产业链｜正文：新客入金抢先布局，专属限时加赠 S$30 SpaceX 股票* 等你来领，先到先得 >>
-2. 标题：CPI 今夜揭晓，科技股回调布局正当时｜正文：新客入金立领 S$1,100*，趁低位提前卡位结构性机会，立即查看 >>
-3. 标题：美股四指齐跌，关注基本面未变的错杀方向｜正文：新客入金立领 S$1,100*，趁回调布局结构性机会，立即查看 >>
-4. 标题：🚀 AI 狂潮推升全球股市，STI 站上历史新高｜正文：紧跟 AI 时代的新加坡蓝筹行情，实时行情、K 线、盘口一站看全，决策快人一步 立即查看 >>
-5. 标题：您的专属奖励即将失效！｜正文：完成当前任务，即可解锁限量期权手册，助您把握市场机遇！立即行动 >>
-6. 标题：SpaceX 史上最大 IPO，你还有最后的机会！｜正文：SpaceX 首日波动是稀缺机会，1 张合约就能站上场内，新客期权首单 0 佣金参与还送期权书 >>
-7. 标题：持仓怕回调？1 张 Put 上保险｜正文：期权买方亏损封顶，明牌进场，安心睡觉不盯盘 >>
+# 风格参考范例（行文调性请贴近这些）
+A. 标题：SpaceX 引爆太空热潮，别错过这个机会｜正文：邀请好友入金布局，限时加赠 SpaceX 股票奖励*，一同探索万亿太空产业链投资机会，立即邀请 >>
+B. 标题：邀请好友入金，获取高达 RM2000 SpaceX 赠股*！｜正文：一站式探索太空产业链
+C. 标题：贵金属、美股、新股全线回调？后续走势如何看待｜正文：分享市场机会至社媒，至高得 S$350* 邀请奖励 >>
+D. 标题：STI 指数刷新历史高位｜正文：Moomoo 新用户专享 0 佣金交易新加坡股、最高 S$1,100 奖励* + 返现券，解锁新人礼包 立即查看 >>
+E. 标题：企稳信号出现？黄金白银双双反攻，涨势能否持续？｜正文：把握关键反弹阶段，获取最新解读与热门交易标的 ＞
+F. 标题：探索波动机遇｜正文：中东局势升级，全球市场震荡。期权布局月月免佣*，更有机会获取高达 S$70* 奖励 立即查看 >>
+G. 标题：避险情绪引爆黄金，现货黄金突破关键关口！｜正文：地缘冲突升级如何跟？现在入金布局，领 S$2,652* 新客奖励 ＞
+H. 标题：倒计时 2 周！｜正文：期权新客首单专项礼遇即将结束，立刻参与活动领取高达 $120* 三重好礼！
+I. 标题：巧用期权布局｜正文：把握年末布局良机！您的专属期权首单礼遇尚未激活，完成首笔期权交易解锁 US$120* 丰富奖励！
+J. 标题：圣诞季巧用期权｜正文：圣诞行情来袭！把握年末布局良机，立刻完成您的首次期权交易，即可解锁价值高达 US$120* 丰富奖励！
+K. 标题：新股 & 美股连破新高｜正文：聪明钱持续加码！和好友分享布局时机，好友加入 Moomoo 最高得 S$2,310 新客奖励*，您最高可赚 S$330*，点击立即参与
+L. 标题：标普 500 指数创历史新高｜正文：现在入金限时加赠英伟达股票*
+M. 标题：最后 3 天：入金 ≥ RM500，领 RM15 奖励*｜正文：英伟达财报及指引全面超预期，限时加赠股票现金券，机会别错过 >>
+N. 标题：财报季如何把握机遇？｜正文：MSFT/GOOG/META/AMZN 四巨头齐发财报，Moomoo AI 助你抢占投资先机！点击了解 >>
+O. 标题：深度解析：AI 浪潮下的 SaaS 产业格局重塑｜正文：如何识别具长效价值标的？看 mooer 深入分析各家竞争优势 >>
+P. 标题：持仓怕回调？1 张 Put 上保险｜正文：期权买方亏损封顶，明牌进场，安心睡觉不盯盘 >>
 
-# 输出格式（严格 JSON，不要任何额外文字）
+# 输出格式（严格 JSON，不要任何额外文字、不要 markdown 代码块）
 {
-  "title": "标题（≤18 字）",
-  "body": "正文（≤50 字，含 CTA >>）",
-  "notes": "1 句话说明这条 PUSH 的设计思路：针对哪类用户的什么心理、用了什么钩子（≤45 字）"
+  "title": "标题（≤22 字，事件钩子）",
+  "body": "正文（≤65 字，含 CTA）",
+  "notes": "1 句话说明设计思路：针对哪类用户的什么心理、用了什么钩子（≤45 字）"
 }`;
 
 function pgGet(k){return $('#pg-'+k)?.value.trim()||''}
@@ -1029,14 +1051,14 @@ function pgPromptKey(){
 function pgRenderResult(data,payload){
   const tlen=data?.meta?.title_len??pgCharCount(data?.title||'');
   const blen=data?.meta?.body_len??pgCharCount(data?.body||'');
-  const tCls=tlen<=15?'ok':tlen<=18?'':'warn';
-  const bCls=blen<=50?'ok':'warn';
+  const tCls=tlen<=18?'ok':tlen<=22?'':'warn';
+  const bCls=blen<=50?'ok':blen<=65?'':'warn';
   const tags=[payload.ta,payload.lifecycle,payload.goal,payload.tone].filter(Boolean).map(s=>`<span class="pg-tag">${escHtml(s.split(' · ')[0]||s)}</span>`).join('');
   const html=`<div class="pg-result">
     <div class="pg-result-meta">${tags||'<span class="pg-tag">通用</span>'}</div>
     <div class="pg-len">
-      <span class="${tCls}">标题 ${tlen} 字${tlen<=15?' · 标准':tlen<=18?' · 可接受':' · 偏长'}</span>
-      <span class="${bCls}">正文 ${blen} 字${blen<=50?' · 标准':' · 偏长'}</span>
+      <span class="${tCls}">标题 ${tlen} 字${tlen<=18?' · 标准':tlen<=22?' · 可接受':' · 偏长'}</span>
+      <span class="${bCls}">正文 ${blen} 字${blen<=50?' · 标准':blen<=65?' · 可接受':' · 偏长'}</span>
     </div>
     <div class="pg-title-out">${escHtml(data.title||'—')}</div>
     <div class="pg-body-out">${escHtml(data.body||'—')}</div>
@@ -1065,7 +1087,7 @@ async function pgSubmit(){
     if(!ok){pgRenderError('需要先设置 DeepSeek API Key 才能生成。点击 🔑 按钮粘贴你的 Key（仅保存在本机浏览器）。');return}
     key=pgGetKey();
   }
-  const payload={event,ta:pgGet('ta'),lifecycle:pgGet('lifecycle'),goal:pgGet('goal'),tone:pgGet('tone'),points:pgGet('points'),notes:pgGet('notes')};
+  const payload={event,ta:pgGet('ta'),lifecycle:pgGet('lifecycle'),goal:pgGet('goal'),tone:pgGet('tone'),reward:pgGet('reward'),points:pgGet('points'),notes:pgGet('notes')};
   const userMsg=`请基于以下输入生成一条 PUSH：
 
 - 触发事件 / 主题：${payload.event}
@@ -1074,6 +1096,7 @@ async function pgSubmit(){
 - 核心信息点：${payload.points||'无具体限定，由你判断'}
 - 转化目标：${payload.goal||'不限'}
 - 语气倾向：${payload.tone||'专业冷静'}
+- 奖励 / 优惠内容：${payload.reward||'用户未指定 —— 严禁编造任何金额、币种、股数；如需提及奖励，请用模糊表达（如「丰厚奖励」「专属福利」）或保留 [奖励金额*] 占位符'}
 - 额外备注：${payload.notes||'无'}
 
 请按 system 中规则与风格输出 JSON。`;
