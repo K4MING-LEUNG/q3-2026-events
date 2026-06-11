@@ -288,6 +288,45 @@ footer.foot a{color:var(--text3)}
 #modal .m-source{font-size:13px;color:var(--text4);padding-top:20px;border-top:1px solid var(--border);margin-top:20px}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 @keyframes rise{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+/* nav new badge */
+.nav-new{display:inline-flex;align-items:center;gap:6px}
+.nav-badge{font-size:9px;font-weight:700;letter-spacing:.05em;padding:2px 6px;border-radius:980px;background:linear-gradient(135deg,#0071e3,#af52de);color:#fff}
+/* PUSH generator */
+.pg-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:32px 30px;max-width:880px;margin:0 auto}
+.pg-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px}
+.pg-field{display:flex;flex-direction:column;gap:6px}
+.pg-field.full{grid-column:1/-1}
+.pg-label{font-size:12px;font-weight:600;color:var(--text2);letter-spacing:.02em}
+.pg-label .req{color:#ff3b30;margin-left:4px}
+.pg-input,.pg-select,.pg-textarea{width:100%;padding:11px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);font-size:14px;font-family:inherit;color:var(--text);outline:none;transition:all .18s;box-sizing:border-box}
+.pg-textarea{resize:vertical;min-height:64px;line-height:1.5}
+.pg-input:focus,.pg-select:focus,.pg-textarea:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(0,113,227,.12)}
+.pg-help{font-size:11px;color:var(--text4);line-height:1.45}
+.pg-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:22px;align-items:center;flex-wrap:wrap}
+.pg-hint{font-size:12px;color:var(--text4);margin-right:auto}
+.pg-btn{padding:11px 22px;border-radius:980px;font-size:14px;font-weight:600;cursor:pointer;border:none;transition:all .2s;font-family:inherit}
+.pg-btn.primary{background:var(--text);color:#fff}
+.pg-btn.primary:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.pg-btn.primary:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+.pg-btn.ghost{background:transparent;color:var(--text2);border:1px solid var(--border)}
+.pg-btn.ghost:hover{background:var(--bg2)}
+.pg-result{max-width:880px;margin:24px auto 0;background:linear-gradient(135deg,#0a0a0a,#1a1a2e 60%,#16213e);color:#fff;border-radius:var(--radius);padding:32px 30px;position:relative;overflow:hidden;animation:rise .35s ease-out}
+.pg-result::before{content:'';position:absolute;top:-30%;right:-20%;width:60%;height:120%;background:radial-gradient(circle,rgba(0,113,227,.25),transparent 60%);pointer-events:none}
+.pg-result>*{position:relative;z-index:1}
+.pg-result-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.pg-tag{font-size:10.5px;font-weight:600;padding:4px 10px;border-radius:980px;background:rgba(255,255,255,.14);color:#fff;letter-spacing:.03em;backdrop-filter:blur(10px)}
+.pg-title-out{font-size:24px;font-weight:600;letter-spacing:-.018em;line-height:1.25;margin-bottom:14px}
+.pg-body-out{font-size:15px;line-height:1.6;color:rgba(255,255,255,.85);margin-bottom:18px;background:rgba(255,255,255,.06);padding:14px 16px;border-radius:10px;border-left:3px solid rgba(255,255,255,.5)}
+.pg-len{display:inline-flex;gap:14px;font-size:11px;color:rgba(255,255,255,.55);margin-bottom:10px;font-variant-numeric:tabular-nums}
+.pg-len .ok{color:#34c759}
+.pg-len .warn{color:#ff9500}
+.pg-notes{font-size:13px;color:rgba(255,255,255,.7);line-height:1.55;padding-top:16px;border-top:1px solid rgba(255,255,255,.12)}
+.pg-notes b{color:#fff;font-weight:600;margin-right:6px}
+.pg-result-actions{display:flex;gap:10px;margin-top:18px}
+.pg-result-actions .pg-btn{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(10px)}
+.pg-result-actions .pg-btn:hover{background:rgba(255,255,255,.22)}
+.pg-error{max-width:880px;margin:18px auto 0;padding:14px 18px;border-radius:12px;background:rgba(255,59,48,.08);border:1px solid rgba(255,59,48,.25);color:#c2261d;font-size:13.5px;line-height:1.5}
+@media(max-width:680px){.pg-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -303,6 +342,7 @@ footer.foot a{color:var(--text3)}
       <a href="#super">Super</a>
       <a href="#list">Events</a>
       <a href="#library">Library</a>
+      <a href="#push-gen" class="nav-new">PUSH 生成器<span class="nav-badge">NEW</span></a>
     </div>
     <div class="meta tnum" id="clock">--:--:--</div>
   </div>
@@ -406,6 +446,88 @@ footer.foot a{color:var(--text3)}
     </div>
     <div class="list-filters" id="list-filters"></div>
     <div class="list-wrap" id="list-wrap"></div>
+  </div>
+</section>
+
+<section id="push-gen">
+  <div class="container-sm">
+    <div class="section-head">
+      <div class="eyebrow">Moomoo Tools · NEW</div>
+      <h2 class="h2">PUSH 生成器</h2>
+      <p class="lead">输入触发事件、目标用户、转化目的，DeepSeek 按 Moomoo 品牌指南生成符合规范的 PUSH 文案。</p>
+    </div>
+    <div class="pg-card">
+      <div class="pg-grid">
+        <div class="pg-field full">
+          <label class="pg-label">触发事件 / 主题<span class="req">*</span></label>
+          <input type="text" class="pg-input" id="pg-event" placeholder="例：NVDA 财报、Fed 议息、世界杯开赛、SpaceX IPO …" maxlength="60">
+        </div>
+        <div class="pg-field">
+          <label class="pg-label">目标用户分层（TA）</label>
+          <select class="pg-select" id="pg-ta">
+            <option value="">不限</option>
+            <option value="TA1 Explorer · 入门客（占存量 70%，引导首次入金/首笔交易）">TA1 Explorer · 入门客</option>
+            <option value="TA2 Investor · 长期配置型（SRS/CPF/CDP/基金，提升 AUM）">TA2 Investor · 长期配置</option>
+            <option value="TA3 Trader · 活跃交易者（美股/期权/Crypto，提升 ARPU）">TA3 Trader · 活跃交易</option>
+          </select>
+        </div>
+        <div class="pg-field">
+          <label class="pg-label">生命周期阶段</label>
+          <select class="pg-select" id="pg-lifecycle">
+            <option value="">不限</option>
+            <option value="新客 · 下载 / 注册 / 待开户">新客 · 待开户</option>
+            <option value="新客 · 已开户待入金">新客 · 待入金</option>
+            <option value="老客 · 已入金待首交">老客 · 待首交</option>
+            <option value="老客 · 活跃用户（提升 ARPU）">老客 · 活跃</option>
+            <option value="老客 · 沉默用户（30 天未操作）">老客 · 沉默召回</option>
+            <option value="老客 · 流失用户（90+ 天未操作）">老客 · 流失召回</option>
+          </select>
+        </div>
+        <div class="pg-field">
+          <label class="pg-label">转化目标</label>
+          <select class="pg-select" id="pg-goal">
+            <option value="">不限</option>
+            <option value="新客开户">新客开户</option>
+            <option value="新客入金">新客入金</option>
+            <option value="首笔交易（任意标的）">首笔交易</option>
+            <option value="期权首单 / 期权渗透">期权首单</option>
+            <option value="美股交易">美股交易</option>
+            <option value="ETF / 基金配置">ETF / 基金配置</option>
+            <option value="SRS / CPF / CDP（新加坡本地）">SRS/CPF/CDP</option>
+            <option value="Crypto 交易">Crypto 交易</option>
+            <option value="活动报名 / 任务完成">活动 / 任务</option>
+            <option value="学习栏目（Moomoo Learn / 期权手册）">学习栏目</option>
+            <option value="App 唤醒 / 召回">App 唤醒</option>
+          </select>
+        </div>
+        <div class="pg-field">
+          <label class="pg-label">语气倾向</label>
+          <select class="pg-select" id="pg-tone">
+            <option value="专业冷静（Smart）">专业冷静</option>
+            <option value="紧迫感 / 限时（Emotional）">紧迫感 / 限时</option>
+            <option value="共情陪伴（User-Centric）">共情陪伴</option>
+            <option value="数据型 / 干货">数据型 / 干货</option>
+            <option value="时机型（市场情境驱动）">时机型</option>
+            <option value="降门槛 / 鼓励第一步（Accessible）">降门槛</option>
+          </select>
+        </div>
+        <div class="pg-field full">
+          <label class="pg-label">核心信息点（必须传达的内容）</label>
+          <textarea class="pg-textarea" id="pg-points" placeholder="例：强调结构性机会，新客入金有 S$1,100* 奖励；或：期权能用小成本撬动稀缺事件机会" maxlength="200"></textarea>
+        </div>
+        <div class="pg-field full">
+          <label class="pg-label">额外备注（可选）</label>
+          <textarea class="pg-textarea" id="pg-notes" placeholder="例：避免提及具体股价；可提及'限时 48 小时'；面向新加坡市场" maxlength="200"></textarea>
+          <div class="pg-help">硬性规则已内置：标题 ≤18 字、正文 ≤50 字、必含 CTA、禁夸张承诺、奖励金额带 *。</div>
+        </div>
+      </div>
+      <div class="pg-actions">
+        <span class="pg-hint" id="pg-hint">DeepSeek 通常 5-10 秒返回</span>
+        <button class="pg-btn ghost" id="pg-clear">清空</button>
+        <button class="pg-btn primary" id="pg-submit">生成 PUSH ↓</button>
+      </div>
+    </div>
+    <div id="pg-output"></div>
   </div>
 </section>
 
@@ -827,8 +949,63 @@ function renderLibTable(){
 }
 $('#lib-search-input').addEventListener('input',e=>{libSearch=e.target.value;renderLibTable()});
 
+// ========== PUSH GENERATOR ==========
+const PG_FIELDS=['event','ta','lifecycle','goal','tone','points','notes'];
+function pgGet(k){return $('#pg-'+k)?.value.trim()||''}
+function pgSet(k,v){const el=$('#pg-'+k);if(el)el.value=v||''}
+function pgCharCount(s){return [...(s||'')].length}
+function pgRenderResult(data,payload){
+  const tlen=data?.meta?.title_len??pgCharCount(data?.title||'');
+  const blen=data?.meta?.body_len??pgCharCount(data?.body||'');
+  const tCls=tlen<=15?'ok':tlen<=18?'':'warn';
+  const bCls=blen<=50?'ok':'warn';
+  const tags=[payload.ta,payload.lifecycle,payload.goal,payload.tone].filter(Boolean).map(s=>`<span class="pg-tag">${escHtml(s.split(' · ')[0]||s)}</span>`).join('');
+  const html=`<div class="pg-result">
+    <div class="pg-result-meta">${tags||'<span class="pg-tag">通用</span>'}</div>
+    <div class="pg-len">
+      <span class="${tCls}">标题 ${tlen} 字${tlen<=15?' · 标准':tlen<=18?' · 可接受':' · 偏长'}</span>
+      <span class="${bCls}">正文 ${blen} 字${blen<=50?' · 标准':' · 偏长'}</span>
+    </div>
+    <div class="pg-title-out">${escHtml(data.title||'—')}</div>
+    <div class="pg-body-out">${escHtml(data.body||'—')}</div>
+    ${data.notes?`<div class="pg-notes"><b>设计思路</b>${escHtml(data.notes)}</div>`:''}
+    <div class="pg-result-actions">
+      <button class="pg-btn" id="pg-copy">复制全文</button>
+      <button class="pg-btn" id="pg-regen">重新生成</button>
+    </div>
+  </div>`;
+  $('#pg-output').innerHTML=html;
+  $('#pg-copy').addEventListener('click',()=>{
+    const text=`${data.title}\n${data.body}`;
+    navigator.clipboard.writeText(text).then(()=>{
+      const b=$('#pg-copy');b.textContent='已复制 ✓';setTimeout(()=>b.textContent='复制全文',1500);
+    }).catch(()=>{const b=$('#pg-copy');b.textContent='复制失败';setTimeout(()=>b.textContent='复制全文',1500);});
+  });
+  $('#pg-regen').addEventListener('click',pgSubmit);
+}
+function pgRenderError(msg){$('#pg-output').innerHTML=`<div class="pg-error">⚠ ${escHtml(msg)}</div>`}
+async function pgSubmit(){
+  const event=pgGet('event');
+  if(!event){pgRenderError('请填写「触发事件 / 主题」');$('#pg-event').focus();return}
+  const payload={event,ta:pgGet('ta'),lifecycle:pgGet('lifecycle'),goal:pgGet('goal'),tone:pgGet('tone'),points:pgGet('points'),notes:pgGet('notes')};
+  const btn=$('#pg-submit');const hint=$('#pg-hint');
+  btn.disabled=true;btn.textContent='生成中…';hint.textContent='DeepSeek 正在按 Moomoo 品牌指南生成…';
+  $('#pg-output').innerHTML='';
+  try{
+    const r=await fetch('/api/push',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    const data=await r.json().catch(()=>({error:'响应解析失败'}));
+    if(!r.ok){pgRenderError(data.error||('请求失败 HTTP '+r.status)+(data.detail?' · '+data.detail:''));return}
+    pgRenderResult(data,payload);
+    document.querySelector('#pg-output')?.scrollIntoView({behavior:'smooth',block:'center'});
+  }catch(e){pgRenderError('网络错误：'+(e.message||String(e))+'。本地预览模式无法调用 /api/push，请在 Vercel 部署后使用。');
+  }finally{btn.disabled=false;btn.textContent='生成 PUSH ↓';hint.textContent='DeepSeek 通常 5-10 秒返回';}
+}
+$('#pg-submit').addEventListener('click',pgSubmit);
+$('#pg-clear').addEventListener('click',()=>{PG_FIELDS.forEach(k=>pgSet(k,''));$('#pg-output').innerHTML='';$('#pg-event').focus()});
+$('#pg-event').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.ctrlKey||e.metaKey))pgSubmit()});
+
 // ========== NAV: SCROLL PROGRESS + ACTIVE SECTION ==========
-const NAV_SECTIONS=['today','news','forecast','calendar','super','list','library'];
+const NAV_SECTIONS=['today','news','forecast','calendar','super','list','library','push-gen'];
 function updateNav(){
   const sy=window.scrollY||document.documentElement.scrollTop;
   const max=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
