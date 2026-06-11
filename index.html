@@ -723,6 +723,8 @@ function renderSuper(){
 
 // ========== LIST + FILTERS ==========
 let currentFilter='all';
+let listExpanded=false;
+const LIST_INITIAL=8;
 function renderListFilters(){
   const filters=[
     {k:'all',label:'All'},
@@ -742,7 +744,9 @@ function renderList(){
   if(currentFilter==='imp3')list=list.filter(e=>e.imp===3);
   else if(currentFilter==='imp2')list=list.filter(e=>e.imp===2);
   else if(currentFilter!=='all')list=list.filter(e=>e.cats.includes(currentFilter));
-  $('#list-wrap').innerHTML=list.map(e=>{
+  const total=list.length;
+  const visible=listExpanded?list:list.slice(0,LIST_INITIAL);
+  const rows=visible.map(e=>{
     const stars='★'.repeat(e.imp);
     const impCls=e.imp===3?'badge-imp-3':e.imp===2?'badge-imp-2':'badge';
     return `<div class="list-row" onclick="openModal('${e.id}')">
@@ -752,6 +756,18 @@ function renderList(){
       <div class="arrow">→</div>
     </div>`;
   }).join('')||'<div style="padding:48px;text-align:center;color:var(--text4)">No events match this filter.</div>';
+  $('#list-wrap').innerHTML=rows;
+  const wrap=$('#list-wrap').parentElement;
+  let existing=$('#list-toggle-wrap');
+  if(existing)existing.remove();
+  if(total>LIST_INITIAL){
+    const div=document.createElement('div');
+    div.id='list-toggle-wrap';
+    div.className='super-toggle-wrap';
+    div.innerHTML=`<button class="super-toggle" id="list-toggle">${listExpanded?`收起 ↑`:`展开全部 ${total} 个事件 ↓`}</button>`;
+    wrap.appendChild(div);
+    $('#list-toggle').addEventListener('click',()=>{listExpanded=!listExpanded;renderList();});
+  }
 }
 
 // ========== MODAL ==========
