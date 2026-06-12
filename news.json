@@ -1,166 +1,183 @@
 {
-  "updated_at": "2026-06-11T15:36:04+08:00",
+  "updated_at": "2026-06-12T09:19:33+08:00",
   "items": [
     {
-      "source": "NYT Business",
-      "title": "With Inflation Bearing Down, Europe Is Facing Higher Interest Rates",
-      "url": "https://www.nytimes.com/2026/06/11/business/european-central-bank-inflation-interest-rates.html",
-      "published_at": "2026-06-11T07:16:50+00:00",
-      "summary": "欧洲央行预计将加息，为2023年9月以来首次，因伊朗战争导致的能源中断推高了价格。",
-      "category": "政策",
-      "angle": "科普欧洲央行加息对欧元区债券和外汇ETF的影响，引导用户关注汇率对冲策略。"
-    },
-    {
-      "source": "CNBC",
-      "title": "Kuwait closes airspace, Israel warns of launches from Lebanon after U.S strikes in Iran",
-      "url": "https://www.cnbc.com/2026/06/10/trump-iran-war-attacks-deal.html",
-      "published_at": "2026-06-11T06:16:33+00:00",
-      "summary": "科威特关闭领空，以色列警告黎巴嫩方向有发射活动，此前美国对伊朗发动打击。",
+      "source": "FT",
+      "title": "Trump vows to take ‘total control’ of Iran’s oil and gas markets",
+      "url": "https://www.ft.com/content/84ee31f2-0e12-4083-9572-143a928efb63",
+      "published_at": "2026-06-11T16:10:46+00:00",
+      "summary": "美国总统特朗普声称将夺取伊朗的哈尔克岛，并完全控制其石油和天然气市场。",
       "category": "地缘政治",
-      "angle": "梳理中东冲突升级对航空、保险和能源板块的传导链，制作相关ETF配置对照表。"
-    },
-    {
-      "source": "NYT Business",
-      "title": "Lee Raymond, Who Created Global Oil Behemoth Exxon Mobil, Dies at 87",
-      "url": "https://www.nytimes.com/2026/06/10/business/lee-raymond-dead.html",
-      "published_at": "2026-06-11T02:12:59+00:00",
-      "summary": "埃克森美孚前CEO李·雷蒙德去世，他主导了公司对竞争对手的收购并大幅削减成本。",
-      "category": "能源",
-      "angle": "拆解埃克森美孚并购历史及其对当前能源巨头估值的影响，引导用户关注能源ETF。"
-    },
-    {
-      "source": "NYT Business",
-      "title": "Oil Prices Rise as U.S. Launches New Attack on Iran",
-      "url": "https://www.nytimes.com/2026/06/10/business/oil-gas-price-iran.html",
-      "published_at": "2026-06-11T01:49:17+00:00",
-      "summary": "美国对伊朗发动新攻击后，油价上涨，市场担忧两国可能重回公开冲突。",
-      "category": "能源",
-      "angle": "做油价波动与能源股期权策略的科普内容，引导用户学习如何用期权对冲油价风险。"
-    },
-    {
-      "source": "MarketWatch",
-      "title": "When a World Cup team loses, its country’s stock market also goes down. Here’s the weird reason why.",
-      "url": "https://www.marketwatch.com/story/the-weird-reason-why-a-teams-world-cup-loss-can-trigger-a-sharp-drop-in-stock-prices-ac385f51?mod=mw_rss_topstories",
-      "published_at": "2026-06-10T23:25:00+00:00",
-      "summary": "研究发现世界杯球队输球时，其国家股市往往下跌，原因与投资者情绪有关。",
-      "category": "全球事件",
-      "angle": "梳理世界杯期间各国股市与消费板块的历史表现，制作事件驱动型ETF配置指南。"
-    },
-    {
-      "source": "CNBC",
-      "title": "Analysis: Trump said he loves inflation. Why that should be music to Kevin Warsh's ears",
-      "url": "https://www.cnbc.com/2026/06/10/trump-inflation-fed-chair-kevin-warsh-analysis.html",
-      "published_at": "2026-06-10T21:52:56+00:00",
-      "summary": "特朗普表示对4.2%的通胀率感到满意，这可能利好新任美联储主席凯文·沃什。",
-      "category": "政策",
-      "angle": "科普美联储主席更替对利率预期和债券ETF的影响，引导用户关注利率期权策略。"
-    },
-    {
-      "source": "CNBC",
-      "title": "Investors brace for a 'long grind' as Iran war escalation dims hopes of an early end to hostilities",
-      "url": "https://www.cnbc.com/2026/06/11/iran-war-us-trump-strikes-centcom-oil-investors.html",
-      "published_at": "2026-06-11T06:44:48+00:00",
-      "summary": "随着美伊持续交火，投资者担心冲突可能延长，市场面临长期煎熬。",
-      "category": "地缘政治",
-      "angle": "做地缘冲突持续情景下的资产配置对照表，引导用户关注避险资产如黄金ETF和VIX期权。"
+      "angle": "梳理中东地缘风险对原油期货波动率的影响，结合期权策略做多波动率。"
     },
     {
       "source": "Bloomberg",
-      "title": "Wizz Air Says Iran Conflict Cut into Earnings; Omits Outlook",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-11/wizz-air-says-iran-conflict-cut-into-earnings-omits-outlook",
-      "published_at": "2026-06-11T06:05:09+00:00",
-      "summary": "Wizz Air表示伊朗冲突导致其财年收益减少5000万欧元，几乎抹去利润，并取消业绩指引。",
-      "category": "财报",
-      "angle": "拆解中东冲突对航空业盈利的影响，制作航空股期权策略案例，引导用户学习事件驱动交易。"
+      "title": "Korea’s Kospi Surges 8% as Iran Deal Hopes Lift Chip Stocks",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-12/korea-s-kospi-surges-7-as-iran-deal-hopes-lift-chip-stocks",
+      "published_at": "2026-06-12T00:03:58+00:00",
+      "summary": "韩国Kospi指数因特朗普暗示接近与伊朗达成协议而大涨8%，芯片股领涨。",
+      "category": "大盘走势",
+      "angle": "做韩国半导体ETF（如KODEX半导体）与地缘风险缓解的联动分析，引导用户关注跨境ETF配置。"
+    },
+    {
+      "source": "Bloomberg",
+      "title": "Stocks Rally as Trump Signals Iran Deal, Oil Slips: Markets Wrap",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-11/asian-stocks-to-gain-as-trump-signals-us-iran-deal-markets-wrap",
+      "published_at": "2026-06-11T22:03:20+00:00",
+      "summary": "美股和亚洲股市因特朗普释放伊朗协议信号而上涨，油价下跌。",
+      "category": "大盘走势",
+      "angle": "制作地缘政治事件与美股板块轮动对照表，重点展示能源与科技板块的跷跷板效应。"
+    },
+    {
+      "source": "CNBC",
+      "title": "Oil prices fall on hopes of U.S.-Iran deal despite Tehran pushback",
+      "url": "https://www.cnbc.com/2026/06/12/oil-prices-wti-brent-on-hopes-of-us-iran-deal-despite-tehran-pushback.html",
+      "published_at": "2026-06-12T00:53:28+00:00",
+      "summary": "油价因特朗普称与伊朗达成框架协议而下跌，尽管伊朗方面否认。",
+      "category": "能源",
+      "angle": "科普原油期货期权中的蝶式价差策略，用于押注油价在协议落地前后的窄幅波动。"
     },
     {
       "source": "FT",
-      "title": "State-owned AI",
-      "url": "https://www.ft.com/content/6212a1dc-5ebe-4037-b136-e1c29b061f8b",
-      "published_at": "2026-06-11T05:30:04+00:00",
-      "summary": "报道关注国有AI发展，同时提及CPI数据横向波动。",
-      "category": "科技",
-      "angle": "梳理国有AI概念股与科技ETF的关联，结合CPI平稳环境，引导用户关注AI板块期权交易机会。"
+      "title": "Donald Trump says US close to deal with Iran and calls off strikes",
+      "url": "https://www.ft.com/content/05472479-445d-4c16-ba85-6db47ba72373",
+      "published_at": "2026-06-12T00:53:17+00:00",
+      "summary": "特朗普称美国接近与伊朗达成协议并取消打击，市场上涨，油价下跌。",
+      "category": "地缘政治",
+      "angle": "拆解霍尔木兹海峡通航风险对航运保险板块的影响，引导用户关注相关ETF。"
+    },
+    {
+      "source": "Bloomberg",
+      "title": "Japan’s Stocks Rise as Trump’s Iran Deal Comments Lift Sentiment",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-11/japanese-stocks-set-to-rise-on-optimism-over-middle-east-war",
+      "published_at": "2026-06-11T23:02:08+00:00",
+      "summary": "日本股市因特朗普的伊朗协议言论上涨，市场预期中东冲突接近结束。",
+      "category": "大盘走势",
+      "angle": "做日本出口股（如丰田、索尼）与油价下跌的敏感性分析，引导用户通过个股期权布局。"
+    },
+    {
+      "source": "CNBC",
+      "title": "Trump claims Iran war settled 'subject to finalization,' expects signing in 'next few days'",
+      "url": "https://www.cnbc.com/2026/06/11/trump-iran-strikes-deal.html",
+      "published_at": "2026-06-11T20:49:53+00:00",
+      "summary": "特朗普声称伊朗战争已解决，但此前曾威胁将攻击伊朗并接管其石油资产。",
+      "category": "地缘政治",
+      "angle": "梳理特朗普言论反复期间原油期权隐含波动率的变化，引导用户使用跨式期权捕捉波动。"
+    },
+    {
+      "source": "FT",
+      "title": "Can Trump make a deal with Iran?",
+      "url": "https://www.ft.com/content/c0dd70da-5c91-47db-97e9-44a106edc988",
+      "published_at": "2026-06-11T20:00:00+00:00",
+      "summary": "分析油价能否预示美伊达成和平协议的可能性。",
+      "category": "能源",
+      "angle": "科普原油期货期限结构（contango/backwardation）作为地缘风险指标，引导用户学习期货知识。"
+    },
+    {
+      "source": "Bloomberg",
+      "title": "Knicks Spark Euphoria From Bronx to Brooklyn",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-12/knicks-spark-euphoria-from-bronx-to-brooklyn-video",
+      "published_at": "2026-06-12T01:13:38+00:00",
+      "summary": "纽约尼克斯队在NBA总决赛第四场完成29分大逆转，以3-1领先。",
+      "category": "全球事件",
+      "angle": "做NBA总决赛收视率与博彩、广告板块标的（如迪士尼、麦迪逊广场花园）的关联分析。"
     }
   ],
   "sectors": [
     {
-      "name": "国防军工",
-      "tickers": "LMT, NOC, RTX, ITA",
-      "thesis": "中东冲突升级驱动国防开支预期增加",
+      "name": "能源·石油",
+      "tickers": "XOM, CVX, OXY, USO",
+      "thesis": "美伊协议预期压低油价，但地缘风险仍存",
       "drivers": [
-        "美国对伊朗发动新攻击，地缘风险加剧",
-        "科威特关闭领空，以色列警告黎巴嫩方向发射"
+        "特朗普声称接近与伊朗达成协议，油价承压",
+        "伊朗否认协议，谈判不确定性仍高",
+        "特朗普曾威胁控制伊朗石油市场，供应风险未消"
+      ],
+      "evidence": [
+        {
+          "i": 0,
+          "point": "特朗普威胁控制伊朗石油市场",
+          "source": "FT",
+          "title": "Trump vows to take ‘total control’ of Iran’s oil and gas markets",
+          "url": "https://www.ft.com/content/84ee31f2-0e12-4083-9572-143a928efb63"
+        },
+        {
+          "i": 3,
+          "point": "油价因协议预期下跌",
+          "source": "CNBC",
+          "title": "Oil prices fall on hopes of U.S.-Iran deal despite Tehran pushback",
+          "url": "https://www.cnbc.com/2026/06/12/oil-prices-wti-brent-on-hopes-of-us-iran-deal-despite-tehran-pushback.html"
+        },
+        {
+          "i": 4,
+          "point": "特朗普称接近协议并取消打击",
+          "source": "FT",
+          "title": "Donald Trump says US close to deal with Iran and calls off strikes",
+          "url": "https://www.ft.com/content/05472479-445d-4c16-ba85-6db47ba72373"
+        }
+      ],
+      "risk": "协议若未达成，油价可能反弹"
+    },
+    {
+      "name": "半导体·芯片",
+      "tickers": "NVDA, AMD, SMH, TSM",
+      "thesis": "地缘缓和提振风险偏好，芯片股受益",
+      "drivers": [
+        "韩国Kospi因伊朗协议希望大涨8%，芯片股领涨",
+        "亚洲及美股因特朗普信号全面上涨",
+        "市场预期中东冲突结束利好科技股"
       ],
       "evidence": [
         {
           "i": 1,
-          "point": "科威特关闭领空，以色列警告发射",
-          "source": "CNBC",
-          "title": "Kuwait closes airspace, Israel warns of launches from Lebanon after U.S strikes in Iran",
-          "url": "https://www.cnbc.com/2026/06/10/trump-iran-war-attacks-deal.html"
+          "point": "Kospi大涨8%，芯片股领涨",
+          "source": "Bloomberg",
+          "title": "Korea’s Kospi Surges 8% as Iran Deal Hopes Lift Chip Stocks",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-12/korea-s-kospi-surges-7-as-iran-deal-hopes-lift-chip-stocks"
         },
         {
-          "i": 3,
-          "point": "美国攻击伊朗，油价上涨",
-          "source": "NYT Business",
-          "title": "Oil Prices Rise as U.S. Launches New Attack on Iran",
-          "url": "https://www.nytimes.com/2026/06/10/business/oil-gas-price-iran.html"
+          "i": 2,
+          "point": "美股因伊朗协议信号上涨",
+          "source": "Bloomberg",
+          "title": "Stocks Rally as Trump Signals Iran Deal, Oil Slips: Markets Wrap",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-11/asian-stocks-to-gain-as-trump-signals-us-iran-deal-markets-wrap"
         },
+        {
+          "i": 5,
+          "point": "日本股市因协议言论上涨",
+          "source": "Bloomberg",
+          "title": "Japan’s Stocks Rise as Trump’s Iran Deal Comments Lift Sentiment",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-11/japanese-stocks-set-to-rise-on-optimism-over-middle-east-war"
+        }
+      ],
+      "risk": "地缘反复或打压风险情绪"
+    },
+    {
+      "name": "国防军工",
+      "tickers": "LMT, RTX, NOC, GD",
+      "thesis": "中东局势缓和或削减军需预期，但长期需求稳固",
+      "drivers": [
+        "特朗普声称伊朗战争已解决，可能减少短期军购",
+        "此前威胁攻击伊朗，显示军事紧张仍存",
+        "全球国防预算长期增长趋势未变"
+      ],
+      "evidence": [
         {
           "i": 6,
-          "point": "投资者担心冲突长期化",
+          "point": "特朗普称伊朗战争已解决",
           "source": "CNBC",
-          "title": "Investors brace for a 'long grind' as Iran war escalation dims hopes of an early end to hostilities",
-          "url": "https://www.cnbc.com/2026/06/11/iran-war-us-trump-strikes-centcom-oil-investors.html"
-        }
-      ],
-      "risk": "停火协议可能削弱国防股短期动能"
-    },
-    {
-      "name": "能源·石油",
-      "tickers": "XOM, CVX, OXY, USO",
-      "thesis": "美伊冲突升级推高油价，利好能源股",
-      "drivers": [
-        "美国对伊朗新攻击后油价上涨",
-        "Wizz Air因冲突损失5000万欧元，供应链受扰"
-      ],
-      "evidence": [
-        {
-          "i": 3,
-          "point": "油价因美国攻击伊朗上涨",
-          "source": "NYT Business",
-          "title": "Oil Prices Rise as U.S. Launches New Attack on Iran",
-          "url": "https://www.nytimes.com/2026/06/10/business/oil-gas-price-iran.html"
+          "title": "Trump claims Iran war settled 'subject to finalization,' expects signing in 'next few days'",
+          "url": "https://www.cnbc.com/2026/06/11/trump-iran-strikes-deal.html"
         },
         {
-          "i": 7,
-          "point": "Wizz Air收益因冲突减少",
-          "source": "Bloomberg",
-          "title": "Wizz Air Says Iran Conflict Cut into Earnings; Omits Outlook",
-          "url": "https://www.bloomberg.com/news/articles/2026-06-11/wizz-air-says-iran-conflict-cut-into-earnings-omits-outlook"
+          "i": 0,
+          "point": "特朗普威胁攻击伊朗并接管石油",
+          "source": "FT",
+          "title": "Trump vows to take ‘total control’ of Iran’s oil and gas markets",
+          "url": "https://www.ft.com/content/84ee31f2-0e12-4083-9572-143a928efb63"
         }
       ],
-      "risk": "若冲突缓和，油价可能快速回落"
-    },
-    {
-      "name": "航空",
-      "tickers": "DAL, UAL, AAL, JETS",
-      "thesis": "中东冲突导致航空业成本上升与需求下滑",
-      "drivers": [
-        "Wizz Air因伊朗冲突损失5000万欧元并取消指引",
-        "油价上涨推高燃油成本，压缩利润"
-      ],
-      "evidence": [
-        {
-          "i": 7,
-          "point": "Wizz Air收益受冲突影响，取消指引",
-          "source": "Bloomberg",
-          "title": "Wizz Air Says Iran Conflict Cut into Earnings; Omits Outlook",
-          "url": "https://www.bloomberg.com/news/articles/2026-06-11/wizz-air-says-iran-conflict-cut-into-earnings-omits-outlook"
-        }
-      ],
-      "risk": "若停火，航空股可能反弹"
+      "risk": "协议若破裂，军工股或反弹"
     }
   ]
 }
