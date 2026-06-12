@@ -52,7 +52,9 @@ IMPACT_KEYWORDS = [
     "s&p", "spx", "nasdaq", "dow", "spy", "qqq", "nvidia", "apple", "microsoft", "tesla",
     "google", "alphabet", "meta", "amazon", "boeing", "jpmorgan", "goldman", "morgan stanley",
     "cpi", "ppi", "pce", "nonfarm", "non-farm", "payroll", "jobless", "ism", "gdp",
-    "boj", "ecb", "opec", "yen", "dollar", "iran", "ukraine", "tariff", "china tariff",
+    "boj", "ecb", "boe", "bank of england", "bank of japan", "lagarde", "ueda", "bailey",
+    "opec", "yen", "dollar", "iran", "ukraine", "tariff", "china tariff",
+    "sec ", "edgar", "10-k", "10-q", "8-k", "13f", "filing", "enforcement",
     "earnings", "q1", "q2", "q3", "q4", "stocks", "bond", "yield", "rate cut", "rate hike",
     # Commodities & supply chain
     "oil", "crude", "brent", "wti", "gold", "copper", "lithium", "uranium", "nickel",
