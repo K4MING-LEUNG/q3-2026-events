@@ -1,166 +1,159 @@
 {
-  "updated_at": "2026-06-12T10:36:59+08:00",
+  "updated_at": "2026-06-13T08:00:39+08:00",
   "items": [
     {
       "source": "Bloomberg",
-      "title": "Korea’s Kospi Surges as Iran Deal Hopes Lift Chip Stocks",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-12/korea-s-kospi-surges-7-as-iran-deal-hopes-lift-chip-stocks",
-      "published_at": "2026-06-12T00:03:58+00:00",
-      "summary": "韩国KOSPI指数上涨，因特朗普暗示美国接近与伊朗达成协议，缓解了中东紧张局势，芯片股受到提振。",
-      "category": "地缘政治",
-      "angle": "梳理中东局势缓和下受益的半导体板块标的，如三星、SK海力士等，并关联相关ETF（如EWY、SOXX）的期权策略。"
-    },
-    {
-      "source": "Bloomberg",
-      "title": "Stock Rally Builds on Iran Optimism, Oil Drops: Markets Wrap",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-11/asian-stocks-to-gain-as-trump-signals-us-iran-deal-markets-wrap",
-      "published_at": "2026-06-11T22:03:20+00:00",
-      "summary": "全球股市延续涨势，油价下跌，因特朗普称美国接近与伊朗达成协议，市场预期冲突将外交解决。",
-      "category": "地缘政治",
-      "angle": "做地缘政治风险与油价关联的科普内容，引导用户关注能源ETF（如XLE）的期权交易机会。"
-    },
-    {
-      "source": "Barron's",
-      "title": "Trump’s Iran Stand-Down Calms Markets",
-      "url": "https://www.wsj.com/finance/stocks/trumps-iran-stand-down-calms-markets-7b63fe88?mod=rss_markets_main",
-      "published_at": "2026-06-11T20:10:00+00:00",
-      "summary": "特朗普对伊朗态度缓和，市场情绪改善，芯片股反弹，Meta的订阅业务面临挑战。",
-      "category": "地缘政治",
-      "angle": "拆解芯片股反弹逻辑，制作半导体板块（如SOXX）与地缘政治风险的对冲策略对照表。"
-    },
-    {
-      "source": "Bloomberg",
-      "title": "Trump Insists Iran Deal Is Close After Scrapping Strikes",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-12/trump-insists-iran-deal-is-close-after-scrapping-strikes-video",
-      "published_at": "2026-06-12T02:22:47+00:00",
-      "summary": "特朗普在取消对伊朗的军事打击后，坚称与伊朗的协议接近达成，此前他曾威胁要严厉打击伊朗并夺取其石油基础设施。",
-      "category": "地缘政治",
-      "angle": "科普美伊关系对油价和能源板块的传导机制，引导用户学习如何通过期权布局能源ETF。"
+      "title": "CFTC Considers Blocking CME’s 24/7 Oil Contract Bid",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-12/cftc-considers-blocking-cme-s-24-7-oil-contract-bid",
+      "published_at": "2026-06-12T22:51:46+00:00",
+      "summary": "美国商品期货交易委员会正在考虑是否阻止芝加哥商品交易所推出全天候石油合约，此举加剧了市场与监管机构之间的紧张关系。",
+      "category": "能源",
+      "angle": "梳理CFTC监管对原油期货交易的影响，对比CME现有合约与新合约的差异，引导用户关注期权策略。"
     },
     {
       "source": "CNBC",
-      "title": "Oil prices fall on hopes of U.S.-Iran deal despite Tehran pushback",
-      "url": "https://www.cnbc.com/2026/06/12/oil-prices-wti-brent-on-hopes-of-us-iran-deal-despite-tehran-pushback.html",
-      "published_at": "2026-06-12T00:53:28+00:00",
-      "summary": "油价因美伊协议希望而下跌，尽管伊朗方面否认接近达成协议。",
-      "category": "能源",
-      "angle": "做油价波动与地缘政治事件的关联分析，引导用户关注USO期权策略。"
-    },
-    {
-      "source": "FT",
-      "title": "Donald Trump says US close to deal with Iran and calls off strikes",
-      "url": "https://www.ft.com/content/05472479-445d-4c16-ba85-6db47ba72373",
-      "published_at": "2026-06-12T00:53:17+00:00",
-      "summary": "特朗普称美国接近与伊朗达成协议并取消打击，市场上涨，油价下跌，协议将重新开放霍尔木兹海峡。",
-      "category": "地缘政治",
-      "angle": "梳理霍尔木兹海峡通航对航运和能源板块的影响，制作相关ETF（如XLE、XOP）的期权策略。"
-    },
-    {
-      "source": "FT",
-      "title": "Can Trump make a deal with Iran?",
-      "url": "https://www.ft.com/content/c0dd70da-5c91-47db-97e9-44a106edc988",
-      "published_at": "2026-06-11T20:00:00+00:00",
-      "summary": "分析油价走势是否预示美伊和平协议的可能性。",
-      "category": "能源",
-      "angle": "拆解油价与地缘政治风险的关系，科普如何利用期权押注油价波动。"
+      "title": "Trump name must be removed from Kennedy Center by Friday night as appeals court rejects delay",
+      "url": "https://www.cnbc.com/2026/06/12/trump-loses-kennedy-center-name.html",
+      "published_at": "2026-06-12T23:58:41+00:00",
+      "summary": "特朗普要求联邦上诉法院暂停下级法院关于其名字必须从肯尼迪中心移除的命令，但上诉法院拒绝了这一请求。",
+      "category": "全球事件",
+      "angle": "做特朗普相关事件对媒体和娱乐板块影响的分析，关注迪士尼等标的的波动。"
     },
     {
       "source": "Seeking Alpha",
-      "title": "U.S. becomes world's top oil exporter, breaking Saudi-Russian decades-long grip",
-      "url": "https://seekingalpha.com/news/4602818-u-s-becomes-worlds-top-oil-exporter-breaking-saudi-russian-decades-long-grip?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-      "published_at": "2026-06-11T23:50:35+00:00",
-      "summary": "美国成为全球最大石油出口国，打破了沙特和俄罗斯数十年的主导地位。",
+      "title": "Persian Gulf oil flows reaching 7M bbl/day, helped by U.S. escorts, DoE secretary says",
+      "url": "https://seekingalpha.com/news/4603096-persian-gulf-oil-flows-reaching-7m-bblday-helped-by-us-escorts-doe-secretary-says?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+      "published_at": "2026-06-12T23:54:41+00:00",
+      "summary": "美国能源部长表示，在美国护航下，波斯湾石油流量达到每日700万桶。",
       "category": "能源",
-      "angle": "做美国能源出口崛起的专题，梳理受益标的（如EOG、OXY）及ETF（XLE）的期权机会。"
+      "angle": "科普中东石油运输安全对油价的影响，引导用户配置原油ETF或期权。"
     },
     {
       "source": "MarketWatch",
-      "title": "Rocket Lab and these four stocks are joining the Nasdaq 100, with SpaceX waiting in the wings",
-      "url": "https://www.marketwatch.com/story/rocket-lab-and-these-four-stocks-are-joining-the-nasdaq-100-with-spacex-waiting-in-the-wings-0e8cc71b?mod=mw_rss_topstories",
-      "published_at": "2026-06-12T01:56:00+00:00",
-      "summary": "Rocket Lab等五只股票将加入纳斯达克100指数，SpaceX未来也可能纳入。",
+      "title": "‘This is not a flash in the pan’: Why value stocks are beating growth by such a wide margin",
+      "url": "https://www.marketwatch.com/story/this-is-not-a-flash-in-the-pan-why-value-stocks-are-beating-growth-by-such-a-wide-margin-b2bddccc?mod=mw_rss_topstories",
+      "published_at": "2026-06-12T22:50:00+00:00",
+      "summary": "价值股今年涨幅远超成长股，投资者对科技以外行业的盈利增长持乐观态度。",
+      "category": "大盘走势",
+      "angle": "做价值股与成长股表现对比表，引导用户关注价值型ETF（如IWD）及期权策略。"
+    },
+    {
+      "source": "Bloomberg",
+      "title": "Knicks' Team Sacrifices and Success Inspire New York Optimism",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-12/knicks-team-sacrifices-success-inspire-new-york-video",
+      "published_at": "2026-06-12T22:21:48+00:00",
+      "summary": "前参议员比尔·布拉德利讨论纽约尼克斯队的成功，指出杰伦·布伦森在自由球员市场放弃高薪以增强球队阵容灵活性。",
+      "category": "全球事件",
+      "angle": "做体育赛事对相关消费和广告板块影响的梳理，关注耐克、麦迪逊广场花园等标的。"
+    },
+    {
+      "source": "MarketWatch",
+      "title": "FIFA World Cup prize money: What each USMNT player stands to earn",
+      "url": "https://www.marketwatch.com/story/fifa-world-cup-prize-money-what-each-usmnt-player-stands-to-earn-332f8a96?mod=mw_rss_topstories",
+      "published_at": "2026-06-12T21:44:00+00:00",
+      "summary": "根据2022年里程碑式协议，美国女足队员将获得世界杯奖金池的一部分。",
+      "category": "全球事件",
+      "angle": "科普世界杯奖金分配机制，引导用户关注体育赛事对赞助商和媒体公司的提振。"
+    },
+    {
+      "source": "CNBC",
+      "title": "Trump administration: Iran deal signing likely in coming days, but not '100%' certain",
+      "url": "https://www.cnbc.com/2026/06/12/iran-deal-trump-pakistan-sharif.html",
+      "published_at": "2026-06-12T20:21:14+00:00",
+      "summary": "特朗普政府高级官员表示，结束伊朗战争的协议可能在未来几天签署，但并非百分之百确定。",
+      "category": "地缘政治",
+      "angle": "拆解伊朗局势对油价和能源板块的影响，引导用户关注原油期权交易机会。"
+    },
+    {
+      "source": "Barron's",
+      "title": "Stocks Climb on SpaceX’s Debut",
+      "url": "https://www.wsj.com/finance/stocks/stocks-climb-on-spacexs-debut-4a14e882?mod=rss_markets_main",
+      "published_at": "2026-06-12T20:14:00+00:00",
+      "summary": "SpaceX首次公开上市推动股市上涨，同时埃隆·马斯克成为万亿富翁，可穿戴设备可能对投资组合不利。",
       "category": "科技",
-      "angle": "拆解纳入纳斯达克100的选股标准，科普指数调整对相关ETF（如QQQ）的影响及期权策略。"
+      "angle": "做SpaceX上市对太空概念股影响的对照表，引导用户关注相关ETF及期权。"
+    },
+    {
+      "source": "Barron's",
+      "title": "Bond Investor Ken Leech Pleads Guilty to Obstructing SEC Probe",
+      "url": "https://www.wsj.com/finance/regulation/bond-investor-ken-leech-pleads-guilty-to-obstructing-sec-probe-60f28082?mod=rss_markets_main",
+      "published_at": "2026-06-12T18:10:00+00:00",
+      "summary": "债券投资者肯·利奇因妨碍SEC调查而认罪，检察官指控其领导了挑拣欺诈计划。",
+      "category": "金融",
+      "angle": "科普债券市场欺诈案例，引导用户学习固定收益ETF及期权风控知识。"
     }
   ],
   "sectors": [
     {
-      "name": "芯片·半导体",
-      "tickers": "NVDA, SMH, AVGO",
-      "thesis": "地缘缓和提振芯片需求预期，行业景气度持续",
+      "name": "能源·石油运输",
+      "tickers": "XLE, OIH, HAL, SLB",
+      "thesis": "美国护航保障波斯湾石油运输，利好油服与航运",
       "drivers": [
-        "美伊协议希望缓解中东紧张，利好全球科技供应链",
-        "韩国芯片股因伊朗协议预期大涨，带动板块情绪"
+        "波斯湾石油流量达700万桶/日，美国护航保障运输安全",
+        "CFTC考虑阻止CME全天候合约，监管风险或推高实物溢价"
       ],
       "evidence": [
         {
-          "i": 0,
-          "point": "伊朗协议希望提振韩国芯片股",
-          "source": "Bloomberg",
-          "title": "Korea’s Kospi Surges as Iran Deal Hopes Lift Chip Stocks",
-          "url": "https://www.bloomberg.com/news/articles/2026-06-12/korea-s-kospi-surges-7-as-iran-deal-hopes-lift-chip-stocks"
+          "i": 2,
+          "point": "波斯湾石油流量达700万桶/日",
+          "source": "Seeking Alpha",
+          "title": "Persian Gulf oil flows reaching 7M bbl/day, helped by U.S. escorts, DoE secretary says",
+          "url": "https://seekingalpha.com/news/4603096-persian-gulf-oil-flows-reaching-7m-bblday-helped-by-us-escorts-doe-secretary-says?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
         },
         {
-          "i": 2,
-          "point": "特朗普态度缓和，芯片股反弹",
-          "source": "Barron's",
-          "title": "Trump’s Iran Stand-Down Calms Markets",
-          "url": "https://www.wsj.com/finance/stocks/trumps-iran-stand-down-calms-markets-7b63fe88?mod=rss_markets_main"
+          "i": 0,
+          "point": "CFTC考虑阻止CME全天候合约",
+          "source": "Bloomberg",
+          "title": "CFTC Considers Blocking CME’s 24/7 Oil Contract Bid",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-12/cftc-considers-blocking-cme-s-24-7-oil-contract-bid"
         }
       ],
-      "risk": "地缘谈判反复可能导致情绪逆转"
+      "risk": "地缘冲突升级或OPEC+增产可能压制油价"
     },
     {
-      "name": "国防军工",
-      "tickers": "LMT, ITA, GD",
-      "thesis": "中东局势虽暂缓，但长期军备需求不减",
+      "name": "价值股·周期板块",
+      "tickers": "XLV, XLF, CAT, DE",
+      "thesis": "价值股持续跑赢成长股，资金轮动至传统行业",
       "drivers": [
-        "美伊紧张虽缓和，但军事对峙风险仍存",
-        "全球国防预算持续增长，订单稳定"
+        "价值股涨幅远超成长股，投资者看好科技以外行业盈利",
+        "伊朗协议可能签署，缓解地缘风险利好周期板块"
       ],
       "evidence": [
         {
           "i": 3,
-          "point": "特朗普曾威胁打击伊朗并夺取石油设施",
-          "source": "Bloomberg",
-          "title": "Trump Insists Iran Deal Is Close After Scrapping Strikes",
-          "url": "https://www.bloomberg.com/news/videos/2026-06-12/trump-insists-iran-deal-is-close-after-scrapping-strikes-video"
+          "point": "价值股涨幅远超成长股",
+          "source": "MarketWatch",
+          "title": "‘This is not a flash in the pan’: Why value stocks are beating growth by such a wide margin",
+          "url": "https://www.marketwatch.com/story/this-is-not-a-flash-in-the-pan-why-value-stocks-are-beating-growth-by-such-a-wide-margin-b2bddccc?mod=mw_rss_topstories"
         },
         {
-          "i": 5,
-          "point": "特朗普取消打击但协议未定，风险仍在",
-          "source": "FT",
-          "title": "Donald Trump says US close to deal with Iran and calls off strikes",
-          "url": "https://www.ft.com/content/05472479-445d-4c16-ba85-6db47ba72373"
+          "i": 6,
+          "point": "伊朗协议可能签署",
+          "source": "CNBC",
+          "title": "Trump administration: Iran deal signing likely in coming days, but not '100%' certain",
+          "url": "https://www.cnbc.com/2026/06/12/iran-deal-trump-pakistan-sharif.html"
         }
       ],
-      "risk": "和平协议若达成可能压制短期军工股"
+      "risk": "若科技股业绩超预期，风格可能快速切换"
     },
     {
-      "name": "能源·石油",
-      "tickers": "XOM, CVX, OIH",
-      "thesis": "美伊协议预期压低油价，但美国出口主导地位强化",
+      "name": "航天·商业航天",
+      "tickers": "SPCE, RKLB, ASTS, MAXR",
+      "thesis": "SpaceX上市预期提振商业航天板块情绪",
       "drivers": [
-        "美国成全球最大石油出口国，打破沙特俄罗斯垄断",
-        "油价因协议希望下跌，但供应端不确定性仍大"
+        "SpaceX首次公开上市推动相关股票上涨",
+        "马斯克成为万亿富翁，市场关注航天商业化"
       ],
       "evidence": [
         {
-          "i": 4,
-          "point": "油价因美伊协议希望下跌",
-          "source": "CNBC",
-          "title": "Oil prices fall on hopes of U.S.-Iran deal despite Tehran pushback",
-          "url": "https://www.cnbc.com/2026/06/12/oil-prices-wti-brent-on-hopes-of-us-iran-deal-despite-tehran-pushback.html"
-        },
-        {
           "i": 7,
-          "point": "美国成为全球最大石油出口国",
-          "source": "Seeking Alpha",
-          "title": "U.S. becomes world's top oil exporter, breaking Saudi-Russian decades-long grip",
-          "url": "https://seekingalpha.com/news/4602818-u-s-becomes-worlds-top-oil-exporter-breaking-saudi-russian-decades-long-grip?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+          "point": "SpaceX上市推动股市上涨",
+          "source": "Barron's",
+          "title": "Stocks Climb on SpaceX’s Debut",
+          "url": "https://www.wsj.com/finance/stocks/stocks-climb-on-spacexs-debut-4a14e882?mod=rss_markets_main"
         }
       ],
-      "risk": "伊朗协议若失败，油价可能反弹"
+      "risk": "SpaceX上市时间不确定，板块估值依赖事件驱动"
     }
   ]
 }
