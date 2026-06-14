@@ -1,159 +1,159 @@
 {
-  "updated_at": "2026-06-13T08:00:39+08:00",
+  "updated_at": "2026-06-14T08:00:56+08:00",
   "items": [
     {
       "source": "Bloomberg",
-      "title": "CFTC Considers Blocking CME’s 24/7 Oil Contract Bid",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-12/cftc-considers-blocking-cme-s-24-7-oil-contract-bid",
-      "published_at": "2026-06-12T22:51:46+00:00",
-      "summary": "美国商品期货交易委员会正在考虑是否阻止芝加哥商品交易所推出全天候石油合约，此举加剧了市场与监管机构之间的紧张关系。",
+      "title": "Fed and BOE Stay Guarded After 100 Days of Iran War",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-13/fed-boe-to-hold-rates-as-trump-seeks-iran-peace-deal",
+      "published_at": "2026-06-13T20:00:00+00:00",
+      "summary": "多家全球央行在未来一周将评估伊朗战争对通胀或增长的短期风险。",
+      "category": "地缘政治",
+      "angle": "梳理战争对通胀和利率预期的影响路径，制作央行政策应对对比表，引导用户关注利率期权交易机会。"
+    },
+    {
+      "source": "FT",
+      "title": "Investment firms join Donald Trump’s $100bn race for Venezuelan oil",
+      "url": "https://www.ft.com/content/6982febe-5d1b-4e16-9505-fbee84ca60ab",
+      "published_at": "2026-06-13T10:00:04+00:00",
+      "summary": "投资公司Lionheart Capital和Keo Energy成立纳斯达克上市公司，以参与委内瑞拉石油资产竞购。",
       "category": "能源",
-      "angle": "梳理CFTC监管对原油期货交易的影响，对比CME现有合约与新合约的差异，引导用户关注期权策略。"
+      "angle": "拆解委内瑞拉石油资产竞购方及潜在标的，引导用户关注相关能源ETF和期权策略。"
     },
     {
       "source": "CNBC",
-      "title": "Trump name must be removed from Kennedy Center by Friday night as appeals court rejects delay",
-      "url": "https://www.cnbc.com/2026/06/12/trump-loses-kennedy-center-name.html",
-      "published_at": "2026-06-12T23:58:41+00:00",
-      "summary": "特朗普要求联邦上诉法院暂停下级法院关于其名字必须从肯尼迪中心移除的命令，但上诉法院拒绝了这一请求。",
-      "category": "全球事件",
-      "angle": "做特朗普相关事件对媒体和娱乐板块影响的分析，关注迪士尼等标的的波动。"
-    },
-    {
-      "source": "Seeking Alpha",
-      "title": "Persian Gulf oil flows reaching 7M bbl/day, helped by U.S. escorts, DoE secretary says",
-      "url": "https://seekingalpha.com/news/4603096-persian-gulf-oil-flows-reaching-7m-bblday-helped-by-us-escorts-doe-secretary-says?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-      "published_at": "2026-06-12T23:54:41+00:00",
-      "summary": "美国能源部长表示，在美国护航下，波斯湾石油流量达到每日700万桶。",
-      "category": "能源",
-      "angle": "科普中东石油运输安全对油价的影响，引导用户配置原油ETF或期权。"
-    },
-    {
-      "source": "MarketWatch",
-      "title": "‘This is not a flash in the pan’: Why value stocks are beating growth by such a wide margin",
-      "url": "https://www.marketwatch.com/story/this-is-not-a-flash-in-the-pan-why-value-stocks-are-beating-growth-by-such-a-wide-margin-b2bddccc?mod=mw_rss_topstories",
-      "published_at": "2026-06-12T22:50:00+00:00",
-      "summary": "价值股今年涨幅远超成长股，投资者对科技以外行业的盈利增长持乐观态度。",
-      "category": "大盘走势",
-      "angle": "做价值股与成长股表现对比表，引导用户关注价值型ETF（如IWD）及期权策略。"
+      "title": "Trump says peace deal will be signed Sunday after Iran said it remains cautious on timing",
+      "url": "https://www.cnbc.com/2026/06/13/trump-iran-deal-strait-of-hormuz.html",
+      "published_at": "2026-06-13T19:44:44+00:00",
+      "summary": "特朗普称将于周日签署结束伊朗战争的和平协议，伊朗对时间表持谨慎态度。",
+      "category": "地缘政治",
+      "angle": "做和平协议签署前后市场反应对照表，引导用户关注地缘风险缓解下的能源与避险资产期权配置。"
     },
     {
       "source": "Bloomberg",
-      "title": "Knicks' Team Sacrifices and Success Inspire New York Optimism",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-12/knicks-team-sacrifices-success-inspire-new-york-video",
-      "published_at": "2026-06-12T22:21:48+00:00",
-      "summary": "前参议员比尔·布拉德利讨论纽约尼克斯队的成功，指出杰伦·布伦森在自由球员市场放弃高薪以增强球队阵容灵活性。",
-      "category": "全球事件",
-      "angle": "做体育赛事对相关消费和广告板块影响的梳理，关注耐克、麦迪逊广场花园等标的。"
-    },
-    {
-      "source": "MarketWatch",
-      "title": "FIFA World Cup prize money: What each USMNT player stands to earn",
-      "url": "https://www.marketwatch.com/story/fifa-world-cup-prize-money-what-each-usmnt-player-stands-to-earn-332f8a96?mod=mw_rss_topstories",
-      "published_at": "2026-06-12T21:44:00+00:00",
-      "summary": "根据2022年里程碑式协议，美国女足队员将获得世界杯奖金池的一部分。",
-      "category": "全球事件",
-      "angle": "科普世界杯奖金分配机制，引导用户关注体育赛事对赞助商和媒体公司的提振。"
+      "title": "CLO ETFs Boom on Higher Rates, Private Debt Woes",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-13/clo-etfs-boom-on-higher-rates-private-debt-woes-credit-weekly",
+      "published_at": "2026-06-13T19:00:00+00:00",
+      "summary": "CLO ETF因利率上升和私人信贷违约担忧而需求激增，为散户提供高收益投资渠道。",
+      "category": "金融",
+      "angle": "科普CLO ETF运作机制及风险收益特征，引导用户学习结构化产品知识并考虑ETF期权策略。"
     },
     {
       "source": "CNBC",
-      "title": "Trump administration: Iran deal signing likely in coming days, but not '100%' certain",
-      "url": "https://www.cnbc.com/2026/06/12/iran-deal-trump-pakistan-sharif.html",
-      "published_at": "2026-06-12T20:21:14+00:00",
-      "summary": "特朗普政府高级官员表示，结束伊朗战争的协议可能在未来几天签署，但并非百分之百确定。",
+      "title": "UAE denies 'false' reports of fund transfer to Iran",
+      "url": "https://www.cnbc.com/2026/06/13/uae-denies-false-reports-of-fund-transfer-to-iran.html",
+      "published_at": "2026-06-13T09:30:18+00:00",
+      "summary": "阿联酋否认关于向伊朗转移数十亿美元冻结资金的报道。",
       "category": "地缘政治",
-      "angle": "拆解伊朗局势对油价和能源板块的影响，引导用户关注原油期权交易机会。"
+      "angle": "梳理中东资金流动对油价和地区风险溢价的影响，引导用户关注能源板块期权交易机会。"
     },
     {
-      "source": "Barron's",
-      "title": "Stocks Climb on SpaceX’s Debut",
-      "url": "https://www.wsj.com/finance/stocks/stocks-climb-on-spacexs-debut-4a14e882?mod=rss_markets_main",
-      "published_at": "2026-06-12T20:14:00+00:00",
-      "summary": "SpaceX首次公开上市推动股市上涨，同时埃隆·马斯克成为万亿富翁，可穿戴设备可能对投资组合不利。",
-      "category": "科技",
-      "angle": "做SpaceX上市对太空概念股影响的对照表，引导用户关注相关ETF及期权。"
+      "source": "NYT Business",
+      "title": "Despite US Help, Little Oil Has Gone Through Strait of Hormuz",
+      "url": "https://www.nytimes.com/2026/06/13/business/oil-strait-of-hormuz.html",
+      "published_at": "2026-06-13T09:00:56+00:00",
+      "summary": "尽管美国声称协助，但通过霍尔木兹海峡的商船数量仍远低于战前水平。",
+      "category": "能源",
+      "angle": "做霍尔木兹海峡通行量对油价影响的量化分析，引导用户关注原油期权和能源ETF配置。"
     },
     {
-      "source": "Barron's",
-      "title": "Bond Investor Ken Leech Pleads Guilty to Obstructing SEC Probe",
-      "url": "https://www.wsj.com/finance/regulation/bond-investor-ken-leech-pleads-guilty-to-obstructing-sec-probe-60f28082?mod=rss_markets_main",
-      "published_at": "2026-06-12T18:10:00+00:00",
-      "summary": "债券投资者肯·利奇因妨碍SEC调查而认罪，检察官指控其领导了挑拣欺诈计划。",
-      "category": "金融",
-      "angle": "科普债券市场欺诈案例，引导用户学习固定收益ETF及期权风控知识。"
+      "source": "MarketWatch",
+      "title": "Worried about a lower Social Security benefit? How to calculate the exact impact it will have on your retirement.",
+      "url": "https://www.marketwatch.com/story/you-can-calculate-the-exact-impact-a-reduced-social-security-check-will-have-on-your-retirement-success-f0f58429?mod=mw_rss_topstories",
+      "published_at": "2026-06-13T19:01:00+00:00",
+      "summary": "社保信托基金报告预测2032年福利可能削减22%，文章指导如何计算影响。",
+      "category": "经济数据",
+      "angle": "科普社保福利削减对退休规划的潜在影响，引导用户学习个人养老金投资及ETF配置策略。"
+    },
+    {
+      "source": "Seeking Alpha",
+      "title": "Trump says Strait of Hormuz will be “open to all” after Iran deal “tomorrow”",
+      "url": "https://seekingalpha.com/news/4603116-trump-signals-signing-iran-peace-deal-tomorrow?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+      "published_at": "2026-06-13T18:55:33+00:00",
+      "summary": "特朗普称伊朗协议签署后霍尔木兹海峡将“对所有国家开放”。",
+      "category": "地缘政治",
+      "angle": "梳理海峡开放对航运和保险板块的传导，引导用户关注相关ETF和期权交易机会。"
+    },
+    {
+      "source": "Bloomberg",
+      "title": "Caffeine Minimalists Rewrite Routines to Battle Coffee Jitters",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-13/consumers-embrace-caffeine-minimalism-video",
+      "published_at": "2026-06-13T17:04:06+00:00",
+      "summary": "消费者在咖啡因摄入上趋向“能量管理”，选择更多低咖啡因替代品。",
+      "category": "全球事件",
+      "angle": "拆解咖啡因替代品市场对食品饮料板块的影响，引导用户关注相关消费ETF和个股期权。"
     }
   ],
   "sectors": [
     {
-      "name": "能源·石油运输",
-      "tickers": "XLE, OIH, HAL, SLB",
-      "thesis": "美国护航保障波斯湾石油运输，利好油服与航运",
+      "name": "国防军工",
+      "tickers": "LMT, NOC, RTX, ITA",
+      "thesis": "中东冲突持续支撑国防开支预期",
       "drivers": [
-        "波斯湾石油流量达700万桶/日，美国护航保障运输安全",
-        "CFTC考虑阻止CME全天候合约，监管风险或推高实物溢价"
+        "伊朗战争持续100天，全球央行评估风险",
+        "和平协议谈判反复，地缘不确定性延续"
       ],
       "evidence": [
         {
-          "i": 2,
-          "point": "波斯湾石油流量达700万桶/日",
-          "source": "Seeking Alpha",
-          "title": "Persian Gulf oil flows reaching 7M bbl/day, helped by U.S. escorts, DoE secretary says",
-          "url": "https://seekingalpha.com/news/4603096-persian-gulf-oil-flows-reaching-7m-bblday-helped-by-us-escorts-doe-secretary-says?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+          "i": 0,
+          "point": "央行评估战争风险，国防需求稳固",
+          "source": "Bloomberg",
+          "title": "Fed and BOE Stay Guarded After 100 Days of Iran War",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-13/fed-boe-to-hold-rates-as-trump-seeks-iran-peace-deal"
         },
         {
-          "i": 0,
-          "point": "CFTC考虑阻止CME全天候合约",
-          "source": "Bloomberg",
-          "title": "CFTC Considers Blocking CME’s 24/7 Oil Contract Bid",
-          "url": "https://www.bloomberg.com/news/articles/2026-06-12/cftc-considers-blocking-cme-s-24-7-oil-contract-bid"
+          "i": 2,
+          "point": "和平协议时间未定，紧张局势持续",
+          "source": "CNBC",
+          "title": "Trump says peace deal will be signed Sunday after Iran said it remains cautious on timing",
+          "url": "https://www.cnbc.com/2026/06/13/trump-iran-deal-strait-of-hormuz.html"
         }
       ],
-      "risk": "地缘冲突升级或OPEC+增产可能压制油价"
+      "risk": "和平协议若超预期达成，板块可能回调"
     },
     {
-      "name": "价值股·周期板块",
-      "tickers": "XLV, XLF, CAT, DE",
-      "thesis": "价值股持续跑赢成长股，资金轮动至传统行业",
+      "name": "能源·石油",
+      "tickers": "XOM, CVX, OXY, USO",
+      "thesis": "霍尔木兹海峡通行受阻支撑油价",
       "drivers": [
-        "价值股涨幅远超成长股，投资者看好科技以外行业盈利",
-        "伊朗协议可能签署，缓解地缘风险利好周期板块"
+        "通过海峡商船量远低于战前水平",
+        "特朗普称协议后海峡开放，但短期仍受限"
+      ],
+      "evidence": [
+        {
+          "i": 5,
+          "point": "海峡通行量低迷，供应风险持续",
+          "source": "NYT Business",
+          "title": "Despite US Help, Little Oil Has Gone Through Strait of Hormuz",
+          "url": "https://www.nytimes.com/2026/06/13/business/oil-strait-of-hormuz.html"
+        },
+        {
+          "i": 7,
+          "point": "开放承诺尚未兑现，短期供应偏紧",
+          "source": "Seeking Alpha",
+          "title": "Trump says Strait of Hormuz will be “open to all” after Iran deal “tomorrow”",
+          "url": "https://seekingalpha.com/news/4603116-trump-signals-signing-iran-peace-deal-tomorrow?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        }
+      ],
+      "risk": "和平协议签署后油价可能快速回落"
+    },
+    {
+      "name": "CLO ETF",
+      "tickers": "JAAA, CLOZ, PCLO",
+      "thesis": "利率高位+私人信贷风险推升CLO ETF需求",
+      "drivers": [
+        "利率上升使CLO收益更具吸引力",
+        "私人信贷违约担忧促使资金转向CLO"
       ],
       "evidence": [
         {
           "i": 3,
-          "point": "价值股涨幅远超成长股",
-          "source": "MarketWatch",
-          "title": "‘This is not a flash in the pan’: Why value stocks are beating growth by such a wide margin",
-          "url": "https://www.marketwatch.com/story/this-is-not-a-flash-in-the-pan-why-value-stocks-are-beating-growth-by-such-a-wide-margin-b2bddccc?mod=mw_rss_topstories"
-        },
-        {
-          "i": 6,
-          "point": "伊朗协议可能签署",
-          "source": "CNBC",
-          "title": "Trump administration: Iran deal signing likely in coming days, but not '100%' certain",
-          "url": "https://www.cnbc.com/2026/06/12/iran-deal-trump-pakistan-sharif.html"
+          "point": "CLO ETF因利率和私人信贷问题需求激增",
+          "source": "Bloomberg",
+          "title": "CLO ETFs Boom on Higher Rates, Private Debt Woes",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-13/clo-etfs-boom-on-higher-rates-private-debt-woes-credit-weekly"
         }
       ],
-      "risk": "若科技股业绩超预期，风格可能快速切换"
-    },
-    {
-      "name": "航天·商业航天",
-      "tickers": "SPCE, RKLB, ASTS, MAXR",
-      "thesis": "SpaceX上市预期提振商业航天板块情绪",
-      "drivers": [
-        "SpaceX首次公开上市推动相关股票上涨",
-        "马斯克成为万亿富翁，市场关注航天商业化"
-      ],
-      "evidence": [
-        {
-          "i": 7,
-          "point": "SpaceX上市推动股市上涨",
-          "source": "Barron's",
-          "title": "Stocks Climb on SpaceX’s Debut",
-          "url": "https://www.wsj.com/finance/stocks/stocks-climb-on-spacexs-debut-4a14e882?mod=rss_markets_main"
-        }
-      ],
-      "risk": "SpaceX上市时间不确定，板块估值依赖事件驱动"
+      "risk": "信用事件或利率下行可能影响收益"
     }
   ]
 }
