@@ -644,6 +644,35 @@ footer.foot a{color:var(--text3)}
 .mkt-user{background:linear-gradient(135deg,rgba(0,113,227,.16),rgba(175,82,222,.16));color:#5e3acf;font-weight:600}
 .lib-del{margin-left:8px;width:18px;height:18px;border-radius:50%;border:0;background:rgba(255,69,58,.1);color:#c2261d;font-size:11px;cursor:pointer;line-height:1;padding:0;vertical-align:middle}
 .lib-del:hover{background:rgba(255,69,58,.22)}
+
+/* ===== Help / onboarding floating ball + modal ===== */
+.help-ball{position:fixed;right:24px;bottom:24px;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#0071e3,#af52de);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 24px rgba(0,113,227,.32),0 2px 6px rgba(0,0,0,.08);z-index:900;transition:transform .2s,box-shadow .2s;animation:helpBallIn .4s ease-out}
+.help-ball:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 12px 32px rgba(0,113,227,.4),0 3px 8px rgba(0,0,0,.1)}
+.help-ball-icon{font-size:22px;font-weight:600;font-family:'SF Pro Display','Helvetica Neue',sans-serif;line-height:1}
+.help-ball-x{position:absolute;top:-4px;right:-4px;width:20px;height:20px;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;border:2px solid #fff;font-size:10px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;opacity:0;transition:opacity .15s}
+.help-ball:hover .help-ball-x{opacity:1}
+.help-ball-pulse{position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(0,113,227,.5);animation:helpPulse 2s ease-out infinite;pointer-events:none}
+@keyframes helpBallIn{from{opacity:0;transform:translateY(20px) scale(.8)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes helpPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.6);opacity:0}}
+#help-modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.45);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;z-index:1100;padding:20px;animation:fade .2s ease}
+#help-modal-bg.show{display:flex}
+.help-modal{background:var(--bg);border-radius:20px;width:100%;max-width:440px;padding:28px 28px 22px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.18);animation:rise .3s ease-out}
+.help-modal-close{position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:50%;background:var(--bg2);color:var(--text3);border:0;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;line-height:1}
+.help-modal-close:hover{background:var(--border)}
+.help-modal-tag{display:inline-block;font-size:11px;font-weight:600;color:var(--accent);background:rgba(0,113,227,.1);padding:4px 10px;border-radius:980px;letter-spacing:.05em;margin-bottom:10px}
+.help-modal h3{font-size:20px;font-weight:600;letter-spacing:-.018em;line-height:1.3;margin:0 0 6px;color:var(--text)}
+.help-modal-sub{font-size:13px;color:var(--text3);line-height:1.5;margin:0 0 18px}
+.help-list{list-style:none;padding:0;margin:0 0 20px;counter-reset:hl}
+.help-list li{counter-increment:hl;position:relative;padding:10px 12px 10px 38px;font-size:13px;line-height:1.55;color:var(--text2);background:var(--bg2);border-radius:10px;margin-bottom:6px}
+.help-list li::before{content:counter(hl);position:absolute;left:10px;top:11px;width:20px;height:20px;border-radius:50%;background:linear-gradient(135deg,#0071e3,#af52de);color:#fff;font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center;line-height:1}
+.help-list li b{display:block;color:var(--text);font-weight:600;margin-bottom:1px;font-size:13.5px}
+.help-list li span{display:block;color:var(--text3);font-size:12.5px;line-height:1.5}
+.help-modal-actions{display:flex;gap:8px;justify-content:flex-end}
+.help-modal-actions button{padding:9px 18px;border-radius:980px;font-size:13px;font-weight:500;border:1px solid var(--border);background:var(--bg2);color:var(--text2);cursor:pointer;transition:all .15s}
+.help-modal-actions button:hover{background:var(--border)}
+.help-modal-actions button.primary{background:linear-gradient(135deg,#0071e3,#af52de);color:#fff;border-color:transparent}
+.help-modal-actions button.primary:hover{filter:brightness(1.08)}
+@media(max-width:540px){.help-ball{right:16px;bottom:16px;width:48px;height:48px}.help-modal{padding:24px 22px 18px}}
 </style>
 </head>
 <body>
@@ -1584,6 +1613,58 @@ tick();setInterval(tick,1000);
 updateNav();
 
 if(typeof renderLibFilters==='function'){try{renderLibFilters()}catch(e){}}
+
+// ========== HELP / ONBOARDING ==========
+(function(){
+  const KEY_DISMISSED='qg_help_dismissed_v1';
+  const KEY_SEEN='qg_help_seen_v1';
+  const ball=document.getElementById('help-ball');
+  const bg=document.getElementById('help-modal-bg');
+  if(!ball||!bg)return;
+  const dismissed=localStorage.getItem(KEY_DISMISSED)==='1';
+  const seen=localStorage.getItem(KEY_SEEN)==='1';
+  function showBall(){ball.hidden=false;}
+  function hideBall(){ball.hidden=true;}
+  function openModal(){bg.classList.add('show');document.body.style.overflow='hidden';}
+  function closeModal(){bg.classList.remove('show');document.body.style.overflow='';localStorage.setItem(KEY_SEEN,'1');const p=ball.querySelector('.help-ball-pulse');if(p)p.remove();}
+  function permaDismiss(){localStorage.setItem(KEY_DISMISSED,'1');localStorage.setItem(KEY_SEEN,'1');hideBall();closeModal();}
+  if(!dismissed){
+    showBall();
+    if(!seen){setTimeout(openModal,800);} // first visit auto-open
+  }
+  ball.addEventListener('click',e=>{if(e.target.id==='help-ball-x')return;openModal();});
+  document.getElementById('help-ball-x').addEventListener('click',e=>{e.stopPropagation();permaDismiss();});
+  document.getElementById('help-modal-close').addEventListener('click',closeModal);
+  document.getElementById('help-ok').addEventListener('click',closeModal);
+  document.getElementById('help-dismiss').addEventListener('click',permaDismiss);
+  bg.addEventListener('click',e=>{if(e.target.id==='help-modal-bg')closeModal();});
+})();
 </script>
+
+<!-- ===== HELP / ONBOARDING ===== -->
+<div id="help-ball" class="help-ball" title="使用指南" hidden>
+  <span class="help-ball-icon">?</span>
+  <span class="help-ball-pulse"></span>
+  <button class="help-ball-x" id="help-ball-x" title="不再提示">×</button>
+</div>
+<div id="help-modal-bg">
+  <div class="help-modal" role="dialog" aria-labelledby="help-modal-title">
+    <button class="help-modal-close" id="help-modal-close" aria-label="关闭">×</button>
+    <div class="help-modal-tag">使用指南</div>
+    <h3 id="help-modal-title">30 秒上手 Q3 2026 增长工作台</h3>
+    <p class="help-modal-sub">资讯 × 营销一体化 — 一个页面回答「今天发什么」「面向谁」「文案怎么写」。</p>
+    <ol class="help-list">
+      <li><b>每日资讯 · News</b><span>AI 每日 8:00 抓取 14+ 国际财经源，按 9 类标签平衡分布并提炼增长营销角度，避免单一题材淹没 feed</span></li>
+      <li><b>营销日历 · Calendar</b><span>60+ 跨市场事件（财报 / 政策 / 财报季 / 休市），点击查看背景、受影响标的、增长机会与文案模板</span></li>
+      <li><b>PUSH 生成器</b><span>输入事件 + TA + 转化目标，AI 按 Moomoo 品牌指南生成；用户评分 + 反馈 → 一键迭代到满意</span></li>
+      <li><b>Library 沉淀</b><span>满意文案保存进 Library，按市场 / 关键词检索，沉淀团队复用知识库</span></li>
+    </ol>
+    <div class="help-modal-actions">
+      <button id="help-dismiss">不再提示</button>
+      <button class="primary" id="help-ok">开始使用</button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
