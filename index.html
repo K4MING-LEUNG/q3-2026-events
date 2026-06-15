@@ -351,8 +351,8 @@ footer.foot a{color:var(--text3)}
 .pg-stars{display:inline-flex;gap:2px;margin-bottom:10px;align-items:center}
 .pg-star{width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:22px;line-height:1;color:rgba(255,255,255,.22);transition:color .18s ease,transform .18s cubic-bezier(.34,1.56,.64,1);user-select:none;background:none;border:0;padding:0}
 .pg-star:hover{transform:scale(1.18)}
-.pg-star.preview,.pg-star.on{background:linear-gradient(135deg,#0071e3 0%,#5856d6 50%,#af52de 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;text-shadow:0 1px 8px rgba(0,113,227,.35)}
-.pg-star.on{filter:drop-shadow(0 0 6px rgba(175,82,222,.35))}
+.pg-star.preview,.pg-star.on{background:linear-gradient(135deg,#ffd60a 0%,#ffb340 50%,#ff9f0a 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.pg-star.on{filter:drop-shadow(0 0 6px rgba(255,179,64,.45))}
 .pg-stars[data-rating="0"] .pg-star:not(.preview){color:rgba(255,255,255,.22)}
 #pg-rating-label{display:inline-block;margin-left:14px;font-size:12px;color:rgba(255,255,255,.6);vertical-align:8px;letter-spacing:.02em;font-weight:500;min-height:14px;transition:color .15s}
 .pg-fb-text{width:100%;min-height:78px;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:11px 14px;color:#fff;font-size:13.5px;line-height:1.55;font-family:inherit;resize:vertical;outline:none;transition:border-color .15s}
@@ -866,7 +866,6 @@ footer.foot a{color:var(--text3)}
         </div>
       </div>
       <div class="pg-actions">
-        <span class="pg-train-hint" id="pg-train-hint" style="display:none"></span>
         <span class="pg-hint" id="pg-hint">首次使用先设置 DeepSeek API Key</span>
         <button class="pg-btn ghost" id="pg-keybtn" title="设置或更换 DeepSeek API Key（仅保存在你本机浏览器）">🔑 设置 API Key</button>
         <button class="pg-btn ghost" id="pg-clear">清空</button>
@@ -1538,13 +1537,7 @@ function pgBuildTeamExamplesBlock(){
   }).join('\n\n');
   return `\n\n# 团队精品范例（用户实际打分 ≥4★ 的高质量产出，行文风格请优先对齐这些，超过下面任何写死的范例）\n${lines}\n`;
 }
-function pgRefreshTrainHint(){
-  const n=pgGetTeamExamples(6).length;
-  const el=$('#pg-train-hint');
-  if(!el)return;
-  if(n>0){el.style.display='inline-flex';el.innerHTML=`<span class="pg-train-dot"></span>正在用 <b>${n}</b> 条团队精品文案训练 AI`;}
-  else{el.style.display='none';}
-}
+function pgRefreshTrainHint(){}
 async function pgSubmit(opts){
   opts=opts||{};
   const event=pgGet('event');
