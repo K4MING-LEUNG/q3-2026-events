@@ -1,0 +1,572 @@
+[
+{
+"id": "0701ism",
+"date": "2026-07-01",
+"weekday": "三",
+"month": 7,
+"market": "US",
+"title": "6月 ISM 制造业 PMI",
+"cats": [
+"macro"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"SPY",
+"XLI",
+"XME",
+"CAT"
+],
+"summary": "Q3 首个工业景气读数",
+"background": "10:00 ET 由 ISM 公布。新订单/就业/价格三个分项是关键,价格付出指数对通胀路径有领先作用。",
+"hook": "Q3 首个高频工业指标,关注 XLI 走向",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"PMI 拐点信号 + XLI 期权链\"图,落期权投教——制造业 PMI 是衰退最早预警,XLI Put 是教育用户对冲的高频示例",
+"jargon": [
+{
+"t": "ISM PMI",
+"d": "采购经理人指数,>50 扩张"
+},
+{
+"t": "价格付出",
+"d": "投入品价格分项,通胀领先指标"
+}
+],
+"push": {
+"title": "7 月开门第一份 ISM PMI",
+"body": "PMI 跌破 50 时 XLI 当日跟跌概率超六成。1 张 XLI Put 锁定下行,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "ISM",
+"url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
+}
+},
+{
+"id": "0702nfp",
+"date": "2026-07-02",
+"weekday": "四",
+"month": 7,
+"market": "US",
+"title": "6月非农就业(提前一天)",
+"cats": [
+"macro"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"UUP",
+"XLF"
+],
+"summary": "独立日前 BLS 提前发布",
+"background": "因 7/3 独立日休市,BLS 把 6月 NFP 提前到 7/2 8:30 ET。新增就业/失业率/平均时薪三件套同时发布。",
+"hook": "假期前最后一份就业数据,定调 7月 FOMC",
+"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"独立日提前一天的非农\"特别图——节前流动性低 + 高 IV,SPY 跨式杠杆效率最高,转化期权户黄金日",
+"jargon": [
+{
+"t": "NFP",
+"d": "非农就业人数,联储双重目标核心指标"
+},
+{
+"t": "AHE",
+"d": "平均时薪同比,工资通胀代表"
+}
+],
+"push": {
+"title": "独立日前夜非农,流动性最低之夜",
+"body": "节前流动性低 + 非农冲击 = SPY 单日波动放大。1 张 SPY 跨式跨节,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "BLS",
+"url": "https://www.bls.gov/ces/"
+}
+},
+{
+"id": "0703hol",
+"date": "2026-07-03",
+"weekday": "五",
+"month": 7,
+"market": "US",
+"title": "美股独立日休市",
+"cats": [
+"holiday"
+],
+"imp": 1,
+"confirmed": true,
+"tickers": [],
+"summary": "Independence Day observed",
+"background": "7/4 独立日落在周六,美股按惯例 7/3 周五休市一天。债市 7/2 提前 14:00 ET 收盘。",
+"hook": "周末长假休市,期权时间价值衰减加速",
+"angle": "[KPI=唤醒沉默·TA=TA1] 节假日提醒 + 长周末持仓盘点页,推送 30 天未登录沉默用户——独立日是 SG 用户夜间习惯打断的天然契机,Moo 庄园打卡触发签到",
+"jargon": [
+{
+"t": "IV crush",
+"d": "事件后波动率快速下行,期权价值压缩"
+}
+],
+"push": {
+"title": "独立日休市,长周末持仓盘点",
+"body": "美股周五全天休市,Crypto 24/7 不停。打开 moomoo 富途 Moo 庄园签到 + Crypto 行情看一眼,新户首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "NYSE",
+"url": "https://www.nyse.com/markets/hours-calendars"
+}
+},
+{
+"id": "0708minutes",
+"date": "2026-07-08",
+"weekday": "三",
+"month": 7,
+"market": "US",
+"title": "6月 FOMC 会议纪要",
+"cats": [
+"fomc"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"DXY"
+],
+"summary": "6/17 FOMC 详细讨论披露",
+"background": "14:00 ET 公布。重点看委员对核心 PCE/就业的内部分歧,以及缩表节奏(QT)的措辞变化。",
+"hook": "6月会议幕后细节,降息分歧曝光",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"6 月 FOMC 内部分歧拆解 + 措辞变化\"图——纪要常出鸽派或鹰派意外,SPY/TLT 单日波动易超 1%",
+"jargon": [
+{
+"t": "FOMC Minutes",
+"d": "会议三周后发布的详细纪要"
+},
+{
+"t": "QT",
+"d": "量化紧缩,缩减资产负债表"
+}
+],
+"push": {
+"title": "6 月 FOMC 纪要,内部分歧曝光",
+"body": "纪要常曝出会议未明说的分歧,SPY/TLT 易超 1%。1 张 TLT 期权押降息节奏,期权投教 15 分钟学会,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "Federal Reserve",
+"url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260617.htm"
+}
+},
+{
+"id": "0708stripe",
+"date": "2026-07-08",
+"weekday": "三",
+"month": 7,
+"market": "US",
+"title": "Stripe IPO 窗口期(传闻)",
+"cats": [
+"ipo"
+],
+"imp": 3,
+"confirmed": false,
+"tickers": [
+"STRIPE*",
+"PYPL",
+"SQ",
+"ADYEY",
+"V",
+"MA"
+],
+"summary": "支付独角兽 IPO 时间窗口持续被市场炒作",
+"background": "Stripe 一级估值 $91.5B(2024 tender),Collison 兄弟多次表示 IPO 不在短期议程,但每次员工流动性事件都引发 IPO 时间表猜测。SEC EDGAR 一旦出现 Stripe S-1,即立即被市场捕捉。受益对照组:PYPL/SQ/ADYEY 上市同业估值锚。SG 用户中 TA3 Trader 对支付科技板块兴趣度高。",
+"hook": "支付科技 IPO 第一梯队,情绪股集体催化",
+"angle": "[KPI=促期权首交·TA=TA3] Stripe 一旦递表,PYPL/SQ 同业即重定价。做\"Stripe vs PYPL/SQ 估值倍数对比\"图,落期权投教转化(SG 期权渗透率仅 8%,缺口最大)",
+"jargon": [
+{
+"t": "Tender Offer",
+"d": "员工股份回购,常用于一级估值确认"
+},
+{
+"t": "Direct Listing",
+"d": "直接挂牌,无承销商,Stripe 可能采用"
+}
+],
+"push": {
+"title": "Stripe IPO 再传闻,PYPL/SQ 该买吗?",
+"body": "支付独角兽递表,同业对标股估值同步重写。1 张 PYPL 价差期权押宝同业反弹,新客期权首单 0 佣金,打开富途\"期权投教\"3 分钟学会怎么开。"
+},
+"source": {
+"name": "SEC EDGAR",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=stripe&type=S-1&dateb=&owner=include&count=40"
+}
+},
+{
+"id": "0710cpi",
+"date": "2026-07-10",
+"weekday": "五",
+"month": 7,
+"market": "US",
+"title": "6月 CPI",
+"cats": [
+"macro"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"GLD",
+"UUP"
+],
+"summary": "7月 FOMC 前最关键通胀",
+"background": "8:30 ET 由 BLS 公布。核心 CPI 月环比是市场最敏感读数,>0.3% 鹰派、0.2% 中性、≤0.1% 鸽派。",
+"hook": "7月会议前最后一份核心通胀",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"CPI 关税传导 + 服务通胀粘性\"图,QQQ 跨式期权——CPI 日 IV 翻倍最适合教 TA3 期权杠杆",
+"jargon": [
+{
+"t": "核心 CPI",
+"d": "剔除食品能源后的居民消费价格"
+},
+{
+"t": "shelter",
+"d": "住房分项,核心 CPI 三分之一权重"
+}
+],
+"push": {
+"title": "今晚 CPI 决定下半年降息节奏",
+"body": "CPI 是 Fed 最关键变量,QQQ 单日 IV 翻倍。1 张 QQQ 跨式双向押宝,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "BLS",
+"url": "https://www.bls.gov/cpi/"
+}
+},
+{
+"id": "0714jpm",
+"date": "2026-07-14",
+"weekday": "二",
+"month": 7,
+"market": "US",
+"title": "JPM/Citi/Wells Fargo 财报",
+"cats": [
+"earnings"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"JPM",
+"C",
+"WFC",
+"XLF",
+"KRE"
+],
+"summary": "大行 Q2 业绩开启财报季",
+"background": "盘前公布。关注 NII 净息差走向、信用卡坏账、IB 投行业务复苏度,Dimon 电话会措辞最受关注。",
+"hook": "财报季首发,银行业景气定调",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"大行净息差 + 投行收入分项\"图,XLF 期权布局——财报季首发周,JPM 信号决定整个金融板块基调",
+"jargon": [
+{
+"t": "NII",
+"d": "净利息收入,银行核心利润源"
+},
+{
+"t": "NCO",
+"d": "净核销率,信用卡资产质量指标"
+}
+],
+"push": {
+"title": "财报季开锣!JPM/Citi/WFC 三连发",
+"body": "大行净息差 + 投行收入双线索,XLF 板块同步定调。1 张 XLF 价差期权押方向,期权投教课同步跟,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "JPMorgan IR",
+"url": "https://www.jpmorganchase.com/ir/quarterly-earnings"
+}
+},
+{
+"id": "0716tsm",
+"date": "2026-07-16",
+"weekday": "四",
+"month": 7,
+"market": "US",
+"title": "TSMC 台积电 Q2 财报",
+"cats": [
+"earnings"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"TSM",
+"NVDA",
+"AMD",
+"SOXX",
+"SMH"
+],
+"summary": "全球芯片代工龙头业绩",
+"background": "盘前 ADR/同日台北。看 HPC/AI 营收占比、CoWoS 产能爬坡进度、3nm/2nm 节点收入贡献。是 NVDA Q2 业绩的领先指标。",
+"hook": "AI 算力链最重要的中报",
+"angle": "[KPI=促期权首交+拉新NUP·TA=TA3] 做\"TSMC 资本开支 vs NVDA/AMD 营收\"图——TSMC 是全球 AI 芯片晶圆代工垄断者,赚效活动页+期权投教双触发",
+"jargon": [
+{
+"t": "CoWoS",
+"d": "台积电先进封装,AI 芯片产能瓶颈"
+},
+{
+"t": "HPC",
+"d": "高性能计算,AI/数据中心芯片大类"
+}
+],
+"push": {
+"title": "TSMC 财报,AI 芯片产业链晴雨表",
+"body": "TSMC 资本开支直接定价 NVDA/AMD 出货节奏,赚效活动页同步上线。打开富途\"AI 半导体赚效页\"看清单,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "TSMC IR",
+"url": "https://investor.tsmc.com/english/quarterly-results"
+}
+},
+{
+"id": "0719wcupfinal",
+"date": "2026-07-19",
+"weekday": "日",
+"month": 7,
+"market": "GLOBAL",
+"title": "FIFA 世界杯决赛",
+"cats": [
+"global"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"DIS",
+"NFLX",
+"V",
+"MA",
+"MAR",
+"ABNB"
+],
+"summary": "MetLife 体育场总决赛",
+"background": "美东时间晚上,MetLife Stadium(新泽西)。预计全球收视超 15 亿,直播版权、赌球流水、赞助露出三大变现峰值。",
+"hook": "全球收视巅峰,消费/广告/支付板块联动",
+"angle": "[KPI=拉新NUP+促Referral裂变·TA=TA1] 世界杯决赛是赚效活动页收官 + 裂变邀请高峰,做\"全球收视 vs 受益股榜\"图,Referral 裂变中心同步推奖",
+"jargon": [
+{
+"t": "GMS",
+"d": "赛事期间博彩+消费总流水"
+},
+{
+"t": "VAR",
+"d": "视频助理裁判,科技植入点"
+}
+],
+"push": {
+"title": "世界杯决赛夜!赚效页最后一波",
+"body": "决赛收视破纪录,V/MA/DIS 单周波动放大。打开 moomoo 富途\"世界杯赚效页\"决赛特别版,Referral 裂变中心邀好友同步得 S$[奖励金额*]。"
+},
+"source": {
+"name": "FIFA",
+"url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026"
+}
+},
+{
+"id": "0722goog",
+"date": "2026-07-22",
+"weekday": "三",
+"month": 7,
+"market": "US",
+"title": "Alphabet/Tesla Q2 财报",
+"cats": [
+"earnings"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"GOOGL",
+"GOOG",
+"TSLA",
+"QQQ"
+],
+"summary": "Mag7 双雄盘后",
+"background": "盘后公布。GOOG 看 Search 广告 vs AI 替代风险、Cloud 增速;TSLA 看交付指引、Robotaxi 商业化时间表、Cybertruck 利润率。",
+"hook": "Mag7 财报开启,QQQ 短线波动放大",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"GOOG 云 + AI 资本开支拆解 + TSLA 交付指引\"图——双 Mag7 财报夜,QQQ 期权 IV 翻倍",
+"jargon": [
+{
+"t": "TAC",
+"d": "流量获取成本,谷歌广告毛利侵蚀项"
+},
+{
+"t": "deliveries",
+"d": "特斯拉单季交付量,股价高敏感变量"
+}
+],
+"push": {
+"title": "GOOG/TSLA 财报双引爆",
+"body": "Mag7 双财报夜,QQQ 单日 IV 翻倍。1 张 QQQ 跨式 + 单股价差期权组合,期权投教 15 分钟学会,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "Alphabet IR",
+"url": "https://abc.xyz/investor/"
+}
+},
+{
+"id": "0723meta",
+"date": "2026-07-23",
+"weekday": "四",
+"month": 7,
+"market": "US",
+"title": "Meta/Microsoft Q2 财报",
+"cats": [
+"earnings"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"META",
+"MSFT",
+"QQQ",
+"SMH"
+],
+"summary": "AI 资本开支双锚定",
+"background": "盘后公布。META 看广告 ROAS、Reality Labs 亏损、AI capex 指引;MSFT 看 Azure 增速、Copilot 货币化、AI 资本开支占营收比重。",
+"hook": "AI capex 指引,直接定价 NVDA 后市",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"META AI 资本开支 + MSFT Azure/Copilot 收入\"图——AI 主线两大权重股财报,期权 IV Crush 教育最佳示例",
+"jargon": [
+{
+"t": "capex",
+"d": "资本开支,AI 基建投入代理"
+},
+{
+"t": "hyperscaler",
+"d": "超大规模云厂商(MSFT/META/AMZN/GOOG)"
+}
+],
+"push": {
+"title": "META/MSFT 财报夜,AI 主线压舱石",
+"body": "Mag7 双财报夜,IV Crush 教育最佳示例。1 张 META 价差 + MSFT Put 组合,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "Microsoft IR",
+"url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
+}
+},
+{
+"id": "0729fomc",
+"date": "2026-07-29",
+"weekday": "三",
+"month": 7,
+"market": "US",
+"title": "FOMC 利率决议(无 SEP)",
+"cats": [
+"fomc"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"UUP",
+"GLD"
+],
+"summary": "7月会议无点阵图更新",
+"background": "14:00 ET 决议+声明,14:30 ET 鲍威尔记者会。无 SEP 更新,焦点是声明措辞变化(\"appropriate\" vs \"some time\")和 Powell 对 9月降息的暗示。",
+"hook": "9月降息预期最后定调",
+"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"无 SEP 的 FOMC vs 带 SEP\"对比图——这次仅声明 + Powell,SPY 波动相对小,适合教 TA3 调整仓位",
+"jargon": [
+{
+"t": "SEP",
+"d": "经济预测摘要含点阵图,3/6/9/12 月才更新"
+},
+{
+"t": "data dependent",
+"d": "\"看数据\",鸽派代名词"
+}
+],
+"push": {
+"title": "无 SEP 的 FOMC,声明措辞为王",
+"body": "无点阵图但 Powell 关键词足以重写预期,SPY 波动 0.7-1.2%。1 张 SPY 价差期权布局,期权投教 15 分钟通关,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "Federal Reserve",
+"url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+}
+},
+{
+"id": "0730aapl",
+"date": "2026-07-30",
+"weekday": "四",
+"month": 7,
+"market": "US",
+"title": "Apple/Amazon Q2 财报",
+"cats": [
+"earnings"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"AAPL",
+"AMZN",
+"QQQ",
+"XLY"
+],
+"summary": "消费+云双子星",
+"background": "盘后公布。AAPL 看 iPhone 需求、Services 增速、China 营收、Vision Pro 出货;AMZN 看 AWS 增速、广告业务、零售运营利润率。",
+"hook": "消费电子+云服务双锚同夜出炉",
+"angle": "[KPI=促期权首交+拉新NUP·TA=TA3] 做\"AAPL iPhone 周期 + AMZN AWS 增速\"图——双 Mag7 财报,SG 用户对苹果热度最高,期权投教 + 赚效页双触发",
+"jargon": [
+{
+"t": "Services",
+"d": "AAPL 高毛利订阅业务集合"
+},
+{
+"t": "AWS",
+"d": "亚马逊云,集团利润主引擎"
+}
+],
+"push": {
+"title": "AAPL/AMZN 财报双夜,Mag7 收官",
+"body": "Mag7 财报季收官夜,期权 IV 翻倍。1 张 AAPL 价差 + AMZN 跨式,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "Apple IR",
+"url": "https://investor.apple.com/investor-relations/default.aspx"
+}
+},
+{
+"id": "0731pce",
+"date": "2026-07-31",
+"weekday": "五",
+"month": 7,
+"market": "US",
+"title": "6月核心 PCE",
+"cats": [
+"macro"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"GLD",
+"UUP"
+],
+"summary": "联储最看重的通胀指标",
+"background": "8:30 ET 由 BEA 公布。核心 PCE 同比是 Fed 2% 通胀目标的口径锚,3 个月年化更敏感于近期趋势。",
+"hook": "Fed 最看重的通胀,定 9月降息",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"6 月 PCE vs CPI 差异 + Fed 9 月降息概率重估\"图——FOMC 后第一份 PCE,验证 Powell 措辞",
+"jargon": [
+{
+"t": "核心 PCE",
+"d": "剔除食品能源,Fed 政策锚通胀"
+},
+{
+"t": "3M 年化",
+"d": "近三月环比折年率,趋势更新"
+}
+],
+"push": {
+"title": "FOMC 后第一份 PCE,降息概率重估",
+"body": "PCE 是 Fed SEP 跟踪指标,直接重写 9 月降息定价。1 张 TLT 价差期权押降息节奏,期权投教 15 分钟通关,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "BEA",
+"url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+}
+}
+]

@@ -1,0 +1,441 @@
+[
+{
+"id": "0803ism",
+"date": "2026-08-03",
+"weekday": "一",
+"month": 8,
+"market": "US",
+"title": "7月 ISM 制造业 PMI",
+"cats": [
+"macro"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"SPY",
+"XLI",
+"XME"
+],
+"summary": "夏季工业景气读数",
+"background": "10:00 ET 由 ISM 公布。夏季是制造业淡季,看价格付出分项是否回落,以判断 PCE 路径。",
+"hook": "暑期淡季工业脉搏,XLI 短线信号",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"PMI 拐点 + XLI 历史回测\"图,落期权投教——8 月 PMI 是夏季淡季后第一个高频读数",
+"jargon": [
+{
+"t": "价格付出",
+"d": "投入品价格分项,PCE 领先 1-2 月"
+}
+],
+"push": {
+"title": "8 月开门 ISM PMI,工业股拐点",
+"body": "PMI 跌破 50 时 XLI 当日跟跌概率超六成。1 张 XLI Put,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "ISM",
+"url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
+}
+},
+{
+"id": "0804jolts",
+"date": "2026-08-04",
+"weekday": "二",
+"month": 8,
+"market": "US",
+"title": "6月 JOLTS 职位空缺",
+"cats": [
+"macro"
+],
+"imp": 1,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT"
+],
+"summary": "劳动力市场结构高频",
+"background": "10:00 ET 由 BLS 公布。职位空缺/失业人数比(V/U)是工资通胀领先指标,联储多次引用。",
+"hook": "工资通胀的领先指标,TLT 短线信号",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"JOLTS 辞职率 vs 时薪同比\"图——劳动力松紧度领先非农 2 周,TLT 期权布局教育示例",
+"jargon": [
+{
+"t": "V/U 比",
+"d": "职位空缺数/失业人数,>1 紧张"
+},
+{
+"t": "quits rate",
+"d": "主动离职率,工资议价力代理"
+}
+],
+"push": {
+"title": "JOLTS 辞职率破 2% 即降息信号",
+"body": "辞职率比非农早 2 周露马脚。把 TLT 加入富途自选 + 数据提醒,期权投教课同步跟,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "BLS",
+"url": "https://www.bls.gov/jlt/"
+}
+},
+{
+"id": "0807nfp",
+"date": "2026-08-07",
+"weekday": "五",
+"month": 8,
+"market": "US",
+"title": "7月非农就业",
+"cats": [
+"macro"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"UUP",
+"XLF"
+],
+"summary": "9月 FOMC 前最关键就业",
+"background": "8:30 ET 由 BLS 公布。新增就业/失业率/平均时薪三件套。9月 SEP 会议前最重要的就业读数。",
+"hook": "9月会议前最关键就业,降息几率定调",
+"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"非农 5 看 + Sahm Rule 衰退预警\"图——FOMC 后第一份非农,验证 Powell 措辞",
+"jargon": [
+{
+"t": "U-3",
+"d": "标准失业率,4.0% 是中性枢纽"
+},
+{
+"t": "AHE",
+"d": "平均时薪同比,工资通胀代理"
+}
+],
+"push": {
+"title": "FOMC 后第一份非农,验证 Powell",
+"body": "Powell 7 月措辞 vs 8 月数据,SPY 单日波动常超 1.5%。1 张 SPY 跨式双向押宝,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "BLS",
+"url": "https://www.bls.gov/ces/"
+}
+},
+{
+"id": "0812klarna",
+"date": "2026-08-12",
+"weekday": "三",
+"month": 8,
+"market": "US",
+"title": "Klarna IPO 窗口期(传闻)",
+"cats": [
+"ipo"
+],
+"imp": 2,
+"confirmed": false,
+"tickers": [
+"KLARNA*",
+"AFRM",
+"PYPL",
+"SQ",
+"SEZL"
+],
+"summary": "瑞典 BNPL 巨头美股 IPO 推迟后再传重启",
+"background": "Klarna 2025 年 4 月已递 F-1 但因关税担忧推迟,2026 H2 市场重新预期重启。BNPL(Buy Now Pay Later)板块:AFRM 是直接对标股,SEZL 是新晋小盘。一旦 Klarna 上市,BNPL 整体估值倍数可能重写。",
+"hook": "BNPL 板块第一大 IPO,AFRM/SEZL 直接受益",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"BNPL 三巨头估值倍数对比\"图,AFRM 期权 IV 在 IPO 临近常飙升,落期权投教 + 跟单提示",
+"jargon": [
+{
+"t": "F-1",
+"d": "外国发行人在美 IPO 招股书,Klarna 用 F-1"
+},
+{
+"t": "BNPL",
+"d": "Buy Now Pay Later 先买后付分期支付"
+}
+],
+"push": {
+"title": "Klarna 重启 IPO,AFRM 该上车吗?",
+"body": "BNPL 板块估值重写在即,AFRM 期权 IV 已在异动。1 张 AFRM 价差期权 锁定方向,新客期权首单 0 佣金,打开富途\"期权投教\"15 分钟通关。"
+},
+"source": {
+"name": "SEC EDGAR",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=klarna&type=F-1&dateb=&owner=include&count=40"
+}
+},
+{
+"id": "0813cpi",
+"date": "2026-08-13",
+"weekday": "四",
+"month": 8,
+"market": "US",
+"title": "7月 CPI",
+"cats": [
+"macro"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"GLD",
+"UUP"
+],
+"summary": "9月 FOMC 前最后通胀",
+"background": "8:30 ET 由 BLS 公布。核心 CPI 月环比是 9月降息幅度的关键投票:>0.3% 鹰、0.2% 中、≤0.1% 大幅降息。",
+"hook": "9月降息 25/50bp 之争,CPI 一锤定音",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"CPI 服务通胀粘性 + 关税传导\"图——9 月 FOMC 前第二份 CPI,QQQ 跨式期权高频教学",
+"jargon": [
+{
+"t": "核心 CPI",
+"d": "剔除食品能源居民价格"
+},
+{
+"t": "super core",
+"d": "剔除住房的服务类核心通胀"
+}
+],
+"push": {
+"title": "今晚 CPI,9 月 FOMC 前第二份",
+"body": "QQQ 单日 IV 翻倍,跨式期权杠杆效率最高。1 张 QQQ 跨式双向押宝,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "BLS",
+"url": "https://www.bls.gov/cpi/"
+}
+},
+{
+"id": "0814retail",
+"date": "2026-08-14",
+"weekday": "五",
+"month": 8,
+"market": "US",
+"title": "7月零售销售 + Michigan 信心",
+"cats": [
+"macro"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"XLY",
+"XRT",
+"SPY"
+],
+"summary": "消费板块双数据",
+"background": "8:30 ET 零售(Census)、10:00 ET 密歇根消费者信心初值。Control group 是 GDP 消费分项关键投入。",
+"hook": "消费分化期,XLY/XRT 短线信号",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"零售控制组 + Michigan 消费者预期\"双图——双数据日,XRT/XLY 期权链解读最佳教学示例",
+"jargon": [
+{
+"t": "控制组",
+"d": "剔除汽车汽油的核心零售"
+},
+{
+"t": "密歇根信心",
+"d": "消费者信心调查,前瞻消费"
+}
+],
+"push": {
+"title": "零售 + Michigan 双数据日",
+"body": "双数据日 XRT/XLY 当日波动放大,期权链 OI 热力图直接看主力位。富途期权链一键查,期权投教 15 分钟通关,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "Census Bureau",
+"url": "https://www.census.gov/retail/index.html"
+}
+},
+{
+"id": "0817wmt",
+"date": "2026-08-17",
+"weekday": "一",
+"month": 8,
+"market": "US",
+"title": "Walmart Q2 财报",
+"cats": [
+"earnings"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"WMT",
+"XLP",
+"XLY",
+"XRT"
+],
+"summary": "美国零售龙头业绩",
+"background": "盘前公布。同店销售、电商增速、广告业务(Walmart Connect)、低收入消费者动向是关注重点。",
+"hook": "美国消费降级与否,WMT 一句话验证",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"WMT 同店销售 + 低收入消费分层\"图——零售龙头财报,XRT 板块基调由此定",
+"jargon": [
+{
+"t": "comp sales",
+"d": "同店销售,零售商核心 KPI"
+}
+],
+"push": {
+"title": "Walmart 财报,零售龙头定调",
+"body": "WMT 同店销售 + 低收入分层是消费温度计,XRT 跟动。1 张 WMT 价差期权押方向,期权投教课同步跟,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "Walmart IR",
+"url": "https://stock.walmart.com/financial-information/quarterly-results/default.aspx"
+}
+},
+{
+"id": "0819target",
+"date": "2026-08-19",
+"weekday": "三",
+"month": 8,
+"market": "US",
+"title": "Target/Lowe's 财报",
+"cats": [
+"earnings"
+],
+"imp": 1,
+"confirmed": true,
+"tickers": [
+"TGT",
+"LOW",
+"XRT",
+"HD"
+],
+"summary": "零售二线业绩",
+"background": "盘前公布。TGT 看自有品牌占比与利润率,LOW 看大宗 DIY 与专业建商需求,验证地产复苏成色。",
+"hook": "零售分层 + 房地产链双信号",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"TGT/LOW 财报 vs WMT 对比\"图——二线零售财报,中低端消费分层信号",
+"jargon": [
+{
+"t": "DIY",
+"d": "自助装修,LOW/HD 主力客群"
+}
+],
+"push": {
+"title": "TGT/LOW 财报,二线零售信号",
+"body": "TGT 同店是中产消费温度计,与 WMT 对比信息量最大。期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "Target IR",
+"url": "https://investors.target.com/financial-information/quarterly-results"
+}
+},
+{
+"id": "0805jh",
+"date": "2026-08-27",
+"weekday": "四",
+"month": 8,
+"market": "US",
+"title": "Jackson Hole 全球央行年会(8/27-29)",
+"cats": [
+"fomc",
+"macro"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"QQQ",
+"TLT",
+"GLD",
+"UUP"
+],
+"summary": "Powell 主旨演讲定调全年货币政策",
+"background": "堪萨斯城联储主办的年度央行峰会,Powell 周五主旨演讲历来是市场关注度最高的非 FOMC 央行讲话。2022 年\"Pain ahead\"演讲单日 SPX 跌 3.4%,2024 年\"Time has come\"启动降息周期。SG 时间(EDT 周五 10:00 ≈ SGT 周五 22:00)正好 SG 用户晚间在线时段。",
+"hook": "Powell 演讲定全年货币政策基调",
+"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"JH 演讲历史回顾+SPX 当日波动榜\"图解,直播 + 期权投教联动:演讲前先开期权户,演讲中跟单",
+"jargon": [
+{
+"t": "Jackson Hole",
+"d": "怀俄明州 KC 联储主办的年度央行论坛"
+},
+{
+"t": "Forward Guidance",
+"d": "前瞻指引,央行用语沟通未来政策"
+}
+],
+"push": {
+"title": "Jackson Hole · Powell 演讲夜",
+"body": "历届演讲日 SPX 单日波动 1-3%。SGT 周五 22:00 直播,期权投教课同步开,新客期权首单 0 佣金,首次入金最高得 [奖励金额*]。"
+},
+"source": {
+"name": "Kansas City Fed",
+"url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/"
+}
+},
+{
+"id": "0827nvda",
+"date": "2026-08-27",
+"weekday": "四",
+"month": 8,
+"market": "US",
+"title": "NVIDIA Q2 FY27 财报",
+"cats": [
+"earnings"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"NVDA",
+"SMH",
+"SOXX",
+"AVGO",
+"MU"
+],
+"summary": "AI 算力链最高浓度财报",
+"background": "盘后公布。数据中心营收 YoY、Blackwell/Rubin 出货节奏、毛利率指引、China 营收占比是四大胜负手。",
+"hook": "AI 算力链定海神针,SMH 暴动",
+"angle": "[KPI=促期权首交+拉新NUP·TA=TA3] 做\"NVDA 数据中心收入 + AI Capex 指引\"图——AI 主线最大权重股,赚效活动页+期权投教双触发,IV 70%+",
+"jargon": [
+{
+"t": "Blackwell",
+"d": "NVDA 当前主力 GPU 架构"
+},
+{
+"t": "Rubin",
+"d": "NVDA 下一代 GPU 路线图"
+}
+],
+"push": {
+"title": "NVDA 财报夜,AI 主线压舱石",
+"body": "NVDA IV 70%+,单日波动常 6-10%。打开富途\"AI 半导体赚效页\" + 1 张 NVDA 价差期权,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "NVIDIA IR",
+"url": "https://investor.nvidia.com/financial-info/financial-reports/default.aspx"
+}
+},
+{
+"id": "0828pce",
+"date": "2026-08-28",
+"weekday": "五",
+"month": 8,
+"market": "US",
+"title": "7月核心 PCE",
+"cats": [
+"macro"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"GLD",
+"UUP"
+],
+"summary": "9月 FOMC 前最关键通胀",
+"background": "8:30 ET 由 BEA 公布。9月 SEP 会议前最后一次核心 PCE,直接影响新点阵图中位数。",
+"hook": "9月点阵图前最后通胀读数",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"7 月 PCE 验证 Powell JH 演讲\"图——JH 后第一份 PCE,定调 9 月 FOMC 降息节奏",
+"jargon": [
+{
+"t": "点阵图",
+"d": "FOMC 委员对未来政策利率匿名预期"
+},
+{
+"t": "中位数",
+"d": "点阵图核心读数,鹰鸽方向标"
+}
+],
+"push": {
+"title": "JH 后第一份 PCE,降息节奏定锚",
+"body": "Powell JH 演讲 vs PCE 数据双重验证,TLT 期权直接重写。1 张 TLT 价差期权,期权投教课同步跟,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "BEA",
+"url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+}
+}
+]

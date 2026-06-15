@@ -339,6 +339,206 @@ footer.foot a{color:var(--text3)}
 .pg-result-actions .pg-btn:hover{background:rgba(255,255,255,.22)}
 .pg-error{max-width:880px;margin:18px auto 0;padding:14px 18px;border-radius:12px;background:rgba(255,59,48,.08);border:1px solid rgba(255,59,48,.25);color:#c2261d;font-size:13.5px;line-height:1.5}
 @media(max-width:680px){.pg-grid{grid-template-columns:1fr}}
+
+.mkt-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600;letter-spacing:.02em}
+.mkt-us{background:rgba(0,113,227,.12);color:#0071e3}
+.mkt-cn{background:rgba(255,69,58,.12);color:#c2261d}
+.mkt-jp{background:rgba(175,82,222,.12);color:#7d3acf}
+.mkt-kr{background:rgba(48,176,199,.12);color:#1f8a9e}
+.mkt-hk{background:rgba(255,159,10,.14);color:#a05a00}
+.mkt-eu{background:rgba(52,199,89,.12);color:#1f7d35}
+.mkt-global{background:rgba(142,142,147,.16);color:#555}
+.mkt-other{background:rgba(142,142,147,.12);color:#888}
+.filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.filter-row.mkt-row{margin-top:4px}
+#modal-close{position:absolute;top:20px;right:20px;width:32px;height:32px;border-radius:50%;background:var(--bg2);font-size:18px;color:var(--text3);display:flex;align-items:center;justify-content:center;border:0;cursor:pointer}
+#modal .m-meta{font-size:13px;color:var(--text4);font-variant-numeric:tabular-nums;margin-bottom:8px}
+#modal .m-meta .m-src-link{color:var(--accent);text-decoration:none;margin-left:6px}
+#modal .m-meta .m-src-link:hover{text-decoration:underline}
+#modal .m-title{font-size:30px;font-weight:600;letter-spacing:-.018em;line-height:1.2;margin:0 0 14px}
+#modal .m-badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+#modal .m-badges .unc{background:rgba(255,149,0,.12);color:#a04e00}
+#modal .m-summary{font-size:17px;line-height:1.55;color:var(--text);margin:0 0 22px;letter-spacing:-.005em}
+#modal .m-section{margin-bottom:22px}
+#modal .m-label{font-size:12.5px;color:var(--text3);font-weight:600;margin-bottom:8px;letter-spacing:.04em}
+#modal .m-bg{font-size:14px;line-height:1.7;color:var(--text2);background:var(--bg2);padding:18px 22px;border-radius:12px}
+#modal .m-tks{display:flex;flex-wrap:wrap;gap:6px}
+#modal .m-tk{background:var(--bg2);padding:4px 10px;border-radius:6px;font-family:'SF Mono',Menlo,monospace;font-size:13px;color:var(--text)}
+#modal .m-hook,#modal .m-angle{padding:12px 16px;background:linear-gradient(135deg,rgba(0,113,227,.06),rgba(175,82,222,.06));border-radius:10px;font-size:14px;color:var(--text2);margin-bottom:8px;line-height:1.55}
+#modal .m-hook .lab,#modal .m-angle .lab{display:inline-block;color:var(--accent);font-weight:600;margin-right:8px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;vertical-align:1px}
+#modal .m-jgs{display:grid;gap:8px}
+#modal .m-jg{padding:10px 14px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:8px;font-size:13.5px;line-height:1.55}
+#modal .m-jg b{color:var(--text);margin-right:8px;font-family:'SF Mono',Menlo,monospace;font-weight:600}
+#modal .m-jg span{color:var(--text2)}
+#modal .push-block{background:linear-gradient(135deg,rgba(0,113,227,.05),rgba(175,82,222,.05));padding:18px 22px;border-radius:14px;border:1px solid rgba(0,113,227,.12)}
+#modal .push-block .push-hook{font-size:16px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.4}
+#modal .push-block .push-path{font-size:13.5px;color:var(--text2);line-height:1.6;margin-bottom:12px}
+#modal .m-copy{padding:8px 16px;background:var(--accent);color:#fff;border-radius:8px;font-size:13px;border:0;cursor:pointer;font-weight:500}
+#modal .m-copy:hover{opacity:.9}
+#modal .m-source-foot{margin-top:18px;padding-top:14px;border-top:1px solid var(--border);font-size:12px;color:var(--text4)}
+#modal .m-source-foot a{color:var(--accent);text-decoration:none;margin-left:6px}
+#modal .m-source-foot a:hover{text-decoration:underline}
+
+
+.mkt-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600;letter-spacing:.02em}
+.mkt-us{background:rgba(0,113,227,.12);color:#0071e3}
+.mkt-cn{background:rgba(255,69,58,.12);color:#c2261d}
+.mkt-jp{background:rgba(175,82,222,.12);color:#7d3acf}
+.mkt-kr{background:rgba(48,176,199,.12);color:#1f8a9e}
+.mkt-hk{background:rgba(255,159,10,.14);color:#a05a00}
+.mkt-eu{background:rgba(52,199,89,.12);color:#1f7d35}
+.mkt-global{background:rgba(142,142,147,.16);color:#555}
+.mkt-other{background:rgba(142,142,147,.12);color:#888}
+.filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.filter-row.mkt-row{margin-top:4px}
+#modal-close{position:absolute;top:20px;right:20px;width:32px;height:32px;border-radius:50%;background:var(--bg2);font-size:18px;color:var(--text3);display:flex;align-items:center;justify-content:center;border:0;cursor:pointer}
+#modal .m-meta{font-size:13px;color:var(--text4);font-variant-numeric:tabular-nums;margin-bottom:8px}
+#modal .m-meta .m-src-link{color:var(--accent);text-decoration:none;margin-left:6px}
+#modal .m-meta .m-src-link:hover{text-decoration:underline}
+#modal .m-title{font-size:30px;font-weight:600;letter-spacing:-.018em;line-height:1.2;margin:0 0 14px}
+#modal .m-badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+#modal .m-badges .unc{background:rgba(255,149,0,.12);color:#a04e00}
+#modal .m-summary{font-size:17px;line-height:1.55;color:var(--text);margin:0 0 22px;letter-spacing:-.005em}
+#modal .m-section{margin-bottom:22px}
+#modal .m-label{font-size:12.5px;color:var(--text3);font-weight:600;margin-bottom:8px;letter-spacing:.04em}
+#modal .m-bg{font-size:14px;line-height:1.7;color:var(--text2);background:var(--bg2);padding:18px 22px;border-radius:12px}
+#modal .m-tks{display:flex;flex-wrap:wrap;gap:6px}
+#modal .m-tk{background:var(--bg2);padding:4px 10px;border-radius:6px;font-family:'SF Mono',Menlo,monospace;font-size:13px;color:var(--text)}
+#modal .m-hook,#modal .m-angle{padding:12px 16px;background:linear-gradient(135deg,rgba(0,113,227,.06),rgba(175,82,222,.06));border-radius:10px;font-size:14px;color:var(--text2);margin-bottom:8px;line-height:1.55}
+#modal .m-hook .lab,#modal .m-angle .lab{display:inline-block;color:var(--accent);font-weight:600;margin-right:8px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;vertical-align:1px}
+#modal .m-jgs{display:grid;gap:8px}
+#modal .m-jg{padding:10px 14px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:8px;font-size:13.5px;line-height:1.55}
+#modal .m-jg b{color:var(--text);margin-right:8px;font-family:'SF Mono',Menlo,monospace;font-weight:600}
+#modal .m-jg span{color:var(--text2)}
+#modal .push-block{background:linear-gradient(135deg,rgba(0,113,227,.05),rgba(175,82,222,.05));padding:18px 22px;border-radius:14px;border:1px solid rgba(0,113,227,.12)}
+#modal .push-block .push-hook{font-size:16px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.4}
+#modal .push-block .push-path{font-size:13.5px;color:var(--text2);line-height:1.6;margin-bottom:12px}
+#modal .m-copy{padding:8px 16px;background:var(--accent);color:#fff;border-radius:8px;font-size:13px;border:0;cursor:pointer;font-weight:500}
+#modal .m-copy:hover{opacity:.9}
+#modal .m-source-foot{margin-top:18px;padding-top:14px;border-top:1px solid var(--border);font-size:12px;color:var(--text4)}
+#modal .m-source-foot a{color:var(--accent);text-decoration:none;margin-left:6px}
+#modal .m-source-foot a:hover{text-decoration:underline}
+
+
+.mkt-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600;letter-spacing:.02em}
+.mkt-us{background:rgba(0,113,227,.12);color:#0071e3}
+.mkt-cn{background:rgba(255,69,58,.12);color:#c2261d}
+.mkt-jp{background:rgba(175,82,222,.12);color:#7d3acf}
+.mkt-kr{background:rgba(48,176,199,.12);color:#1f8a9e}
+.mkt-hk{background:rgba(255,159,10,.14);color:#a05a00}
+.mkt-eu{background:rgba(52,199,89,.12);color:#1f7d35}
+.mkt-global{background:rgba(142,142,147,.16);color:#555}
+.mkt-other{background:rgba(142,142,147,.12);color:#888}
+.filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.filter-row.mkt-row{margin-top:4px}
+#modal-close{position:absolute;top:20px;right:20px;width:32px;height:32px;border-radius:50%;background:var(--bg2);font-size:18px;color:var(--text3);display:flex;align-items:center;justify-content:center;border:0;cursor:pointer}
+#modal .m-meta{font-size:13px;color:var(--text4);font-variant-numeric:tabular-nums;margin-bottom:8px}
+#modal .m-meta .m-src-link{color:var(--accent);text-decoration:none;margin-left:6px}
+#modal .m-meta .m-src-link:hover{text-decoration:underline}
+#modal .m-title{font-size:30px;font-weight:600;letter-spacing:-.018em;line-height:1.2;margin:0 0 14px}
+#modal .m-badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+#modal .m-badges .unc{background:rgba(255,149,0,.12);color:#a04e00}
+#modal .m-summary{font-size:17px;line-height:1.55;color:var(--text);margin:0 0 22px;letter-spacing:-.005em}
+#modal .m-section{margin-bottom:22px}
+#modal .m-label{font-size:12.5px;color:var(--text3);font-weight:600;margin-bottom:8px;letter-spacing:.04em}
+#modal .m-bg{font-size:14px;line-height:1.7;color:var(--text2);background:var(--bg2);padding:18px 22px;border-radius:12px}
+#modal .m-tks{display:flex;flex-wrap:wrap;gap:6px}
+#modal .m-tk{background:var(--bg2);padding:4px 10px;border-radius:6px;font-family:'SF Mono',Menlo,monospace;font-size:13px;color:var(--text)}
+#modal .m-hook,#modal .m-angle{padding:12px 16px;background:linear-gradient(135deg,rgba(0,113,227,.06),rgba(175,82,222,.06));border-radius:10px;font-size:14px;color:var(--text2);margin-bottom:8px;line-height:1.55}
+#modal .m-hook .lab,#modal .m-angle .lab{display:inline-block;color:var(--accent);font-weight:600;margin-right:8px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;vertical-align:1px}
+#modal .m-jgs{display:grid;gap:8px}
+#modal .m-jg{padding:10px 14px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:8px;font-size:13.5px;line-height:1.55}
+#modal .m-jg b{color:var(--text);margin-right:8px;font-family:'SF Mono',Menlo,monospace;font-weight:600}
+#modal .m-jg span{color:var(--text2)}
+#modal .push-block{background:linear-gradient(135deg,rgba(0,113,227,.05),rgba(175,82,222,.05));padding:18px 22px;border-radius:14px;border:1px solid rgba(0,113,227,.12)}
+#modal .push-block .push-hook{font-size:16px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.4}
+#modal .push-block .push-path{font-size:13.5px;color:var(--text2);line-height:1.6;margin-bottom:12px}
+#modal .m-copy{padding:8px 16px;background:var(--accent);color:#fff;border-radius:8px;font-size:13px;border:0;cursor:pointer;font-weight:500}
+#modal .m-copy:hover{opacity:.9}
+#modal .m-source-foot{margin-top:18px;padding-top:14px;border-top:1px solid var(--border);font-size:12px;color:var(--text4)}
+#modal .m-source-foot a{color:var(--accent);text-decoration:none;margin-left:6px}
+#modal .m-source-foot a:hover{text-decoration:underline}
+
+
+.mkt-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600;letter-spacing:.02em}
+.mkt-us{background:rgba(0,113,227,.12);color:#0071e3}
+.mkt-cn{background:rgba(255,69,58,.12);color:#c2261d}
+.mkt-jp{background:rgba(175,82,222,.12);color:#7d3acf}
+.mkt-kr{background:rgba(48,176,199,.12);color:#1f8a9e}
+.mkt-hk{background:rgba(255,159,10,.14);color:#a05a00}
+.mkt-eu{background:rgba(52,199,89,.12);color:#1f7d35}
+.mkt-global{background:rgba(142,142,147,.16);color:#555}
+.mkt-other{background:rgba(142,142,147,.12);color:#888}
+.filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.filter-row.mkt-row{margin-top:4px}
+#modal-close{position:absolute;top:20px;right:20px;width:32px;height:32px;border-radius:50%;background:var(--bg2);font-size:18px;color:var(--text3);display:flex;align-items:center;justify-content:center;border:0;cursor:pointer}
+#modal .m-meta{font-size:13px;color:var(--text4);font-variant-numeric:tabular-nums;margin-bottom:8px}
+#modal .m-meta .m-src-link{color:var(--accent);text-decoration:none;margin-left:6px}
+#modal .m-meta .m-src-link:hover{text-decoration:underline}
+#modal .m-title{font-size:30px;font-weight:600;letter-spacing:-.018em;line-height:1.2;margin:0 0 14px}
+#modal .m-badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+#modal .m-badges .unc{background:rgba(255,149,0,.12);color:#a04e00}
+#modal .m-summary{font-size:17px;line-height:1.55;color:var(--text);margin:0 0 22px;letter-spacing:-.005em}
+#modal .m-section{margin-bottom:22px}
+#modal .m-label{font-size:12.5px;color:var(--text3);font-weight:600;margin-bottom:8px;letter-spacing:.04em}
+#modal .m-bg{font-size:14px;line-height:1.7;color:var(--text2);background:var(--bg2);padding:18px 22px;border-radius:12px}
+#modal .m-tks{display:flex;flex-wrap:wrap;gap:6px}
+#modal .m-tk{background:var(--bg2);padding:4px 10px;border-radius:6px;font-family:'SF Mono',Menlo,monospace;font-size:13px;color:var(--text)}
+#modal .m-hook,#modal .m-angle{padding:12px 16px;background:linear-gradient(135deg,rgba(0,113,227,.06),rgba(175,82,222,.06));border-radius:10px;font-size:14px;color:var(--text2);margin-bottom:8px;line-height:1.55}
+#modal .m-hook .lab,#modal .m-angle .lab{display:inline-block;color:var(--accent);font-weight:600;margin-right:8px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;vertical-align:1px}
+#modal .m-jgs{display:grid;gap:8px}
+#modal .m-jg{padding:10px 14px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:8px;font-size:13.5px;line-height:1.55}
+#modal .m-jg b{color:var(--text);margin-right:8px;font-family:'SF Mono',Menlo,monospace;font-weight:600}
+#modal .m-jg span{color:var(--text2)}
+#modal .push-block{background:linear-gradient(135deg,rgba(0,113,227,.05),rgba(175,82,222,.05));padding:18px 22px;border-radius:14px;border:1px solid rgba(0,113,227,.12)}
+#modal .push-block .push-hook{font-size:16px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.4}
+#modal .push-block .push-path{font-size:13.5px;color:var(--text2);line-height:1.6;margin-bottom:12px}
+#modal .m-copy{padding:8px 16px;background:var(--accent);color:#fff;border-radius:8px;font-size:13px;border:0;cursor:pointer;font-weight:500}
+#modal .m-copy:hover{opacity:.9}
+#modal .m-source-foot{margin-top:18px;padding-top:14px;border-top:1px solid var(--border);font-size:12px;color:var(--text4)}
+#modal .m-source-foot a{color:var(--accent);text-decoration:none;margin-left:6px}
+#modal .m-source-foot a:hover{text-decoration:underline}
+
+
+.mkt-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600;letter-spacing:.02em}
+.mkt-us{background:rgba(0,113,227,.12);color:#0071e3}
+.mkt-cn{background:rgba(255,69,58,.12);color:#c2261d}
+.mkt-jp{background:rgba(175,82,222,.12);color:#7d3acf}
+.mkt-kr{background:rgba(48,176,199,.12);color:#1f8a9e}
+.mkt-hk{background:rgba(255,159,10,.14);color:#a05a00}
+.mkt-eu{background:rgba(52,199,89,.12);color:#1f7d35}
+.mkt-global{background:rgba(142,142,147,.16);color:#555}
+.mkt-other{background:rgba(142,142,147,.12);color:#888}
+.filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.filter-row.mkt-row{margin-top:4px}
+#modal-close{position:absolute;top:20px;right:20px;width:32px;height:32px;border-radius:50%;background:var(--bg2);font-size:18px;color:var(--text3);display:flex;align-items:center;justify-content:center;border:0;cursor:pointer}
+#modal .m-meta{font-size:13px;color:var(--text4);font-variant-numeric:tabular-nums;margin-bottom:8px}
+#modal .m-meta .m-src-link{color:var(--accent);text-decoration:none;margin-left:6px}
+#modal .m-meta .m-src-link:hover{text-decoration:underline}
+#modal .m-title{font-size:30px;font-weight:600;letter-spacing:-.018em;line-height:1.2;margin:0 0 14px}
+#modal .m-badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+#modal .m-badges .unc{background:rgba(255,149,0,.12);color:#a04e00}
+#modal .m-summary{font-size:17px;line-height:1.55;color:var(--text);margin:0 0 22px;letter-spacing:-.005em}
+#modal .m-section{margin-bottom:22px}
+#modal .m-label{font-size:12.5px;color:var(--text3);font-weight:600;margin-bottom:8px;letter-spacing:.04em}
+#modal .m-bg{font-size:14px;line-height:1.7;color:var(--text2);background:var(--bg2);padding:18px 22px;border-radius:12px}
+#modal .m-tks{display:flex;flex-wrap:wrap;gap:6px}
+#modal .m-tk{background:var(--bg2);padding:4px 10px;border-radius:6px;font-family:'SF Mono',Menlo,monospace;font-size:13px;color:var(--text)}
+#modal .m-hook,#modal .m-angle{padding:12px 16px;background:linear-gradient(135deg,rgba(0,113,227,.06),rgba(175,82,222,.06));border-radius:10px;font-size:14px;color:var(--text2);margin-bottom:8px;line-height:1.55}
+#modal .m-hook .lab,#modal .m-angle .lab{display:inline-block;color:var(--accent);font-weight:600;margin-right:8px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;vertical-align:1px}
+#modal .m-jgs{display:grid;gap:8px}
+#modal .m-jg{padding:10px 14px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:8px;font-size:13.5px;line-height:1.55}
+#modal .m-jg b{color:var(--text);margin-right:8px;font-family:'SF Mono',Menlo,monospace;font-weight:600}
+#modal .m-jg span{color:var(--text2)}
+#modal .push-block{background:linear-gradient(135deg,rgba(0,113,227,.05),rgba(175,82,222,.05));padding:18px 22px;border-radius:14px;border:1px solid rgba(0,113,227,.12)}
+#modal .push-block .push-hook{font-size:16px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.4}
+#modal .push-block .push-path{font-size:13.5px;color:var(--text2);line-height:1.6;margin-bottom:12px}
+#modal .m-copy{padding:8px 16px;background:var(--accent);color:#fff;border-radius:8px;font-size:13px;border:0;cursor:pointer;font-weight:500}
+#modal .m-copy:hover{opacity:.9}
+#modal .m-source-foot{margin-top:18px;padding-top:14px;border-top:1px solid var(--border);font-size:12px;color:var(--text4)}
+#modal .m-source-foot a{color:var(--accent);text-decoration:none;margin-left:6px}
+#modal .m-source-foot a:hover{text-decoration:underline}
+
 </style>
 </head>
 <body>
@@ -353,8 +553,8 @@ footer.foot a{color:var(--text3)}
       <a href="#calendar">Calendar</a>
       <a href="#super">Super</a>
       <a href="#list">Events</a>
-      <a href="#library">Library</a>
       <a href="#push-gen" class="nav-new">PUSH 生成器<span class="nav-badge">NEW</span></a>
+      <a href="#library">Library</a>
     </div>
     <div class="meta tnum" id="clock">--:--:--</div>
   </div>
@@ -557,6 +757,7 @@ footer.foot a{color:var(--text3)}
       <p class="lead">每事件 1 条，围绕该事件 Growth Angle 设计期权转化文案。可搜索事件、标题、Angle。</p>
     </div>
     <div class="lib-toolbar">
+      <div id="lib-filters" class="filter-row" style="margin-bottom:10px"></div>
       <div class="lib-search"><input type="text" id="lib-search-input" placeholder="搜索事件、标题、Angle 或正文…"></div>
       <div class="lib-count" id="lib-count"></div>
     </div>
@@ -577,91 +778,45 @@ footer.foot a{color:var(--text3)}
 
 <script>
 const CATEGORIES={fomc:{label:'FOMC',cls:'fomc'},macro:{label:'Macro',cls:'macro'},earnings:{label:'Earnings',cls:'earnings'},ipo:{label:'IPO',cls:'ipo'},product:{label:'Product',cls:'product'},index:{label:'Index',cls:'index'},geo:{label:'Geo',cls:'geo'},holiday:{label:'Holiday',cls:'holiday'}};
-const TODAY=(()=>{const d=new Date();const p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());})();
-const EVENTS=[
-{id:'0601ism',date:'2026-06-01',weekday:'一',month:6,title:'5月 ISM 制造业 PMI',cats:['macro'],imp:2,confirmed:true,tickers:['SPY','XLI','XME'],summary:'制造业景气月度高频指标',detail:'**发布**：10:00 ET，由 ISM 公布。\n**核心**：综合 PMI、新订单、就业、价格四分项；50 为荣枯线。\n**重要性**：制造业占 GDP 仅 11%，但 PMI 是衰退最早预警指标之一。\n**历史**：2024 年 PMI 连续 6 个月低于 50 时市场对衰退担忧明显上升。',hook:'制造业荣枯线分水岭',angles:[{type:'内容',text:'PMI 4 大分项含义图解'}],source:'ISM',analysis:{hawk:{prob:'25%',desc:'PMI ≥52 且价格分项反弹，通胀粘性升温',sectors:'利空 TLT；利好 XLE/XLB'},base:{prob:'55%',desc:'PMI 在 49–51 荣枯线徘徊，反应温和',sectors:'SPY 区间震荡，板块轮动'},dove:{prob:'20%',desc:'PMI ≤47，衰退担忧推升降息预期',sectors:'利好 TLT/GLD；利空 XLI'}}},
-{id:'0602jolts',date:'2026-06-02',weekday:'二',month:6,title:'4月 JOLTS 职位空缺',cats:['macro'],imp:2,confirmed:true,tickers:['SPY','TLT'],summary:'劳动力松紧度月度信号',detail:'**发布**：10:00 ET，BLS 发布 JOLTS 报告。\n**核心**：职位空缺数、辞职率(Quits)、招聘率。\n**Fed 关注**：辞职率是工资压力前瞻指标，连续低于 2.0% 即为劳动力降温信号。\n**市场反应**：JOLTS 走弱常推升降息预期，TLT 受益。',hook:'辞职率=工资压力前瞻',angles:[{type:'内容',text:'JOLTS vs 非农领先关系'}],source:'BLS',analysis:{hawk:{prob:'20%',desc:'职位空缺 >800万，劳动力依然紧',sectors:'利空 TLT；利好 XLF'},base:{prob:'60%',desc:'空缺 700–780万 区间，趋势性降温',sectors:'TLT 温和走强'},dove:{prob:'20%',desc:'空缺 <700万 + 辞职率破 2%',sectors:'利好 TLT/GLD；利空 XLY'}}},
-{id:'0604ecb',date:'2026-06-04',weekday:'四',month:6,title:'ECB 利率决议',cats:['macro','geo'],imp:2,confirmed:true,tickers:['FXE','EZU','VGK'],summary:'欧元区货币政策定调',detail:'**议程**：07:45 ET 利率决议，08:30 ET Lagarde 记者会。\n**关注**：是否再降息、对欧元区核心通胀（剔除能源）的判断。\n**美股传导**：ECB 鸽于 Fed → EURUSD 走弱 → 美元指数走强 → 美股大盘承压、跨国公司汇率拖累显著。\n**联动**：FXE / EZU / VGK 直接定价；XLP / XLK 中跨国公司间接受影响。',hook:'欧美货币政策分化定汇率',angles:[{type:'内容',text:'欧美利差 vs EURUSD 关系'}],source:'ECB',analysis:{hawk:{prob:'20%',desc:'按兵不动 + Lagarde 鹰派措辞',sectors:'利好 FXE；中性 EZU'},base:{prob:'55%',desc:'25bp 降息符合预期',sectors:'EURUSD 小幅波动'},dove:{prob:'25%',desc:'50bp 降息或暗示加快',sectors:'利空 FXE；利好 EZU'}}},
-{id:'0605nfp',date:'2026-06-05',weekday:'五',month:6,title:'5月非农就业',cats:['macro'],imp:3,confirmed:true,tickers:['SPY','TLT','GLD'],summary:'6月FOMC前关键劳动力数据',detail:'**发布**：08:30 ET，BLS 发布。\n**5 看**：新增就业、失业率、时薪同比、参与率、前两月修正。\n**FOMC 衔接**：6/17 FOMC 前最重磅劳动力数据，决定点阵图利率路径修正。\n**Sahm Rule**：失业率 3 个月均值较 12 个月低点上行 0.5pp 触发衰退信号。',hook:'FOMC前最重磅劳动力数据',angles:[{type:'内容',text:'非农 5 看 + Sahm Rule'},{type:'转化',text:'就业骤冷 → 长债 ETF 配置思路'}],source:'BLS',analysis:{hawk:{prob:'25%',desc:'新增 >25万 + 时薪 >4%，通胀风险',sectors:'利空 TLT/QQQ；利好 UUP/XLF'},base:{prob:'50%',desc:'新增 12–18万，失业率持平 4.2%',sectors:'SPY 维持窄幅波动'},dove:{prob:'25%',desc:'新增 <8万 或失业率破 4.5%',sectors:'利好 TLT/GLD；利空 IWM'}}},
-{id:'0610cpi',date:'2026-06-10',weekday:'三',month:6,title:'5月 CPI',cats:['macro'],imp:3,confirmed:true,tickers:['SPY','QQQ','TLT'],summary:'FOMC 前最后高权重通胀',detail:'**发布**：08:30 ET，BLS 公布。\n**核心看点**：整体 CPI 同比/环比、核心 CPI(剔除食品能源)、核心服务(住房+超级核心)。\n**关税传导**：2025–26 加征关税在零售端的传导节奏；核心商品环比连续两月>0.3% 会触发通胀粘性化担忧。\n**FOMC 衔接**：6/17 FOMC 前最后一份 CPI，是点阵图修正最重要输入之一。',hook:'FOMC前最后高权重数据,定调降息预期',angles:[{type:'内容',text:'CPI 三看:整体/核心/服务,叠加关税滞后图'},{type:'转化',text:'高于预期→通胀对冲清单;低于预期→降息ETF'}],source:'BLS',analysis:{hawk:{prob:'30%',desc:'核心 CPI ≥0.4% 环比，通胀重新加速',sectors:'利空 TLT/QQQ；利好 UUP/XLE'},base:{prob:'50%',desc:'核心 CPI 0.2–0.3%，路径维持',sectors:'SPY 区间震荡，XLK 维持强势'},dove:{prob:'20%',desc:'核心 CPI ≤0.1%，降息预期重燃',sectors:'利好 TLT/GLD/IWM；利空 UUP'}}},
-{id:'0611ppi',date:'2026-06-11',weekday:'四',month:6,title:'5月 PPI + 初请',cats:['macro'],imp:2,confirmed:true,tickers:['SPY','XLI'],summary:'PPI反映企业上游成本',detail:'**发布**：08:30 ET，PPI 由 BLS 发布、初请失业金由劳工部发布。\n**PPI 看点**：最终需求 PPI、核心 PPI(剔除食品/能源/贸易)，重点子项是医疗保健、机票、组合管理费——这些权重直接进入 PCE 计算。\n**初请看点**：周度高频劳动力指标，4 周均值上破 24 万常被视作劳动力市场松动信号。\n**与 CPI 关系**：PPI→CPI 一般滞后 1–3 个月。若 PPI 走低但 CPI 仍粘，提示企业以利润吸收成本。\n**交易含义**：PPI/CPI 剪刀差扩大，常驱动板块轮动而非指数大幅波动。',hook:'CPI/PPI背离常出现交易机会',angles:[{type:'内容',text:'CPI vs PPI 剪刀差解读企业利润空间'}],source:'BLS/DOL'},
-{id:'0612spx',date:'2026-06-12',weekday:'五',month:6,title:'SpaceX IPO 传闻窗口',cats:['ipo'],imp:3,confirmed:false,tickers:['RKLB','ASTS'],summary:'市场流传SpaceX或Q3启动IPO',detail:'**背景**：SpaceX 估值在 2025 年内部 tender 已突破 4000 亿美元，Starlink 业务现金流转正后市场反复传 IPO 时间窗。\n**关注信号**：1) 是否秘密递交 S-1；2) 是否公布主承销商；3) Starlink 是否单独分拆。\n**联动板块**：纯正商业航天对标股 RKLB、ASTS、IRDM；卫星制造 LMT、NOC；航天 ETF UFO、ARKX。\n**风险点**：传闻级事件，时间未定。即使路演启动，IPO 至少需 60–120 天准备期。\n**交易心态**：传闻驱动板块波动放大，宜事件交易而非长期持有。',hook:'若坐实,商业航天板块整体重估',angles:[{type:'内容',text:'商业航天估值对照表'},{type:'转化',text:'IPO打新教学+航天ETF介绍'}],source:'Reuters/WSJ'},
-{id:'0613umich',date:'2026-06-13',weekday:'六',month:6,title:'密歇根消费者信心(初值)',cats:['macro'],imp:2,confirmed:true,tickers:['XLY','XRT'],summary:'5年通胀预期为Fed重点指标',detail:'**发布**：10:00 ET，密歇根大学公布。本周为初值，月底有终值。\n**核心数据**：消费者信心指数、现状指数、预期指数；1年通胀预期、5–10年通胀预期。\n**Fed为何关注**：Powell 多次在发布会引用"长期通胀预期"，5–10y 数值若脱锚至 3.5%+ 是重大政策警报。\n**消费板块映射**：信心走弱→XRT(零售) 与 XLY(可选消费) 阶段跑输。\n**周末发布特性**：周六公布，下周一开盘集中定价，盘前波动常较剧烈。',hook:'信心连续走弱可能预示衰退',angles:[{type:'内容',text:'消费信心 vs 标普消费板块相关性'}],source:'U.Michigan'},
-{id:'0617fomc',date:'2026-06-17',weekday:'三',month:6,title:'FOMC 决议 + 点阵图 + Powell',cats:['fomc'],imp:3,confirmed:true,tickers:['SPY','QQQ','TLT','GLD','UUP'],summary:'公布利率决议、SEP、点阵图,Powell 14:30 ET 发布会',detail:'**议程**：14:00 ET 公布利率决议+SEP经济预测+点阵图；14:30 ET Powell 记者会(约45–60分钟)。\n**SEP 看点**：GDP/失业率/PCE/核心PCE 四组预测的中位数与分布；点阵图 2026/2027/2028/longer run 四档利率预测。\n**点阵图四看**：1) 2026年末利率中位数；2) 各位委员分布是否分散；3) 2027年终值是否下移；4) 长期中性利率 r* 调整。\n**Powell 关键词**："data dependent"(政策灵活)、"restrictive"(限制性)、"meaningful"(实质性下行)、"insurance cut"(预防性降息)的措辞变化。\n**期权波动**：SPX 当日 ATM straddle 隐含波动通常 80–110bp，发布会期间 IV 单边塌陷。',hook:'年内权重最高节点之一,点阵图修正即定价重写',angles:[{type:'内容',text:'点阵图 4 看:中位数/分歧度/2027 终点/长期利率'},{type:'转化',text:'SPY 期权 IV 解读 → 期权账户开通'}],source:'Federal Reserve'},
-{id:'0618boj',date:'2026-06-18',weekday:'四',month:6,title:'BOJ 利率决议',cats:['macro','geo'],imp:2,confirmed:true,tickers:['EWJ','DXJ','FXY'],summary:'日央行政策与日元走向',detail:'**议程**：日本央行公布政策利率与购债指引，下午行长记者会。\n**核心看点**：是否再加息(当前 0.5%)、是否调整 YCC 与购债节奏。\n**对美股影响**：日元若大幅走强 → 套利交易解除 → 全球科技股短线承压(参考 2024-08 事件)。\n**联动**：USDJPY、TLT、QQQ、半导体股。',hook:'日元套利交易若解除会冲击美股',angles:[{type:'内容',text:'日元套利交易科普'}],source:'BOJ'},
-{id:'0618quad',date:'2026-06-18',weekday:'四',month:6,title:'六月四巫日(提前交割)',cats:['index'],imp:2,confirmed:true,tickers:['SPY','QQQ','IWM'],summary:'因6/19 Juneteenth休市,四巫日实际滚至本日',detail:'**机制**：股指期货、股指期权、个股期货、个股期权四类衍生品同日到期。\n**特殊安排**：2026/6/19 为 Juneteenth 美股休市，期权交割实际滚动至 6/18 周四执行。\n**市场表现**：成交量常为平日 1.5–2 倍，盘尾 30 分钟波动放大。\n**与 Q2 末**：本次叠加季末再平衡，养老金/共同基金调整股债权重。',hook:'尾盘波动放大,Juneteenth前抢交割',angles:[{type:'内容',text:'四巫日 + 假期前移机制科普'}],source:'CME/CBOE',analysis:{hawk:{prob:'30%',desc:'尾盘买盘集中,SPX 收涨 0.5%+',sectors:'利好 SPY/QQQ 短线'},base:{prob:'50%',desc:'OI Pin 在 ATM 附近,窄幅震荡',sectors:'指数 ETF 流动性放大'},dove:{prob:'20%',desc:'尾盘集中卖出,VIX 走高',sectors:'利好 VXX 短线'}}},
-{id:'0619juneteenth',date:'2026-06-19',weekday:'五',month:6,title:'Juneteenth 美股休市',cats:['holiday'],imp:1,confirmed:true,tickers:[],summary:'六月节,美股全天休市',detail:'**安排**：Juneteenth(六月节)为联邦法定假日,2021 年起成为美股休市日。\n**流动性**：周四(6/18)午后流动性已开始萎缩,周一(6/22)开盘可能放量。\n**期货**：CME 股指期货部分时段仍交易,但流动性显著低于平日。',hook:'美股全天休市,跨周持仓注意',angles:[{type:'内容',text:'美股 11 个法定假日交易日历'}],source:'NYSE'},
-{id:'0626pce',date:'2026-06-26',weekday:'五',month:6,title:'5月核心PCE + Russell再平衡',cats:['macro','index'],imp:2,confirmed:true,tickers:['SPY','TLT','IWM'],summary:'Fed最看重的通胀指标 + 罗素年度再平衡',detail:'**核心PCE 发布**：08:30 ET,BEA 发布 5 月数据。\n**为何重要**：Fed 在 SEP 中跟踪的就是核心 PCE 而非 CPI;权重差异(住房/医疗)使 PCE 反应可能与 CPI 相反。\n**FOMC 衔接**：6/17 FOMC 后第一份 PCE,市场用它验证点阵图假设。\n**Russell 再平衡**：FTSE Russell 在 6 月最后一个周五完成 Russell 1000/2000/3000 年度再平衡,IWM 当日成交量常为平日 3–5 倍。',hook:'PCE+IWM再平衡双重事件',angles:[{type:'内容',text:'CPI vs PCE 权重差异图解'},{type:'转化',text:'Russell 再平衡日 IWM 期权策略'}],source:'BEA/FTSE Russell',analysis:{hawk:{prob:'25%',desc:'核心 PCE ≥0.3% 环比,通胀粘性',sectors:'利空 TLT/QQQ;利好 UUP'},base:{prob:'55%',desc:'核心 PCE 0.15–0.25%,温和回落',sectors:'SPY 维持区间'},dove:{prob:'20%',desc:'核心 PCE ≤0.1%,降息预期升温',sectors:'利好 TLT/GLD/IWM'}}},
-{id:'0625gdp',date:'2026-06-25',weekday:'四',month:6,title:'Q1 GDP 终值',cats:['macro'],imp:1,confirmed:true,tickers:['SPY'],summary:'修正Q1经济增长',detail:'**发布**：08:30 ET，BEA 发布 Q1 GDP 第三次估算(终值)。\n**关注**：消费、投资、净出口分项；GDI(国民收入)与 GDP 的偏差。\n**市场影响**：终值通常已被前两次估算消化，除非修正幅度>0.5pp 否则反应有限。',hook:'终值通常波动较小',angles:[{type:'内容',text:'GDP 三次估算流程科普'}],source:'BEA'},
-{id:'0630end',date:'2026-06-30',weekday:'二',month:6,title:'Q2 季末 + 上半年收官',cats:['index'],imp:2,confirmed:true,tickers:['SPY','QQQ','IWM'],summary:'上半年收官,机构再平衡',detail:'**机构再平衡**：养老金/Target Date Fund 在季末调整股债比例，规模可达数百亿美元。\n**复盘窗口**：上半年板块/个股表现榜单出炉，下半年配置切换。\n**回顾 H1 主线**：AI 资本开支、降息节奏、商业地产、地缘政治。\n**下半年关注**：H2 是否切换到防御性板块？小盘股能否补涨？',hook:'机构再平衡日,可能放大盘尾波动',angles:[{type:'内容',text:'上半年涨跌幅榜+下半年三大主线展望'}],source:'NYSE'},
-{id:'0702nfp',date:'2026-07-02',weekday:'四',month:7,title:'6月非农 + 失业率',cats:['macro'],imp:3,confirmed:true,tickers:['SPY','TLT','GLD'],summary:'独立日前提前发布',detail:'**发布**：08:30 ET。因 7/3 美股因独立日休市，6 月非农提前至 7/2 发布。\n**核心数据**：新增非农就业、失业率、平均时薪、劳动力参与率。\n**Fed 关注**：失业率是否突破 4.5%(年内 SEP 中位数)、时薪同比是否回落至 3.5%以下。\n**Sahm Rule**：3 个月失业率均值较 12 个月低点上行 0.5pp 即触发衰退信号。\n**节前发布特性**：流动性已部分撤离，反应可能放大。',hook:'独立日前最重磅数据,流动性较低',angles:[{type:'内容',text:'非农 5 看:就业/失业率/时薪/参与率/前值修正'}],source:'BLS'},
-{id:'0703hol',date:'2026-07-03',weekday:'五',month:7,title:'美股提前休市/独立日',cats:['holiday'],imp:1,confirmed:true,tickers:[],summary:'7/3提前13:00收市,7/4独立日休市',detail:'**安排**：7/3 周五提前至 13:00 ET 收市；7/4 周六为独立日观察日(本年实际假期)。\n**流动性**：周三-周五成交量明显萎缩，机构早早离场。\n**历史规律**：独立日前一周 SPX 平均上涨概率约 60%，但波动放大。',hook:'流动性低,避免大额下单',angles:[{type:'内容',text:'美股节假日交易日历科普'}],source:'NYSE'},
-{id:'0708fed',date:'2026-07-08',weekday:'三',month:7,title:'FOMC 6月会议纪要',cats:['fomc'],imp:2,confirmed:true,tickers:['SPY','TLT'],summary:'纪要透露分歧细节',detail:'**发布**：14:00 ET，FOMC 公布 6/17 会议纪要(滞后 21 天)。\n**关注**：1) 委员对降息时点的具体分歧；2) 资产负债表政策(QT 节奏)讨论；3) 对中性利率 r* 的最新表述。\n**典型反应**：纪要"鹰于市场预期" → 长债收益率上行；"鸽于市场预期" → 风险资产反弹。',hook:'纪要常包含点阵图未公开信息',angles:[{type:'内容',text:'纪要 vs 发布会差异解读'}],source:'Federal Reserve'},
-{id:'0710cpi',date:'2026-07-10',weekday:'五',month:7,title:'6月 CPI',cats:['macro'],imp:3,confirmed:true,tickers:['SPY','QQQ','TLT'],summary:'7月FOMC前关键数据',detail:'**发布**：08:30 ET。\n**重要性**：7/29 FOMC 前最后一份 CPI(7 月只有一次会议)，市场对降息预期的最后输入。\n**焦点**：核心服务通胀(剔除住房)、住房通胀回落速度。\n**关税滞后**：2025 加征关税进入年中开始集中传导窗口。',hook:'7月FOMC决策的最后通胀拼图',angles:[{type:'内容',text:'核心商品/核心服务/住房三分项跟踪表'}],source:'BLS'},
-{id:'0714jpm',date:'2026-07-14',weekday:'二',month:7,title:'摩根大通财报(Q2财报季开启)',cats:['earnings'],imp:3,confirmed:true,tickers:['JPM','XLF','KRE'],summary:'六大行打头阵',detail:'**发布**：盘前(约 06:45 ET)。同日 WFC、C 公布。\n**关注**：1) NII(净利息收入)指引；2) 投行业务收入(IPO/M&A 回暖度)；3) 商业地产敞口；4) 信用卡核销率。\n**Dimon 发言**：电话会上对经济与利率的判断常引发板块波动。\n**板块联动**：KRE(地区银行)对 NII 指引尤为敏感。',hook:'金融板块定调,关注信用卡核销率',angles:[{type:'内容',text:'美国六大行 Q2 看点对照表'}],source:'JPM IR'},
-{id:'0715bac',date:'2026-07-15',weekday:'三',month:7,title:'BAC/GS/MS 财报',cats:['earnings'],imp:2,confirmed:true,tickers:['BAC','GS','MS','XLF'],summary:'投行+财富管理双线',detail:'**关注**：GS/MS 投行手续费同比、交易部门 FICC/Equities 收入；BAC 消费者业务存款流向。\n**主题**：财富管理是华尔街新增长引擎，关注 RIA 整合进度。',hook:'投行业务回暖度的关键验证',angles:[{type:'内容',text:'投行 vs 商行 vs 财富管理三模式对比'}],source:'公司IR'},
-{id:'0716tsm',date:'2026-07-16',weekday:'四',month:7,title:'TSMC Q2 财报 + 资本开支',cats:['earnings'],imp:3,confirmed:true,tickers:['TSM','NVDA','AVGO','SOXX'],summary:'AI算力上游晴雨表',detail:'**发布**：北京时间 14:00(美股盘前)，台积电法说会。\n**核心**：1) 全年资本开支指引(原 380–420 亿美元区间是否上修)；2) 3nm/2nm 产能利用率；3) HBM 客户订单可见度。\n**联动逻辑**：TSM 资本开支指引上修 → 半导体设备(ASML/AMAT/LRCX)直接受益 → AI 链情绪强化。\n**地缘风险**：管理层对地缘的措辞变化是市场敏感点。',hook:'AI 资本开支最重要前瞻指标',angles:[{type:'内容',text:'TSM 资本开支 vs SOX 指数走势叠加图'},{type:'转化',text:'半导体设备 ETF SOXX 介绍'}],source:'TSMC IR'},
-{id:'0722goog',date:'2026-07-22',weekday:'三',month:7,title:'Alphabet/Tesla 财报',cats:['earnings'],imp:3,confirmed:false,tickers:['GOOGL','TSLA','QQQ'],summary:'Mag7首批,AI变现验证',detail:'**Alphabet 关注**：1) 搜索广告同比(AI Overview 是否分流)；2) Cloud 收入与 OI margin；3) 资本开支指引(全年是否再上修至 800 亿+)。\n**Tesla 关注**：1) 汽车毛利率(剔除碳积分)；2) Robotaxi 时间表更新；3) Optimus 量产进度。\n**期权预期波动**：GOOGL ATM straddle 通常隐含 ±5–7%，TSLA ±8–12%。',hook:'Mag7首场,AI收入分项最受关注',angles:[{type:'内容',text:'GOOGL 三块业务拆解'},{type:'转化',text:'Mag7 财报日历清单'}],source:'公司IR'},
-{id:'0723meta',date:'2026-07-23',weekday:'四',month:7,title:'Meta 财报',cats:['earnings'],imp:3,confirmed:false,tickers:['META','QQQ'],summary:'广告+Reality Labs双主题',detail:'**关注**：1) 广告收入同比与 Reels 变现进度；2) Reality Labs 亏损规模(全年是否仍超 200 亿)；3) 资本开支指引；4) AI 推理芯片自研进度(MTIA)。\n**Llama 路线**：开源策略对生态影响。\n**期权波动**：通常 ±6–9%，财报后 IV 大幅塌陷。',hook:'广告龙头AI变现节奏',angles:[{type:'内容',text:'广告 ARPU vs 时长占比双轴图'}],source:'Meta IR'},
-{id:'0724msft',date:'2026-07-24',weekday:'五',month:7,title:'Microsoft 财报',cats:['earnings'],imp:3,confirmed:false,tickers:['MSFT','QQQ'],summary:'Azure增速+Copilot渗透',detail:'**Azure**：增速能否维持 28%+(扣除汇率影响)，AI 贡献占比披露。\n**Copilot**：渗透率指引、ARPU 提升幅度。\n**资本开支**：全年指引(2025 财年已超 800 亿)，对 NVDA/AVGO 形成镜像逻辑。\n**OpenAI 关系**：投资估值变化、对损益表影响。',hook:'AI最大To-B验证,Azure增速是焦点',angles:[{type:'内容',text:'Azure 增速 vs AWS/GCP 三巨头对比'}],source:'MSFT IR'},
-{id:'0729fomc',date:'2026-07-29',weekday:'三',month:7,title:'FOMC 决议(无SEP)',cats:['fomc'],imp:3,confirmed:true,tickers:['SPY','QQQ','TLT'],summary:'仅利率决议+发布会',detail:'**议程**：14:00 ET 利率决议(无 SEP/点阵图)；14:30 ET Powell 记者会。\n**为何关键**：6 月 SEP 已给出 2026 年降息路径，本次主要看 Powell 是否对路径"再校准"。\n**关注措辞**：是否首次出现"approach"(接近)目标的表述、是否暗示 9 月行动。\n**JH 前瞻**：本次会议常为 8/22 Jackson Hole 演讲铺垫。',hook:'无SEP但发布会措辞决定9月预期',angles:[{type:'内容',text:'有/无 SEP 会议反应模式差异'}],source:'Federal Reserve'},
-{id:'0731pce',date:'2026-07-31',weekday:'五',month:7,title:'核心PCE + ECI',cats:['macro'],imp:2,confirmed:true,tickers:['SPY','TLT'],summary:'7月最后一份通胀+劳动力成本',detail:'**核心 PCE**：6 月数据，FOMC 关注首选指标。\n**ECI(雇佣成本指数)**：季度数据，Fed 跟踪劳动力总成本(工资+福利)的金标准。\n**联动**：ECI 同比若回落至 3.5%以下，强化降息逻辑。',hook:'劳动力成本降温=降息条件成熟',angles:[{type:'内容',text:'ECI vs 时薪指标差异'}],source:'BEA/BLS'},
-{id:'0807nfp',date:'2026-08-07',weekday:'五',month:8,title:'7月非农',cats:['macro'],imp:3,confirmed:true,tickers:['SPY','TLT','GLD'],summary:'夏季就业季节性强',detail:'**发布**：08:30 ET。\n**季节性**：7 月数据常受夏季招聘高峰影响，季调因子较大。\n**关注**：失业率是否突破 4.5%、时薪同比是否回落、前值大幅修正风险。\n**与 9 月 FOMC**：本次非农叠加 8/12 CPI 是 9/15 决议的两大输入。',hook:'9月FOMC前重要劳动力数据',angles:[{type:'内容',text:'夏季季调对非农影响科普'}],source:'BLS'},
-{id:'0812cpi',date:'2026-08-12',weekday:'三',month:8,title:'7月 CPI',cats:['macro'],imp:3,confirmed:true,tickers:['SPY','QQQ','TLT'],summary:'9月降息预期定调',detail:'**发布**：08:30 ET。\n**为何关键**：与 9/11 CPI 一同决定 9/15 FOMC 决议方向，本次稍弱即可强化降息预期。\n**关税验证**：2025 关税在零售端的传导高峰预计在 7–9 月。',hook:'9月FOMC定调数据',angles:[{type:'内容',text:'核心商品 vs 服务通胀剪刀差'}],source:'BLS'},
-{id:'0813ppi',date:'2026-08-13',weekday:'四',month:8,title:'7月 PPI',cats:['macro'],imp:1,confirmed:true,tickers:['SPY'],summary:'PPI先行指标',detail:'**发布**：08:30 ET。\n**子项关注**：医疗保健、机票、组合管理费等进入 PCE 计算的项目。',hook:'PPI 子项进入 PCE 计算',angles:[{type:'内容',text:'PPI→PCE 传导路径'}],source:'BLS'},
-{id:'0820jh',date:'2026-08-20',weekday:'四',month:8,title:'Jackson Hole 全球央行年会(开幕)',cats:['fomc'],imp:2,confirmed:true,tickers:['SPY','TLT','UUP','GLD'],summary:'央行年会开幕',detail:'**地点**：怀俄明州 Jackson Hole。每年由堪萨斯城联储主办。\n**议程**：通常周四晚开幕欢迎晚宴，周五上午 Powell 主旨演讲。\n**历史影响**：2022 年 Powell"不惜代价"演讲后 SPX 一周内回调超 5%；2024 年"政策调整时机已到"启动降息。\n**关注重点**：会议主题是否聚焦中性利率 r* / 通胀目标 / 资产负债表正常化。',hook:'Powell 主旨演讲前的市场紧张',angles:[{type:'内容',text:'JH 历届主题与 SPX 反应回顾'}],source:'KC Fed'},
-{id:'0822jh',date:'2026-08-22',weekday:'六',month:8,title:'Powell Jackson Hole 演讲',cats:['fomc'],imp:3,confirmed:true,tickers:['SPY','QQQ','TLT','GLD','UUP'],summary:'Powell主旨演讲,定调下半年',detail:'**时间**：上午 10:00 ET 左右。\n**为何关键**：JH 是 Powell 一年中除 FOMC 外最重要发言场，市场对每个措辞极度敏感。\n**关注措辞**：1) 是否暗示 9 月降息；2) 中性利率 r* 的最新表述；3) 对劳动力市场的判断("cooling" vs "weakening")；4) 资产负债表政策方向。\n**期权波动**：当周 SPY straddle 隐含波动通常 ±3–5%；演讲后 IV 大幅塌陷。',hook:'年内仅次于FOMC的政策信号',angles:[{type:'内容',text:'JH 演讲前后 SPX 历史 5 日表现'},{type:'转化',text:'政策预期重塑下的债券 ETF 选择'}],source:'KC Fed'},
-{id:'0826nvda',date:'2026-08-26',weekday:'三',month:8,title:'NVIDIA 财报(Q2 FY27)',cats:['earnings'],imp:3,confirmed:true,tickers:['NVDA','SMH','SOXX'],summary:'AI算力终极考',detail:'**发布**：盘后(约 16:20 ET)。NVIDIA 财年与日历年错位 1 个月，Q2 FY27 即 2026 年 5–7 月数据。\n**核心关注**：1) Data Center 收入(占比已超 90%)；2) 下季度指引；3) 毛利率(关税与产品组合影响)；4) Blackwell/Rubin 量产进度；5) 中国地区收入(出口管制下)。\n**期权波动**：NVDA ATM straddle 历来隐含 ±8–10%，财报当晚常剧烈波动。\n**联动**：财报后 SMH/SOXX 整体跟随，对 SPX 当日贡献可达 30–40bp。',hook:'Mag7单股对指数影响最大,SPX定海神针',angles:[{type:'内容',text:'NVDA 数据中心 vs 游戏 vs 汽车收入拆解'},{type:'转化',text:'AI 算力 ETF 矩阵 SMH/SOXX/AIQ'}],source:'NVDA IR'},
-{id:'0828pce',date:'2026-08-28',weekday:'五',month:8,title:'7月核心PCE',cats:['macro'],imp:2,confirmed:true,tickers:['SPY','TLT'],summary:'9月FOMC前最后PCE',detail:'**发布**：08:30 ET。\n**为何关键**：9/15 FOMC 前最后一份 PCE。叠加 7 月 CPI/非农,已基本锁定降息路径。\n**关注**：超级核心(剔除住房的服务通胀)环比是否稳定在 0.2%以下。\n**Jackson Hole 衔接**：本次 PCE 紧随 8/22 Powell JH 演讲,市场会用它验证 Powell 的政策导向。',hook:'9月FOMC前最后通胀数据',angles:[{type:'内容',text:'超级核心 PCE 跟踪表'}],source:'BEA',analysis:{hawk:{prob:'25%',desc:'核心 PCE ≥0.3% 环比,通胀重新加速',sectors:'利空 TLT/QQQ;9月 50bp 降息预期消失'},base:{prob:'55%',desc:'核心 PCE 0.15–0.25%,降息路径维持',sectors:'SPY 维持区间,XLK 强势'},dove:{prob:'20%',desc:'核心 PCE ≤0.1%,50bp 降息预期升温',sectors:'利好 TLT/GLD/IWM'}}},
-{id:'0901ism',date:'2026-09-01',weekday:'二',month:9,title:'8月 ISM 制造业 PMI',cats:['macro'],imp:2,confirmed:true,tickers:['SPY','XLI','XME'],summary:'9月首份高频景气数据',detail:'**发布**：10:00 ET。\n**重要性**：本月唯一一次集中观察制造业的窗口,为 9/15 FOMC 提供重要输入。\n**关注**：综合 PMI、新订单、价格分项;价格分项反弹常预示 PPI/CPI 上行。',hook:'9月FOMC前首份高频数据',angles:[{type:'内容',text:'PMI 新订单/价格 vs SPX 走势'}],source:'ISM',analysis:{hawk:{prob:'25%',desc:'PMI ≥52 + 价格反弹',sectors:'利空 TLT;利好 XLE/XLB'},base:{prob:'55%',desc:'PMI 49–51 荣枯线徘徊',sectors:'SPY 区间震荡'},dove:{prob:'20%',desc:'PMI ≤47,衰退担忧',sectors:'利好 TLT/GLD;利空 XLI'}}},
-{id:'0904nfp',date:'2026-09-04',weekday:'五',month:9,title:'8月非农',cats:['macro'],imp:3,confirmed:true,tickers:['SPY','TLT','GLD'],summary:'9月FOMC前最关键就业数据',detail:'**发布**：08:30 ET,9 月第一个周五。\n**为何关键**：9/15 FOMC 前最后一份就业数据,决定降息幅度(25bp vs 50bp)。\n**关注**：失业率、时薪同比、参与率、前两月修正幅度。\n**Sahm Rule**：若失业率 3 个月均值上行 0.5pp,触发衰退信号 → 50bp 降息预期。',hook:'9月FOMC前最关键数据,定调25/50bp',angles:[{type:'内容',text:'非农 5 看 + Sahm Rule'},{type:'转化',text:'降息节奏分歧下债券 ETF 选择'}],source:'BLS',analysis:{hawk:{prob:'25%',desc:'新增 >20万 + 时薪粘性,50bp 预期消失',sectors:'利空 TLT/IWM;利好 UUP/XLF'},base:{prob:'50%',desc:'新增 12–18万,失业率持平,25bp 路径',sectors:'SPY 维持区间'},dove:{prob:'25%',desc:'新增 <8万 或失业率破 4.5%,50bp 升温',sectors:'利好 TLT/GLD/IWM'}}},
-{id:'0907labor',date:'2026-09-07',weekday:'一',month:9,title:'劳工节(美股休市)',cats:['holiday'],imp:1,confirmed:true,tickers:[],summary:'劳工节,美股全天休市',detail:'**安排**：劳工节为每年 9 月第一个周一,2026 年即 9/7。当日 NYSE/Nasdaq 全天休市。\n**节后首日**：9/8 周二为节后首个交易日,通常是机构 H2 资金回流窗口。\n**历史规律**：劳工节后第一周 SPX 平均上涨概率约 55%,但 9 月整体季节性较弱。',hook:'美股休市,夏季流动性回归',angles:[{type:'内容',text:'美股 9 月季节性 + 劳工节后规律'}],source:'NYSE'},
-{id:'0909appl',date:'2026-09-09',weekday:'三',month:9,title:'Apple 秋季新品发布会',cats:['product'],imp:2,confirmed:false,tickers:['AAPL','SWKS','QRVO','LRCX'],summary:'iPhone 18系列+AI主题',detail:'**惯例**：Apple 通常在 9 月第二周举办秋季发布会，发布 iPhone 主力机型。\n**本届预期**：iPhone 18 系列、Apple Intelligence 升级、新款 AirPods。\n**供应链联动**：射频(SWKS/QRVO)、半导体设备(LRCX)、屏幕(LPL)。\n**历史规律**：发布会日 AAPL 通常小幅回调("buy the rumor sell the news")，但 5 日内修复概率高。',hook:'Apple发布会经典"利好出尽"模式',angles:[{type:'内容',text:'Apple 供应链 ETF 与个股清单'},{type:'转化',text:'消费电子季节性策略'}],source:'Apple'},
-{id:'0911cpi',date:'2026-09-11',weekday:'五',month:9,title:'8月 CPI',cats:['macro'],imp:3,confirmed:true,tickers:['SPY','QQQ','TLT'],summary:'9月FOMC前最后CPI',detail:'**发布**：08:30 ET，9/15 FOMC 前 4 天。\n**为何关键**：CPI 是市场对降息节奏的最后输入；与 9/4 非农共同决定 25bp/50bp 路径。\n**关注**：核心服务、住房通胀、超级核心。\n**期权预期波动**：当日 SPX straddle 隐含 ±0.8–1.2%。',hook:'9月降息25/50bp定调战',angles:[{type:'内容',text:'CPI vs 非农组合对降息路径影响'}],source:'BLS'},
-{id:'0916fomc',date:'2026-09-16',weekday:'三',month:9,title:'FOMC 决议 + SEP + 点阵图',cats:['fomc'],imp:3,confirmed:true,tickers:['SPY','QQQ','TLT','GLD','UUP'],summary:'Q3最重磅,有SEP+点阵图',detail:'**议程**：14:00 ET 决议+SEP+点阵图;14:30 ET Powell 记者会。\n**为何关键**：1) 6/17 后第二次有 SEP 的会议;2) 市场对 25bp 降息已基本定价,关键看 2026 年末点阵图中位数;3) 2027 年降息路径首次清晰化。\n**关注 4 大维度**：(a) 降息幅度;(b) 点阵图 2026/2027 中位数;(c) 失业率/PCE 预测修正;(d) Powell 对 2027 路径的措辞。\n**期权波动**：SPX 当日 straddle 隐含 100–130bp。',hook:'Q3最重磅,2026/2027利率路径再定价',angles:[{type:'内容',text:'点阵图四看升级版'},{type:'转化',text:'降息周期下债券+黄金 ETF 组合'}],source:'Federal Reserve',analysis:{hawk:{prob:'25%',desc:'25bp 降息 + 点阵图 2027 终点上修',sectors:'利空 TLT;利好 UUP/XLF'},base:{prob:'55%',desc:'25bp 降息 + 路径符合预期',sectors:'SPY 小幅波动,XLK 走强'},dove:{prob:'20%',desc:'50bp 降息 或 2027 终点显著下修',sectors:'利好 TLT/GLD/IWM;利空 UUP'}}},
-{id:'0918quad',date:'2026-09-18',weekday:'五',month:9,title:'九月四巫日',cats:['index'],imp:2,confirmed:true,tickers:['SPY','QQQ','IWM'],summary:'季度交割+季末再平衡',detail:'**机制**：股指期货+股指期权+个股期权同日到期。\n**Q3 末特性**：叠加 9/30 季末机构再平衡，资金流动放大。\n**FOMC 后窗口**：紧随 9/15 FOMC 之后，市场对决议消化后的二次定价。',hook:'FOMC后季度交割,流动性事件',angles:[{type:'内容',text:'四巫日 + FOMC 双叠加效应'}],source:'CME'},
-{id:'0925pce',date:'2026-09-25',weekday:'五',month:9,title:'8月核心PCE',cats:['macro'],imp:2,confirmed:true,tickers:['SPY','TLT'],summary:'FOMC 后首份PCE',detail:'**发布**：08:30 ET。\n**为何关注**：9/16 FOMC 后第一份 PCE,市场用它验证降息决定的合理性。\n**关注**：超级核心(剔除住房的服务通胀)环比是否继续走低。\n**Q3收官**：Q3 最后一份重磅通胀数据,直接定调 Q4 降息预期。',hook:'验证FOMC降息合理性',angles:[{type:'内容',text:'FOMC 后 PCE 反应模式'}],source:'BEA',analysis:{hawk:{prob:'25%',desc:'PCE 反弹 ≥0.3%,降息节奏放缓',sectors:'利空 TLT;利好 UUP'},base:{prob:'55%',desc:'PCE 0.15–0.25%,降息合理',sectors:'SPY 维持区间'},dove:{prob:'20%',desc:'PCE ≤0.1%,Q4 加速降息预期',sectors:'利好 TLT/GLD/IWM'}}},
-{id:'0930end',date:'2026-09-30',weekday:'三',month:9,title:'Q3 季末 + 联邦财年末',cats:['index','geo'],imp:2,confirmed:true,tickers:['SPY','QQQ','IWM','TLT'],summary:'美国联邦财年末,可能政府关门风险',detail:'**财年末**：9/30 是美国联邦政府财年末，新财年从 10/1 开始。\n**关门风险**：若 9/30 前国会未通过预算或 CR(持续决议)，政府部分部门将关门。历史上关门事件频繁发生。\n**机构再平衡**：Q3 末季度调仓，养老金/Target Date Fund 调整股债比例。\n**Q3 复盘**：本季三大关键节点(7/29、8/22、9/15)走完，市场进入 Q4 配置切换。',hook:'财年末叠加可能政府关门',angles:[{type:'内容',text:'Q3 复盘 + Q4 三大主线展望'},{type:'转化',text:'政府关门历史规律与 SPX 反应'}],source:'US Treasury'},
-];
-const PUSH_COPY={
-'0610cpi':{title:"今晚 CPI 决定 Fed 降息节奏，超预期就翻车",body:"CPI 是 Fed 是否降息最关键变量，超预期或不及预期市场都会瞬间反向，QQQ 单日波动常翻倍。1 张 QQQ 跨式组合双向押宝，新客期权首单 0 佣金。",angle:"CPI 三看：整体/核心/服务，叠加关税滞后图"},
-'0611ppi':{title:"PPI 上游成本，CPI 之后的\"二次锤\"",body:"CPI 已出，PPI 是企业利润空间最后一块拼图，工业股最容易被剪刀差打到。你觉得这次会延续 CPI 方向，还是反向定价？打开富途期权链看 XLI 资金正在押哪边。",angle:"CPI vs PPI 剪刀差，解读企业利润空间"},
-'0612spx':{title:"SpaceX 万亿 IPO 传闻发酵，商业航天集体躁动",body:"史上最大 IPO 传闻一来，RKLB/ASTS 容易冲高回落，IV 已经开始抬升。直接追高容易被套，提前 1 张 RKLB 看跌期权封顶亏损，比割肉理性得多。",angle:"商业航天估值对照表 + IPO 打新教学"},
-'0613umich':{title:"消费者信心数据，零售板块的\"体温计\"",body:"信心走弱时 XRT/XLY 当日就开始跟跌。打开富途期权链先看一眼 XRT 当前 IV 分位 + OI 集中区，再决定 Put 行权价怎么选最划算。",angle:"消费信心 vs 标普消费板块相关性"},
-'0617fomc':{title:"今夜 FOMC + 点阵图，全年权重最高之夜",body:"带 SEP 的 FOMC 一年只有 4 次，点阵图直接定调未来 18 个月利率路径，标普历史平均波动 1.5%。1 张 SPY 跨式组合双向布局，新客期权首单 0 佣金。",angle:"点阵图 4 看：中位数/分歧度/2027 终点/长期利率"},
-'0618boj':{title:"BOJ 决议夜，全球流动性的隐形开关",body:"BOJ 一旦超预期，日元套利解除会引发美股闪崩（去年 8 月已演示）。这种夜盘风险，你买没买保险？1 张 QQQ Put 当作保险单，几十美元封顶最大亏损。",angle:"日元套利交易解除会冲击美股"},
-'0619quad':{title:"六月四巫日，全年最大期权到期日",body:"季度四类衍生品同日到期，OI 集中点最容易触发 Pin Risk，尾盘 30 分钟波动放大数倍。富途期权链一键看 OI 热力图，机构在哪里\"钉桩\"一目了然。",angle:"四巫日交易日历 + Pin Risk 集中区"},
-'0620pce':{title:"核心 PCE，Fed 真正盯的通胀指标",body:"Fed 决策时优先看 PCE 而不是 CPI，权重不同口径不同，市场反应可能与 CPI 完全相反。CPI 已 priced in 的方向，PCE 会不会反水？打开富途看资金提前怎么布。",angle:"CPI vs PCE 权重差异图解"},
-'0625gdp':{title:"Q1 GDP 终值，经济叙事最终定锤",body:"三次估算到此为止，终值若较二次估算大幅修正，债市常剧烈反应。把 TLT 加入富途自选 + 设置数据提醒，开盘前 30 分钟 IV 异动你会第一个收到。",angle:"GDP 三次估算流程 + 终值修正含义"},
-'0630end':{title:"Q2 季末，机构强制调仓最后一天",body:"季末机构必须再平衡，被动资金被动买卖，权重股容易在尾盘出现非常规冲量。富途模拟盘先试一手 SPY 期权感受波动，看看符不符合自己节奏，0 风险练手。",angle:"上半年涨跌幅榜 + 下半年三大主线展望"},
-'0702nfp':{title:"独立日前夜非农，长假 Gap 风险叠加",body:"非农当日恰逢长假前，数据偏离会被节后放大，假期持仓风险翻倍。1 张 SPY Put 锁定下行保护，新客期权首单 0 佣金。",angle:"非农 5 看：就业/失业率/时薪/参与率/前值修正"},
-'0703hol':{title:"美股 13:00 提前收盘，三天长假 Gap 风险来了",body:"流动性骤降叠加非农刚出，假期风险被压缩到 4 小时内集中释放，节后跳空概率显著提升。一张到期日跨过假期的 SPY Put，就是最简单的防 Gap 保险。",angle:"美股节假日交易日历 + Gap 风险管理"},
-'0708fed':{title:"FOMC 纪要，Powell 当时没说出口的话",body:"纪要常披露发布会未提的内部分歧，鹰鸽倾向常与发布会相反。你猜这次纪要更鹰还是更鸽？打开富途看 TLT 期权链，资金已经开始用真金白银投票了。",angle:"纪要 vs 发布会差异解读"},
-'0710cpi':{title:"6月 CPI，7月 FOMC 决策的最后一块拼图",body:"距离 FOMC 仅 3 周，这份 CPI 直接决定是否降息，超预期暴跌或暴涨概率都不低。1 张 QQQ 跨式期权两个方向都不错过，新客期权首单 0 佣金。",angle:"核心商品/核心服务/住房三分项追踪表"},
-'0714jpm':{title:"JPM 财报，Q2 财报季正式开打",body:"大行率先出炉，信用卡核销率 / 净息差是判断衰退预期最敏感的领先指标。财报日 JPM 隐含波动率最贵，富途期权链看 IV Crush 区间提前定方向，比盲买便宜不少。",angle:"美国六大行 Q2 看点对照表"},
-'0715bac':{title:"BAC + GS + MS 同日，银行业三大模式 PK",body:"商业银行 vs 投行 vs 财富管理三模式同日出炉，板块内分化剧烈。你看好哪个模式赢？富途期权链对照三家 IV，差异越大，超预期反应空间越大。",angle:"投行 vs 商行 vs 财富管理三模式对比"},
-'0716tsm':{title:"TSM 财报，NVDA 之前 AI 算力的预演",body:"TSM 资本开支是 AI 算力链最权威的领先指标，直接决定 SOXX/NVDA 下一季节奏。等到 NVDA 财报当日 IV 翻倍才动手，性价比早已不在；TSM 期权链先看一眼吧。",angle:"TSM 资本开支 vs SOX 指数走势叠加 + SOXX"},
-'0722goog':{title:"GOOGL + TSLA，Mag7 财报首场登场",body:"搜索 / 云 / 自动驾驶三块业务一起验证，Mag7 财报首场常奠定整轮节奏。把后续 Mag7 财报日全部加入富途自选 + 财报日历提醒，下一场是 Meta，一场不漏才是关键。",angle:"GOOGL 三块业务拆解 + Mag7 财报日历"},
-'0723meta':{title:"Meta 财报，AI 广告变现真章",body:"广告 ARPU + Reels 时长是判断 AI 能否真正变现的核心，Meta 财报后单日波动常超 8%。你押 META 涨还是跌？看一眼期权链 Put/Call Ratio，资金的答案已经在那里。",angle:"广告 ARPU vs 时长占比双轴图"},
-'0724msft':{title:"MSFT 财报，AI 最大 To-B 故事的真相",body:"Azure 增速是判断 AI 商业化是否真实落地的最硬指标，超预期时 QQQ 容易被一同拉起。富途看 Azure vs AWS vs GCP 同期增速对照表，财报数字一出谁高谁低秒判断。",angle:"Azure 增速 vs AWS/GCP 三巨头对比"},
-'0729fomc':{title:"7月 FOMC，全靠 Powell 一张嘴定 9月",body:"无 SEP 没点阵图，市场只能从 Powell 措辞里猜降息节奏，发布会每个字都被反复解读。1 张 QQQ 期权抓发布会窗口波动，新客期权首单 0 佣金。",angle:"有/无 SEP 会议反应模式差异"},
-'0731pce':{title:"PCE + ECI 双发，9月降息条件最后试金石",body:"PCE 通胀 + ECI 劳动力成本同日出炉，二者同步降温才是 Fed 启动降息的真正信号。富途宏观日历把这两个数据并列追踪，开盘前 1 分钟读完不迟。",angle:"ECI vs 时薪 指标差异 + 劳动力成本传导"},
-'0807nfp':{title:"7月非农，夏季季调最容易\"翻车\"的一期",body:"七月数据夏季季调影响最大，\"假爆冷\"或\"假爆热\"频出，回调修正才是真正机会。这次你赌哪种翻车方向？打开富途期权链看 SPY Put/Call OI，资金倾向一目了然。",angle:"夏季季调对非农影响科普"},
-'0812cpi':{title:"7月 CPI，9月降息 25bp 还是 50bp 之争开打",body:"9月 FOMC 前最重磅通胀，决定市场押 25 还是 50bp，债市股市同步剧烈反应。1 张 QQQ 期权押降息节奏，新客期权首单 0 佣金。",angle:"核心商品 vs 服务通胀 剪刀差"},
-'0813ppi':{title:"7月 PPI，PCE 子项的提前剧透",body:"PPI 中医疗 / 金融服务子项直接进入 PCE 计算，CPI 之后 PPI 常引发利率预期二次定价。把 PPI + 月底 PCE 一并加入富途数据日历，连贯看才不会错过节奏。",angle:"PPI→PCE 传导路径"},
-'0820jh':{title:"Jackson Hole 周开启，全球央行年度集结",body:"JH 周一开启 IV 就开始抬升，期权溢价随预期升温。这种\"还没出事就已经开始贵\"的特性，恰好是提前布局者的窗口期 — 周一买比周五便宜得多。",angle:"JH 历届主题与 SPX 反应回顾"},
-'0822jh':{title:"今夜 Powell JH 演讲，重要性仅次 FOMC",body:"Powell 历史上常在 JH 透露重大政策转向（2022 年那次至今难忘），SPX 5 日波动均值 2%+。1 张 SPY 期权押方向，新客期权首单 0 佣金。",angle:"JH 演讲前后 SPX 历史 5 日表现 + 债券 ETF"},
-'0826nvda':{title:"今夜 NVDA 财报，AI 算力主线最重磅之夜",body:"NVDA 单家公司决定 AI 主线情绪，数据中心增速 + 下季指引定调全市场风险偏好，SMH/SOXX 当日同步联动。1 张 NVDA 期权押 AI 主线，新客期权首单 0 佣金。",angle:"NVDA 数据中心/游戏/汽车收入拆解 + AI 算力 ETF SMH/SOXX"},
-'0829pce':{title:"7月核心 PCE，9月 FOMC 前最后一份通胀",body:"这份 PCE 之后，市场对 9月降息的押注就再无变量了。25 还是 50bp 的天平今天就要倾斜。富途期权链看 SPY 当周到期合约 IV 分位，资金的判断比新闻早 24 小时。",angle:"超级核心 PCE 跟踪表"},
-'0901hol':{title:"劳工节休市，9月历史最差行情前夜",body:"9月美股历史季节性最弱，过去 30 年平均下跌，长假前持仓风险偏大。一张到期日跨过劳工节的 SPY Put 备着，比假期里盯着新闻焦虑省心。",angle:"9月 季节性最弱 + 节假日日历"},
-'0902nfp':{title:"8月非农，9月 FOMC 前最关键就业数据",body:"这份非农直接决定 9月降息幅度，失业率若触发 Sahm Rule，市场对衰退定价会瞬间切换。1 张 SPY 期权押降息节奏，新客期权首单 0 佣金。",angle:"非农 5 看 + Sahm Rule + 债券 ETF 选择"},
-'0909appl':{title:"今夜 Apple 发布会，秋季旗舰登场",body:"苹果发布会规律是\"提前涨预期 + 当日卖事实\"，AAPL 单日方向最难判断，最适合双向押宝的跨式组合。还没用过跨式？富途期权学院 30 分钟搞懂，今晚就能用上。",angle:"Apple 供应链 ETF + 消费电子季节性策略"},
-'0911cpi':{title:"8月 CPI，9月 FOMC 前最后通胀牌",body:"CPI + 非农组合直接决定降息 25 还是 50bp，市场押宝心态浓，单日波动易翻倍。25 还是 50，你押哪边？富途期权链 OI 分布告诉你大资金已经选好了哪边。",angle:"CPI vs 非农 组合对降息路径影响"},
-'0915fomc':{title:"今夜 9月 FOMC + 点阵图，Q3 最重磅之夜",body:"带 SEP 的 FOMC + 降息周期可能正式开启，标普历史平均波动 2%、债市黄金同步异动。1 张 SPY 跨式组合双向布局，新客期权首单 0 佣金。",angle:"点阵图四看升级版 + 降息周期下 债券+黄金 ETF 组合"},
-'0918quad':{title:"九月四巫日 + FOMC 余波，二次定价良机",body:"FOMC 隔两日就是季度交割，定价分歧 + Pin Risk 双重叠加，全年罕见的双因子日，尾盘波动放大数倍。富途期权链 OI 热力图打开，\"钉桩\"位置一目了然。",angle:"四巫日 + FOMC 双叠加效应"},
-'0926pce':{title:"8月核心 PCE，FOMC 决策合理性的\"考卷\"",body:"FOMC 刚决议完，这份 PCE 是市场对 Fed 判断的验证；偏差大时债市反应比股市更剧烈。把 TLT 加入富途自选盯隔夜异动，比看新闻更直观。",angle:"FOMC 后 PCE 反应模式"},
-'0930end':{title:"Q3 季末 + 联邦财年末，政府关门倒计时",body:"联邦财年末若拨款法案未过即关门，历史上 SPX 短期承压、防御板块反而跑出超额。一张到期日跨过 10 月初的 SPY Put 备着，是这种政策尾部风险最便宜的对冲方式。",angle:"Q3 复盘 + Q4 三大主线 + 政府关门历史规律"}
+const MARKETS={
+  US:{label:'美股',cls:'mkt-us'},
+  CN:{label:'中国',cls:'mkt-cn'},
+  JP:{label:'日本',cls:'mkt-jp'},
+  KR:{label:'韩国',cls:'mkt-kr'},
+  HK:{label:'香港',cls:'mkt-hk'},
+  EU:{label:'欧洲',cls:'mkt-eu'},
+  GLOBAL:{label:'全球',cls:'mkt-global'}
 };
+const MARKETS={
+  US:{label:'美股',cls:'mkt-us'},
+  CN:{label:'中国',cls:'mkt-cn'},
+  JP:{label:'日本',cls:'mkt-jp'},
+  KR:{label:'韩国',cls:'mkt-kr'},
+  HK:{label:'香港',cls:'mkt-hk'},
+  EU:{label:'欧洲',cls:'mkt-eu'},
+  GLOBAL:{label:'全球',cls:'mkt-global'}
+};
+const MARKETS={
+  US:{label:'美股',cls:'mkt-us'},
+  CN:{label:'中国',cls:'mkt-cn'},
+  JP:{label:'日本',cls:'mkt-jp'},
+  KR:{label:'韩国',cls:'mkt-kr'},
+  HK:{label:'香港',cls:'mkt-hk'},
+  EU:{label:'欧洲',cls:'mkt-eu'},
+  GLOBAL:{label:'全球',cls:'mkt-global'}
+};
+const MARKETS={
+  US:{label:'美股',cls:'mkt-us'},
+  CN:{label:'中国',cls:'mkt-cn'},
+  JP:{label:'日本',cls:'mkt-jp'},
+  KR:{label:'韩国',cls:'mkt-kr'},
+  HK:{label:'香港',cls:'mkt-hk'},
+  EU:{label:'欧洲',cls:'mkt-eu'},
+  GLOBAL:{label:'全球',cls:'mkt-global'}
+};
+const TODAY=(()=>{const d=new Date();const p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());})();
+const EVENTS=[{"id": "0601ism", "date": "2026-06-01", "weekday": "一", "month": 6, "market": "US", "title": "5月 ISM 制造业 PMI", "cats": ["macro"], "imp": 2, "confirmed": true, "tickers": ["SPY", "XLI", "XME"], "summary": "制造业景气月度高频指标", "background": "10:00 ET 由 ISM 公布 5 月数据。综合 PMI/新订单/就业/价格四分项,50 为荣枯线。制造业占美国 GDP 仅 11%,但 PMI 历来是衰退最早预警指标之一。2024 年 PMI 连续 6 个月低于 50 期间,市场对衰退担忧曾显著升温。", "hook": "制造业荣枯线,工业股短线信号", "angle": "[KPI=促期权首交·TA=TA3] 做\"PMI 4 分项 + XLI 当日波动\"图,落期权投教——SG 期权渗透率仅 8%,工业股 IV 在 PMI 日易抬升,适合首单练手", "jargon": [{"t": "PMI", "d": "采购经理指数,>50 扩张 <50 收缩"}, {"t": "荣枯线", "d": "PMI 50 分水岭,经济扩张/收缩临界值"}], "push": {"title": "今晚 ISM PMI,XLI 期权 IV 易抬升", "body": "PMI 跌破 50 时 XLI 当日跟跌概率超六成。打开 moomoo 富途\"期权投教\"15 分钟通关 + 1 张 XLI Put 保护组合,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "ISM", "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"}}, {"id": "0602jolts", "date": "2026-06-02", "weekday": "二", "month": 6, "market": "US", "title": "4月 JOLTS 职位空缺", "cats": ["macro"], "imp": 2, "confirmed": true, "tickers": ["SPY", "TLT"], "summary": "劳动力松紧度月度信号", "background": "10:00 ET BLS 发布 JOLTS 报告。核心:职位空缺数、辞职率(Quits)、招聘率。Fed 高度关注辞职率——它是工资压力前瞻指标,连续低于 2.0% 即为劳动力降温信号。JOLTS 走弱常推升降息预期,TLT 受益。", "hook": "辞职率=工资压力前瞻,Fed 内部金标准", "angle": "[KPI=促期权首交·TA=TA3] 做\"JOLTS 三看 vs 非农领先关系\"图,引导用户开期权账户布局 TLT——辞职率拐点是债券长期看多信号", "jargon": [{"t": "JOLTS", "d": "职位空缺与劳动力流动调查"}, {"t": "Quits Rate", "d": "辞职率,>2.5% 紧 <2.0% 松"}], "push": {"title": "JOLTS,Fed 真正盯的劳动力数据", "body": "辞职率破 2% 几乎锁定降息——这种隐藏信号比非农早 2 周。把 TLT 加入富途自选 + 数据提醒,期权投教课同步跟,新客期权首单 0 佣金。"}, "source": {"name": "U.S. BLS", "url": "https://www.bls.gov/jlt/"}}, {"id": "0604ecb", "date": "2026-06-04", "weekday": "四", "month": 6, "market": "EU", "title": "ECB 利率决议 + Lagarde 记者会", "cats": ["macro", "geo"], "imp": 2, "confirmed": true, "tickers": ["FXE", "EZU", "VGK", "UUP"], "summary": "欧元区货币政策定调", "background": "07:45 ET 利率决议、08:30 ET Lagarde 记者会。关注:是否再降息、对欧元区核心通胀(剔除能源)的判断。ECB 鸽于 Fed → EURUSD 走弱 → 美元指数走强 → 美股大盘承压、跨国公司汇率拖累显著。", "hook": "欧美货币政策分化定汇率", "angle": "[KPI=促期权首交+促CDP转仓·TA=TA2+TA3] 做\"欧美利差 vs EURUSD\"图,TA2 中老年关注 HSBC 通过 CDP 转仓,TA3 用 FXE 期权押欧元方向", "jargon": [{"t": "ECB", "d": "欧洲央行,管 19 国欧元区货币政策"}, {"t": "政策利率", "d": "ECB 三档:存款便利、MRO、边际贷款"}], "push": {"title": "ECB 决议夜,欧美利差再校准", "body": "ECB 鸽于 Fed → 欧元跌、HSBC 港美 ADR 套利窗口。CDP 直连转仓最快 T+1,首次转入最高 S$[奖励金额*],新客期权首单 0 佣金。"}, "source": {"name": "European Central Bank", "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"}}, {"id": "0605nfp", "date": "2026-06-05", "weekday": "五", "month": 6, "market": "US", "title": "5月非农就业", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "GLD", "UUP"], "summary": "6月FOMC前关键劳动力数据", "background": "08:30 ET BLS 发布。5 看:新增就业、失业率、时薪同比、参与率、前两月修正。6/17 FOMC 前最重磅劳动力数据,决定点阵图修正方向。Sahm Rule:失业率 3 个月均值较 12 个月低点上行 0.5pp 触发衰退信号。", "hook": "FOMC 前最重磅劳动力数据", "angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"非农 5 看 + Sahm Rule\"科普长图,落 SPY 跨式期权策略——非农日 SPY ATM straddle 隐含 1.5%,新客转化期权户的最佳事件", "jargon": [{"t": "非农", "d": "剔除农业、政府、自雇的就业人数月增量"}, {"t": "Sahm Rule", "d": "失业率 3 月均上行 0.5pp 即衰退信号"}], "push": {"title": "今夜非农,FOMC 前最重要数据", "body": "超预期或不及,SPY 单日波动常超 1.5%。1 张 SPY 跨式组合双向押宝,期权投教 15 分钟学会,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "U.S. BLS", "url": "https://www.bls.gov/ces/"}}, {"id": "0610cpi", "date": "2026-06-10", "weekday": "三", "month": 6, "market": "US", "title": "5月 CPI", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "QQQ", "TLT"], "summary": "FOMC 前最后高权重通胀", "background": "08:30 ET BLS 公布。核心看点:整体 CPI 同比/环比、核心 CPI(剔除食品能源)、核心服务(住房+超级核心)。关税传导:2025–26 加征关税在零售端传导节奏;核心商品环比连续两月>0.3% 触发通胀粘性化担忧。6/17 FOMC 前最后一份 CPI,点阵图修正最重要输入之一。", "hook": "FOMC 前最后高权重数据,定调降息预期", "angle": "[KPI=促期权首交·TA=TA3] 做\"CPI 三看(整体/核心/超级核心)叠加关税滞后\"图,QQQ 跨式期权布局——CPI 日 QQQ 单日 IV 翻倍是教育用户期权杠杆的最佳示例", "jargon": [{"t": "CPI", "d": "消费者价格指数,衡量居民通胀"}, {"t": "超级核心", "d": "剔除住房的核心服务通胀,Fed 紧盯"}], "push": {"title": "今晚 CPI 决定 9 月降息节奏", "body": "CPI 是 Fed 是否降息最关键变量,QQQ 单日波动常翻倍。1 张 QQQ 跨式组合双向押宝,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "U.S. BLS", "url": "https://www.bls.gov/cpi/"}}, {"id": "0611wcup", "date": "2026-06-11", "weekday": "四", "month": 6, "market": "GLOBAL", "title": "FIFA 世界杯 2026 开幕(墨西哥城)", "cats": ["geo", "product"], "imp": 3, "confirmed": true, "tickers": ["V", "MA", "DIS", "ABNB", "MAR", "NKE", "FOXA", "FUBO"], "summary": "美墨加 16 城联办,赛期 6/11–7/19", "background": "开幕战墨西哥城阿兹特克体育场,首次 48 队制 104 场赛事。美墨加联办,期间美国餐饮/旅游/广告/支付/媒体板块订单激增。Visa/Mastercard 是官方支付伙伴,Adidas/Nike 装备供应,Disney(ESPN/Telemundo母公司)+FOX 美区独家转播。历史规律:世界杯期间 Visa 跨境支付量同比+30%、Disney 流媒体订阅短期飙升。", "hook": "消费/旅游/支付/媒体板块齐集体催化", "angle": "[KPI=拉新NUP+促首次入金·TA=TA1] 世界杯是 2026 最大赚效活动页抓手,做\"赛程日历 + 受益清单(V/MA/DIS/NKE)\"页,落 NUP 新客拉新——每场比赛触发推送、每个受益股看一眼", "jargon": [{"t": "FIFA 官方合作伙伴", "d": "Visa/Adidas/Coca-Cola/Hyundai 等顶级赞助商"}], "push": {"title": "世界杯开赛!Visa/MA 跨境支付旺季", "body": "赛事 38 天,Visa 跨境支付历史 +30%。打开 moomoo 富途\"世界杯赚效活动页\"看实时受益清单,首次入金最高 S$[奖励金额*],新客期权首单 0 佣金。"}, "source": {"name": "FIFA", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026"}}, {"id": "0612spx", "date": "2026-06-12", "weekday": "五", "month": 6, "market": "US", "title": "SpaceX / Starlink IPO 窗口期(传闻)", "cats": ["ipo", "product"], "imp": 3, "confirmed": false, "tickers": ["SPACEX*", "SPCE", "RKLB", "ASTS", "IRDM", "LMT"], "summary": "市场炒作 SpaceX 拆分 Starlink IPO 时间窗口", "background": "Reuters/Bloomberg 等持续追踪 Musk 多次公开提到 Starlink 有可能在用户突破 6000 万 + 现金流稳定后单独上市。市场普遍把 2026 H2 当作可能窗口。一旦 S-1 文件递交,SEC EDGAR 即可查询。在此之前所有信息均为传闻级,但仍是太空板块最大估值催化剂——SpaceX 一级估值已达 $400B 量级,Starlink 拆分后单体可能超 $200B。受益板块:商业航天(RKLB/ASTS/IRDM)、卫星通信、国防(LMT/NOC)。", "hook": "TA1+TA3 双吃·赚效活动页最大抓手", "angle": "[KPI=拉新NUP+促期权首交·TA=TA1+TA3] SpaceX 是 2026 太空概念赚效活动页核心抓手——做\"SpaceX/Starlink 估值拆解+一级二级套利逻辑\"科普长图,落 NUP 拉新 + 期权投教转化", "jargon": [{"t": "S-1", "d": "美国 IPO 招股说明书,SEC 上市必递交"}, {"t": "SEC EDGAR", "d": "美国证监会公司备案数据库,IPO 信息源头"}, {"t": "Pre-IPO", "d": "未上市轮次,通过一级市场基金参与"}], "push": {"title": "SpaceX 上市传闻再起,太空概念怎么玩?", "body": "SpaceX 一旦递 S-1,RKLB/ASTS 板块齐涨。打开 moomoo 富途\"SpaceX 太空概念赚效页\"看实时受益清单,首次入金最高得 [奖励金额*],期权首单 0 佣金。"}, "source": {"name": "SEC EDGAR", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=spacex&type=S-1&dateb=&owner=include&count=40"}}, {"id": "0616retail", "date": "2026-06-16", "weekday": "二", "month": 6, "market": "US", "title": "5月零售销售", "cats": ["macro"], "imp": 2, "confirmed": true, "tickers": ["SPY", "XRT", "XLY", "AMZN", "WMT"], "summary": "消费动能高频指标", "background": "08:30 ET 美国商务部 Census 公布。核心控制组(剔除汽车/汽油/建材/餐饮)直接进 GDP 消费分项。关注:零售环比、控制组数据、上月修正。消费占美国 GDP 70%,零售连续走弱即预示衰退。", "hook": "消费 70% GDP,零售即先行指标", "angle": "[KPI=促期权首交·TA=TA3] 做\"零售控制组 vs XRT/XLY\"映射,XRT Put 锁定下行——零售弱 → 消费板块跟跌,期权对冲是 TA3 高频教育点", "jargon": [{"t": "控制组", "d": "剔除汽车/汽油/建材/餐饮的零售口径,直接入 GDP"}], "push": {"title": "5 月零售,消费动能体温计", "body": "控制组连续两月走弱,XRT 容易跟跌。1 张 XRT Put 锁定下行,期权投教 15 分钟学会,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "U.S. Census", "url": "https://www.census.gov/retail/index.html"}}, {"id": "0617fomc", "date": "2026-06-17", "weekday": "三", "month": 6, "market": "US", "title": "FOMC 决议 + SEP + 点阵图 + Powell", "cats": ["fomc"], "imp": 3, "confirmed": true, "tickers": ["SPY", "QQQ", "TLT", "GLD", "UUP"], "summary": "全年权重最高节点之一", "background": "14:00 ET 利率决议+SEP 经济预测+点阵图;14:30 ET Powell 记者会(45–60 分钟)。SEP 看 GDP/失业率/PCE/核心 PCE 4 组中位数;点阵图 4 看:2026 终点中位数、委员分布分散度、2027 终点是否下移、长期中性利率 r* 调整。Powell 关键词:data dependent / restrictive / meaningful / insurance cut 措辞变化。SPX 当日 ATM straddle 隐含 80–110bp。", "hook": "年内权重最高节点之一,点阵图修正即定价重写", "angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"点阵图 4 看升级版 + Powell 关键词清单\"图,SPY 跨式 + IV Crush 双教学——年内权重最高节点之一,转化期权户最佳窗口", "jargon": [{"t": "SEP", "d": "Summary of Economic Projections,Fed 季度经济预测"}, {"t": "点阵图", "d": "19 位委员对未来利率匿名预测"}, {"t": "r*", "d": "长期中性利率,既不刺激也不抑制经济"}], "push": {"title": "今夜 FOMC + 点阵图,全年最高之夜", "body": "带 SEP 的 FOMC 一年仅 4 次,点阵图重写未来 18 个月利率。1 张 SPY 跨式双向布局,期权投教课同步开,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "Federal Reserve", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"}}, {"id": "0618boe", "date": "2026-06-18", "weekday": "四", "month": 6, "market": "EU", "title": "BoE 利率决议 + 会议纪要", "cats": ["macro"], "imp": 2, "confirmed": true, "tickers": ["EWU", "FXB", "BP", "SHEL", "HSBC"], "summary": "英国央行政策利率与投票分布", "background": "12:00 GMT BoE 公布银行利率(Bank Rate)决议与 9 名 MPC 委员投票分布(Hawk/Hold/Cut 票数)。同步发布会议纪要。BoE 鸽于 Fed → 英镑承压、伦敦 ADR(BP/SHEL/HSBC)跨市场套利窗口打开。英国是 SG 用户高关注度市场之一(英联邦法律体系、HSBC 母行)。", "hook": "MPC 投票分布即英镑方向风向标", "angle": "[KPI=促有效PC·TA=TA2+TA3] 做\"BoE 9 票拆解 + 英镑/HSBC 联动\"图解,SG 中老年关注 HSBC 配置——引导 TA2 用 CDP 转仓把 HSBC 持仓从竞品搬过来,同时 TA3 看 FXB 期权", "jargon": [{"t": "MPC", "d": "Monetary Policy Committee 英国央行货币政策委员会"}, {"t": "Bank Rate", "d": "BoE 政策利率,影响英镑和英国国债"}], "push": {"title": "BoE 决议,HSBC 持仓的你必看", "body": "BoE 鸽 → 英镑跌 → HSBC 港股+美股 ADR 套利窗口。富途 CDP 直连转仓最快 T+1,持仓搬过来同步打开,首次转入最高得 [奖励金额*]。"}, "source": {"name": "Bank of England", "url": "https://www.bankofengland.co.uk/monetary-policy/monetary-policy-committee"}}, {"id": "0619boj", "date": "2026-06-19", "weekday": "五", "month": 6, "market": "JP", "title": "BOJ 利率决议 + Ueda 记者会", "cats": ["macro", "geo"], "imp": 2, "confirmed": true, "tickers": ["EWJ", "DXJ", "FXY", "TLT", "QQQ"], "summary": "日央行政策与日元走向", "background": "日本央行公布政策利率与购债指引,下午 Ueda 行长记者会(JST)。核心看点:是否再加息(当前 0.5%)、是否调整 YCC 与购债节奏。日元若大幅走强 → 套利交易解除 → 全球科技股短线承压(参考 2024-08 黑色星期一)。叠加美股 Juneteenth 休市,BOJ 信号当晚仅夜盘期货消化,周一开盘集中定价。", "hook": "日元套利解除会冲击美股科技股", "angle": "[KPI=促期权首交·TA=TA3] 做\"日元套利交易复盘 + 2024-08 黑色星期一\"图,QQQ 防御 Put——美股休市叠加 BOJ 信号,周一开盘 Gap 风险翻倍", "jargon": [{"t": "YCC", "d": "收益率曲线控制,BOJ 长债利率管制工具"}, {"t": "日元套利", "d": "借日元投美股科技,日元升值时被迫平仓"}], "push": {"title": "BOJ 决议夜 + 美股 Juneteenth 休市", "body": "美股休市 + BOJ 信号 = 周一开盘集中定价。1 张 QQQ Put 跨过周末作保险,几十美元封顶最大亏损,期权投教课 15 分钟跟,新客期权首单 0 佣金。"}, "source": {"name": "Bank of Japan", "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"}}, {"id": "0619hol", "date": "2026-06-19", "weekday": "五", "month": 6, "market": "US", "title": "Juneteenth 美股休市", "cats": ["holiday"], "imp": 1, "confirmed": true, "tickers": [], "summary": "六月节,美股全天休市", "background": "Juneteenth(六月节)为联邦法定假日,2021 年起成为美股休市日。当日 NYSE/Nasdaq 全天休市。期权交割已于 6/18 周四提前完成。CME 股指期货部分时段仍交易,但流动性显著低于平日。", "hook": "美股全天休市,夜盘 BOJ 风险跨周末", "angle": "[KPI=唤醒沉默·TA=TA1] 节假日盘点页:11 个美股法定假日 + 跨假日持仓清单,推送给 30 天未登录沉默用户——节日是低意图用户重新打开 App 的最佳钩子", "jargon": [{"t": "Juneteenth", "d": "6/19 联邦节日,纪念美国废奴"}], "push": {"title": "Juneteenth 休市,跨周末持仓盘点", "body": "BOJ 决议夜 + 美股休市 = 周一开盘 Gap 风险翻倍。打开 moomoo 富途模拟盘试一手 SPY 期权感受夜盘波动,0 风险练手,新户首次入金最高 S$[奖励金额*]。"}, "source": {"name": "NYSE", "url": "https://www.nyse.com/markets/hours-calendars"}}, {"id": "0626pce", "date": "2026-06-26", "weekday": "五", "month": 6, "market": "US", "title": "5月核心 PCE + Russell 再平衡", "cats": ["macro", "index"], "imp": 2, "confirmed": true, "tickers": ["SPY", "TLT", "IWM"], "summary": "Fed 最看重通胀 + 罗素年度再平衡", "background": "核心 PCE 08:30 ET BEA 发布。Fed 在 SEP 中跟踪的就是核心 PCE 而非 CPI,权重差异(住房/医疗)使 PCE 反应可能与 CPI 相反。FOMC 后第一份 PCE,验证点阵图假设。同日 FTSE Russell 完成 Russell 1000/2000/3000 年度再平衡,IWM 当日成交量常为平日 3–5 倍。", "hook": "PCE + IWM 再平衡双重事件", "angle": "[KPI=促期权首交+提AUM·TA=TA2+TA3] 做\"CPI vs PCE 权重差异\"图 + Russell 再平衡 IWM Pin Risk 教学——TA2 长配看 IWM 季节性,TA3 看 PCE 期权链 OI 热力图", "jargon": [{"t": "核心 PCE", "d": "个人消费支出价格指数,剔除食品能源"}, {"t": "Russell 再平衡", "d": "罗素指数年度成份股调整,6月最后周五"}], "push": {"title": "PCE + Russell 再平衡,IWM 流动性日", "body": "IWM 成交量翻 3 倍,期权 IV 抬升 + Pin Risk 集中。富途期权链一键看 OI 热力图,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "U.S. BEA", "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"}}, {"id": "0630end", "date": "2026-06-30", "weekday": "二", "month": 6, "market": "US", "title": "Q2 季末 + 上半年收官", "cats": ["index"], "imp": 2, "confirmed": true, "tickers": ["SPY", "QQQ", "IWM"], "summary": "机构再平衡 + H1 复盘", "background": "养老金/Target Date Fund 季末调整股债比例,规模数百亿美元。上半年板块/个股榜单出炉。H1 主线复盘:AI 资本开支、降息节奏、商业地产、地缘政治。H2 关注:是否切换防御板块、小盘股能否补涨。", "hook": "机构再平衡日,尾盘波动放大", "angle": "[KPI=提AUM+促CDP转仓·TA=TA2] 做\"H1 涨跌幅榜 + H2 三大主线\"复盘,TA2 长配视角——季末是中老年盘点资产、考虑 CDP 转仓的最佳窗口", "jargon": [{"t": "再平衡", "d": "机构按目标比例买卖股债,被动资金被动跟随"}], "push": {"title": "Q2 季末,机构强制调仓最后一天", "body": "被动资金机械买卖,权重股尾盘易冲量。CDP 直连转仓最快 T+1 把竞品持仓搬过来 H2 一站统配,首次转入最高 S$[奖励金额*]。"}, "source": {"name": "NYSE", "url": "https://www.nyse.com/markets/hours-calendars"}}, {"id": "0701ism", "date": "2026-07-01", "weekday": "三", "month": 7, "market": "US", "title": "6月 ISM 制造业 PMI", "cats": ["macro"], "imp": 2, "confirmed": true, "tickers": ["SPY", "XLI", "XME", "CAT"], "summary": "Q3 首个工业景气读数", "background": "10:00 ET 由 ISM 公布。新订单/就业/价格三个分项是关键,价格付出指数对通胀路径有领先作用。", "hook": "Q3 首个高频工业指标,关注 XLI 走向", "angle": "[KPI=促期权首交·TA=TA3] 做\"PMI 拐点信号 + XLI 期权链\"图,落期权投教——制造业 PMI 是衰退最早预警,XLI Put 是教育用户对冲的高频示例", "jargon": [{"t": "ISM PMI", "d": "采购经理人指数,>50 扩张"}, {"t": "价格付出", "d": "投入品价格分项,通胀领先指标"}], "push": {"title": "7 月开门第一份 ISM PMI", "body": "PMI 跌破 50 时 XLI 当日跟跌概率超六成。1 张 XLI Put 锁定下行,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "ISM", "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"}}, {"id": "0702nfp", "date": "2026-07-02", "weekday": "四", "month": 7, "market": "US", "title": "6月非农就业(提前一天)", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "UUP", "XLF"], "summary": "独立日前 BLS 提前发布", "background": "因 7/3 独立日休市,BLS 把 6月 NFP 提前到 7/2 8:30 ET。新增就业/失业率/平均时薪三件套同时发布。", "hook": "假期前最后一份就业数据,定调 7月 FOMC", "angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"独立日提前一天的非农\"特别图——节前流动性低 + 高 IV,SPY 跨式杠杆效率最高,转化期权户黄金日", "jargon": [{"t": "NFP", "d": "非农就业人数,联储双重目标核心指标"}, {"t": "AHE", "d": "平均时薪同比,工资通胀代表"}], "push": {"title": "独立日前夜非农,流动性最低之夜", "body": "节前流动性低 + 非农冲击 = SPY 单日波动放大。1 张 SPY 跨式跨节,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "BLS", "url": "https://www.bls.gov/ces/"}}, {"id": "0703hol", "date": "2026-07-03", "weekday": "五", "month": 7, "market": "US", "title": "美股独立日休市", "cats": ["holiday"], "imp": 1, "confirmed": true, "tickers": [], "summary": "Independence Day observed", "background": "7/4 独立日落在周六,美股按惯例 7/3 周五休市一天。债市 7/2 提前 14:00 ET 收盘。", "hook": "周末长假休市,期权时间价值衰减加速", "angle": "[KPI=唤醒沉默·TA=TA1] 节假日提醒 + 长周末持仓盘点页,推送 30 天未登录沉默用户——独立日是 SG 用户夜间习惯打断的天然契机,Moo 庄园打卡触发签到", "jargon": [{"t": "IV crush", "d": "事件后波动率快速下行,期权价值压缩"}], "push": {"title": "独立日休市,长周末持仓盘点", "body": "美股周五全天休市,Crypto 24/7 不停。打开 moomoo 富途 Moo 庄园签到 + Crypto 行情看一眼,新户首次入金最高 S$[奖励金额*]。"}, "source": {"name": "NYSE", "url": "https://www.nyse.com/markets/hours-calendars"}}, {"id": "0708minutes", "date": "2026-07-08", "weekday": "三", "month": 7, "market": "US", "title": "6月 FOMC 会议纪要", "cats": ["fomc"], "imp": 2, "confirmed": true, "tickers": ["SPY", "TLT", "DXY"], "summary": "6/17 FOMC 详细讨论披露", "background": "14:00 ET 公布。重点看委员对核心 PCE/就业的内部分歧,以及缩表节奏(QT)的措辞变化。", "hook": "6月会议幕后细节,降息分歧曝光", "angle": "[KPI=促期权首交·TA=TA3] 做\"6 月 FOMC 内部分歧拆解 + 措辞变化\"图——纪要常出鸽派或鹰派意外,SPY/TLT 单日波动易超 1%", "jargon": [{"t": "FOMC Minutes", "d": "会议三周后发布的详细纪要"}, {"t": "QT", "d": "量化紧缩,缩减资产负债表"}], "push": {"title": "6 月 FOMC 纪要,内部分歧曝光", "body": "纪要常曝出会议未明说的分歧,SPY/TLT 易超 1%。1 张 TLT 期权押降息节奏,期权投教 15 分钟学会,新客期权首单 0 佣金。"}, "source": {"name": "Federal Reserve", "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260617.htm"}}, {"id": "0708stripe", "date": "2026-07-08", "weekday": "三", "month": 7, "market": "US", "title": "Stripe IPO 窗口期(传闻)", "cats": ["ipo"], "imp": 3, "confirmed": false, "tickers": ["STRIPE*", "PYPL", "SQ", "ADYEY", "V", "MA"], "summary": "支付独角兽 IPO 时间窗口持续被市场炒作", "background": "Stripe 一级估值 $91.5B(2024 tender),Collison 兄弟多次表示 IPO 不在短期议程,但每次员工流动性事件都引发 IPO 时间表猜测。SEC EDGAR 一旦出现 Stripe S-1,即立即被市场捕捉。受益对照组:PYPL/SQ/ADYEY 上市同业估值锚。SG 用户中 TA3 Trader 对支付科技板块兴趣度高。", "hook": "支付科技 IPO 第一梯队,情绪股集体催化", "angle": "[KPI=促期权首交·TA=TA3] Stripe 一旦递表,PYPL/SQ 同业即重定价。做\"Stripe vs PYPL/SQ 估值倍数对比\"图,落期权投教转化(SG 期权渗透率仅 8%,缺口最大)", "jargon": [{"t": "Tender Offer", "d": "员工股份回购,常用于一级估值确认"}, {"t": "Direct Listing", "d": "直接挂牌,无承销商,Stripe 可能采用"}], "push": {"title": "Stripe IPO 再传闻,PYPL/SQ 该买吗?", "body": "支付独角兽递表,同业对标股估值同步重写。1 张 PYPL 价差期权押宝同业反弹,新客期权首单 0 佣金,打开富途\"期权投教\"3 分钟学会怎么开。"}, "source": {"name": "SEC EDGAR", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=stripe&type=S-1&dateb=&owner=include&count=40"}}, {"id": "0710cpi", "date": "2026-07-10", "weekday": "五", "month": 7, "market": "US", "title": "6月 CPI", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "GLD", "UUP"], "summary": "7月 FOMC 前最关键通胀", "background": "8:30 ET 由 BLS 公布。核心 CPI 月环比是市场最敏感读数,>0.3% 鹰派、0.2% 中性、≤0.1% 鸽派。", "hook": "7月会议前最后一份核心通胀", "angle": "[KPI=促期权首交·TA=TA3] 做\"CPI 关税传导 + 服务通胀粘性\"图,QQQ 跨式期权——CPI 日 IV 翻倍最适合教 TA3 期权杠杆", "jargon": [{"t": "核心 CPI", "d": "剔除食品能源后的居民消费价格"}, {"t": "shelter", "d": "住房分项,核心 CPI 三分之一权重"}], "push": {"title": "今晚 CPI 决定下半年降息节奏", "body": "CPI 是 Fed 最关键变量,QQQ 单日 IV 翻倍。1 张 QQQ 跨式双向押宝,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "BLS", "url": "https://www.bls.gov/cpi/"}}, {"id": "0714jpm", "date": "2026-07-14", "weekday": "二", "month": 7, "market": "US", "title": "JPM/Citi/Wells Fargo 财报", "cats": ["earnings"], "imp": 2, "confirmed": true, "tickers": ["JPM", "C", "WFC", "XLF", "KRE"], "summary": "大行 Q2 业绩开启财报季", "background": "盘前公布。关注 NII 净息差走向、信用卡坏账、IB 投行业务复苏度,Dimon 电话会措辞最受关注。", "hook": "财报季首发,银行业景气定调", "angle": "[KPI=促期权首交·TA=TA3] 做\"大行净息差 + 投行收入分项\"图,XLF 期权布局——财报季首发周,JPM 信号决定整个金融板块基调", "jargon": [{"t": "NII", "d": "净利息收入,银行核心利润源"}, {"t": "NCO", "d": "净核销率,信用卡资产质量指标"}], "push": {"title": "财报季开锣!JPM/Citi/WFC 三连发", "body": "大行净息差 + 投行收入双线索,XLF 板块同步定调。1 张 XLF 价差期权押方向,期权投教课同步跟,新客期权首单 0 佣金。"}, "source": {"name": "JPMorgan IR", "url": "https://www.jpmorganchase.com/ir/quarterly-earnings"}}, {"id": "0716tsm", "date": "2026-07-16", "weekday": "四", "month": 7, "market": "US", "title": "TSMC 台积电 Q2 财报", "cats": ["earnings"], "imp": 3, "confirmed": true, "tickers": ["TSM", "NVDA", "AMD", "SOXX", "SMH"], "summary": "全球芯片代工龙头业绩", "background": "盘前 ADR/同日台北。看 HPC/AI 营收占比、CoWoS 产能爬坡进度、3nm/2nm 节点收入贡献。是 NVDA Q2 业绩的领先指标。", "hook": "AI 算力链最重要的中报", "angle": "[KPI=促期权首交+拉新NUP·TA=TA3] 做\"TSMC 资本开支 vs NVDA/AMD 营收\"图——TSMC 是全球 AI 芯片晶圆代工垄断者,赚效活动页+期权投教双触发", "jargon": [{"t": "CoWoS", "d": "台积电先进封装,AI 芯片产能瓶颈"}, {"t": "HPC", "d": "高性能计算,AI/数据中心芯片大类"}], "push": {"title": "TSMC 财报,AI 芯片产业链晴雨表", "body": "TSMC 资本开支直接定价 NVDA/AMD 出货节奏,赚效活动页同步上线。打开富途\"AI 半导体赚效页\"看清单,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "TSMC IR", "url": "https://investor.tsmc.com/english/quarterly-results"}}, {"id": "0719wcupfinal", "date": "2026-07-19", "weekday": "日", "month": 7, "market": "GLOBAL", "title": "FIFA 世界杯决赛", "cats": ["global"], "imp": 2, "confirmed": true, "tickers": ["DIS", "NFLX", "V", "MA", "MAR", "ABNB"], "summary": "MetLife 体育场总决赛", "background": "美东时间晚上,MetLife Stadium(新泽西)。预计全球收视超 15 亿,直播版权、赌球流水、赞助露出三大变现峰值。", "hook": "全球收视巅峰,消费/广告/支付板块联动", "angle": "[KPI=拉新NUP+促Referral裂变·TA=TA1] 世界杯决赛是赚效活动页收官 + 裂变邀请高峰,做\"全球收视 vs 受益股榜\"图,Referral 裂变中心同步推奖", "jargon": [{"t": "GMS", "d": "赛事期间博彩+消费总流水"}, {"t": "VAR", "d": "视频助理裁判,科技植入点"}], "push": {"title": "世界杯决赛夜!赚效页最后一波", "body": "决赛收视破纪录,V/MA/DIS 单周波动放大。打开 moomoo 富途\"世界杯赚效页\"决赛特别版,Referral 裂变中心邀好友同步得 S$[奖励金额*]。"}, "source": {"name": "FIFA", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026"}}, {"id": "0722goog", "date": "2026-07-22", "weekday": "三", "month": 7, "market": "US", "title": "Alphabet/Tesla Q2 财报", "cats": ["earnings"], "imp": 3, "confirmed": true, "tickers": ["GOOGL", "GOOG", "TSLA", "QQQ"], "summary": "Mag7 双雄盘后", "background": "盘后公布。GOOG 看 Search 广告 vs AI 替代风险、Cloud 增速;TSLA 看交付指引、Robotaxi 商业化时间表、Cybertruck 利润率。", "hook": "Mag7 财报开启,QQQ 短线波动放大", "angle": "[KPI=促期权首交·TA=TA3] 做\"GOOG 云 + AI 资本开支拆解 + TSLA 交付指引\"图——双 Mag7 财报夜,QQQ 期权 IV 翻倍", "jargon": [{"t": "TAC", "d": "流量获取成本,谷歌广告毛利侵蚀项"}, {"t": "deliveries", "d": "特斯拉单季交付量,股价高敏感变量"}], "push": {"title": "GOOG/TSLA 财报双引爆", "body": "Mag7 双财报夜,QQQ 单日 IV 翻倍。1 张 QQQ 跨式 + 单股价差期权组合,期权投教 15 分钟学会,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "Alphabet IR", "url": "https://abc.xyz/investor/"}}, {"id": "0723meta", "date": "2026-07-23", "weekday": "四", "month": 7, "market": "US", "title": "Meta/Microsoft Q2 财报", "cats": ["earnings"], "imp": 3, "confirmed": true, "tickers": ["META", "MSFT", "QQQ", "SMH"], "summary": "AI 资本开支双锚定", "background": "盘后公布。META 看广告 ROAS、Reality Labs 亏损、AI capex 指引;MSFT 看 Azure 增速、Copilot 货币化、AI 资本开支占营收比重。", "hook": "AI capex 指引,直接定价 NVDA 后市", "angle": "[KPI=促期权首交·TA=TA3] 做\"META AI 资本开支 + MSFT Azure/Copilot 收入\"图——AI 主线两大权重股财报,期权 IV Crush 教育最佳示例", "jargon": [{"t": "capex", "d": "资本开支,AI 基建投入代理"}, {"t": "hyperscaler", "d": "超大规模云厂商(MSFT/META/AMZN/GOOG)"}], "push": {"title": "META/MSFT 财报夜,AI 主线压舱石", "body": "Mag7 双财报夜,IV Crush 教育最佳示例。1 张 META 价差 + MSFT Put 组合,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "Microsoft IR", "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"}}, {"id": "0729fomc", "date": "2026-07-29", "weekday": "三", "month": 7, "market": "US", "title": "FOMC 利率决议(无 SEP)", "cats": ["fomc"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "UUP", "GLD"], "summary": "7月会议无点阵图更新", "background": "14:00 ET 决议+声明,14:30 ET 鲍威尔记者会。无 SEP 更新,焦点是声明措辞变化(\"appropriate\" vs \"some time\")和 Powell 对 9月降息的暗示。", "hook": "9月降息预期最后定调", "angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"无 SEP 的 FOMC vs 带 SEP\"对比图——这次仅声明 + Powell,SPY 波动相对小,适合教 TA3 调整仓位", "jargon": [{"t": "SEP", "d": "经济预测摘要含点阵图,3/6/9/12 月才更新"}, {"t": "data dependent", "d": "\"看数据\",鸽派代名词"}], "push": {"title": "无 SEP 的 FOMC,声明措辞为王", "body": "无点阵图但 Powell 关键词足以重写预期,SPY 波动 0.7-1.2%。1 张 SPY 价差期权布局,期权投教 15 分钟通关,新客期权首单 0 佣金。"}, "source": {"name": "Federal Reserve", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"}}, {"id": "0730aapl", "date": "2026-07-30", "weekday": "四", "month": 7, "market": "US", "title": "Apple/Amazon Q2 财报", "cats": ["earnings"], "imp": 3, "confirmed": true, "tickers": ["AAPL", "AMZN", "QQQ", "XLY"], "summary": "消费+云双子星", "background": "盘后公布。AAPL 看 iPhone 需求、Services 增速、China 营收、Vision Pro 出货;AMZN 看 AWS 增速、广告业务、零售运营利润率。", "hook": "消费电子+云服务双锚同夜出炉", "angle": "[KPI=促期权首交+拉新NUP·TA=TA3] 做\"AAPL iPhone 周期 + AMZN AWS 增速\"图——双 Mag7 财报,SG 用户对苹果热度最高,期权投教 + 赚效页双触发", "jargon": [{"t": "Services", "d": "AAPL 高毛利订阅业务集合"}, {"t": "AWS", "d": "亚马逊云,集团利润主引擎"}], "push": {"title": "AAPL/AMZN 财报双夜,Mag7 收官", "body": "Mag7 财报季收官夜,期权 IV 翻倍。1 张 AAPL 价差 + AMZN 跨式,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "Apple IR", "url": "https://investor.apple.com/investor-relations/default.aspx"}}, {"id": "0731pce", "date": "2026-07-31", "weekday": "五", "month": 7, "market": "US", "title": "6月核心 PCE", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "GLD", "UUP"], "summary": "联储最看重的通胀指标", "background": "8:30 ET 由 BEA 公布。核心 PCE 同比是 Fed 2% 通胀目标的口径锚,3 个月年化更敏感于近期趋势。", "hook": "Fed 最看重的通胀,定 9月降息", "angle": "[KPI=促期权首交·TA=TA3] 做\"6 月 PCE vs CPI 差异 + Fed 9 月降息概率重估\"图——FOMC 后第一份 PCE,验证 Powell 措辞", "jargon": [{"t": "核心 PCE", "d": "剔除食品能源,Fed 政策锚通胀"}, {"t": "3M 年化", "d": "近三月环比折年率,趋势更新"}], "push": {"title": "FOMC 后第一份 PCE,降息概率重估", "body": "PCE 是 Fed SEP 跟踪指标,直接重写 9 月降息定价。1 张 TLT 价差期权押降息节奏,期权投教 15 分钟通关,新客期权首单 0 佣金。"}, "source": {"name": "BEA", "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"}}, {"id": "0803ism", "date": "2026-08-03", "weekday": "一", "month": 8, "market": "US", "title": "7月 ISM 制造业 PMI", "cats": ["macro"], "imp": 2, "confirmed": true, "tickers": ["SPY", "XLI", "XME"], "summary": "夏季工业景气读数", "background": "10:00 ET 由 ISM 公布。夏季是制造业淡季,看价格付出分项是否回落,以判断 PCE 路径。", "hook": "暑期淡季工业脉搏,XLI 短线信号", "angle": "[KPI=促期权首交·TA=TA3] 做\"PMI 拐点 + XLI 历史回测\"图,落期权投教——8 月 PMI 是夏季淡季后第一个高频读数", "jargon": [{"t": "价格付出", "d": "投入品价格分项,PCE 领先 1-2 月"}], "push": {"title": "8 月开门 ISM PMI,工业股拐点", "body": "PMI 跌破 50 时 XLI 当日跟跌概率超六成。1 张 XLI Put,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "ISM", "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"}}, {"id": "0804jolts", "date": "2026-08-04", "weekday": "二", "month": 8, "market": "US", "title": "6月 JOLTS 职位空缺", "cats": ["macro"], "imp": 1, "confirmed": true, "tickers": ["SPY", "TLT"], "summary": "劳动力市场结构高频", "background": "10:00 ET 由 BLS 公布。职位空缺/失业人数比(V/U)是工资通胀领先指标,联储多次引用。", "hook": "工资通胀的领先指标,TLT 短线信号", "angle": "[KPI=促期权首交·TA=TA3] 做\"JOLTS 辞职率 vs 时薪同比\"图——劳动力松紧度领先非农 2 周,TLT 期权布局教育示例", "jargon": [{"t": "V/U 比", "d": "职位空缺数/失业人数,>1 紧张"}, {"t": "quits rate", "d": "主动离职率,工资议价力代理"}], "push": {"title": "JOLTS 辞职率破 2% 即降息信号", "body": "辞职率比非农早 2 周露马脚。把 TLT 加入富途自选 + 数据提醒,期权投教课同步跟,新客期权首单 0 佣金。"}, "source": {"name": "BLS", "url": "https://www.bls.gov/jlt/"}}, {"id": "0807nfp", "date": "2026-08-07", "weekday": "五", "month": 8, "market": "US", "title": "7月非农就业", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "UUP", "XLF"], "summary": "9月 FOMC 前最关键就业", "background": "8:30 ET 由 BLS 公布。新增就业/失业率/平均时薪三件套。9月 SEP 会议前最重要的就业读数。", "hook": "9月会议前最关键就业,降息几率定调", "angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"非农 5 看 + Sahm Rule 衰退预警\"图——FOMC 后第一份非农,验证 Powell 措辞", "jargon": [{"t": "U-3", "d": "标准失业率,4.0% 是中性枢纽"}, {"t": "AHE", "d": "平均时薪同比,工资通胀代理"}], "push": {"title": "FOMC 后第一份非农,验证 Powell", "body": "Powell 7 月措辞 vs 8 月数据,SPY 单日波动常超 1.5%。1 张 SPY 跨式双向押宝,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "BLS", "url": "https://www.bls.gov/ces/"}}, {"id": "0812klarna", "date": "2026-08-12", "weekday": "三", "month": 8, "market": "US", "title": "Klarna IPO 窗口期(传闻)", "cats": ["ipo"], "imp": 2, "confirmed": false, "tickers": ["KLARNA*", "AFRM", "PYPL", "SQ", "SEZL"], "summary": "瑞典 BNPL 巨头美股 IPO 推迟后再传重启", "background": "Klarna 2025 年 4 月已递 F-1 但因关税担忧推迟,2026 H2 市场重新预期重启。BNPL(Buy Now Pay Later)板块:AFRM 是直接对标股,SEZL 是新晋小盘。一旦 Klarna 上市,BNPL 整体估值倍数可能重写。", "hook": "BNPL 板块第一大 IPO,AFRM/SEZL 直接受益", "angle": "[KPI=促期权首交·TA=TA3] 做\"BNPL 三巨头估值倍数对比\"图,AFRM 期权 IV 在 IPO 临近常飙升,落期权投教 + 跟单提示", "jargon": [{"t": "F-1", "d": "外国发行人在美 IPO 招股书,Klarna 用 F-1"}, {"t": "BNPL", "d": "Buy Now Pay Later 先买后付分期支付"}], "push": {"title": "Klarna 重启 IPO,AFRM 该上车吗?", "body": "BNPL 板块估值重写在即,AFRM 期权 IV 已在异动。1 张 AFRM 价差期权 锁定方向,新客期权首单 0 佣金,打开富途\"期权投教\"15 分钟通关。"}, "source": {"name": "SEC EDGAR", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=klarna&type=F-1&dateb=&owner=include&count=40"}}, {"id": "0813cpi", "date": "2026-08-13", "weekday": "四", "month": 8, "market": "US", "title": "7月 CPI", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "GLD", "UUP"], "summary": "9月 FOMC 前最后通胀", "background": "8:30 ET 由 BLS 公布。核心 CPI 月环比是 9月降息幅度的关键投票:>0.3% 鹰、0.2% 中、≤0.1% 大幅降息。", "hook": "9月降息 25/50bp 之争,CPI 一锤定音", "angle": "[KPI=促期权首交·TA=TA3] 做\"CPI 服务通胀粘性 + 关税传导\"图——9 月 FOMC 前第二份 CPI,QQQ 跨式期权高频教学", "jargon": [{"t": "核心 CPI", "d": "剔除食品能源居民价格"}, {"t": "super core", "d": "剔除住房的服务类核心通胀"}], "push": {"title": "今晚 CPI,9 月 FOMC 前第二份", "body": "QQQ 单日 IV 翻倍,跨式期权杠杆效率最高。1 张 QQQ 跨式双向押宝,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "BLS", "url": "https://www.bls.gov/cpi/"}}, {"id": "0814retail", "date": "2026-08-14", "weekday": "五", "month": 8, "market": "US", "title": "7月零售销售 + Michigan 信心", "cats": ["macro"], "imp": 2, "confirmed": true, "tickers": ["XLY", "XRT", "SPY"], "summary": "消费板块双数据", "background": "8:30 ET 零售(Census)、10:00 ET 密歇根消费者信心初值。Control group 是 GDP 消费分项关键投入。", "hook": "消费分化期,XLY/XRT 短线信号", "angle": "[KPI=促期权首交·TA=TA3] 做\"零售控制组 + Michigan 消费者预期\"双图——双数据日,XRT/XLY 期权链解读最佳教学示例", "jargon": [{"t": "控制组", "d": "剔除汽车汽油的核心零售"}, {"t": "密歇根信心", "d": "消费者信心调查,前瞻消费"}], "push": {"title": "零售 + Michigan 双数据日", "body": "双数据日 XRT/XLY 当日波动放大,期权链 OI 热力图直接看主力位。富途期权链一键查,期权投教 15 分钟通关,新客期权首单 0 佣金。"}, "source": {"name": "Census Bureau", "url": "https://www.census.gov/retail/index.html"}}, {"id": "0817wmt", "date": "2026-08-17", "weekday": "一", "month": 8, "market": "US", "title": "Walmart Q2 财报", "cats": ["earnings"], "imp": 2, "confirmed": true, "tickers": ["WMT", "XLP", "XLY", "XRT"], "summary": "美国零售龙头业绩", "background": "盘前公布。同店销售、电商增速、广告业务(Walmart Connect)、低收入消费者动向是关注重点。", "hook": "美国消费降级与否,WMT 一句话验证", "angle": "[KPI=促期权首交·TA=TA3] 做\"WMT 同店销售 + 低收入消费分层\"图——零售龙头财报,XRT 板块基调由此定", "jargon": [{"t": "comp sales", "d": "同店销售,零售商核心 KPI"}], "push": {"title": "Walmart 财报,零售龙头定调", "body": "WMT 同店销售 + 低收入分层是消费温度计,XRT 跟动。1 张 WMT 价差期权押方向,期权投教课同步跟,新客期权首单 0 佣金。"}, "source": {"name": "Walmart IR", "url": "https://stock.walmart.com/financial-information/quarterly-results/default.aspx"}}, {"id": "0819target", "date": "2026-08-19", "weekday": "三", "month": 8, "market": "US", "title": "Target/Lowe's 财报", "cats": ["earnings"], "imp": 1, "confirmed": true, "tickers": ["TGT", "LOW", "XRT", "HD"], "summary": "零售二线业绩", "background": "盘前公布。TGT 看自有品牌占比与利润率,LOW 看大宗 DIY 与专业建商需求,验证地产复苏成色。", "hook": "零售分层 + 房地产链双信号", "angle": "[KPI=促期权首交·TA=TA3] 做\"TGT/LOW 财报 vs WMT 对比\"图——二线零售财报,中低端消费分层信号", "jargon": [{"t": "DIY", "d": "自助装修,LOW/HD 主力客群"}], "push": {"title": "TGT/LOW 财报,二线零售信号", "body": "TGT 同店是中产消费温度计,与 WMT 对比信息量最大。期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "Target IR", "url": "https://investors.target.com/financial-information/quarterly-results"}}, {"id": "0805jh", "date": "2026-08-27", "weekday": "四", "month": 8, "market": "US", "title": "Jackson Hole 全球央行年会(8/27-29)", "cats": ["fomc", "macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "QQQ", "TLT", "GLD", "UUP"], "summary": "Powell 主旨演讲定调全年货币政策", "background": "堪萨斯城联储主办的年度央行峰会,Powell 周五主旨演讲历来是市场关注度最高的非 FOMC 央行讲话。2022 年\"Pain ahead\"演讲单日 SPX 跌 3.4%,2024 年\"Time has come\"启动降息周期。SG 时间(EDT 周五 10:00 ≈ SGT 周五 22:00)正好 SG 用户晚间在线时段。", "hook": "Powell 演讲定全年货币政策基调", "angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"JH 演讲历史回顾+SPX 当日波动榜\"图解,直播 + 期权投教联动:演讲前先开期权户,演讲中跟单", "jargon": [{"t": "Jackson Hole", "d": "怀俄明州 KC 联储主办的年度央行论坛"}, {"t": "Forward Guidance", "d": "前瞻指引,央行用语沟通未来政策"}], "push": {"title": "Jackson Hole · Powell 演讲夜", "body": "历届演讲日 SPX 单日波动 1-3%。SGT 周五 22:00 直播,期权投教课同步开,新客期权首单 0 佣金,首次入金最高得 [奖励金额*]。"}, "source": {"name": "Kansas City Fed", "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/"}}, {"id": "0827nvda", "date": "2026-08-27", "weekday": "四", "month": 8, "market": "US", "title": "NVIDIA Q2 FY27 财报", "cats": ["earnings"], "imp": 3, "confirmed": true, "tickers": ["NVDA", "SMH", "SOXX", "AVGO", "MU"], "summary": "AI 算力链最高浓度财报", "background": "盘后公布。数据中心营收 YoY、Blackwell/Rubin 出货节奏、毛利率指引、China 营收占比是四大胜负手。", "hook": "AI 算力链定海神针,SMH 暴动", "angle": "[KPI=促期权首交+拉新NUP·TA=TA3] 做\"NVDA 数据中心收入 + AI Capex 指引\"图——AI 主线最大权重股,赚效活动页+期权投教双触发,IV 70%+", "jargon": [{"t": "Blackwell", "d": "NVDA 当前主力 GPU 架构"}, {"t": "Rubin", "d": "NVDA 下一代 GPU 路线图"}], "push": {"title": "NVDA 财报夜,AI 主线压舱石", "body": "NVDA IV 70%+,单日波动常 6-10%。打开富途\"AI 半导体赚效页\" + 1 张 NVDA 价差期权,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "NVIDIA IR", "url": "https://investor.nvidia.com/financial-info/financial-reports/default.aspx"}}, {"id": "0828pce", "date": "2026-08-28", "weekday": "五", "month": 8, "market": "US", "title": "7月核心 PCE", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "GLD", "UUP"], "summary": "9月 FOMC 前最关键通胀", "background": "8:30 ET 由 BEA 公布。9月 SEP 会议前最后一次核心 PCE,直接影响新点阵图中位数。", "hook": "9月点阵图前最后通胀读数", "angle": "[KPI=促期权首交·TA=TA3] 做\"7 月 PCE 验证 Powell JH 演讲\"图——JH 后第一份 PCE,定调 9 月 FOMC 降息节奏", "jargon": [{"t": "点阵图", "d": "FOMC 委员对未来政策利率匿名预期"}, {"t": "中位数", "d": "点阵图核心读数,鹰鸽方向标"}], "push": {"title": "JH 后第一份 PCE,降息节奏定锚", "body": "Powell JH 演讲 vs PCE 数据双重验证,TLT 期权直接重写。1 张 TLT 价差期权,期权投教课同步跟,新客期权首单 0 佣金。"}, "source": {"name": "BEA", "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"}}, {"id": "0901ism", "date": "2026-09-01", "weekday": "二", "month": 9, "market": "US", "title": "8月 ISM 制造业 PMI", "cats": ["macro"], "imp": 2, "confirmed": true, "tickers": ["SPY", "XLI", "XME"], "summary": "Q3 末段工业景气", "background": "10:00 ET 由 ISM 公布。Q3 即将收官,8月 PMI 是工业股 Q3 业绩的领先验证。", "hook": "Q3 末工业脉搏,XLI 业绩前瞻", "angle": "[KPI=促期权首交·TA=TA3] 做\"PMI 拐点 + 9 月季节性\"图——9 月历史是 SPX 表现最差月,PMI 偏弱 + 季节性叠加,XLI Put 教育示例", "jargon": [{"t": "新订单", "d": "PMI 最具领先性的分项"}], "push": {"title": "9 月开门 PMI,历史最差月开局", "body": "9 月历史 SPX 表现最差 + PMI 偏弱叠加,XLI 易跟跌。1 张 XLI Put 防御,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "ISM", "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"}}, {"id": "0903jolts", "date": "2026-09-03", "weekday": "四", "month": 9, "market": "US", "title": "7月 JOLTS", "cats": ["macro"], "imp": 1, "confirmed": true, "tickers": ["SPY", "TLT"], "summary": "NFP 前夕劳动力数据", "background": "10:00 ET 由 BLS 公布。NFP 前一天发布,V/U 比是 9月 SEP 前重要参考。", "hook": "NFP 前夕信号,TLT 短线脉冲", "angle": "[KPI=促期权首交·TA=TA3] 做\"JOLTS 辞职率拐点 + 9 月降息概率\"图——FOMC 前第一份 JOLTS,TLT 期权前置布局", "jargon": [{"t": "V/U", "d": "职位空缺/失业人数,>1 紧张"}], "push": {"title": "9 月 FOMC 前第一份 JOLTS", "body": "辞职率破 2% 几乎锁定降息。把 TLT 加入富途自选 + 数据提醒,期权投教课同步跟,新客期权首单 0 佣金。"}, "source": {"name": "BLS", "url": "https://www.bls.gov/jlt/"}}, {"id": "0904nfp", "date": "2026-09-04", "weekday": "五", "month": 9, "market": "US", "title": "8月非农就业", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "UUP", "XLF"], "summary": "9月 SEP 会议核心数据", "background": "8:30 ET 由 BLS 公布。9月 16/17 FOMC 会前最后一份就业,直接定 25/50bp 降息。", "hook": "9月 50bp 降息押注高峰", "angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"FOMC 前最重磅非农\"特别图——9 月降息概率最关键变量,SPY/TLT 单日 ATM straddle 隐含 1.5%+", "jargon": [{"t": "AHE", "d": "平均时薪同比"}], "push": {"title": "9 月 FOMC 前最重磅非农", "body": "决定 9 月降息节奏的最后一份非农,SPY 单日波动 1.5%+。1 张 SPY 跨式双向押宝,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "BLS", "url": "https://www.bls.gov/ces/"}}, {"id": "0907labor", "date": "2026-09-07", "weekday": "一", "month": 9, "market": "US", "title": "美股劳动节休市", "cats": ["holiday"], "imp": 1, "confirmed": true, "tickers": [], "summary": "Labor Day observed", "background": "美国劳动节,股市/债市全天休市。9月本就是历史最弱月,休市后通常有\"Labor Day 魔咒\"开盘下跌。", "hook": "9月最弱月开局,防御股需求升温", "angle": "[KPI=唤醒沉默·TA=TA1] 节假日页 + 长周末持仓盘点,推送 30 天未登录用户——劳动节是 SG 用户秋季节奏开始的天然唤醒点", "jargon": [{"t": "9月效应", "d": "S&P500 历史月度均值最弱"}], "push": {"title": "Labor Day 休市,秋季交易节奏启动", "body": "9 月历史 SPX 最差月,长周末后 Gap 风险翻倍。打开 moomoo 富途模拟盘试一手 SPY 期权,0 风险练手,新户首次入金最高 S$[奖励金额*]。"}, "source": {"name": "NYSE", "url": "https://www.nyse.com/markets/hours-calendars"}}, {"id": "0909cerebras", "date": "2026-09-09", "weekday": "三", "month": 9, "market": "US", "title": "Cerebras IPO 窗口期(传闻)", "cats": ["ipo", "earnings"], "imp": 3, "confirmed": false, "tickers": ["CRBR*", "NVDA", "AMD", "AVGO", "SMCI"], "summary": "AI 芯片独角兽 IPO 重启传闻", "background": "Cerebras 2024 年 9 月已递 S-1,但因 CFIUS(美国外资投资委员会)审查 G42 投资关系一度搁置。2026 年市场预期 G42 持股结构调整后 IPO 可能重启。Cerebras 主打 wafer-scale AI 芯片,与 NVDA H100/B200 直接竞争。一旦上市,AI 芯片板块 NVDA/AMD/AVGO 估值可能重定价。", "hook": "AI 芯片板块第一大 IPO,NVDA 同业竞争白热化", "angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"Cerebras WSE-3 vs NVDA H100 性能对比\"图,AI 芯片是 SG 用户最热门主题,落期权投教 + NVDA 期权链解读", "jargon": [{"t": "Wafer-scale", "d": "整片晶圆做单芯片,Cerebras 独家"}, {"t": "CFIUS", "d": "美国外资投资委员会,审查涉外投资国安"}], "push": {"title": "Cerebras 重启 IPO,NVDA 怎么应对?", "body": "AI 芯片第二供应商上市将冲击 NVDA 估值,机构期权 OI 已在异动。富途\"AI 半导体赚效页\"看实时清单,期权首单 0 佣金,首次入金最高得 [奖励金额*]。"}, "source": {"name": "SEC EDGAR", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002021728&type=S-1&dateb=&owner=include&count=40"}}, {"id": "0910ecb", "date": "2026-09-10", "weekday": "四", "month": 9, "market": "EU", "title": "ECB 利率决议", "cats": ["fomc", "global"], "imp": 2, "confirmed": true, "tickers": ["FEZ", "EFA", "EWG", "UUP"], "summary": "欧央行 9月会议", "background": "13:15 法兰克福时间(CET)决议+声明,13:45 Lagarde 记者会。看是否再降息 25bp,以及对增长/能源价格的评估。", "hook": "欧元/美元汇率拐点,跨境资金流", "angle": "[KPI=促CDP转仓+促期权首交·TA=TA2+TA3] 做\"ECB vs Fed 9 月分化\"图——TA2 中老年关注 HSBC 通过 CDP 直连转仓,TA3 用 FXE 期权", "jargon": [{"t": "deposit rate", "d": "ECB 存款便利利率,主要政策利率"}], "push": {"title": "ECB 9 月决议,欧美利差再分化", "body": "ECB 鸽 → 欧元跌 → HSBC 港美 ADR 套利窗口。CDP 直连转仓最快 T+1 把竞品持仓搬过来,首次转入最高 S$[奖励金额*]。"}, "source": {"name": "ECB", "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"}}, {"id": "0911cpi", "date": "2026-09-11", "weekday": "五", "month": 9, "market": "US", "title": "8月 CPI", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "GLD", "UUP"], "summary": "9月 FOMC 决议前最后通胀", "background": "8:30 ET 由 BLS 公布。9/16 FOMC 前最后一份核心 CPI,与 NFP 共同决定降息 25 还是 50bp。", "hook": "FOMC 前最后通胀,锁定降息幅度", "angle": "[KPI=促期权首交·TA=TA3] 做\"FOMC 前最后 CPI + 关税传导成熟期\"图——9/16 FOMC 前最后高权重通胀,QQQ 跨式期权", "jargon": [{"t": "super core", "d": "剔除住房的服务核心通胀"}], "push": {"title": "FOMC 前最后 CPI,降息节奏定锚", "body": "FOMC 前最后高权重通胀,QQQ 单日 IV 翻倍。1 张 QQQ 跨式双向押宝,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "BLS", "url": "https://www.bls.gov/cpi/"}}, {"id": "0915retail", "date": "2026-09-15", "weekday": "二", "month": 9, "market": "US", "title": "8月零售销售", "cats": ["macro"], "imp": 2, "confirmed": true, "tickers": ["XLY", "XRT", "SPY"], "summary": "开学季消费验证", "background": "8:30 ET 由 Census 公布。开学季消费(Back-to-School)是 Q3 GDP 重要拼图,服装/电子/百货影响最大。", "hook": "开学季消费成色,XLY/XRT 业绩前瞻", "angle": "[KPI=促期权首交·TA=TA3] 做\"FOMC 前零售控制组\"图——消费温度计,XRT/XLY 期权链是 TA3 高频教学示例", "jargon": [{"t": "控制组", "d": "剔除汽车/汽油的核心零售"}], "push": {"title": "FOMC 前零售,消费温度计", "body": "控制组直接进 GDP 消费分项,XRT 当日跟动。1 张 XRT 价差期权,期权投教 15 分钟通关,新客期权首单 0 佣金。"}, "source": {"name": "Census Bureau", "url": "https://www.census.gov/retail/index.html"}}, {"id": "0916fomc", "date": "2026-09-16", "weekday": "三", "month": 9, "market": "US", "title": "FOMC 利率决议 + SEP + 点阵图", "cats": ["fomc"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "UUP", "GLD", "IWM"], "summary": "年度最关键 FOMC", "background": "14:00 ET 决议+声明+SEP+点阵图,14:30 ET Powell 记者会。市场预期 25bp 降息,焦点是点阵图终点利率与 2027 路径。", "hook": "年度最关键决议,所有资产联动", "angle": "[KPI=促期权首交+促有效PC+拉新NUP·TA=TA3] 做\"9 月点阵图 4 看 + 降息路径全图\"——年内最大 FOMC 之夜,赚效活动页 + 期权投教 + NUP 三触发", "jargon": [{"t": "SEP", "d": "经济预测摘要,含点阵图"}, {"t": "终点利率", "d": "长期均衡利率水平"}], "push": {"title": "9 月 FOMC + 点阵图,年内最大之夜", "body": "带 SEP 的 FOMC + 全年关键降息节点,SPX 历史平均波动 1.5%+。打开富途\"FOMC 赚效页\" + 1 张 SPY 跨式,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "Federal Reserve", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"}}, {"id": "0917boj", "date": "2026-09-17", "weekday": "四", "month": 9, "market": "JP", "title": "BOJ 货币政策决议", "cats": ["fomc", "global"], "imp": 2, "confirmed": true, "tickers": ["EWJ", "DXJ", "FXY", "UUP"], "summary": "日本央行 9月会议", "background": "日本时间会后(无固定时,通常 12:00 JST 后)发布。Ueda 是否进一步加息、JGB 收益率上限调整、日元走向是三大焦点。", "hook": "日元 carry trade 拐点风险", "angle": "[KPI=促期权首交·TA=TA3] 做\"BOJ 后 FOMC 24 小时双央行\"图——日元套利交易解除风险,QQQ 防御 Put 教学示例", "jargon": [{"t": "YCC", "d": "收益率曲线控制,2024 退出"}, {"t": "carry trade", "d": "借日元买高息资产策略"}], "push": {"title": "FOMC 隔夜 BOJ,双央行 24 小时", "body": "FOMC + BOJ 24 小时双重定价,日元若大涨,QQQ 易跟跌。1 张 QQQ Put 跨过夜盘,几十美元封顶最大亏损,期权投教课同步跟。"}, "source": {"name": "Bank of Japan", "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"}}, {"id": "0918quad", "date": "2026-09-18", "weekday": "五", "month": 9, "market": "US", "title": "9月四巫日 + S&P 季度调整", "cats": ["super"], "imp": 3, "confirmed": true, "tickers": ["SPY", "QQQ", "IWM", "VIX"], "summary": "季度衍生品到期+指数调仓", "background": "季度末四巫日(指数期货/期权 + 个股期货/期权同日到期)叠加 S&P/Nasdaq 季度成分股调整,成交量与波动率均放大。", "hook": "季末超级流动日,GEX 翻盘", "angle": "[KPI=促期权首交·TA=TA3] 做\"四巫日 + S&P 季度调整\"双线图——成交量翻 3 倍 + 期权交割集中,Pin Risk 教学最佳示例", "jargon": [{"t": "四巫日", "d": "四类衍生品同日到期(季度)"}, {"t": "GEX", "d": "做市商 Gamma 持仓,影响日内波动"}], "push": {"title": "9 月四巫日 + S&P 调仓", "body": "四巫日 + 季末调仓 = 成交量翻 3 倍,Pin Risk 集中。富途期权链一键看 OI 热力图,期权投教课同步跟,新客期权首单 0 佣金。"}, "source": {"name": "S&P DJI", "url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/#overview"}}, {"id": "0923shein", "date": "2026-09-23", "weekday": "三", "month": 9, "market": "EU", "title": "SHEIN 伦交所 IPO 窗口期(传闻)", "cats": ["ipo"], "imp": 2, "confirmed": false, "tickers": ["SHEIN*", "PDD", "BABA", "AMZN", "ZAL.DE"], "summary": "快时尚巨头转战伦敦 IPO 时间窗口", "background": "SHEIN 2024 年放弃纽交所 IPO 改投伦交所(LSE),受英国 FCA 审查。新加坡是 SHEIN 总部地之一,SG 用户对该 IPO 关注度极高。一旦上市,跨境电商板块(PDD/BABA)+ 欧洲服装(ZAL.DE)同步重定价。", "hook": "新加坡总部公司 IPO,SG 用户最高关注度", "angle": "[KPI=拉新NUP+促首笔交易·TA=TA1+TA2] SHEIN 总部在 SG,本地话题度最高,做\"SHEIN 伦敦 IPO 全流程\"科普,落 NUP 新客拉新 + 引导首笔交易购买对标股", "jargon": [{"t": "FCA", "d": "英国金融行为监管局,LSE 上市审批方"}, {"t": "Premium Listing", "d": "LSE 高级上市标准,可入富时 100 指数"}], "push": {"title": "SHEIN 伦敦 IPO,SG 总部公司在路上", "body": "新加坡总部公司全球 IPO,跨境电商 PDD/BABA 同步催化。打开 moomoo 富途 NUP 新客页 加入 SHEIN 主题群,首次入金最高得 [奖励金额*],新客期权首单 0 佣金。"}, "source": {"name": "London Stock Exchange", "url": "https://www.londonstockexchange.com/raise-finance/equity"}}, {"id": "0925pce", "date": "2026-09-25", "weekday": "五", "month": 9, "market": "US", "title": "8月核心 PCE", "cats": ["macro"], "imp": 3, "confirmed": true, "tickers": ["SPY", "TLT", "GLD", "UUP"], "summary": "FOMC 后首份 PCE", "background": "8:30 ET 由 BEA 公布。9/16 FOMC 后首份 PCE,验证联储路径假设是否成立,影响 10/29 会议押注。", "hook": "FOMC 路径验证,10月会议预演", "angle": "[KPI=促期权首交·TA=TA3] 做\"FOMC 后第一份 PCE 验证降息节奏\"图——9 月 FOMC 决议后核心通胀验证,TLT 期权直接重写", "jargon": [{"t": "3M 年化", "d": "近三月环比折年率"}, {"t": "super core PCE", "d": "剔除住房服务核心 PCE"}], "push": {"title": "FOMC 后第一份 PCE,降息节奏验证", "body": "Powell 措辞 vs PCE 数据双重验证,TLT 期权直接重写。1 张 TLT 价差期权,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"}, "source": {"name": "BEA", "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"}}, {"id": "0930end", "date": "2026-09-30", "weekday": "三", "month": 9, "market": "US", "title": "Q3 收官 + 季末再平衡", "cats": ["super"], "imp": 2, "confirmed": true, "tickers": ["SPY", "QQQ", "TLT", "XLU"], "summary": "季末机构调仓", "background": "Q3 最后一个交易日。养老基金/共同基金季末再平衡,股债跷跷板效应明显,VIX 收盘前后异动概率高。", "hook": "季末再平衡,股债跷跷板", "angle": "[KPI=提AUM+促CDP转仓·TA=TA2] 做\"Q3 涨跌幅榜 + Q4 三大主线\"复盘——TA2 中老年长配视角,季末是 CDP 转仓 + AUM 加码最佳窗口", "jargon": [{"t": "再平衡", "d": "调整资产配比回到目标权重"}], "push": {"title": "Q3 季末,机构强制调仓收官", "body": "被动资金机械买卖,权重股尾盘冲量。CDP 直连转仓最快 T+1 一站统配 Q4,首次转入最高 S$[奖励金额*],新户期权首单 0 佣金。"}, "source": {"name": "NYSE", "url": "https://www.nyse.com/markets/hours-calendars"}}];
+const PUSH_COPY={};
 // ========== UTILITIES ==========
 const $=(s,p=document)=>p.querySelector(s);
 const $$=(s,p=document)=>Array.from(p.querySelectorAll(s));
@@ -869,36 +1024,50 @@ function renderSuper(){
 
 // ========== LIST + FILTERS ==========
 let currentFilter='all';
+let currentMarket='all';
 let listExpanded=false;
-const LIST_INITIAL=8;
+const LIST_INITIAL=10;
 function renderListFilters(){
   const filters=[
     {k:'all',label:'All'},
     {k:'imp3',label:'Super (★★★)'},
     {k:'imp2',label:'Major (★★)'},
-    {k:'fomc',label:'FOMC'},
-    {k:'macro',label:'Macro'},
-    {k:'earnings',label:'Earnings'},
-    {k:'product',label:'Product'},
-    {k:'ipo',label:'IPO'}
+    {k:'fomc',label:'央行'},
+    {k:'macro',label:'宏观'},
+    {k:'earnings',label:'财报'},
+    {k:'global',label:'全球事件'},
+    {k:'holiday',label:'休市'}
   ];
-  $('#list-filters').innerHTML=filters.map(f=>`<button class="filter-btn ${f.k===currentFilter?'active':''}" data-k="${f.k}">${f.label}</button>`).join('');
-  $$('#list-filters .filter-btn').forEach(b=>b.onclick=()=>{currentFilter=b.dataset.k;renderListFilters();renderList()});
+  const markets=[
+    {k:'all',label:'全部市场'},
+    {k:'US',label:'美股'},
+    {k:'CN',label:'中国'},
+    {k:'JP',label:'日本'},
+    {k:'EU',label:'欧洲'},
+    {k:'GLOBAL',label:'全球'}
+  ];
+  $('#list-filters').innerHTML=
+    '<div class="filter-row">'+filters.map(f=>`<button class="filter-btn ${f.k===currentFilter?'active':''}" data-k="${f.k}">${f.label}</button>`).join('')+'</div>'+
+    '<div class="filter-row mkt-row">'+markets.map(m=>`<button class="filter-btn mkt ${m.k===currentMarket?'active':''}" data-m="${m.k}">${m.label}</button>`).join('')+'</div>';
+  $$('#list-filters .filter-btn[data-k]').forEach(b=>b.onclick=()=>{currentFilter=b.dataset.k;renderListFilters();renderList()});
+  $$('#list-filters .filter-btn[data-m]').forEach(b=>b.onclick=()=>{currentMarket=b.dataset.m;renderListFilters();renderList()});
 }
 function renderList(){
   let list=EVENTS.slice().sort((a,b)=>a.date.localeCompare(b.date));
   if(currentFilter==='imp3')list=list.filter(e=>e.imp===3);
   else if(currentFilter==='imp2')list=list.filter(e=>e.imp===2);
   else if(currentFilter!=='all')list=list.filter(e=>e.cats.includes(currentFilter));
+  if(currentMarket!=='all')list=list.filter(e=>e.market===currentMarket);
   const total=list.length;
   const visible=listExpanded?list:list.slice(0,LIST_INITIAL);
   const rows=visible.map(e=>{
     const stars='★'.repeat(e.imp);
     const impCls=e.imp===3?'badge-imp-3':e.imp===2?'badge-imp-2':'badge';
+    const mk=MARKETS[e.market]||{label:e.market||'—',cls:'mkt-other'};
     return `<div class="list-row" onclick="openModal('${e.id}')">
       <div class="date">${fmtMD(e.date)}<span class="wd">周${e.weekday}</span></div>
       <div class="imp"><span class="badge ${impCls}">${stars}</span></div>
-      <div class="ttl">${e.title}<span class="sum">${e.summary}</span></div>
+      <div class="ttl"><span class="mkt-badge ${mk.cls}" style="margin-right:8px">${mk.label}</span>${e.title}<span class="sum">${e.summary}</span></div>
       <div class="arrow">→</div>
     </div>`;
   }).join('')||'<div style="padding:48px;text-align:center;color:var(--text4)">No events match this filter.</div>';
@@ -916,39 +1085,63 @@ function renderList(){
   }
 }
 
+
+
+
+
+
 // ========== MODAL ==========
+
+function copyPush(id,btn){
+  const ev=EVENTS.find(x=>x.id===id);if(!ev||!ev.push)return;
+  const text=(ev.push.title||'')+'\n'+(ev.push.body||'');
+  navigator.clipboard.writeText(text).then(()=>{
+    if(btn){const o=btn.textContent;btn.textContent='已复制 ✓';setTimeout(()=>btn.textContent=o||'复制文案',1600);}
+  });
+}
 function openModal(id){
   const e=EVENTS.find(x=>x.id===id);if(!e)return;
   const cats=e.cats.map(c=>`<span class="badge">${CATEGORIES[c]?.label||c}</span>`).join(' ');
   const stars='★'.repeat(e.imp);
   const impCls=e.imp===3?'badge-imp-3':e.imp===2?'badge-imp-2':'badge';
-  const detailHtml=e.detail.split('\n').map(line=>{
-    const formatted=line.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
-    return formatted.trim()?`<p style="margin:0 0 12px;line-height:1.6;color:var(--text2);font-size:15px">${formatted}</p>`:'';
-  }).join('');
-  const angles=e.angles?.map(a=>`<div style="padding:12px 16px;background:var(--bg2);border-radius:10px;margin-bottom:8px;font-size:14px"><span style="color:var(--accent);font-weight:600;margin-right:8px">${a.type}</span><span style="color:var(--text2)">${a.text}</span></div>`).join('')||'';
+  const mk=MARKETS[e.market]||{label:e.market||'—',cls:'mkt-other'};
+  const mktBadge=`<span class="mkt-badge ${mk.cls}">${mk.label}</span>`;
+  const srcLink=e.source?.url?`<a href="${e.source.url}" target="_blank" rel="noopener" class="m-src-link">${e.source.name||'Source'} ↗</a>`:(e.source?.name||'');
+  const tickers=(e.tickers||[]).map(t=>`<code class="m-tk">${t}</code>`).join('')||'<span style="color:var(--text4)">—</span>';
+  const jargon=(e.jargon||[]).map(j=>`<div class="m-jg"><b>${j.t}</b><span>${j.d}</span></div>`).join('');
+  const push=e.push||{};
   $('#modal').innerHTML=`
-    <button id="modal-close" style="position:absolute;top:20px;right:20px;width:32px;height:32px;border-radius:50%;background:var(--bg2);font-size:18px;color:var(--text3);display:flex;align-items:center;justify-content:center" onclick="closeModal()">×</button>
-    <div style="font-size:13px;color:var(--text4);font-variant-numeric:tabular-nums;margin-bottom:8px">${e.date} · 周${e.weekday} · ${e.source}</div>
-    <h2 style="font-size:32px;font-weight:600;letter-spacing:-.018em;line-height:1.2;margin-bottom:14px">${e.title}</h2>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px"><span class="badge ${impCls}">${stars} Importance</span>${cats}${e.confirmed?'':'<span class="badge" style="background:rgba(255,149,0,.12);color:#a04e00">未确认</span>'}</div>
-    <p style="font-size:18px;line-height:1.5;color:var(--text);margin-bottom:24px;letter-spacing:-.008em">${e.summary}</p>
-    ${e.tickers.length?`<div style="margin-bottom:24px;font-size:14px;color:var(--text3)"><strong style="color:var(--text2);font-weight:500">Tickers:</strong> ${e.tickers.map(t=>`<code style="background:var(--bg2);padding:2px 8px;border-radius:6px;font-family:'SF Mono',Menlo,monospace;font-size:13px;margin-right:6px">${t}</code>`).join('')}</div>`:''}
-    <div style="border-top:1px solid var(--border);padding-top:24px;margin-bottom:24px">${detailHtml}</div>
-    ${e.analysis?`<div style="margin-bottom:24px"><div style="font-size:13px;color:var(--text3);font-weight:600;margin-bottom:10px;letter-spacing:.02em">情景分析 · 鹰 / 中 / 鸽</div><div class="m-scenarios">
-      <div class="m-scn hawk"><b>鹰派 ${e.analysis.hawk.prob}</b><div class="m-scn-desc">${e.analysis.hawk.desc}</div><div class="m-scn-sec">${e.analysis.hawk.sectors}</div></div>
-      <div class="m-scn base"><b>中性 ${e.analysis.base.prob}</b><div class="m-scn-desc">${e.analysis.base.desc}</div><div class="m-scn-sec">${e.analysis.base.sectors}</div></div>
-      <div class="m-scn dove"><b>鸽派 ${e.analysis.dove.prob}</b><div class="m-scn-desc">${e.analysis.dove.desc}</div><div class="m-scn-sec">${e.analysis.dove.sectors}</div></div>
-    </div><div class="m-disclaimer">口径：基于历史类似情境频率与公开宏观资料,非投资建议。三档概率合计 100%。</div></div>`:''}
-    ${e.hook?`<div style="background:linear-gradient(135deg,rgba(0,113,227,.06),rgba(175,82,222,.06));padding:18px 22px;border-radius:14px;margin-bottom:20px"><div style="font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Hook</div><div style="font-size:15px;color:var(--text);line-height:1.5">${e.hook}</div></div>`:''}
-    ${angles?`<div style="margin-bottom:24px"><div style="font-size:13px;color:var(--text3);font-weight:600;margin-bottom:10px;letter-spacing:.02em">Growth Angles</div>${angles}</div>`:''}
-    ${(()=>{const p=PUSH_COPY[e.id];if(!p)return '';return `<div><div style="font-size:13px;color:var(--text3);font-weight:600;margin-bottom:10px;letter-spacing:.02em">PUSH 文案 · 期权转化</div>
-      <div class="push-block"><div class="lbl">${p.angle||''}</div><div class="push-hook">${p.title}</div><div class="push-path">${p.body}</div></div>
-    </div>`})()}
+    <button id="modal-close" onclick="closeModal()">×</button>
+    <div class="m-meta">${e.date} · 周${e.weekday} · ${srcLink}</div>
+    <h2 class="m-title">${e.title}</h2>
+    <div class="m-badges">${mktBadge}<span class="badge ${impCls}">${stars} Importance</span>${cats}${e.confirmed?'':'<span class="badge unc">未确认</span>'}</div>
+    <p class="m-summary">${e.summary||''}</p>
+
+    <div class="m-section"><div class="m-label">① 基础背景</div><div class="m-bg">${(e.background||'').split('\n').join('<br>')}</div></div>
+
+    <div class="m-section"><div class="m-label">② 可能受影响的标的</div><div class="m-tks">${tickers}</div></div>
+
+    <div class="m-section"><div class="m-label">③ 增长运营机会</div>
+      ${e.hook?`<div class="m-hook"><span class="lab">钩子</span>${e.hook}</div>`:''}
+      ${e.angle?`<div class="m-angle"><span class="lab">增长角度</span>${e.angle}</div>`:''}
+    </div>
+
+    ${jargon?`<div class="m-section"><div class="m-label">④ 专业术语</div><div class="m-jgs">${jargon}</div></div>`:''}
+
+    ${(push.title||push.body)?`<div class="m-section"><div class="m-label">⑤ 营销文案 · 即用</div>
+      <div class="push-block">
+        ${push.title?`<div class="push-hook">${push.title}</div>`:''}
+        ${push.body?`<div class="push-path">${push.body}</div>`:''}
+        <button class="m-copy" onclick="copyPush('${e.id}',this)">复制文案</button>
+      </div>
+    </div>`:''}
+
+    ${e.source?.url?`<div class="m-source-foot">信源:<a href="${e.source.url}" target="_blank" rel="noopener">${e.source.name||e.source.url}</a></div>`:''}
   `;
   $('#modal-bg').classList.add('show');
   document.body.style.overflow='hidden';
 }
+
 function closeModal(){$('#modal-bg').classList.remove('show');document.body.style.overflow=''}
 $('#modal-bg').onclick=e=>{if(e.target.id==='modal-bg')closeModal()};
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
@@ -961,21 +1154,37 @@ function tick(){
 
 
 // ========== LIBRARY ==========
-const PUSH_LIBRARY=[[1,"5月 CPI","6/10","SPY,QQQ,TLT","CPI 三看：整体/核心/服务，叠加关税滞后图","今晚 CPI 决定 Fed 降息节奏，超预期就翻车","CPI 是 Fed 是否降息最关键变量，超预期或不及预期市场都会瞬间反向，QQQ 单日波动常翻倍。1 张 QQQ 跨式组合双向押宝，新客期权首单 0 佣金。"],[2,"5月 PPI + 初请","6/11","SPY,XLI","CPI vs PPI 剪刀差，解读企业利润空间","PPI 上游成本，CPI 之后的\"二次锤\"","CPI 已出，PPI 是企业利润空间最后一块拼图，工业股最容易被剪刀差打到。你觉得这次会延续 CPI 方向，还是反向定价？打开富途期权链看 XLI 资金正在押哪边。"],[3,"SpaceX IPO 传闻窗口","6/12","RKLB,ASTS","商业航天估值对照表 + IPO 打新教学","SpaceX 万亿 IPO 传闻发酵，商业航天集体躁动","史上最大 IPO 传闻一来，RKLB/ASTS 容易冲高回落，IV 已经开始抬升。直接追高容易被套，提前 1 张 RKLB 看跌期权封顶亏损，比割肉理性得多。"],[4,"密歇根消费者信心","6/13","XLY,XRT","消费信心 vs 标普消费板块相关性","消费者信心数据，零售板块的\"体温计\"","信心走弱时 XRT/XLY 当日就开始跟跌。打开富途期权链先看一眼 XRT 当前 IV 分位 + OI 集中区，再决定 Put 行权价怎么选最划算。"],[5,"6月 FOMC + 点阵图 + Powell","6/17","SPY,QQQ,TLT,GLD,UUP","点阵图 4 看：中位数/分歧度/2027 终点/长期利率","今夜 FOMC + 点阵图，全年权重最高之夜","带 SEP 的 FOMC 一年只有 4 次，点阵图直接定调未来 18 个月利率路径，标普历史平均波动 1.5%。1 张 SPY 跨式组合双向布局，新客期权首单 0 佣金。"],[6,"BOJ 利率决议","6/18","QQQ,FXY","日元套利交易解除会冲击美股","BOJ 决议夜，全球流动性的隐形开关","BOJ 一旦超预期，日元套利解除会引发美股闪崩（去年 8 月已演示）。这种夜盘风险，你买没买保险？1 张 QQQ Put 当作保险单，几十美元封顶最大亏损。"],[7,"六月四巫日(季度交割)","6/19","SPY,QQQ,IWM","四巫日交易日历 + Pin Risk 集中区","六月四巫日，全年最大期权到期日","季度四类衍生品同日到期，OI 集中点最容易触发 Pin Risk，尾盘 30 分钟波动放大数倍。富途期权链一键看 OI 热力图，机构在哪里\"钉桩\"一目了然。"],[8,"5月 核心 PCE","6/20","SPY,TLT","CPI vs PCE 权重差异图解","核心 PCE，Fed 真正盯的通胀指标","Fed 决策时优先看 PCE 而不是 CPI，权重不同口径不同，市场反应可能与 CPI 完全相反。CPI 已 priced in 的方向，PCE 会不会反水？打开富途看资金提前怎么布。"],[9,"Q1 GDP 终值","6/25","SPY,TLT","GDP 三次估算流程 + 终值修正含义","Q1 GDP 终值，经济叙事最终定锤","三次估算到此为止，终值若较二次估算大幅修正，债市常剧烈反应。把 TLT 加入富途自选 + 设置数据提醒，开盘前 30 分钟 IV 异动你会第一个收到。"],[10,"Q2 季末 + 上半年收官","6/30","SPY,QQQ","上半年涨跌幅榜 + 下半年三大主线展望","Q2 季末，机构强制调仓最后一天","季末机构必须再平衡，被动资金被动买卖，权重股容易在尾盘出现非常规冲量。富途模拟盘先试一手 SPY 期权感受波动，看看符不符合自己节奏，0 风险练手。"],[11,"6月 非农","7/2","SPY,TLT","非农 5 看：就业/失业率/时薪/参与率/前值修正","独立日前夜非农，长假 Gap 风险叠加","非农当日恰逢长假前，数据偏离会被节后放大，假期持仓风险翻倍。1 张 SPY Put 锁定下行保护，新客期权首单 0 佣金。"],[12,"美股提前休市/独立日","7/3","SPY","美股节假日交易日历 + Gap 风险管理","美股 13:00 提前收盘，三天长假 Gap 风险来了","流动性骤降叠加非农刚出，假期风险被压缩到 4 小时内集中释放，节后跳空概率显著提升。一张到期日跨过假期的 SPY Put，就是最简单的防 Gap 保险。"],[13,"FOMC 6月会议纪要","7/8","SPY,TLT","纪要 vs 发布会差异解读","FOMC 纪要，Powell 当时没说出口的话","纪要常披露发布会未提的内部分歧，鹰鸽倾向常与发布会相反。你猜这次纪要更鹰还是更鸽？打开富途看 TLT 期权链，资金已经开始用真金白银投票了。"],[14,"6月 CPI","7/10","SPY,QQQ","核心商品/核心服务/住房三分项追踪表","6月 CPI，7月 FOMC 决策的最后一块拼图","距离 FOMC 仅 3 周，这份 CPI 直接决定是否降息，超预期暴跌或暴涨概率都不低。1 张 QQQ 跨式期权两个方向都不错过，新客期权首单 0 佣金。"],[15,"JPM 财报 (Q2 财报季开启)","7/14","JPM,XLF,KRE","美国六大行 Q2 看点对照表","JPM 财报，Q2 财报季正式开打","大行率先出炉，信用卡核销率 / 净息差是判断衰退预期最敏感的领先指标。财报日 JPM 隐含波动率最贵，富途期权链看 IV Crush 区间提前定方向，比盲买便宜不少。"],[16,"BAC/GS/MS 财报","7/15","BAC,KRE","投行 vs 商行 vs 财富管理三模式对比","BAC + GS + MS 同日，银行业三大模式 PK","商业银行 vs 投行 vs 财富管理三模式同日出炉，板块内分化剧烈。你看好哪个模式赢？富途期权链对照三家 IV，差异越大，超预期反应空间越大。"],[17,"TSM 财报 + 资本开支","7/16","TSM,SMH,NVDA","TSM 资本开支 vs SOX 指数走势叠加 + SOXX","TSM 财报，NVDA 之前 AI 算力的预演","TSM 资本开支是 AI 算力链最权威的领先指标，直接决定 SOXX/NVDA 下一季节奏。等到 NVDA 财报当日 IV 翻倍才动手，性价比早已不在；TSM 期权链先看一眼吧。"],[18,"Alphabet / Tesla 财报","7/22","GOOGL,TSLA,QQQ","GOOGL 三块业务拆解 + Mag7 财报日历","GOOGL + TSLA，Mag7 财报首场登场","搜索 / 云 / 自动驾驶三块业务一起验证，Mag7 财报首场常奠定整轮节奏。把后续 Mag7 财报日全部加入富途自选 + 财报日历提醒，下一场是 Meta，一场不漏才是关键。"],[19,"Meta 财报","7/23","META,QQQ","广告 ARPU vs 时长占比双轴图","Meta 财报，AI 广告变现真章","广告 ARPU + Reels 时长是判断 AI 能否真正变现的核心，Meta 财报后单日波动常超 8%。你押 META 涨还是跌？看一眼期权链 Put/Call Ratio，资金的答案已经在那里。"],[20,"Microsoft 财报","7/24","MSFT,QQQ","Azure 增速 vs AWS/GCP 三巨头对比","MSFT 财报，AI 最大 To-B 故事的真相","Azure 增速是判断 AI 商业化是否真实落地的最硬指标，超预期时 QQQ 容易被一同拉起。富途看 Azure vs AWS vs GCP 同期增速对照表，财报数字一出谁高谁低秒判断。"],[21,"7月 FOMC (无 SEP)","7/29","SPY,QQQ,TLT","有/无 SEP 会议反应模式差异","7月 FOMC，全靠 Powell 一张嘴定 9月","无 SEP 没点阵图，市场只能从 Powell 措辞里猜降息节奏，发布会每个字都被反复解读。1 张 QQQ 期权抓发布会窗口波动，新客期权首单 0 佣金。"],[22,"6月 核心 PCE + ECI","7/31","SPY,TLT","ECI vs 时薪 指标差异 + 劳动力成本传导","PCE + ECI 双发，9月降息条件最后试金石","PCE 通胀 + ECI 劳动力成本同日出炉，二者同步降温才是 Fed 启动降息的真正信号。富途宏观日历把这两个数据并列追踪，开盘前 1 分钟读完不迟。"],[23,"7月 非农","8/7","SPY,TLT","夏季季调对非农影响科普","7月非农，夏季季调最容易\"翻车\"的一期","七月数据夏季季调影响最大，\"假爆冷\"或\"假爆热\"频出，回调修正才是真正机会。这次你赌哪种翻车方向？打开富途期权链看 SPY Put/Call OI，资金倾向一目了然。"],[24,"7月 CPI","8/12","SPY,QQQ","核心商品 vs 服务通胀 剪刀差","7月 CPI，9月降息 25bp 还是 50bp 之争开打","9月 FOMC 前最重磅通胀，决定市场押 25 还是 50bp，债市股市同步剧烈反应。1 张 QQQ 期权押降息节奏，新客期权首单 0 佣金。"],[25,"7月 PPI","8/13","SPY,XLI","PPI→PCE 传导路径","7月 PPI，PCE 子项的提前剧透","PPI 中医疗 / 金融服务子项直接进入 PCE 计算，CPI 之后 PPI 常引发利率预期二次定价。把 PPI + 月底 PCE 一并加入富途数据日历，连贯看才不会错过节奏。"],[26,"Jackson Hole 全球央行年会(开幕)","8/20","SPY,TLT","JH 历届主题与 SPX 反应回顾","Jackson Hole 周开启，全球央行年度集结","JH 周一开启 IV 就开始抬升，期权溢价随预期升温。这种\"还没出事就已经开始贵\"的特性，恰好是提前布局者的窗口期 — 周一买比周五便宜得多。"],[27,"Powell Jackson Hole 演讲","8/22","SPY,TLT,GLD","JH 演讲前后 SPX 历史 5 日表现 + 债券 ETF","今夜 Powell JH 演讲，重要性仅次 FOMC","Powell 历史上常在 JH 透露重大政策转向（2022 年那次至今难忘），SPX 5 日波动均值 2%+。1 张 SPY 期权押方向，新客期权首单 0 佣金。"],[28,"NVIDIA 财报 (Q2 FY27)","8/26","NVDA,SMH,SPY","NVDA 数据中心/游戏/汽车收入拆解 + AI 算力 ETF SMH/SOXX","今夜 NVDA 财报，AI 算力主线最重磅之夜","NVDA 单家公司决定 AI 主线情绪，数据中心增速 + 下季指引定调全市场风险偏好，SMH/SOXX 当日同步联动。1 张 NVDA 期权押 AI 主线，新客期权首单 0 佣金。"],[29,"7月 核心 PCE","8/29","SPY,TLT","超级核心 PCE 跟踪表","7月核心 PCE，9月 FOMC 前最后一份通胀","这份 PCE 之后，市场对 9月降息的押注就再无变量了。25 还是 50bp 的天平今天就要倾斜。富途期权链看 SPY 当周到期合约 IV 分位，资金的判断比新闻早 24 小时。"],[30,"劳工节(美股休市)","9/1","SPY","9月 季节性最弱 + 节假日日历","劳工节休市，9月历史最差行情前夜","9月美股历史季节性最弱，过去 30 年平均下跌，长假前持仓风险偏大。一张到期日跨过劳工节的 SPY Put 备着，比假期里盯着新闻焦虑省心。"],[31,"8月 非农","9/4","SPY,TLT,GLD","非农 5 看 + Sahm Rule + 债券 ETF 选择","8月非农，9月 FOMC 前最关键就业数据","这份非农直接决定 9月降息幅度，失业率若触发 Sahm Rule，市场对衰退定价会瞬间切换。1 张 SPY 期权押降息节奏，新客期权首单 0 佣金。"],[32,"Apple 秋季新品发布会","9/9","AAPL,SWKS,QRVO","Apple 供应链 ETF + 消费电子季节性策略","今夜 Apple 发布会，秋季旗舰登场","苹果发布会规律是\"提前涨预期 + 当日卖事实\"，AAPL 单日方向最难判断，最适合双向押宝的跨式组合。还没用过跨式？富途期权学院 30 分钟搞懂，今晚就能用上。"],[33,"8月 CPI","9/11","SPY,QQQ,TLT","CPI vs 非农 组合对降息路径影响","8月 CPI，9月 FOMC 前最后通胀牌","CPI + 非农组合直接决定降息 25 还是 50bp，市场押宝心态浓，单日波动易翻倍。25 还是 50，你押哪边？富途期权链 OI 分布告诉你大资金已经选好了哪边。"],[34,"9月 FOMC + SEP + 点阵图","9/16","SPY,QQQ,TLT,GLD","点阵图四看升级版 + 降息周期下 债券+黄金 ETF 组合","今夜 9月 FOMC + 点阵图，Q3 最重磅之夜","带 SEP 的 FOMC + 降息周期可能正式开启，标普历史平均波动 2%、债市黄金同步异动。1 张 SPY 跨式组合双向布局，新客期权首单 0 佣金。"],[35,"九月四巫日","9/18","SPY,QQQ,IWM","四巫日 + FOMC 双叠加效应","九月四巫日 + FOMC 余波，二次定价良机","FOMC 隔两日就是季度交割，定价分歧 + Pin Risk 双重叠加，全年罕见的双因子日，尾盘波动放大数倍。富途期权链 OI 热力图打开，\"钉桩\"位置一目了然。"],[36,"8月 核心 PCE","9/26","SPY,TLT","FOMC 后 PCE 反应模式","8月核心 PCE，FOMC 决策合理性的\"考卷\"","FOMC 刚决议完，这份 PCE 是市场对 Fed 判断的验证；偏差大时债市反应比股市更剧烈。把 TLT 加入富途自选盯隔夜异动，比看新闻更直观。"],[37,"Q3 季末 + 联邦财年末","9/30","SPY,QQQ,IWM","Q3 复盘 + Q4 三大主线 + 政府关门历史规律","Q3 季末 + 联邦财年末，政府关门倒计时","联邦财年末若拨款法案未过即关门，历史上 SPX 短期承压、防御板块反而跑出超额。一张到期日跨过 10 月初的 SPY Put 备着，是这种政策尾部风险最便宜的对冲方式。"]];
+
+const PUSH_LIBRARY=EVENTS.filter(e=>e.push&&(e.push.title||e.push.body)).map((e,i)=>[i+1,e.title,fmtMD(e.date),(e.tickers||[]).join(','),e.angle||'',e.push.title||'',e.push.body||'',e.market||'',e.id]);
 let libSearch='';
-function renderLibFilters(){}
+let libMarket='all';
+function renderLibFilters(){
+  const markets=[{k:'all',label:'全部'},{k:'US',label:'美股'},{k:'CN',label:'中国'},{k:'JP',label:'日本'},{k:'EU',label:'欧洲'},{k:'GLOBAL',label:'全球'}];
+  const wrap=$('#lib-filters');
+  if(!wrap)return;
+  wrap.innerHTML=markets.map(m=>`<button class="filter-btn ${m.k===libMarket?'active':''}" data-m="${m.k}">${m.label}</button>`).join('');
+  $$('#lib-filters .filter-btn').forEach(b=>b.onclick=()=>{libMarket=b.dataset.m;renderLibFilters();renderLibTable()});
+}
 function renderLibTable(){
   const q=libSearch.toLowerCase();
-  const rows=PUSH_LIBRARY.filter(r=>{
-    if(!q) return true;
-    return r[1].toLowerCase().includes(q)||r[4].toLowerCase().includes(q)||r[5].toLowerCase().includes(q)||r[6].toLowerCase().includes(q);
-  });
+  let rows=PUSH_LIBRARY.filter(r=>libMarket==='all'||r[7]===libMarket);
+  if(q)rows=rows.filter(r=>r.slice(1,7).join(' ').toLowerCase().includes(q));
   $('#lib-count').innerHTML='<b>'+rows.length+'</b> / '+PUSH_LIBRARY.length+' 条';
-  if(!rows.length){$('#lib-tbody').innerHTML='<tr><td colspan="6" class="lib-empty">没有匹配的 PUSH 文案</td></tr>';return;}
-  $('#lib-tbody').innerHTML=rows.map(r=>{
-    return '<tr><td class="col-num">'+r[0]+'</td><td class="col-evt">'+r[1]+'</td><td class="col-time">'+r[2]+'</td><td class="col-tk"><span class="lib-tag angle">'+r[4]+'</span></td><td class="col-title">'+r[5]+'</td><td class="col-body">'+r[6]+'</td></tr>';
-  }).join('');
+  const tbody=$('#lib-tbody');
+  if(!tbody)return;
+  tbody.innerHTML=rows.map((r,i)=>{
+    const mk=MARKETS[r[7]]||{label:r[7]||'—',cls:'mkt-other'};
+    return `<tr onclick="openModal('${r[8]}')" style="cursor:pointer">
+      <td class="col-num">${i+1}</td>
+      <td class="col-evt"><span class="mkt-badge ${mk.cls}" style="margin-right:6px">${mk.label}</span>${r[1]}</td>
+      <td class="col-time">${r[2]}</td>
+      <td class="col-tk">${r[4]}</td>
+      <td class="col-title">${r[5]}</td>
+      <td class="col-body">${r[6]}</td>
+    </tr>`;
+  }).join('')||'<tr><td colspan="6" style="padding:32px;text-align:center;color:var(--text4)">无匹配文案</td></tr>';
 }
+
 $('#lib-search-input').addEventListener('input',e=>{libSearch=e.target.value;renderLibTable()});
 
 // ========== PUSH GENERATOR (browser-direct DeepSeek, key in localStorage) ==========
@@ -1195,6 +1404,8 @@ renderLibFilters();
 renderLibTable();
 tick();setInterval(tick,1000);
 updateNav();
+
+if(typeof renderLibFilters==='function'){try{renderLibFilters()}catch(e){}}
 </script>
 </body>
 </html>

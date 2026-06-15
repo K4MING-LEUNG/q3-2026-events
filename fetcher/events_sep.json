@@ -1,0 +1,541 @@
+[
+{
+"id": "0901ism",
+"date": "2026-09-01",
+"weekday": "二",
+"month": 9,
+"market": "US",
+"title": "8月 ISM 制造业 PMI",
+"cats": [
+"macro"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"SPY",
+"XLI",
+"XME"
+],
+"summary": "Q3 末段工业景气",
+"background": "10:00 ET 由 ISM 公布。Q3 即将收官,8月 PMI 是工业股 Q3 业绩的领先验证。",
+"hook": "Q3 末工业脉搏,XLI 业绩前瞻",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"PMI 拐点 + 9 月季节性\"图——9 月历史是 SPX 表现最差月,PMI 偏弱 + 季节性叠加,XLI Put 教育示例",
+"jargon": [
+{
+"t": "新订单",
+"d": "PMI 最具领先性的分项"
+}
+],
+"push": {
+"title": "9 月开门 PMI,历史最差月开局",
+"body": "9 月历史 SPX 表现最差 + PMI 偏弱叠加,XLI 易跟跌。1 张 XLI Put 防御,期权投教 15 分钟通关,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "ISM",
+"url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
+}
+},
+{
+"id": "0903jolts",
+"date": "2026-09-03",
+"weekday": "四",
+"month": 9,
+"market": "US",
+"title": "7月 JOLTS",
+"cats": [
+"macro"
+],
+"imp": 1,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT"
+],
+"summary": "NFP 前夕劳动力数据",
+"background": "10:00 ET 由 BLS 公布。NFP 前一天发布,V/U 比是 9月 SEP 前重要参考。",
+"hook": "NFP 前夕信号,TLT 短线脉冲",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"JOLTS 辞职率拐点 + 9 月降息概率\"图——FOMC 前第一份 JOLTS,TLT 期权前置布局",
+"jargon": [
+{
+"t": "V/U",
+"d": "职位空缺/失业人数,>1 紧张"
+}
+],
+"push": {
+"title": "9 月 FOMC 前第一份 JOLTS",
+"body": "辞职率破 2% 几乎锁定降息。把 TLT 加入富途自选 + 数据提醒,期权投教课同步跟,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "BLS",
+"url": "https://www.bls.gov/jlt/"
+}
+},
+{
+"id": "0904nfp",
+"date": "2026-09-04",
+"weekday": "五",
+"month": 9,
+"market": "US",
+"title": "8月非农就业",
+"cats": [
+"macro"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"UUP",
+"XLF"
+],
+"summary": "9月 SEP 会议核心数据",
+"background": "8:30 ET 由 BLS 公布。9月 16/17 FOMC 会前最后一份就业,直接定 25/50bp 降息。",
+"hook": "9月 50bp 降息押注高峰",
+"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"FOMC 前最重磅非农\"特别图——9 月降息概率最关键变量,SPY/TLT 单日 ATM straddle 隐含 1.5%+",
+"jargon": [
+{
+"t": "AHE",
+"d": "平均时薪同比"
+}
+],
+"push": {
+"title": "9 月 FOMC 前最重磅非农",
+"body": "决定 9 月降息节奏的最后一份非农,SPY 单日波动 1.5%+。1 张 SPY 跨式双向押宝,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "BLS",
+"url": "https://www.bls.gov/ces/"
+}
+},
+{
+"id": "0907labor",
+"date": "2026-09-07",
+"weekday": "一",
+"month": 9,
+"market": "US",
+"title": "美股劳动节休市",
+"cats": [
+"holiday"
+],
+"imp": 1,
+"confirmed": true,
+"tickers": [],
+"summary": "Labor Day observed",
+"background": "美国劳动节,股市/债市全天休市。9月本就是历史最弱月,休市后通常有\"Labor Day 魔咒\"开盘下跌。",
+"hook": "9月最弱月开局,防御股需求升温",
+"angle": "[KPI=唤醒沉默·TA=TA1] 节假日页 + 长周末持仓盘点,推送 30 天未登录用户——劳动节是 SG 用户秋季节奏开始的天然唤醒点",
+"jargon": [
+{
+"t": "9月效应",
+"d": "S&P500 历史月度均值最弱"
+}
+],
+"push": {
+"title": "Labor Day 休市,秋季交易节奏启动",
+"body": "9 月历史 SPX 最差月,长周末后 Gap 风险翻倍。打开 moomoo 富途模拟盘试一手 SPY 期权,0 风险练手,新户首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "NYSE",
+"url": "https://www.nyse.com/markets/hours-calendars"
+}
+},
+{
+"id": "0909cerebras",
+"date": "2026-09-09",
+"weekday": "三",
+"month": 9,
+"market": "US",
+"title": "Cerebras IPO 窗口期(传闻)",
+"cats": [
+"ipo",
+"earnings"
+],
+"imp": 3,
+"confirmed": false,
+"tickers": [
+"CRBR*",
+"NVDA",
+"AMD",
+"AVGO",
+"SMCI"
+],
+"summary": "AI 芯片独角兽 IPO 重启传闻",
+"background": "Cerebras 2024 年 9 月已递 S-1,但因 CFIUS(美国外资投资委员会)审查 G42 投资关系一度搁置。2026 年市场预期 G42 持股结构调整后 IPO 可能重启。Cerebras 主打 wafer-scale AI 芯片,与 NVDA H100/B200 直接竞争。一旦上市,AI 芯片板块 NVDA/AMD/AVGO 估值可能重定价。",
+"hook": "AI 芯片板块第一大 IPO,NVDA 同业竞争白热化",
+"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"Cerebras WSE-3 vs NVDA H100 性能对比\"图,AI 芯片是 SG 用户最热门主题,落期权投教 + NVDA 期权链解读",
+"jargon": [
+{
+"t": "Wafer-scale",
+"d": "整片晶圆做单芯片,Cerebras 独家"
+},
+{
+"t": "CFIUS",
+"d": "美国外资投资委员会,审查涉外投资国安"
+}
+],
+"push": {
+"title": "Cerebras 重启 IPO,NVDA 怎么应对?",
+"body": "AI 芯片第二供应商上市将冲击 NVDA 估值,机构期权 OI 已在异动。富途\"AI 半导体赚效页\"看实时清单,期权首单 0 佣金,首次入金最高得 [奖励金额*]。"
+},
+"source": {
+"name": "SEC EDGAR",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002021728&type=S-1&dateb=&owner=include&count=40"
+}
+},
+{
+"id": "0910ecb",
+"date": "2026-09-10",
+"weekday": "四",
+"month": 9,
+"market": "EU",
+"title": "ECB 利率决议",
+"cats": [
+"fomc",
+"global"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"FEZ",
+"EFA",
+"EWG",
+"UUP"
+],
+"summary": "欧央行 9月会议",
+"background": "13:15 法兰克福时间(CET)决议+声明,13:45 Lagarde 记者会。看是否再降息 25bp,以及对增长/能源价格的评估。",
+"hook": "欧元/美元汇率拐点,跨境资金流",
+"angle": "[KPI=促CDP转仓+促期权首交·TA=TA2+TA3] 做\"ECB vs Fed 9 月分化\"图——TA2 中老年关注 HSBC 通过 CDP 直连转仓,TA3 用 FXE 期权",
+"jargon": [
+{
+"t": "deposit rate",
+"d": "ECB 存款便利利率,主要政策利率"
+}
+],
+"push": {
+"title": "ECB 9 月决议,欧美利差再分化",
+"body": "ECB 鸽 → 欧元跌 → HSBC 港美 ADR 套利窗口。CDP 直连转仓最快 T+1 把竞品持仓搬过来,首次转入最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "ECB",
+"url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+}
+},
+{
+"id": "0911cpi",
+"date": "2026-09-11",
+"weekday": "五",
+"month": 9,
+"market": "US",
+"title": "8月 CPI",
+"cats": [
+"macro"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"GLD",
+"UUP"
+],
+"summary": "9月 FOMC 决议前最后通胀",
+"background": "8:30 ET 由 BLS 公布。9/16 FOMC 前最后一份核心 CPI,与 NFP 共同决定降息 25 还是 50bp。",
+"hook": "FOMC 前最后通胀,锁定降息幅度",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"FOMC 前最后 CPI + 关税传导成熟期\"图——9/16 FOMC 前最后高权重通胀,QQQ 跨式期权",
+"jargon": [
+{
+"t": "super core",
+"d": "剔除住房的服务核心通胀"
+}
+],
+"push": {
+"title": "FOMC 前最后 CPI,降息节奏定锚",
+"body": "FOMC 前最后高权重通胀,QQQ 单日 IV 翻倍。1 张 QQQ 跨式双向押宝,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "BLS",
+"url": "https://www.bls.gov/cpi/"
+}
+},
+{
+"id": "0915retail",
+"date": "2026-09-15",
+"weekday": "二",
+"month": 9,
+"market": "US",
+"title": "8月零售销售",
+"cats": [
+"macro"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"XLY",
+"XRT",
+"SPY"
+],
+"summary": "开学季消费验证",
+"background": "8:30 ET 由 Census 公布。开学季消费(Back-to-School)是 Q3 GDP 重要拼图,服装/电子/百货影响最大。",
+"hook": "开学季消费成色,XLY/XRT 业绩前瞻",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"FOMC 前零售控制组\"图——消费温度计,XRT/XLY 期权链是 TA3 高频教学示例",
+"jargon": [
+{
+"t": "控制组",
+"d": "剔除汽车/汽油的核心零售"
+}
+],
+"push": {
+"title": "FOMC 前零售,消费温度计",
+"body": "控制组直接进 GDP 消费分项,XRT 当日跟动。1 张 XRT 价差期权,期权投教 15 分钟通关,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "Census Bureau",
+"url": "https://www.census.gov/retail/index.html"
+}
+},
+{
+"id": "0916fomc",
+"date": "2026-09-16",
+"weekday": "三",
+"month": 9,
+"market": "US",
+"title": "FOMC 利率决议 + SEP + 点阵图",
+"cats": [
+"fomc"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"UUP",
+"GLD",
+"IWM"
+],
+"summary": "年度最关键 FOMC",
+"background": "14:00 ET 决议+声明+SEP+点阵图,14:30 ET Powell 记者会。市场预期 25bp 降息,焦点是点阵图终点利率与 2027 路径。",
+"hook": "年度最关键决议,所有资产联动",
+"angle": "[KPI=促期权首交+促有效PC+拉新NUP·TA=TA3] 做\"9 月点阵图 4 看 + 降息路径全图\"——年内最大 FOMC 之夜,赚效活动页 + 期权投教 + NUP 三触发",
+"jargon": [
+{
+"t": "SEP",
+"d": "经济预测摘要,含点阵图"
+},
+{
+"t": "终点利率",
+"d": "长期均衡利率水平"
+}
+],
+"push": {
+"title": "9 月 FOMC + 点阵图,年内最大之夜",
+"body": "带 SEP 的 FOMC + 全年关键降息节点,SPX 历史平均波动 1.5%+。打开富途\"FOMC 赚效页\" + 1 张 SPY 跨式,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "Federal Reserve",
+"url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+}
+},
+{
+"id": "0917boj",
+"date": "2026-09-17",
+"weekday": "四",
+"month": 9,
+"market": "JP",
+"title": "BOJ 货币政策决议",
+"cats": [
+"fomc",
+"global"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"EWJ",
+"DXJ",
+"FXY",
+"UUP"
+],
+"summary": "日本央行 9月会议",
+"background": "日本时间会后(无固定时,通常 12:00 JST 后)发布。Ueda 是否进一步加息、JGB 收益率上限调整、日元走向是三大焦点。",
+"hook": "日元 carry trade 拐点风险",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"BOJ 后 FOMC 24 小时双央行\"图——日元套利交易解除风险,QQQ 防御 Put 教学示例",
+"jargon": [
+{
+"t": "YCC",
+"d": "收益率曲线控制,2024 退出"
+},
+{
+"t": "carry trade",
+"d": "借日元买高息资产策略"
+}
+],
+"push": {
+"title": "FOMC 隔夜 BOJ,双央行 24 小时",
+"body": "FOMC + BOJ 24 小时双重定价,日元若大涨,QQQ 易跟跌。1 张 QQQ Put 跨过夜盘,几十美元封顶最大亏损,期权投教课同步跟。"
+},
+"source": {
+"name": "Bank of Japan",
+"url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+}
+},
+{
+"id": "0918quad",
+"date": "2026-09-18",
+"weekday": "五",
+"month": 9,
+"market": "US",
+"title": "9月四巫日 + S&P 季度调整",
+"cats": [
+"super"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"QQQ",
+"IWM",
+"VIX"
+],
+"summary": "季度衍生品到期+指数调仓",
+"background": "季度末四巫日(指数期货/期权 + 个股期货/期权同日到期)叠加 S&P/Nasdaq 季度成分股调整,成交量与波动率均放大。",
+"hook": "季末超级流动日,GEX 翻盘",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"四巫日 + S&P 季度调整\"双线图——成交量翻 3 倍 + 期权交割集中,Pin Risk 教学最佳示例",
+"jargon": [
+{
+"t": "四巫日",
+"d": "四类衍生品同日到期(季度)"
+},
+{
+"t": "GEX",
+"d": "做市商 Gamma 持仓,影响日内波动"
+}
+],
+"push": {
+"title": "9 月四巫日 + S&P 调仓",
+"body": "四巫日 + 季末调仓 = 成交量翻 3 倍,Pin Risk 集中。富途期权链一键看 OI 热力图,期权投教课同步跟,新客期权首单 0 佣金。"
+},
+"source": {
+"name": "S&P DJI",
+"url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/#overview"
+}
+},
+{
+"id": "0923shein",
+"date": "2026-09-23",
+"weekday": "三",
+"month": 9,
+"market": "EU",
+"title": "SHEIN 伦交所 IPO 窗口期(传闻)",
+"cats": [
+"ipo"
+],
+"imp": 2,
+"confirmed": false,
+"tickers": [
+"SHEIN*",
+"PDD",
+"BABA",
+"AMZN",
+"ZAL.DE"
+],
+"summary": "快时尚巨头转战伦敦 IPO 时间窗口",
+"background": "SHEIN 2024 年放弃纽交所 IPO 改投伦交所(LSE),受英国 FCA 审查。新加坡是 SHEIN 总部地之一,SG 用户对该 IPO 关注度极高。一旦上市,跨境电商板块(PDD/BABA)+ 欧洲服装(ZAL.DE)同步重定价。",
+"hook": "新加坡总部公司 IPO,SG 用户最高关注度",
+"angle": "[KPI=拉新NUP+促首笔交易·TA=TA1+TA2] SHEIN 总部在 SG,本地话题度最高,做\"SHEIN 伦敦 IPO 全流程\"科普,落 NUP 新客拉新 + 引导首笔交易购买对标股",
+"jargon": [
+{
+"t": "FCA",
+"d": "英国金融行为监管局,LSE 上市审批方"
+},
+{
+"t": "Premium Listing",
+"d": "LSE 高级上市标准,可入富时 100 指数"
+}
+],
+"push": {
+"title": "SHEIN 伦敦 IPO,SG 总部公司在路上",
+"body": "新加坡总部公司全球 IPO,跨境电商 PDD/BABA 同步催化。打开 moomoo 富途 NUP 新客页 加入 SHEIN 主题群,首次入金最高得 [奖励金额*],新客期权首单 0 佣金。"
+},
+"source": {
+"name": "London Stock Exchange",
+"url": "https://www.londonstockexchange.com/raise-finance/equity"
+}
+},
+{
+"id": "0925pce",
+"date": "2026-09-25",
+"weekday": "五",
+"month": 9,
+"market": "US",
+"title": "8月核心 PCE",
+"cats": [
+"macro"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"SPY",
+"TLT",
+"GLD",
+"UUP"
+],
+"summary": "FOMC 后首份 PCE",
+"background": "8:30 ET 由 BEA 公布。9/16 FOMC 后首份 PCE,验证联储路径假设是否成立,影响 10/29 会议押注。",
+"hook": "FOMC 路径验证,10月会议预演",
+"angle": "[KPI=促期权首交·TA=TA3] 做\"FOMC 后第一份 PCE 验证降息节奏\"图——9 月 FOMC 决议后核心通胀验证,TLT 期权直接重写",
+"jargon": [
+{
+"t": "3M 年化",
+"d": "近三月环比折年率"
+},
+{
+"t": "super core PCE",
+"d": "剔除住房服务核心 PCE"
+}
+],
+"push": {
+"title": "FOMC 后第一份 PCE,降息节奏验证",
+"body": "Powell 措辞 vs PCE 数据双重验证,TLT 期权直接重写。1 张 TLT 价差期权,期权投教课同步跟,新客期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "BEA",
+"url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+}
+},
+{
+"id": "0930end",
+"date": "2026-09-30",
+"weekday": "三",
+"month": 9,
+"market": "US",
+"title": "Q3 收官 + 季末再平衡",
+"cats": [
+"super"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"SPY",
+"QQQ",
+"TLT",
+"XLU"
+],
+"summary": "季末机构调仓",
+"background": "Q3 最后一个交易日。养老基金/共同基金季末再平衡,股债跷跷板效应明显,VIX 收盘前后异动概率高。",
+"hook": "季末再平衡,股债跷跷板",
+"angle": "[KPI=提AUM+促CDP转仓·TA=TA2] 做\"Q3 涨跌幅榜 + Q4 三大主线\"复盘——TA2 中老年长配视角,季末是 CDP 转仓 + AUM 加码最佳窗口",
+"jargon": [
+{
+"t": "再平衡",
+"d": "调整资产配比回到目标权重"
+}
+],
+"push": {
+"title": "Q3 季末,机构强制调仓收官",
+"body": "被动资金机械买卖,权重股尾盘冲量。CDP 直连转仓最快 T+1 一站统配 Q4,首次转入最高 S$[奖励金额*],新户期权首单 0 佣金。"
+},
+"source": {
+"name": "NYSE",
+"url": "https://www.nyse.com/markets/hours-calendars"
+}
+}
+]
