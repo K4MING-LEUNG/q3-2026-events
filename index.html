@@ -376,6 +376,12 @@ footer.foot a{color:var(--text3)}
 .pg-src-meta{font-size:10.5px;color:rgba(0,113,227,.85);letter-spacing:.02em;margin-bottom:5px}
 .pg-src-snip{font-size:11.5px;color:rgba(255,255,255,.5);line-height:1.5;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .pg-web-tag{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:6px;background:linear-gradient(135deg,rgba(52,199,89,.18),rgba(48,176,199,.18));color:#34c759;font-size:10.5px;font-weight:600;letter-spacing:.02em;margin-left:6px;vertical-align:1px}
+.pg-btn.tav-on{background:rgba(52,199,89,.14)!important;border-color:rgba(52,199,89,.4)!important;color:#34c759!important}
+.pg-btn.tav-on:hover{background:rgba(52,199,89,.22)!important}
+.pg-btn.tav-off{background:rgba(255,255,255,.05)!important;border-color:rgba(255,255,255,.12)!important;color:rgba(255,255,255,.55)!important}
+.pg-btn.tav-off:hover{background:rgba(255,255,255,.1)!important;color:rgba(255,255,255,.75)!important}
+.tav-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#34c759;box-shadow:0 0 0 3px rgba(52,199,89,.22);margin-right:8px;vertical-align:2px;animation:tavDotPulse 2.4s ease-in-out infinite}
+@keyframes tavDotPulse{0%,100%{opacity:1;box-shadow:0 0 0 3px rgba(52,199,89,.22)}50%{opacity:.7;box-shadow:0 0 0 5px rgba(52,199,89,.1)}}
 @media(max-width:680px){.pg-grid{grid-template-columns:1fr}}
 
 .mkt-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600;letter-spacing:.02em}
@@ -1560,10 +1566,24 @@ function pgRenderError(msg){$('#pg-output').innerHTML=`<div class="pg-error">⚠
 const PG_TAV_LS='moomoo_pg_tavkey';
 function pgGetTavKey(){try{return localStorage.getItem(PG_TAV_LS)||''}catch{return''}}
 function pgSaveTavKey(v){try{if(v)localStorage.setItem(PG_TAV_LS,v);else localStorage.removeItem(PG_TAV_LS)}catch{}}
+const PG_TAV_OFF_LS='moomoo_pg_tav_off';
+function pgIsTavEnabled(){try{return !!pgGetTavKey()&&localStorage.getItem(PG_TAV_OFF_LS)!=='1'}catch{return false}}
+function pgSetTavEnabled(v){try{if(v)localStorage.removeItem(PG_TAV_OFF_LS);else localStorage.setItem(PG_TAV_OFF_LS,'1')}catch{}pgRefreshTavUI();}
 function pgRefreshTavUI(){
   const has=!!pgGetTavKey();
+  const on=pgIsTavEnabled();
   const btn=$('#pg-tavbtn');
-  if(btn){btn.textContent=has?'🌐 已联网 ✓':'🌐 接入实时搜索';btn.style.opacity=has?'.7':'1';}
+  if(!btn)return;
+  btn.classList.toggle('tav-on',has&&on);
+  btn.classList.toggle('tav-off',has&&!on);
+  if(!has){btn.innerHTML='🌐 接入实时搜索';btn.style.opacity='1';btn.title='点击设置 Tavily Key 以启用联网搜索';}
+  else if(on){btn.innerHTML='<span class="tav-dot"></span>🌐 联网 ON';btn.style.opacity='1';btn.title='点击关闭联网（Key 保留，下次开启无需重新粘贴）｜Shift + 点击 重置或更换 Key';}
+  else{btn.innerHTML='🌐 联网 OFF';btn.style.opacity='.7';btn.title='点击重新开启联网｜Shift + 点击 重置或更换 Key';}
+}
+function pgHandleTavClick(e){
+  if(e&&e.shiftKey){pgPromptTavKey();return;}
+  if(!pgGetTavKey()){pgPromptTavKey();return;}
+  pgSetTavEnabled(!pgIsTavEnabled());
 }
 function pgPromptTavKey(){
   const cur=pgGetTavKey();
@@ -1622,7 +1642,7 @@ async function pgSubmit(opts){
   const payload={event,ta:pgGet('ta'),lifecycle:pgGet('lifecycle'),goal:pgGet('goal'),tone:pgGet('tone'),reward:pgGet('reward'),points:pgGet('points'),notes:pgGet('notes')};
   const btnEarly=$('#pg-submit');const hintEarly=$('#pg-hint');
   let webResults=null;let webBlock='';
-  if(pgGetTavKey()){
+  if(pgIsTavEnabled()){
     btnEarly.disabled=true;btnEarly.textContent='搜索中…';hintEarly.dataset.busy='1';hintEarly.textContent='① 抓取今日真实媒体报道…';
     webResults=await pgSearchWeb(payload.event);
     if(webResults&&webResults.length){
@@ -1700,7 +1720,7 @@ async function pgSubmit(opts){
 $('#pg-submit').addEventListener('click',pgSubmit);
 $('#pg-clear').addEventListener('click',()=>{PG_FIELDS.forEach(k=>pgSet(k,''));$('#pg-output').innerHTML='';$('#pg-event').focus()});
 $('#pg-keybtn').addEventListener('click',pgPromptKey);
-$('#pg-tavbtn').addEventListener('click',pgPromptTavKey);
+$('#pg-tavbtn').addEventListener('click',pgHandleTavClick);
 $('#pg-event').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.ctrlKey||e.metaKey))pgSubmit()});
 pgRefreshKeyUI();
 pgRefreshTavUI();
