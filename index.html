@@ -643,6 +643,12 @@ footer.foot a{color:var(--text3)}
 #modal .m-source-foot a:hover{text-decoration:underline}
 .mkt-user{background:linear-gradient(135deg,rgba(0,113,227,.16),rgba(175,82,222,.16));color:#5e3acf;font-weight:600}
 .lib-del{margin-left:8px;width:18px;height:18px;border-radius:50%;border:0;background:rgba(255,69,58,.1);color:#c2261d;font-size:11px;cursor:pointer;line-height:1;padding:0;vertical-align:middle}
+.lib-rating{display:inline-block;margin-left:8px;color:#ff9500;font-size:11px;letter-spacing:1px;vertical-align:1px}
+.lib-train{display:inline-flex;align-items:center;margin-left:8px;padding:2px 7px;border-radius:6px;font-size:10.5px;font-weight:600;background:linear-gradient(135deg,rgba(0,113,227,.14),rgba(175,82,222,.14));color:#7d3acf;letter-spacing:.02em;vertical-align:1px;cursor:help}
+.pg-train-hint{display:inline-flex;align-items:center;gap:6px;margin-right:auto;padding:5px 11px;border-radius:8px;background:linear-gradient(135deg,rgba(0,113,227,.18),rgba(175,82,222,.18));color:#fff;font-size:11.5px;letter-spacing:.01em;border:1px solid rgba(255,255,255,.18)}
+.pg-train-hint b{color:#fff;font-weight:700;margin:0 1px}
+.pg-train-dot{width:6px;height:6px;border-radius:50%;background:#34c759;box-shadow:0 0 0 3px rgba(52,199,89,.25);animation:pgTrainPulse 2s ease-in-out infinite}
+@keyframes pgTrainPulse{0%,100%{opacity:1}50%{opacity:.55}}
 .lib-del:hover{background:rgba(255,69,58,.22)}
 
 /* ===== Help / onboarding floating ball + modal ===== */
@@ -857,6 +863,7 @@ footer.foot a{color:var(--text3)}
         </div>
       </div>
       <div class="pg-actions">
+        <span class="pg-train-hint" id="pg-train-hint" style="display:none"></span>
         <span class="pg-hint" id="pg-hint">首次使用先设置 DeepSeek API Key</span>
         <button class="pg-btn ghost" id="pg-keybtn" title="设置或更换 DeepSeek API Key（仅保存在你本机浏览器）">🔑 设置 API Key</button>
         <button class="pg-btn ghost" id="pg-clear">清空</button>
@@ -1269,8 +1276,8 @@ function libUserSave(arr){try{localStorage.setItem(LIB_USER_KEY,JSON.stringify(a
 function libUserAdd(item){const arr=libUserLoad();arr.unshift(item);libUserSave(arr);}
 function libUserRemove(id){libUserSave(libUserLoad().filter(x=>x.id!==id))}
 function buildLibrary(){
-  const base=EVENTS.filter(e=>e.push&&(e.push.title||e.push.body)).map(e=>({src:'event',title:e.title,date:fmtMD(e.date),angle:e.angle||'',ptitle:e.push.title||'',pbody:e.push.body||'',market:e.market||'',id:e.id}));
-  const user=libUserLoad().map(u=>({src:'user',title:u.event||'(自定义)',date:u.dateLabel||'',angle:u.angle||'',ptitle:u.title||'',pbody:u.body||'',market:'USER',id:u.id}));
+  const base=EVENTS.filter(e=>e.push&&(e.push.title||e.push.body)).map(e=>({src:'event',title:e.title,date:fmtMD(e.date),angle:e.angle||'',ptitle:e.push.title||'',pbody:e.push.body||'',market:e.market||'',id:e.id,rating:0}));
+  const user=libUserLoad().map(u=>({src:'user',title:u.event||'(自定义)',date:u.dateLabel||'',angle:u.angle||'',ptitle:u.title||'',pbody:u.body||'',market:'USER',id:u.id,rating:u.rating||0}));
   return user.concat(base);
 }
 let libSearch='';
@@ -1294,9 +1301,11 @@ function renderLibTable(){
     const mk=r.src==='user'?{label:'我的',cls:'mkt-user'}:(MARKETS[r.market]||{label:r.market||'—',cls:'mkt-other'});
     const click=r.src==='user'?'':`onclick="openModal('${r.id}')"`;
     const del=r.src==='user'?`<button class="lib-del" onclick="event.stopPropagation();libDelUser('${r.id}')" title="删除">✕</button>`:'';
+    const trainBadge=(r.src==='user'&&r.rating>=4)?`<span class="lib-train" title="该文案已作为 few-shot 范例注入下次 PG 生成">✨ 训练</span>`:'';
+    const ratingTag=(r.src==='user'&&r.rating>0)?`<span class="lib-rating">${'★'.repeat(r.rating)}</span>`:'';
     return `<tr ${click} style="cursor:${r.src==='user'?'default':'pointer'}">
       <td class="col-num">${i+1}${del}</td>
-      <td class="col-evt"><span class="mkt-badge ${mk.cls}" style="margin-right:6px">${mk.label}</span>${r.title}</td>
+      <td class="col-evt"><span class="mkt-badge ${mk.cls}" style="margin-right:6px">${mk.label}</span>${r.title}${ratingTag}${trainBadge}</td>
       <td class="col-time">${r.date}</td>
       <td class="col-tk">${r.angle}</td>
       <td class="col-title">${r.ptitle}</td>
@@ -1479,10 +1488,15 @@ function pgRenderResult(data,payload){
   });
   $('#pg-savelib').addEventListener('click',()=>{
     const angleParts=[payload.ta,payload.goal,payload.lifecycle].filter(Boolean).map(s=>s.split(' · ')[0]);
-    const item={id:'user-'+Date.now(),event:payload.event||'(自定义)',title:data.title||'',body:data.body||'',angle:angleParts.join(' · '),dateLabel:new Date().toISOString().slice(5,10).replace('-','/'),ts:Date.now()};
+    const fb=($('#pg-fb-text')?.value||'').trim();
+    const item={id:'user-'+Date.now(),event:payload.event||'(自定义)',title:data.title||'',body:data.body||'',angle:angleParts.join(' · '),dateLabel:new Date().toISOString().slice(5,10).replace('-','/'),ts:Date.now(),rating:pgUserRating||0,feedback:fb,payload:{ta:payload.ta||'',lifecycle:payload.lifecycle||'',goal:payload.goal||'',tone:payload.tone||''}};
     libUserAdd(item);
     if(typeof renderLibTable==='function')renderLibTable();
-    const b=$('#pg-savelib');b.textContent='已保存 ✓';setTimeout(()=>b.textContent='保存到 Library',1800);
+    if(typeof pgRefreshTrainHint==='function')pgRefreshTrainHint();
+    const b=$('#pg-savelib');
+    const trained=pgUserRating>=4;
+    b.textContent=trained?'已保存 · 加入训练 ✨':'已保存 ✓';
+    setTimeout(()=>b.textContent='保存到 Library',1800);
   });
   $('#pg-regen-feedback').addEventListener('click',pgRegenWithFeedback);
   $('#pg-regen').addEventListener('click',()=>{pgRoundIdx=0;pgSubmit();});
@@ -1498,6 +1512,30 @@ async function pgRegenWithFeedback(){
   return pgSubmit({useFeedback:true,rating:pgUserRating,feedback:fb});
 }
 function pgRenderError(msg){$('#pg-output').innerHTML=`<div class="pg-error">⚠ ${escHtml(msg)}</div>`}
+function pgGetTeamExamples(maxN){
+  maxN=maxN||6;
+  const all=(typeof libUserLoad==='function')?libUserLoad():[];
+  const good=all.filter(x=>(x.rating||0)>=4&&(x.title||x.body));
+  good.sort((a,b)=>(b.rating-a.rating)||(b.ts-a.ts));
+  return good.slice(0,maxN);
+}
+function pgBuildTeamExamplesBlock(){
+  const ex=pgGetTeamExamples(6);
+  if(!ex.length)return '';
+  const lines=ex.map((x,i)=>{
+    const tags=[x.payload?.ta,x.payload?.lifecycle,x.payload?.goal].filter(Boolean).map(s=>s.split(' · ')[0]).join(' · ')||'通用';
+    const fb=x.feedback?` // 团队反馈：${x.feedback}`:'';
+    return `范例 ${i+1}（${x.rating}★ · ${tags}）\n场景：${x.event||'通用'}\n标题：${x.title||''}\n正文：${x.body||''}${fb}`;
+  }).join('\n\n');
+  return `\n\n# 团队精品范例（用户实际打分 ≥4★ 的高质量产出，行文风格请优先对齐这些，超过下面任何写死的范例）\n${lines}\n`;
+}
+function pgRefreshTrainHint(){
+  const n=pgGetTeamExamples(6).length;
+  const el=$('#pg-train-hint');
+  if(!el)return;
+  if(n>0){el.style.display='inline-flex';el.innerHTML=`<span class="pg-train-dot"></span>正在用 <b>${n}</b> 条团队精品文案训练 AI`;}
+  else{el.style.display='none';}
+}
 async function pgSubmit(opts){
   opts=opts||{};
   const event=pgGet('event');
@@ -1552,7 +1590,7 @@ async function pgSubmit(opts){
       headers:{'Content-Type':'application/json',Authorization:'Bearer '+key},
       body:JSON.stringify({
         model:'deepseek-chat',
-        messages:[{role:'system',content:PG_SYS},{role:'user',content:userMsg}],
+        messages:[{role:'system',content:PG_SYS+pgBuildTeamExamplesBlock()},{role:'user',content:userMsg}],
         response_format:{type:'json_object'},
         max_tokens:600,
         temperature:0.85
@@ -1580,6 +1618,7 @@ $('#pg-clear').addEventListener('click',()=>{PG_FIELDS.forEach(k=>pgSet(k,''));$
 $('#pg-keybtn').addEventListener('click',pgPromptKey);
 $('#pg-event').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.ctrlKey||e.metaKey))pgSubmit()});
 pgRefreshKeyUI();
+pgRefreshTrainHint();
 
 // ========== NAV: SCROLL PROGRESS + ACTIVE SECTION ==========
 const NAV_SECTIONS=['today','news','forecast','calendar','list','push-gen','library'];
