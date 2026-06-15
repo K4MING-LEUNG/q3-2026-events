@@ -1,159 +1,178 @@
 {
-  "updated_at": "2026-06-15T08:00:46+08:00",
+  "updated_at": "2026-06-15T11:29:09+08:00",
   "items": [
     {
-      "source": "MarketWatch",
-      "title": "Stock futures jump, oil prices fall as Trump says U.S. has reached peace deal with Iran",
-      "url": "https://www.marketwatch.com/story/trump-says-u-s-had-reached-peace-deal-with-iran-57a93e56?mod=mw_rss_topstories",
-      "published_at": "2026-06-14T23:44:00+00:00",
-      "summary": "美国与伊朗达成和平协议，油价下跌，美股期货上涨，霍尔木兹海峡有望重新开放。",
-      "category": "地缘政治",
-      "angle": "梳理霍尔木兹海峡重新开放对航运、保险及能源板块的潜在影响，引导用户关注相关ETF如XLE、XOP的期权策略。"
-    },
-    {
-      "source": "Seeking Alpha",
-      "title": "Stocks rally, oil slides as U.S.-Iran peace deal lifts market mood",
-      "url": "https://seekingalpha.com/news/4603154-stocks-rally-oil-slides-as-u-s-iran-peace-deal-lifts-market-mood?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-      "published_at": "2026-06-14T23:12:30+00:00",
-      "summary": "美伊和平协议提振市场情绪，美股上涨，油价下跌。",
-      "category": "地缘政治",
-      "angle": "制作美伊和平协议受益板块对照表，包括航空、旅游、零售等，并推荐相关ETF期权。"
-    },
-    {
       "source": "Bloomberg",
-      "title": "Japanese Stocks Set to Rise After US-Iran Peace Deal Reached",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-14/japanese-stocks-set-to-rise-after-us-iran-peace-deal-reached",
-      "published_at": "2026-06-14T23:09:50+00:00",
-      "summary": "美伊和平协议达成，日本股市预计上涨，霍尔木兹海峡有望重新开放。",
-      "category": "地缘政治",
-      "angle": "科普日本股市与中东局势的关联性，引导用户通过EWJ等日本ETF进行配置。"
-    },
-    {
-      "source": "CNBC",
-      "title": "Trump heads to G7 summit in France after reaching deal to end war with Iran",
-      "url": "https://www.cnbc.com/2026/06/14/trump-g7-iran-deal-france-ukraine.html",
-      "published_at": "2026-06-14T22:30:57+00:00",
-      "summary": "特朗普在赴法国参加G7峰会前宣布与伊朗达成和平协议，G7将讨论该协议及俄乌战争。",
-      "category": "地缘政治",
-      "angle": "拆解G7峰会可能讨论的议题对全球市场的影响，重点关注能源、国防板块。"
-    },
-    {
-      "source": "NYT Business",
-      "title": "Oil Prices Tumble After Trump Announces Deal With Iran",
-      "url": "https://www.nytimes.com/2026/06/14/business/oil-stocks-gas-iran.html",
-      "published_at": "2026-06-14T22:26:46+00:00",
-      "summary": "伊朗和平协议推动油价下跌、股市上涨，霍尔木兹海峡有望恢复通行。",
-      "category": "地缘政治",
-      "angle": "做油价下跌受益板块分析，包括航空、运输、消费品，并推荐相关期权策略。"
-    },
-    {
-      "source": "Bloomberg",
-      "title": "US Futures Climb, Oil Falls on Iran Peace Deal: Markets Wrap",
+      "title": "Stocks Rally, Oil Declines on Iran Peace Deal: Markets Wrap",
       "url": "https://www.bloomberg.com/news/articles/2026-06-14/us-futures-climb-oil-falls-on-iran-peace-deal-markets-wrap",
       "published_at": "2026-06-14T22:06:25+00:00",
-      "summary": "美国与伊朗达成协议重新开放霍尔木兹海峡，美股期货上涨，油价下跌，美元走弱。",
+      "summary": "美国与伊朗达成协议重新开放霍尔木兹海峡，股市和国债上涨，油价跌至三个月低点。",
       "category": "地缘政治",
-      "angle": "梳理美元走弱对新兴市场及大宗商品的传导，引导用户通过UUP或EEM进行配置。"
-    },
-    {
-      "source": "Bloomberg",
-      "title": "Oil Slumps as US-Iran Deal May Allow Strait of Hormuz to Reopen",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-14/latest-oil-market-news-and-analysis-for-june-15",
-      "published_at": "2026-06-14T22:01:15+00:00",
-      "summary": "美伊和平协议可能导致霍尔木兹海峡重新开放，油价大幅下跌。",
-      "category": "能源",
-      "angle": "科普霍尔木兹海峡对全球油运的重要性，并结合期权策略对冲油价波动风险。"
+      "angle": "梳理霍尔木兹海峡相关能源板块标的，关注航运和保险ETF的波动机会。"
     },
     {
       "source": "MarketWatch",
       "title": "Defaults in debt markets are starting again, warns Pimco. Here’s the bond giant’s game plan.",
       "url": "https://www.marketwatch.com/story/defaults-in-debt-markets-are-starting-again-warns-pimco-heres-the-bond-giants-game-plan-16559c6d?mod=mw_rss_topstories",
       "published_at": "2026-06-14T17:34:00+00:00",
-      "summary": "Pimco警告股市估值过高，建议投资者增加固定收益配置以锚定投资组合。",
+      "summary": "Pimco警告债务市场违约再次出现，建议投资者增配固定收益以锚定投资组合。",
       "category": "金融",
-      "angle": "制作债券ETF与股票ETF的收益风险对照表，引导用户通过TLT或AGG进行资产配置。"
+      "angle": "做固定收益ETF与高收益债ETF的对比分析，引导用户配置避险资产。"
     },
     {
-      "source": "CNBC",
-      "title": "JetBlue bets big on Fort Lauderdale, from a new airport lounge to an international gateway",
-      "url": "https://www.cnbc.com/2026/06/14/jetblue-fort-lauderdale-airport.html",
-      "published_at": "2026-06-14T12:00:02+00:00",
-      "summary": "JetBlue加大在劳德代尔堡的投资，包括新机场休息室和国际航线，面临迈阿密机场的激烈竞争。",
+      "source": "FT",
+      "title": "Strait of Hormuz oil backlog could take weeks to clear after US-Iran deal",
+      "url": "https://www.ft.com/content/c2d4e116-c49a-4f6b-9b2e-d10d37e4c2e8",
+      "published_at": "2026-06-15T01:46:28+00:00",
+      "summary": "尽管美伊达成协议，但霍尔木兹海峡积压的石油运输可能需要数周才能清理，分析师警告供应恢复缓慢且易受干扰。",
+      "category": "能源",
+      "angle": "科普霍尔木兹海峡航运保险机制，关联能源ETF和航运股期权策略。"
+    },
+    {
+      "source": "Economist Business",
+      "title": "Donald Trump has cut off access to the world’s best AI model",
+      "url": "https://www.economist.com/business/2026/06/14/donald-trump-has-cut-off-access-to-the-worlds-best-ai-model",
+      "published_at": "2026-06-14T18:56:34+00:00",
+      "summary": "美国阻止其最亲密盟友访问Anthropic的顶级AI模型Mythos。",
+      "category": "科技",
+      "angle": "拆解AI模型出口管制对科技股的影响，梳理相关AI板块标的。"
+    },
+    {
+      "source": "NYT Business",
+      "title": "‘Disclosure Day’ Ends Spielberg’s Summer Box Office Drought",
+      "url": "https://www.nytimes.com/2026/06/14/business/media/disclosure-day-steven-spielberg-box-office.html",
+      "published_at": "2026-06-14T18:38:14+00:00",
+      "summary": "斯皮尔伯格的原创科幻电影在北美首周获得约4400万美元票房，为其24年来首个暑期档新片成功。",
       "category": "全球事件",
-      "angle": "拆解航空公司区域扩张对旅游板块的影响，关注JETS ETF及相关期权机会。"
+      "angle": "做暑期档票房受益股对照表，关注影院、媒体和广告板块期权机会。"
+    },
+    {
+      "source": "Barron's",
+      "title": "Charlie Javice Has Been Seeking a Pardon From Trump After Defrauding JPMorgan",
+      "url": "https://www.wsj.com/finance/charlie-javice-has-been-seeking-a-pardon-from-trump-after-defrauding-jpmorgan-0b4e61db?mod=rss_markets_main",
+      "published_at": "2026-06-14T16:23:00+00:00",
+      "summary": "企业家Charlie Javice因欺诈摩根大通出售其初创公司Frank而被判七年以上监禁，正在寻求特朗普赦免。",
+      "category": "金融",
+      "angle": "科普金融科技并购中的尽职调查风险，关联银行股和监管政策讨论。"
+    },
+    {
+      "source": "Bloomberg",
+      "title": "SVB Energy's Vakhshouri on the Outlook for Oil Prices",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-15/svb-energy-s-vakhshouri-on-the-outlook-for-oil-prices-video",
+      "published_at": "2026-06-15T02:46:33+00:00",
+      "summary": "SVB Energy创始人认为若霍尔木兹海峡真正重新开放，油价可能回落至战前水平。",
+      "category": "能源",
+      "angle": "做油价波动情景分析，引导用户使用原油ETF期权对冲或投机。"
+    },
+    {
+      "source": "MarketWatch",
+      "title": "Will the real Kevin Warsh please stand up? Ahead of his first Fed meeting, economists honestly don’t know what to expect.",
+      "url": "https://www.marketwatch.com/story/will-the-real-kevin-warsh-please-stand-up-ahead-of-his-first-fed-meeting-economists-honestly-dont-know-what-to-expect-6fa95c8c?mod=mw_rss_topstories",
+      "published_at": "2026-06-14T21:00:00+00:00",
+      "summary": "经济学家对美联储新任主席Kevin Warsh首次会议的政策方向不确定。",
+      "category": "政策",
+      "angle": "梳理美联储历任主席首次会议的市场反应，引导用户关注利率决议前后的期权策略。"
+    },
+    {
+      "source": "MarketWatch",
+      "title": "Stock futures jump, oil prices fall as Trump says U.S. has reached peace deal with Iran",
+      "url": "https://www.marketwatch.com/story/trump-says-u-s-had-reached-peace-deal-with-iran-57a93e56?mod=mw_rss_topstories",
+      "published_at": "2026-06-15T03:02:00+00:00",
+      "summary": "特朗普宣布美伊达成和平协议，油价下跌，美股期货上涨。",
+      "category": "地缘政治",
+      "angle": "做地缘政治风险缓解后的板块轮动分析，关注航空和运输ETF。"
     }
   ],
   "sectors": [
     {
-      "name": "航空·出行",
-      "tickers": "JBLU, DAL, UAL, AAL",
-      "thesis": "航空出行需求复苏，区域枢纽投资加码",
+      "name": "石油运输·油轮",
+      "tickers": "STNG, FRO, EURN",
+      "thesis": "霍尔木兹海峡积压清理期支撑油轮运价",
       "drivers": [
-        "JetBlue加码劳德代尔堡枢纽，布局国际航线",
-        "美伊和平协议降低地缘风险，利好航空出行"
+        "美伊协议后海峡积压需数周清理，供应恢复缓慢",
+        "油价下跌但运输需求短期刚性，运价或维持高位"
       ],
       "evidence": [
         {
-          "i": 8,
-          "point": "JetBlue加大区域枢纽投资",
-          "source": "CNBC",
-          "title": "JetBlue bets big on Fort Lauderdale, from a new airport lounge to an international gateway",
-          "url": "https://www.cnbc.com/2026/06/14/jetblue-fort-lauderdale-airport.html"
+          "i": 2,
+          "point": "海峡积压清理需数周，运力紧张",
+          "source": "FT",
+          "title": "Strait of Hormuz oil backlog could take weeks to clear after US-Iran deal",
+          "url": "https://www.ft.com/content/c2d4e116-c49a-4f6b-9b2e-d10d37e4c2e8"
         },
         {
           "i": 0,
-          "point": "地缘风险缓解提振出行需求",
-          "source": "MarketWatch",
-          "title": "Stock futures jump, oil prices fall as Trump says U.S. has reached peace deal with Iran",
-          "url": "https://www.marketwatch.com/story/trump-says-u-s-had-reached-peace-deal-with-iran-57a93e56?mod=mw_rss_topstories"
+          "point": "油价下跌但运输需求仍在",
+          "source": "Bloomberg",
+          "title": "Stocks Rally, Oil Declines on Iran Peace Deal: Markets Wrap",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-14/us-futures-climb-oil-falls-on-iran-peace-deal-markets-wrap"
         }
       ],
-      "risk": "油价下跌虽利好成本，但竞争激烈可能侵蚀利润"
+      "risk": "协议执行不及预期或导致运价快速回落"
     },
     {
-      "name": "固定收益·防御",
-      "tickers": "BND, AGG, TLT",
-      "thesis": "债市违约风险上升，防御性配置受青睐",
+      "name": "AI 算力·半导体",
+      "tickers": "NVDA, AVGO, SMH",
+      "thesis": "美国限制盟友访问顶级模型，加速自主算力需求",
       "drivers": [
-        "Pimco警告股市估值过高，建议增配固定收益",
-        "地缘缓和后资金可能从避险资产流出，但债市仍有吸引力"
+        "美国阻止盟友访问顶级AI模型，推动自主算力建设",
+        "NVDA上季数据中心收入同比增150%，资本开支指引强劲"
       ],
       "evidence": [
         {
-          "i": 7,
-          "point": "Pimco建议增加固定收益配置",
+          "i": 3,
+          "point": "美国限制盟友访问顶级AI模型",
+          "source": "Economist Business",
+          "title": "Donald Trump has cut off access to the world’s best AI model",
+          "url": "https://www.economist.com/business/2026/06/14/donald-trump-has-cut-off-access-to-the-worlds-best-ai-model"
+        }
+      ],
+      "risk": "出口管制升级或影响全球AI供应链"
+    },
+    {
+      "name": "固定收益·债券",
+      "tickers": "BND, AGG, LQD",
+      "thesis": "Pimco警告违约潮，增配固收防御",
+      "drivers": [
+        "Pimco警告债务市场违约再次出现，建议增配固定收益",
+        "美联储政策不确定性下，债券作为避险资产受关注"
+      ],
+      "evidence": [
+        {
+          "i": 1,
+          "point": "Pimco警告违约，建议增配固定收益",
           "source": "MarketWatch",
           "title": "Defaults in debt markets are starting again, warns Pimco. Here’s the bond giant’s game plan.",
           "url": "https://www.marketwatch.com/story/defaults-in-debt-markets-are-starting-again-warns-pimco-heres-the-bond-giants-game-plan-16559c6d?mod=mw_rss_topstories"
+        },
+        {
+          "i": 7,
+          "point": "美联储新任主席政策方向不确定",
+          "source": "MarketWatch",
+          "title": "Will the real Kevin Warsh please stand up? Ahead of his first Fed meeting, economists honestly don’t know what to expect.",
+          "url": "https://www.marketwatch.com/story/will-the-real-kevin-warsh-please-stand-up-ahead-of-his-first-fed-meeting-economists-honestly-dont-know-what-to-expect-6fa95c8c?mod=mw_rss_topstories"
         }
       ],
-      "risk": "利率走势不确定可能影响债券价格"
+      "risk": "利率上行风险可能压制债券价格"
     },
     {
-      "name": "能源·航运",
-      "tickers": "STNG, FRO, EURN",
-      "thesis": "霍尔木兹海峡重开，油轮航运需求或承压",
+      "name": "国防军工",
+      "tickers": "LMT, NOC, GD",
+      "thesis": "地缘缓和但中东航运威胁持续，军需稳定",
       "drivers": [
-        "美伊和平协议有望重开霍尔木兹海峡",
-        "油价下跌反映供应端压力缓解，油轮运价可能回落"
+        "霍尔木兹海峡虽协议但清理缓慢，航运仍受干扰",
+        "全球军费开支上升趋势未变，订单可见性强"
       ],
       "evidence": [
         {
-          "i": 0,
-          "point": "霍尔木兹海峡有望重新开放",
-          "source": "MarketWatch",
-          "title": "Stock futures jump, oil prices fall as Trump says U.S. has reached peace deal with Iran",
-          "url": "https://www.marketwatch.com/story/trump-says-u-s-had-reached-peace-deal-with-iran-57a93e56?mod=mw_rss_topstories"
-        },
-        {
-          "i": 6,
-          "point": "油价因海峡重开预期大跌",
-          "source": "Bloomberg",
-          "title": "Oil Slumps as US-Iran Deal May Allow Strait of Hormuz to Reopen",
-          "url": "https://www.bloomberg.com/news/articles/2026-06-14/latest-oil-market-news-and-analysis-for-june-15"
+          "i": 2,
+          "point": "海峡积压清理缓慢，航运仍受干扰",
+          "source": "FT",
+          "title": "Strait of Hormuz oil backlog could take weeks to clear after US-Iran deal",
+          "url": "https://www.ft.com/content/c2d4e116-c49a-4f6b-9b2e-d10d37e4c2e8"
         }
       ],
-      "risk": "协议执行不确定性仍存，航运需求波动大"
+      "risk": "地缘全面缓和或削减短期军需预期"
     }
   ]
 }

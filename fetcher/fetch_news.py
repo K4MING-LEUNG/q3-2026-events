@@ -82,6 +82,74 @@ def impact_score(item: dict) -> int:
     return score
 
 
+# Lightweight pre-bucketing so fetch can balance categories before LLM tagging.
+# Buckets match the 9 categories used downstream in SYSTEM_PROMPT.
+PRE_BUCKETS = {
+    "经济数据": ["cpi", "ppi", "pce", "nonfarm", "non-farm", "payroll", "jobless", "ism",
+                "gdp", "retail sales", "housing", "mortgage", "consumer confidence",
+                "michigan", "jolts", "claims"],
+    "政策": ["fed", "fomc", "powell", "rate cut", "rate hike", "boj", "ecb", "boe",
+            "lagarde", "ueda", "bailey", "white house", "congress", "senate",
+            "shutdown", "debt ceiling", "treasury secretary", "yellen"],
+    "财报": ["earnings", "q1 results", "q2 results", "q3 results", "q4 results",
+            "beats", "misses", "guidance", "revenue", "profit", "analyst", "downgrade",
+            "upgrade", "10-k", "10-q", "8-k"],
+    "金融": ["bank", "jpmorgan", "goldman", "morgan stanley", "wells fargo", "citi",
+            "ipo", "merger", "acquisition", "hedge fund", "private equity", "regulator",
+            "sec ", "enforcement", "fine", "settlement"],
+    "地缘政治": ["ukraine", "russia", "iran", "israel", "gaza", "tariff", "sanction",
+                "trade war", "china tariff", "korea", "taiwan strait", "nato", "eu trade"],
+    "能源": ["oil", "crude", "brent", "wti", "opec", "natural gas", "lng", "saudi",
+            "exxon", "chevron", "shell", "bp ", "petrobras"],
+    "科技": ["nvidia", "apple", "microsoft", "google", "alphabet", "meta", "amazon",
+            "tesla", "ai ", "chip", "semiconductor", "tsmc", "asml", "openai", "chatgpt",
+            "data center", "cloud"],
+    "全球事件": ["world cup", "olympic", "olympics", "super bowl", "world expo",
+                "hurricane", "wildfire", "drought", "earthquake", "typhoon", "climate",
+                "pandemic", "outbreak", "vaccine", "election"],
+    "大盘走势": ["s&p", "spx", "nasdaq", "dow ", "spy", "qqq", "vix", "russell",
+                "stocks rally", "stocks fall", "etf flow", "market cap"],
+}
+
+
+def pre_bucket(item: dict) -> str:
+    text = (item["title"] + " " + item["raw_summary"]).lower()
+    best_cat, best_hits = "大盘走势", 0
+    for cat, kws in PRE_BUCKETS.items():
+        hits = sum(1 for k in kws if k in text)
+        if hits > best_hits:
+            best_cat, best_hits = cat, hits
+    return best_cat
+
+
+def balance_pick(pool: list[dict], target: int) -> list[dict]:
+    """Pick `target` items from sorted pool with category diversity.
+
+    Strategy: 2-pass walk. Pass 1 caps each bucket at 1 (max diversity).
+    Pass 2 caps at 2 to fill remainder. Pass 3 takes any remaining by score.
+    """
+    for it in pool:
+        it["_bucket"] = pre_bucket(it)
+    chosen, taken_ids = [], set()
+    for cap in (1, 2, 99):
+        bucket_count: dict[str, int] = {}
+        # reset cap-2 to count what's already chosen
+        for c in chosen:
+            bucket_count[c["_bucket"]] = bucket_count.get(c["_bucket"], 0) + 1
+        for it in pool:
+            if id(it) in taken_ids:
+                continue
+            b = it["_bucket"]
+            if bucket_count.get(b, 0) >= cap:
+                continue
+            chosen.append(it)
+            taken_ids.add(id(it))
+            bucket_count[b] = bucket_count.get(b, 0) + 1
+            if len(chosen) >= target:
+                return chosen
+    return chosen[:target]
+
+
 def fetch_items() -> list[dict]:
     cutoff = datetime.now(timezone.utc) - timedelta(hours=FRESHNESS_HOURS)
     pool: list[dict] = []
@@ -116,7 +184,13 @@ def fetch_items() -> list[dict]:
         item["_score"] = impact_score(item)
     pool = [x for x in pool if x["_score"] >= 0]
     pool.sort(key=lambda x: (x["_score"], x["published_at"]), reverse=True)
-    return pool[:TARGET_ITEMS]
+    # Balance across the 9 categories so news.json doesn't end up 6/9 in one bucket.
+    picked = balance_pick(pool[: TARGET_ITEMS * 4], TARGET_ITEMS)
+    log("  pre-bucket distribution: " + ", ".join(
+        f"{c}={sum(1 for p in picked if p['_bucket']==c)}"
+        for c in sorted({p['_bucket'] for p in picked})
+    ))
+    return picked
 
 
 SYSTEM_PROMPT = """你是富途/Moomoo 增长团队的内容编辑助理。任务：把英文财经新闻改写成中文摘要 + 分类 + 给出可落地的"内容增长角度"。
@@ -188,7 +262,7 @@ def call_deepseek(items: list[dict]) -> list[dict]:
     return enriched
 
 
-SECTOR_PROMPT = """你是富途/Moomoo 行业研究助理。任务：基于今日真实要闻，识别 3-4 个**近期有潜力的美股细分行业/主题**，并给出可溯源的依据。
+SECTOR_PROMPT = """你是富途/Moomoo 行业研究助理。任务：基于今日真实要闻，识别**恰好 4 个近期有潜力的美股细分行业/主题**，并给出可溯源的依据。
 
 输出 JSON {"sectors":[{...}]}，每个 sector：
 - name: 细分行业/主题中文名（如 "AI 算力·数据中心"、"网络安全"、"国防军工"、"核能·铀矿"、"减肥药 GLP-1"、"电力基础设施"、"网络安全"）
@@ -203,7 +277,8 @@ SECTOR_PROMPT = """你是富途/Moomoo 行业研究助理。任务：基于今�
 - 禁止编造数字、估值、点数预测、具体涨跌幅
 - evidence 中的 i 必须真实存在于 items
 - 主题选择要"有潜力"≠"今天涨"，重点是结构性逻辑（订单/政策/资本开支/技术拐点）
-- 宁可少出主题，不可硬凑；最少 3 个，最多 4 个
+- **必须输出恰好 4 个主题**，不能多也不能少；4 个主题之间要尽量分散到不同行业（如：1 个 AI/半导体类 + 1 个能源/资源类 + 1 个金融/政策类 + 1 个其他成长主题），避免 4 个都聚焦同一条产业链
+- 如果今日新闻确实只能直接支撑 2-3 个主题，剩下的可以基于近期已公开事实（如 OPEC+ 减产、NVDA 财报指引等可被公开验证的近期信息）补足到 4 个，evidence 数组留空即可
 - thesis/drivers 用专业冷静的研究语气，不喊口号、不用感叹号
 """
 

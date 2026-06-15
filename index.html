@@ -124,11 +124,17 @@ nav.nav .nav-progress{position:absolute;left:0;bottom:0;height:2px;width:0%;back
 .news-card .angle{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;color:var(--text);background:linear-gradient(135deg,rgba(0,113,227,.06),rgba(175,82,222,.06));border-left:3px solid var(--accent);padding:10px 12px;border-radius:8px;line-height:1.5}
 .news-card .angle .lab{flex:0 0 auto;font-weight:600;color:var(--accent);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;padding-top:2px}
 .news-empty{text-align:center;padding:48px 24px;color:var(--text4);font-size:14px;background:var(--bg3);border-radius:var(--radius);border:1px dashed var(--border2)}
-.sec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.sec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 @media(max-width:880px){.sec-grid{grid-template-columns:1fr}}
-.sec-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:30px 28px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:all .25s}
-.sec-card:hover{transform:translateY(-3px);box-shadow:0 16px 40px -12px rgba(0,0,0,.1);border-color:var(--border2)}
-.sec-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--purple))}
+.sec-card{background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(248,250,255,.62));backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1px solid rgba(255,255,255,.55);border-radius:var(--radius);padding:30px 28px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:all .25s;box-shadow:0 4px 30px rgba(0,0,0,.04)}
+.sec-card:hover{transform:translateY(-3px);box-shadow:0 18px 44px -12px rgba(0,0,0,.12);border-color:rgba(255,255,255,.8)}
+.sec-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--purple));z-index:2}
+.sec-card::after{content:attr(data-emoji);position:absolute;right:-30px;bottom:-60px;font-size:240px;line-height:1;opacity:.09;filter:blur(.5px);pointer-events:none;user-select:none;z-index:0}
+.sec-card>*{position:relative;z-index:1}
+.sec-card .sec-bgblob{position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(circle at 80% 110%,var(--blob-c1,rgba(0,113,227,.18)) 0%,transparent 55%),radial-gradient(circle at 0% 0%,var(--blob-c2,rgba(175,82,222,.14)) 0%,transparent 50%)}
+.sec-card.sec-empty{background:linear-gradient(135deg,rgba(255,255,255,.5),rgba(248,250,255,.3));border-style:dashed;border-color:var(--border);align-items:center;justify-content:center;text-align:center;color:var(--text4);font-size:13px;min-height:240px}
+.sec-card.sec-empty::before{display:none}
+.sec-card.sec-empty::after{content:'⌖';right:auto;bottom:auto;font-size:84px;opacity:.08;position:relative}
 .sec-card .sec-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
 .sec-card .sec-name{font-size:20px;font-weight:600;letter-spacing:-.014em;line-height:1.25}
 .sec-card .sec-tickers{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
@@ -947,13 +953,37 @@ async function renderNewsAndForecast(){
     renderSectors([]);
   }
 }
+const SECTOR_THEMES=[
+  {kw:['AI','算力','数据中心','大模型','LLM','机器学习'],emoji:'🧠',c1:'rgba(0,113,227,.22)',c2:'rgba(175,82,222,.16)'},
+  {kw:['半导体','芯片','晶圆','封装','存储','HBM'],emoji:'🔬',c1:'rgba(48,176,199,.22)',c2:'rgba(0,113,227,.16)'},
+  {kw:['国防','军工','军','武器','导弹'],emoji:'🛡️',c1:'rgba(120,120,128,.22)',c2:'rgba(255,69,58,.14)'},
+  {kw:['能源','油','气','OPEC','石油','天然气'],emoji:'⛽',c1:'rgba(255,159,10,.22)',c2:'rgba(255,69,58,.14)'},
+  {kw:['核','铀'],emoji:'☢️',c1:'rgba(52,199,89,.22)',c2:'rgba(255,159,10,.14)'},
+  {kw:['电力','基础设施','电网','输电'],emoji:'⚡',c1:'rgba(255,204,0,.24)',c2:'rgba(255,159,10,.16)'},
+  {kw:['网络安全','安全','零信任'],emoji:'🔒',c1:'rgba(48,176,199,.22)',c2:'rgba(120,120,128,.14)'},
+  {kw:['加密','比特币','以太','稳定币','crypto'],emoji:'₿',c1:'rgba(255,159,10,.22)',c2:'rgba(255,204,0,.14)'},
+  {kw:['医','药','GLP','减肥','生物'],emoji:'💊',c1:'rgba(255,69,58,.18)',c2:'rgba(175,82,222,.14)'},
+  {kw:['银行','金融','保险','支付'],emoji:'🏦',c1:'rgba(0,113,227,.20)',c2:'rgba(48,176,199,.14)'},
+  {kw:['消费','零售','电商','服装'],emoji:'🛍️',c1:'rgba(175,82,222,.18)',c2:'rgba(255,69,58,.12)'},
+  {kw:['汽车','EV','电动车','自动驾驶'],emoji:'🚗',c1:'rgba(48,176,199,.20)',c2:'rgba(0,113,227,.14)'},
+  {kw:['航空','旅游','航司','酒店'],emoji:'✈️',c1:'rgba(0,113,227,.18)',c2:'rgba(48,176,199,.14)'},
+  {kw:['房','地产','REIT'],emoji:'🏘️',c1:'rgba(120,120,128,.18)',c2:'rgba(255,159,10,.12)'},
+];
+const SECTOR_DEFAULT={emoji:'📈',c1:'rgba(0,113,227,.18)',c2:'rgba(175,82,222,.14)'};
+function pickSectorTheme(name){
+  const s=String(name||'').toLowerCase();
+  for(const t of SECTOR_THEMES){
+    for(const k of t.kw){if(s.includes(k.toLowerCase()))return t}
+  }
+  return SECTOR_DEFAULT;
+}
 function renderSectors(sectors){
   const fwrap=$('#forecast-wrap');
   if(!sectors||!sectors.length){
     fwrap.innerHTML='<div class="news-empty" style="grid-column:1/-1">细分行业分析尚未生成。运行 fetch_news.py 后将由 DeepSeek 基于当日真实新闻给出可溯源的行业判断。</div>';
     return;
   }
-  fwrap.innerHTML=sectors.map(s=>{
+  const real=sectors.slice(0,4).map(s=>{
     const tickers=String(s.tickers||'').split(/[,，、\s]+/).filter(Boolean);
     const drivers=Array.isArray(s.drivers)?s.drivers:[];
     const ev=Array.isArray(s.evidence)?s.evidence:[];
@@ -968,7 +998,10 @@ function renderSectors(sectors){
         </span>
       </a>`;
     }).join(''):'<div class="sec-ev-empty">本主题驱动来自近期已公开事实，今日要闻无直接对应原文。</div>';
-    return `<div class="sec-card">
+    const th=pickSectorTheme(s.name);
+    const styleAttr=`style="--blob-c1:${th.c1};--blob-c2:${th.c2}"`;
+    return `<div class="sec-card" data-emoji="${th.emoji}" ${styleAttr}>
+      <div class="sec-bgblob"></div>
       <div class="sec-head">
         <div>
           <div class="sec-name">${escHtml(s.name||'—')}</div>
@@ -986,7 +1019,12 @@ function renderSectors(sectors){
       </div>
       <div class="sec-risk"><b>风险 · </b>${escHtml(s.risk||'—')}</div>
     </div>`;
-  }).join('');
+  });
+  const placeholders=[];
+  while(real.length+placeholders.length<4){
+    placeholders.push('<div class="sec-card sec-empty"><div>等待下一轮 8:00 抓取<br>填补第 '+(real.length+placeholders.length+1)+' 个主题</div></div>');
+  }
+  fwrap.innerHTML=real.join('')+placeholders.join('');
 }
 
 // ========== CALENDAR (single month with switcher) ==========
