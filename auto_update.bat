@@ -4,7 +4,7 @@ REM ============================================================
 REM Q3 2026 daily auto-update
 REM 1) run fetch_news.py (RSS -> DeepSeek -> news.json)
 REM 2) if news.json changed, git commit + push to GitHub
-REM    Vercel will auto-redeploy on push.
+REM    Netlify webhook auto-redeploys ~30s after push.
 REM ============================================================
 cd /d "%~dp0"
 
@@ -46,5 +46,5 @@ if %PUSH_RC% NEQ 0 (
   exit /b %PUSH_RC%
 )
 
-echo [%date% %time%] done, Vercel will redeploy >> "%LOGFILE%"
+echo [%date% %time%] done, Netlify webhook will redeploy in ~30s >> "%LOGFILE%"
 exit /b 0
