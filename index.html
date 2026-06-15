@@ -363,6 +363,18 @@ footer.foot a{color:var(--text3)}
 .pg-len-mini .ok{color:#34c759}
 .pg-len-mini .warn{color:#ff9500}
 .pg-error{max-width:880px;margin:18px auto 0;padding:14px 18px;border-radius:12px;background:rgba(255,59,48,.08);border:1px solid rgba(255,59,48,.25);color:#c2261d;font-size:13.5px;line-height:1.5}
+.pg-sources{margin-top:18px;padding:16px 18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px}
+.pg-sources-head{display:flex;align-items:center;gap:8px;font-size:11.5px;color:rgba(255,255,255,.55);font-weight:600;letter-spacing:.04em;margin-bottom:12px;text-transform:uppercase}
+.pg-sources-head::before{content:'';width:6px;height:6px;border-radius:50%;background:#34c759;box-shadow:0 0 0 3px rgba(52,199,89,.2)}
+.pg-src-card{display:flex;gap:12px;padding:10px 12px;margin-bottom:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;color:#fff;transition:all .15s;cursor:pointer}
+.pg-src-card:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.18);transform:translateX(2px)}
+.pg-src-card:last-child{margin-bottom:0}
+.pg-src-num{flex-shrink:0;width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,#0071e3,#5856d6);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;font-variant-numeric:tabular-nums}
+.pg-src-body{flex:1;min-width:0}
+.pg-src-title{font-size:13px;font-weight:500;line-height:1.4;color:#fff;margin-bottom:3px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.pg-src-meta{font-size:10.5px;color:rgba(0,113,227,.85);letter-spacing:.02em;margin-bottom:5px}
+.pg-src-snip{font-size:11.5px;color:rgba(255,255,255,.5);line-height:1.5;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.pg-web-tag{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:6px;background:linear-gradient(135deg,rgba(52,199,89,.18),rgba(48,176,199,.18));color:#34c759;font-size:10.5px;font-weight:600;letter-spacing:.02em;margin-left:6px;vertical-align:1px}
 @media(max-width:680px){.pg-grid{grid-template-columns:1fr}}
 
 .mkt-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600;letter-spacing:.02em}
@@ -868,6 +880,7 @@ footer.foot a{color:var(--text3)}
       <div class="pg-actions">
         <span class="pg-hint" id="pg-hint">首次使用先设置 DeepSeek API Key</span>
         <button class="pg-btn ghost" id="pg-keybtn" title="设置或更换 DeepSeek API Key（仅保存在你本机浏览器）">🔑 设置 API Key</button>
+        <button class="pg-btn ghost" id="pg-tavbtn" title="设置 Tavily 搜索 Key — 接入后 PUSH 会参考今日真实媒体报道（仅保存在你本机浏览器）">🌐 接入实时搜索</button>
         <button class="pg-btn ghost" id="pg-clear">清空</button>
         <button class="pg-btn primary" id="pg-submit">生成 PUSH ↓</button>
       </div>
@@ -1395,6 +1408,15 @@ How: 去除阻碍用户成为更聪明、更自信投资者的所有壁垒。
 - **合规红线**：禁止使用「梭哈」「all in」「YYDS」「干就完了」「韭菜」「老乡别走」「割肉」「保证收益」类词；MAS 监管下避免任何绝对化收益表述
 - **不要为了用而用**：如果事件场景不需要，宁可不用。一条 PUSH 出现 1-2 个黑话刚好，3 个起就显得堆砌
 
+# 联网素材使用规则（user message 末尾如有【今日真实媒体报道片段】时必须遵循）
+- 这些片段来自 Tavily 实时搜索，是今日全球财经媒体（Bloomberg / Reuters / CNBC / FT / WSJ / Barron's 等）的真实标题与摘要
+- **标题必须从中汲取一个真实事件钩子或精彩措辞**，不要凭空想象。例如媒体说"surge"/"飙升" → 你也用"飙升 / 拉升 / 走高"；媒体说"All-time high" → "刷新历史新高"；媒体说"plunge" → "重挫 / 跳水"
+- **正文要把媒体报道里的真实事件细节融进去**（哪个公司、哪个数据、哪个国家、哪个时间节点），让用户读完知道"今天到底发生了什么"，而不是空泛的"市场波动 + 来交易"
+- **只能引用片段中已出现的事实/数字/公司名/政策名**。如果片段里没有具体数字，禁止你扩写或编造
+- **多片段时综合判断主线**：如果 5 条片段都指向同一事件，就抓主线；如果指向 2-3 个事件，挑与用户填写的"触发事件"最匹配的 1-2 条
+- **黑话与媒体措辞融合**：媒体用英文术语（IV crush / FOMC / hawkish）时，TA3 Trader 文案可保留原文，TA1/TA2 翻成中文黑话（鹰派 / 期权波动率塌陷 / 美联储议息）
+- 在 notes 字段开头注明参考了哪几条片段，例如"参考 [1][3] Bloomberg + CNBC 关于 NVDA 财报后盘后跳水的报道"
+
 # 风格参考范例（行文调性请贴近这些）
 A. 标题：SpaceX 引爆太空热潮，别错过这个机会｜正文：邀请好友入金布局，限时加赠 SpaceX 股票奖励*，一同探索万亿太空产业链投资机会，立即邀请 >>
 B. 标题：邀请好友入金，获取高达 RM2000 SpaceX 赠股*！｜正文：一站式探索太空产业链
@@ -1440,7 +1462,7 @@ function pgPromptKey(){
   pgSaveKey(v.trim());
   return !!v.trim();
 }
-function pgRenderResult(data,payload){
+function pgRenderResult(data,payload,webResults){
   pgLastResult=data;pgLastPayload=payload;pgUserRating=0;
   const tlen=data?.meta?.title_len??pgCharCount(data?.title||'');
   const blen=data?.meta?.body_len??pgCharCount(data?.body||'');
@@ -1448,9 +1470,22 @@ function pgRenderResult(data,payload){
   const bCls=blen<=50?'ok':blen<=65?'':'warn';
   const tags=[payload.ta,payload.lifecycle,payload.goal,payload.tone].filter(Boolean).map(s=>`<span class="pg-tag">${escHtml(s.split(' · ')[0]||s)}</span>`).join('');
   const roundTag=pgRoundIdx>0?`<span class="pg-tag">第 ${pgRoundIdx+1} 版</span>`:'';
+  const webTag=(webResults&&webResults.length)?`<span class="pg-web-tag">📡 联网 · ${webResults.length} 源</span>`:'';
   const stars=[1,2,3,4,5].map(n=>`<span class="pg-star" data-n="${n}">★</span>`).join('');
+  const sourcesHtml=(webResults&&webResults.length)?`
+    <div class="pg-sources">
+      <div class="pg-sources-head">参考媒体（${webResults.length}）· 来自实时搜索</div>
+      ${webResults.map((r,i)=>`<a class="pg-src-card" href="${escHtml(r.url)}" target="_blank" rel="noopener">
+        <span class="pg-src-num">${i+1}</span>
+        <div class="pg-src-body">
+          <div class="pg-src-title">${escHtml(r.title)}</div>
+          <div class="pg-src-meta">${escHtml(r.domain)} ↗</div>
+          ${r.content?`<div class="pg-src-snip">${escHtml(r.content.slice(0,140))}…</div>`:''}
+        </div>
+      </a>`).join('')}
+    </div>`:'';
   const html=`<div class="pg-result">
-    <div class="pg-result-meta">${roundTag}${tags||'<span class="pg-tag">通用</span>'}</div>
+    <div class="pg-result-meta">${roundTag}${tags||'<span class="pg-tag">通用</span>'}${webTag}</div>
     <div class="pg-len-mini">
       <span class="${tCls}">标题 ${tlen} 字</span>
       <span class="${bCls}">正文 ${blen} 字</span>
@@ -1458,6 +1493,7 @@ function pgRenderResult(data,payload){
     <div class="pg-title-out">${escHtml(data.title||'—')}</div>
     <div class="pg-body-out">${escHtml(data.body||'—')}</div>
     ${data.notes?`<div class="pg-notes"><b>设计思路</b>${escHtml(data.notes)}</div>`:''}
+    ${sourcesHtml}
     <div class="pg-feedback">
       <h4>你的评分与建议</h4>
       <div class="pg-fb-sub">打分 + 写一句具体哪里要改，AI 会按你的反馈再生成一版</div>
@@ -1520,6 +1556,40 @@ async function pgRegenWithFeedback(){
   return pgSubmit({useFeedback:true,rating:pgUserRating,feedback:fb});
 }
 function pgRenderError(msg){$('#pg-output').innerHTML=`<div class="pg-error">⚠ ${escHtml(msg)}</div>`}
+const PG_TAV_LS='moomoo_pg_tavkey';
+function pgGetTavKey(){try{return localStorage.getItem(PG_TAV_LS)||''}catch{return''}}
+function pgSaveTavKey(v){try{if(v)localStorage.setItem(PG_TAV_LS,v);else localStorage.removeItem(PG_TAV_LS)}catch{}}
+function pgRefreshTavUI(){
+  const has=!!pgGetTavKey();
+  const btn=$('#pg-tavbtn');
+  if(btn){btn.textContent=has?'🌐 已联网 ✓':'🌐 接入实时搜索';btn.style.opacity=has?'.7':'1';}
+}
+function pgPromptTavKey(){
+  const cur=pgGetTavKey();
+  const placeholder=cur?`当前已保存 Tavily Key（${cur.slice(0,8)}…）。粘贴新 Key 替换；留空+确定可清除。`:'粘贴你的 Tavily API Key（以 tvly- 开头）。免费额度 1000 次/月，去 tavily.com 注册即可。Key 仅保存在本机浏览器。';
+  const v=prompt(placeholder,'');
+  if(v===null)return false;
+  pgSaveTavKey(v.trim());
+  pgRefreshTavUI();
+  return !!v.trim();
+}
+async function pgSearchWeb(query){
+  const key=pgGetTavKey();
+  if(!key||!query)return null;
+  try{
+    const r=await fetch('https://api.tavily.com/search',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({api_key:key,query,search_depth:'basic',max_results:5,topic:'news',days:3,include_answer:false,include_raw_content:false})
+    });
+    if(!r.ok)return null;
+    const data=await r.json();
+    return (data.results||[]).slice(0,5).map(x=>{
+      let domain='';try{domain=new URL(x.url).hostname.replace(/^www\./,'')}catch{}
+      return{title:x.title||'',url:x.url||'',domain,content:(x.content||'').slice(0,300)};
+    }).filter(x=>x.title&&x.url);
+  }catch{return null;}
+}
 function pgGetTeamExamples(maxN){
   maxN=maxN||6;
   const all=(typeof libUserLoad==='function')?libUserLoad():[];
@@ -1549,6 +1619,16 @@ async function pgSubmit(opts){
     key=pgGetKey();
   }
   const payload={event,ta:pgGet('ta'),lifecycle:pgGet('lifecycle'),goal:pgGet('goal'),tone:pgGet('tone'),reward:pgGet('reward'),points:pgGet('points'),notes:pgGet('notes')};
+  const btnEarly=$('#pg-submit');const hintEarly=$('#pg-hint');
+  let webResults=null;let webBlock='';
+  if(pgGetTavKey()){
+    btnEarly.disabled=true;btnEarly.textContent='搜索中…';hintEarly.dataset.busy='1';hintEarly.textContent='① 抓取今日真实媒体报道…';
+    webResults=await pgSearchWeb(payload.event);
+    if(webResults&&webResults.length){
+      webBlock='\n\n【今日真实媒体报道片段（来自 Tavily 实时搜索 · 仅作为措辞与事件细节参考）】\n'+
+        webResults.map((r,i)=>`[${i+1}] ${r.domain} | ${r.title}\n    ${r.content}`).join('\n');
+    }
+  }
   let feedbackBlock='';
   if(opts.useFeedback&&pgLastResult){
     const ratingTxt=opts.rating?`${opts.rating}/5 · ${PG_RATING_LABEL[opts.rating]||''}`:'未打分';
@@ -1580,11 +1660,12 @@ async function pgSubmit(opts){
 - 转化目标：${payload.goal||'不限'}
 - 语气倾向：${payload.tone||'专业冷静'}
 - 奖励 / 优惠内容：${payload.reward||'用户未指定 —— 严禁编造任何金额、币种、股数；如需提及奖励，请用模糊表达（如「丰厚奖励」「专属福利」）或保留 [奖励金额*] 占位符'}
-- 额外备注：${payload.notes||'无'}${feedbackBlock}
+- 额外备注：${payload.notes||'无'}${feedbackBlock}${webBlock}
 
 请按 system 中规则与风格输出 JSON。`;
   const btn=$('#pg-submit');const hint=$('#pg-hint');
-  btn.disabled=true;btn.textContent='生成中…';hint.dataset.busy='1';hint.textContent='DeepSeek 正在按 Moomoo 品牌指南生成…';
+  btn.disabled=true;btn.textContent='生成中…';hint.dataset.busy='1';
+  hint.textContent=webResults&&webResults.length?`② 已抓取 ${webResults.length} 条媒体素材，DeepSeek 融合生成中…`:'DeepSeek 正在按 Moomoo 品牌指南生成…';
   $('#pg-output').innerHTML='';
   try{
     const r=await fetch('https://api.deepseek.com/chat/completions',{
@@ -1607,7 +1688,7 @@ async function pgSubmit(opts){
     const content=data.choices?.[0]?.message?.content||'{}';
     let parsed;try{parsed=JSON.parse(content)}catch{pgRenderError('AI 返回的不是合法 JSON，重试一次');return}
     const out={title:parsed.title||'',body:parsed.body||'',notes:parsed.notes||'',meta:{title_len:[...(parsed.title||'')].length,body_len:[...(parsed.body||'')].length}};
-    pgRenderResult(out,payload);
+    pgRenderResult(out,payload,webResults);
     document.querySelector('#pg-output')?.scrollIntoView({behavior:'smooth',block:'center'});
   }catch(e){
     pgRenderError('网络错误：'+(e.message||String(e))+'。可能原因：① 浏览器拦截了 DeepSeek（CORS/广告拦截器）② 网络不通 ③ Key 没设置。');
@@ -1618,8 +1699,10 @@ async function pgSubmit(opts){
 $('#pg-submit').addEventListener('click',pgSubmit);
 $('#pg-clear').addEventListener('click',()=>{PG_FIELDS.forEach(k=>pgSet(k,''));$('#pg-output').innerHTML='';$('#pg-event').focus()});
 $('#pg-keybtn').addEventListener('click',pgPromptKey);
+$('#pg-tavbtn').addEventListener('click',pgPromptTavKey);
 $('#pg-event').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.ctrlKey||e.metaKey))pgSubmit()});
 pgRefreshKeyUI();
+pgRefreshTavUI();
 pgRefreshTrainHint();
 
 // ========== NAV: SCROLL PROGRESS + ACTIVE SECTION ==========
