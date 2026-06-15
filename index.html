@@ -1615,12 +1615,12 @@ updateNav();
 if(typeof renderLibFilters==='function'){try{renderLibFilters()}catch(e){}}
 
 // ========== HELP / ONBOARDING ==========
-(function(){
+function initHelp(){
   const KEY_DISMISSED='qg_help_dismissed_v1';
   const KEY_SEEN='qg_help_seen_v1';
   const ball=document.getElementById('help-ball');
   const bg=document.getElementById('help-modal-bg');
-  if(!ball||!bg)return;
+  if(!ball||!bg){console.warn('help: elements missing');return;}
   const dismissed=localStorage.getItem(KEY_DISMISSED)==='1';
   const seen=localStorage.getItem(KEY_SEEN)==='1';
   function showBall(){ball.hidden=false;}
@@ -1638,7 +1638,9 @@ if(typeof renderLibFilters==='function'){try{renderLibFilters()}catch(e){}}
   document.getElementById('help-ok').addEventListener('click',closeModal);
   document.getElementById('help-dismiss').addEventListener('click',permaDismiss);
   bg.addEventListener('click',e=>{if(e.target.id==='help-modal-bg')closeModal();});
-})();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initHelp);
+else setTimeout(initHelp,0);
 </script>
 
 <!-- ===== HELP / ONBOARDING ===== -->
