@@ -348,10 +348,13 @@ footer.foot a{color:var(--text3)}
 .pg-feedback{margin-top:18px;padding:18px 20px;background:rgba(255,255,255,.06);border-radius:14px;border:1px solid rgba(255,255,255,.12)}
 .pg-feedback h4{margin:0 0 6px;font-size:13px;font-weight:600;color:#fff;letter-spacing:.02em}
 .pg-feedback .pg-fb-sub{font-size:11.5px;color:rgba(255,255,255,.5);margin-bottom:14px}
-.pg-stars{display:inline-flex;gap:6px;margin-bottom:14px}
-.pg-star{width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.06);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:rgba(255,255,255,.35);border:1px solid transparent;transition:all .15s;user-select:none}
-.pg-star:hover{background:rgba(255,255,255,.12)}
-.pg-star.on{background:linear-gradient(135deg,#ffcc00,#ff9500);color:#fff;border-color:rgba(255,255,255,.2)}
+.pg-stars{display:inline-flex;gap:2px;margin-bottom:10px;align-items:center}
+.pg-star{width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:22px;line-height:1;color:rgba(255,255,255,.22);transition:color .18s ease,transform .18s cubic-bezier(.34,1.56,.64,1);user-select:none;background:none;border:0;padding:0}
+.pg-star:hover{transform:scale(1.18)}
+.pg-star.preview,.pg-star.on{background:linear-gradient(135deg,#0071e3 0%,#5856d6 50%,#af52de 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;text-shadow:0 1px 8px rgba(0,113,227,.35)}
+.pg-star.on{filter:drop-shadow(0 0 6px rgba(175,82,222,.35))}
+.pg-stars[data-rating="0"] .pg-star:not(.preview){color:rgba(255,255,255,.22)}
+#pg-rating-label{display:inline-block;margin-left:14px;font-size:12px;color:rgba(255,255,255,.6);vertical-align:8px;letter-spacing:.02em;font-weight:500;min-height:14px;transition:color .15s}
 .pg-fb-text{width:100%;min-height:78px;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:11px 14px;color:#fff;font-size:13.5px;line-height:1.55;font-family:inherit;resize:vertical;outline:none;transition:border-color .15s}
 .pg-fb-text:focus{border-color:rgba(0,113,227,.6)}
 .pg-fb-text::placeholder{color:rgba(255,255,255,.3)}
@@ -1459,8 +1462,7 @@ function pgRenderResult(data,payload){
     <div class="pg-feedback">
       <h4>你的评分与建议</h4>
       <div class="pg-fb-sub">打分 + 写一句具体哪里要改，AI 会按你的反馈再生成一版</div>
-      <div class="pg-stars" id="pg-stars">${stars}</div>
-      <div id="pg-rating-label" style="display:inline-block;margin-left:10px;font-size:12px;color:rgba(255,255,255,.55);vertical-align:6px"></div>
+      <div class="pg-stars" id="pg-stars" data-rating="0">${stars}<span id="pg-rating-label"></span></div>
       <textarea class="pg-fb-text" id="pg-fb-text" placeholder="例：标题太平淡，加一个数字制造对比；正文 CTA 不够明确，要写「立即查看」"></textarea>
       <div class="pg-fb-actions">
         <button class="pg-btn primary" id="pg-regen-feedback">🔁 按我的反馈再生成</button>
@@ -1473,13 +1475,20 @@ function pgRenderResult(data,payload){
     </div>
   </div>`;
   $('#pg-output').innerHTML=html;
-  $$('#pg-stars .pg-star').forEach(el=>{
+  const starsWrap=$('#pg-stars');
+  const stEls=$$('#pg-stars .pg-star');
+  function paintStars(n,cls){stEls.forEach(s=>{const on=parseInt(s.dataset.n,10)<=n;s.classList.toggle(cls,on);});}
+  function clearPreview(){stEls.forEach(s=>s.classList.remove('preview'));}
+  stEls.forEach(el=>{
+    el.addEventListener('mouseenter',()=>{const n=parseInt(el.dataset.n,10);clearPreview();paintStars(n,'preview');const lbl=$('#pg-rating-label');if(lbl)lbl.textContent=PG_RATING_LABEL[n]||'';});
     el.addEventListener('click',()=>{
       pgUserRating=parseInt(el.dataset.n,10);
-      $$('#pg-stars .pg-star').forEach(s=>s.classList.toggle('on',parseInt(s.dataset.n,10)<=pgUserRating));
+      starsWrap?.setAttribute('data-rating',String(pgUserRating));
+      stEls.forEach(s=>s.classList.toggle('on',parseInt(s.dataset.n,10)<=pgUserRating));
       const lbl=$('#pg-rating-label');if(lbl)lbl.textContent=PG_RATING_LABEL[pgUserRating]||'';
     });
   });
+  starsWrap?.addEventListener('mouseleave',()=>{clearPreview();const lbl=$('#pg-rating-label');if(lbl)lbl.textContent=PG_RATING_LABEL[pgUserRating]||'';});
   $('#pg-copy').addEventListener('click',()=>{
     const text=`${data.title}\n${data.body}`;
     navigator.clipboard.writeText(text).then(()=>{
