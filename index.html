@@ -706,12 +706,7 @@ footer.foot a{color:var(--text3)}
       <a href="#today" class="btn btn-primary">See today's spotlight →</a>
       <a href="#calendar" class="btn btn-ghost">Explore calendar</a>
     </div>
-    <div class="meta-row tnum">
-      <span><span class="dot-imp-3"></span>15 Super</span>
-      <span><span class="dot-imp-2"></span>14 Major</span>
-      <span><span class="dot-imp-1"></span>8 Normal</span>
-      <span>Today · 2026-06-10</span>
-    </div>
+    <div class="meta-row tnum" id="hero-meta"></div>
   </div>
 </section>
 
@@ -932,6 +927,13 @@ function renderStats(){
     {n:daysLeft,l:'Days remaining'}
   ];
   $('#stats-grid').innerHTML=stats.map(s=>`<div class="stat"><div class="num">${s.n}</div><div class="lbl">${s.l}</div></div>`).join('');
+  const heroMeta=$('#hero-meta');
+  if(heroMeta){
+    const c3=EVENTS.filter(e=>e.imp===3).length;
+    const c2=EVENTS.filter(e=>e.imp===2).length;
+    const c1=EVENTS.filter(e=>e.imp===1).length;
+    heroMeta.innerHTML=`<span><span class="dot-imp-3"></span>${c3} Super</span><span><span class="dot-imp-2"></span>${c2} Major</span><span><span class="dot-imp-1"></span>${c1} Normal</span><span>Today · ${TODAY}</span>`;
+  }
 }
 
 // ========== TODAY SPOTLIGHT ==========
