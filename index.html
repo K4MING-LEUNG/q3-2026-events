@@ -1633,8 +1633,7 @@ function initHelp(){
     showBall();
     if(!seen){setTimeout(openModal,800);} // first visit auto-open
   }
-  ball.addEventListener('click',e=>{if(e.target.id==='help-ball-x')return;openModal();});
-  document.getElementById('help-ball-x').addEventListener('click',e=>{e.stopPropagation();permaDismiss();});
+  ball.addEventListener('click',openModal);
   document.getElementById('help-modal-close').addEventListener('click',closeModal);
   document.getElementById('help-ok').addEventListener('click',closeModal);
   document.getElementById('help-dismiss').addEventListener('click',permaDismiss);
@@ -1648,7 +1647,6 @@ else setTimeout(initHelp,0);
 <div id="help-ball" class="help-ball" title="使用指南" hidden>
   <span class="help-ball-icon">?</span>
   <span class="help-ball-pulse"></span>
-  <button class="help-ball-x" id="help-ball-x" title="不再提示">×</button>
 </div>
 <div id="help-modal-bg">
   <div class="help-modal" role="dialog" aria-labelledby="help-modal-title">
