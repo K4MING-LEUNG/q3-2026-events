@@ -19,7 +19,7 @@
 "summary": "夏季工业景气读数",
 "background": "10:00 ET 由 ISM 公布。夏季是制造业淡季,看价格付出分项是否回落,以判断 PCE 路径。",
 "hook": "暑期淡季工业脉搏,XLI 短线信号",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"PMI 拐点 + XLI 历史回测\"图,落期权投教——8 月 PMI 是夏季淡季后第一个高频读数",
+"angle": "做\"PMI 拐点 + XLI 历史回测\"图,落期权投教——8 月 PMI 是夏季淡季后第一个高频读数",
 "jargon": [
 {
 "t": "价格付出",
@@ -54,7 +54,7 @@
 "summary": "劳动力市场结构高频",
 "background": "10:00 ET 由 BLS 公布。职位空缺/失业人数比(V/U)是工资通胀领先指标,联储多次引用。",
 "hook": "工资通胀的领先指标,TLT 短线信号",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"JOLTS 辞职率 vs 时薪同比\"图——劳动力松紧度领先非农 2 周,TLT 期权布局教育示例",
+"angle": "做\"JOLTS 辞职率 vs 时薪同比\"图——劳动力松紧度领先非农 2 周,TLT 期权布局教育示例",
 "jargon": [
 {
 "t": "V/U 比",
@@ -72,6 +72,88 @@
 "source": {
 "name": "BLS",
 "url": "https://www.bls.gov/jlt/"
+}
+},
+{
+"id": "0805toyota",
+"date": "2026-08-05",
+"weekday": "三",
+"month": 8,
+"market": "JP",
+"title": "丰田 Toyota (7203.T) Q1 FY27 财报",
+"cats": [
+"earnings"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"7203.T",
+"TM",
+"DXJ",
+"EWJ"
+],
+"summary": "日股最大市值股季度业绩",
+"background": "丰田日本盘前发业绩。重点:全球销量、北美/中国市场分项、混动 vs 纯电策略、日元汇率敏感度(每弱 1 日元利润 +500 亿)。日股权重股,业绩日 EWJ/DXJ ETF 单日波动放大。SG 用户对日本制造业熟悉度高。",
+"hook": "日股权重股 + 日元汇率敏感度第一",
+"angle": "丰田业绩夜把\"日元贬值 vs 丰田利润\"敏感度做成可视化(每弱 1 日元 +500 亿利润),引导 SG 用户用 DXJ(对冲日元 ETF)+ TM(美股 ADR)双管道布局——开日股户通过 moomoo 富途一键完成",
+"jargon": [
+{
+"t": "DXJ",
+"d": "WisdomTree 日股对冲日元 ETF"
+},
+{
+"t": "FY27 Q1",
+"d": "丰田财年 4-3 月,Q1=4-6 月"
+}
+],
+"push": {
+"title": "丰田财报夜,日股权重股大考",
+"body": "日元每弱 1 日元 = 丰田 +500 亿利润,业绩日 EWJ/DXJ 同步异动。打开 moomoo 富途开日股户,新客佣金 0,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "Toyota IR",
+"url": "https://global.toyota/en/ir/library/financial-results/"
+}
+},
+{
+"id": "0807dbs",
+"date": "2026-08-07",
+"weekday": "五",
+"month": 8,
+"market": "SG",
+"title": "DBS Group (D05.SI) Q2 财报",
+"cats": [
+"earnings"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"D05.SI",
+"O39.SI",
+"U11.SI",
+"STI"
+],
+"summary": "新加坡最大银行季度业绩",
+"background": "DBS 是新加坡市值最大上市公司、STI 第一权重股。Q2 财报披露净息差(NIM)、贷款增长、财富管理(WM)收入、不良率(NPL)。SG 银行三大行(DBS/OCBC/UOB)CDP 持仓在 SG 居民中渗透极高,任何业绩波动都会触发本地用户主动看持仓。",
+"hook": "SG 居民第一持仓股,本地话题度满分",
+"angle": "DBS 是 99% SG 客户的本地核心持仓——业绩夜推送给已开 CDP 户但未在 moomoo 交易的客户,引导通过 CDP 直连转仓 5 秒看到完整持仓 + DBS 美股替代标的(如 BAC/JPM)对比",
+"jargon": [
+{
+"t": "NIM",
+"d": "净息差,银行核心盈利指标"
+},
+{
+"t": "STI",
+"d": "海峡时报指数,SG 蓝筹基准"
+}
+],
+"push": {
+"title": "DBS 财报夜,SG 第一权重股",
+"body": "DBS 是 SG 居民最高持仓,业绩波动直接影响你账户。CDP 直连转仓 T+1 把 DBS 持仓搬过来对照实时盘,首次转入最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "DBS Group IR",
+"url": "https://www.dbs.com/investors/financials/results-and-presentations.page"
 }
 },
 {
@@ -95,7 +177,7 @@
 "summary": "9月 FOMC 前最关键就业",
 "background": "8:30 ET 由 BLS 公布。新增就业/失业率/平均时薪三件套。9月 SEP 会议前最重要的就业读数。",
 "hook": "9月会议前最关键就业,降息几率定调",
-"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"非农 5 看 + Sahm Rule 衰退预警\"图——FOMC 后第一份非农,验证 Powell 措辞",
+"angle": "做\"非农 5 看 + Sahm Rule 衰退预警\"图——FOMC 后第一份非农,验证 Powell 措辞",
 "jargon": [
 {
 "t": "U-3",
@@ -113,6 +195,83 @@
 "source": {
 "name": "BLS",
 "url": "https://www.bls.gov/ces/"
+}
+},
+{
+"id": "0809ndp",
+"date": "2026-08-09",
+"weekday": "日",
+"month": 8,
+"market": "SG",
+"title": "新加坡国庆日 SGX 周一 8/10 休市",
+"cats": [
+"holiday"
+],
+"imp": 1,
+"confirmed": true,
+"tickers": [],
+"summary": "8/9 周日国庆,8/10 周一 SGX 休市",
+"background": "新加坡国庆日 8/9 周日,法定公假顺延至周一 8/10,SGX 全天休市。STI 不交易,但本地居民活动度激增。同期美股 8/10 周一正常交易。",
+"hook": "本地最大节日 + 长周末 + 居民高活时段",
+"angle": "把国庆做成 NUP 拉新主活动——参考 2025 SG60 单场 3.6 万 PC 的成功模板,做\"国庆 61 主题礼包\"+ 限时 0 佣金 + 国庆赠股(本地热门美股),配合实体店周末活动联动落地",
+"jargon": [
+{
+"t": "STI",
+"d": "海峡时报指数"
+},
+{
+"t": "NDP",
+"d": "National Day Parade 国庆庆典"
+}
+],
+"push": {
+"title": "国庆 61 周年!Moo 限时礼包上线",
+"body": "国庆当周 SGX 休市,正好把美股账户开起来。NUP 国庆主题页限时礼包 + 美股赠股,新客首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "SGX",
+"url": "https://www.sgx.com/securities/trading-hours-calendar"
+}
+},
+{
+"id": "0811sftbk",
+"date": "2026-08-11",
+"weekday": "二",
+"month": 8,
+"market": "JP",
+"title": "软银集团 SoftBank Group (9984.T) Q1 财报",
+"cats": [
+"earnings"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"9984.T",
+"SFTBY",
+"ARM",
+"BABA"
+],
+"summary": "Vision Fund 持仓估值 + ARM 影响",
+"background": "软银日本盘后发业绩。Vision Fund 1+2 持仓中 ARM(英国半导体,美股已上市)、Coupang、滴滴等定价直接影响净资产。软银本身持有阿里 ~20% 仓位,Vision Fund 浮盈/浮亏单季度可达万亿日元。",
+"hook": "Vision Fund 估值夜 + ARM/BABA 联动",
+"angle": "做\"软银持仓地图\"图解(ARM 30%/Alibaba 20%/Coupang 10% 等),引导 SG 用户通过 ARM/BABA/CPNG 美股 ADR 间接获取 Vision Fund 暴露——美股开户这条路对 SG 用户最熟",
+"jargon": [
+{
+"t": "Vision Fund",
+"d": "软银千亿规模科技投资基金"
+},
+{
+"t": "ARM",
+"d": "软银控股的英国芯片 IP 公司"
+}
+],
+"push": {
+"title": "软银财报夜,Vision Fund 估值揭晓",
+"body": "ARM/Coupang/BABA 持仓集中定价,SFTBY 单日波动常 5%+。打开 moomoo 富途自选 ARM/BABA/CPNG,1 张 ARM 价差期权押方向,期权首单 0 佣金。"
+},
+"source": {
+"name": "SoftBank Group IR",
+"url": "https://group.softbank/en/ir"
 }
 },
 {
@@ -137,7 +296,7 @@
 "summary": "瑞典 BNPL 巨头美股 IPO 推迟后再传重启",
 "background": "Klarna 2025 年 4 月已递 F-1 但因关税担忧推迟,2026 H2 市场重新预期重启。BNPL(Buy Now Pay Later)板块:AFRM 是直接对标股,SEZL 是新晋小盘。一旦 Klarna 上市,BNPL 整体估值倍数可能重写。",
 "hook": "BNPL 板块第一大 IPO,AFRM/SEZL 直接受益",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"BNPL 三巨头估值倍数对比\"图,AFRM 期权 IV 在 IPO 临近常飙升,落期权投教 + 跟单提示",
+"angle": "做\"BNPL 三巨头估值倍数对比\"图,AFRM 期权 IV 在 IPO 临近常飙升,落期权投教 + 跟单提示",
 "jargon": [
 {
 "t": "F-1",
@@ -178,7 +337,7 @@
 "summary": "9月 FOMC 前最后通胀",
 "background": "8:30 ET 由 BLS 公布。核心 CPI 月环比是 9月降息幅度的关键投票:>0.3% 鹰、0.2% 中、≤0.1% 大幅降息。",
 "hook": "9月降息 25/50bp 之争,CPI 一锤定音",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"CPI 服务通胀粘性 + 关税传导\"图——9 月 FOMC 前第二份 CPI,QQQ 跨式期权高频教学",
+"angle": "做\"CPI 服务通胀粘性 + 关税传导\"图——9 月 FOMC 前第二份 CPI,QQQ 跨式期权高频教学",
 "jargon": [
 {
 "t": "核心 CPI",
@@ -196,6 +355,47 @@
 "source": {
 "name": "BLS",
 "url": "https://www.bls.gov/cpi/"
+}
+},
+{
+"id": "0813tcehy",
+"date": "2026-08-13",
+"weekday": "四",
+"month": 8,
+"market": "HK",
+"title": "腾讯 Tencent (700.HK) Q2 财报",
+"cats": [
+"earnings"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"0700.HK",
+"TCEHY",
+"BABA",
+"META"
+],
+"summary": "中国互联网最大权重股季度业绩",
+"background": "腾讯港股盘后(港股 16:00 后)发业绩+电话会。重点:游戏/广告/金融科技/云四分项收入、海外游戏占比、回购节奏(2025 全年回购千亿港币级)、AI 投入指引。腾讯一只占恒指权重 8%+,业绩单日恒指波动幅度常 1.5%+。SG 华人圈层关注度极高。",
+"hook": "恒指权重股 +AI 资本开支双线索",
+"angle": "腾讯财报夜联动美股 META 同业对比图,做\"东西方互联网两大巨头 ARPU/广告/AI 资本开支\"对照长图,在 SG 华人 KOL 渠道(小红书/抖音)同步分发,把华人客群引到平台开港股户",
+"jargon": [
+{
+"t": "恒指权重",
+"d": "腾讯占恒指 8%+,单股影响指数走势"
+},
+{
+"t": "回购",
+"d": "公司用现金回购股份,EPS 提升"
+}
+],
+"push": {
+"title": "腾讯财报夜,恒指权重股大考",
+"body": "腾讯一只动恒指 1.5%+,SG 华人圈最关注的财报。打开 moomoo 富途港股开户,T+1 当日交易,新客港股佣金 0,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "Tencent IR",
+"url": "https://www.tencent.com/en-us/investors.html"
 }
 },
 {
@@ -218,7 +418,7 @@
 "summary": "消费板块双数据",
 "background": "8:30 ET 零售(Census)、10:00 ET 密歇根消费者信心初值。Control group 是 GDP 消费分项关键投入。",
 "hook": "消费分化期,XLY/XRT 短线信号",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"零售控制组 + Michigan 消费者预期\"双图——双数据日,XRT/XLY 期权链解读最佳教学示例",
+"angle": "做\"零售控制组 + Michigan 消费者预期\"双图——双数据日,XRT/XLY 期权链解读最佳教学示例",
 "jargon": [
 {
 "t": "控制组",
@@ -259,7 +459,7 @@
 "summary": "美国零售龙头业绩",
 "background": "盘前公布。同店销售、电商增速、广告业务(Walmart Connect)、低收入消费者动向是关注重点。",
 "hook": "美国消费降级与否,WMT 一句话验证",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"WMT 同店销售 + 低收入消费分层\"图——零售龙头财报,XRT 板块基调由此定",
+"angle": "做\"WMT 同店销售 + 低收入消费分层\"图——零售龙头财报,XRT 板块基调由此定",
 "jargon": [
 {
 "t": "comp sales",
@@ -296,7 +496,7 @@
 "summary": "零售二线业绩",
 "background": "盘前公布。TGT 看自有品牌占比与利润率,LOW 看大宗 DIY 与专业建商需求,验证地产复苏成色。",
 "hook": "零售分层 + 房地产链双信号",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"TGT/LOW 财报 vs WMT 对比\"图——二线零售财报,中低端消费分层信号",
+"angle": "做\"TGT/LOW 财报 vs WMT 对比\"图——二线零售财报,中低端消费分层信号",
 "jargon": [
 {
 "t": "DIY",
@@ -310,6 +510,47 @@
 "source": {
 "name": "Target IR",
 "url": "https://investors.target.com/financial-information/quarterly-results"
+}
+},
+{
+"id": "0820baba",
+"date": "2026-08-20",
+"weekday": "四",
+"month": 8,
+"market": "HK",
+"title": "阿里巴巴 Alibaba (9988.HK / BABA) Q1 FY27 财报",
+"cats": [
+"earnings"
+],
+"imp": 3,
+"confirmed": true,
+"tickers": [
+"9988.HK",
+"BABA",
+"JD",
+"PDD"
+],
+"summary": "中国电商龙头季度业绩 + 云资本开支",
+"background": "阿里港股盘后 + 美股盘前同步披露。重点:淘天 GMV 同比、AIDC 海外电商增速、阿里云 AI 收入(已超百亿人民币年化)、Capex 指引。BABA 是 SG 用户中概股第一持仓股之一,业绩夜港 ADR 双地价差是套利窗口。",
+"hook": "AI 云收入指引 + 港 ADR 套利窗口",
+"angle": "阿里财报 90 分钟内港股+美股 ADR 双地定价,做\"双地价差套利\"科普视频:同一只股票,港股户用 HKD/SGD 入场更省汇兑——SG 用户主打的 CDP 转仓正好就是这条路径",
+"jargon": [
+{
+"t": "AIDC",
+"d": "阿里国际数字商业,海外电商引擎"
+},
+{
+"t": "双地上市",
+"d": "同一公司同时在港/美交易"
+}
+],
+"push": {
+"title": "阿里财报夜,港 ADR 价差套利",
+"body": "BABA 港股+美股 ADR 同夜披露,价差套利窗口仅 1-2 小时。CDP 直连转仓最快 T+1,首次转入最高 S$[奖励金额*],新客港股佣金 0。"
+},
+"source": {
+"name": "Alibaba Group IR",
+"url": "https://www.alibabagroup.com/en-US/ir-financial-reports-quarterly-results"
 }
 },
 {
@@ -335,7 +576,7 @@
 "summary": "Powell 主旨演讲定调全年货币政策",
 "background": "堪萨斯城联储主办的年度央行峰会,Powell 周五主旨演讲历来是市场关注度最高的非 FOMC 央行讲话。2022 年\"Pain ahead\"演讲单日 SPX 跌 3.4%,2024 年\"Time has come\"启动降息周期。SG 时间(EDT 周五 10:00 ≈ SGT 周五 22:00)正好 SG 用户晚间在线时段。",
 "hook": "Powell 演讲定全年货币政策基调",
-"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"JH 演讲历史回顾+SPX 当日波动榜\"图解,直播 + 期权投教联动:演讲前先开期权户,演讲中跟单",
+"angle": "做\"JH 演讲历史回顾+SPX 当日波动榜\"图解,直播 + 期权投教联动:演讲前先开期权户,演讲中跟单",
 "jargon": [
 {
 "t": "Jackson Hole",
@@ -377,7 +618,7 @@
 "summary": "AI 算力链最高浓度财报",
 "background": "盘后公布。数据中心营收 YoY、Blackwell/Rubin 出货节奏、毛利率指引、China 营收占比是四大胜负手。",
 "hook": "AI 算力链定海神针,SMH 暴动",
-"angle": "[KPI=促期权首交+拉新NUP·TA=TA3] 做\"NVDA 数据中心收入 + AI Capex 指引\"图——AI 主线最大权重股,赚效活动页+期权投教双触发,IV 70%+",
+"angle": "做\"NVDA 数据中心收入 + AI Capex 指引\"图——AI 主线最大权重股,赚效活动页+期权投教双触发,IV 70%+",
 "jargon": [
 {
 "t": "Blackwell",
@@ -395,6 +636,46 @@
 "source": {
 "name": "NVIDIA IR",
 "url": "https://investor.nvidia.com/financial-info/financial-reports/default.aspx"
+}
+},
+{
+"id": "0828bok",
+"date": "2026-08-28",
+"weekday": "五",
+"month": 8,
+"market": "KR",
+"title": "韩国央行 BOK 利率决议",
+"cats": [
+"macro"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"EWY",
+"FLKR",
+"005930.KS"
+],
+"summary": "BOK 政策利率与韩元方向",
+"background": "韩国央行(Bank of Korea)货币政策委员会 8 月会议公布基准利率,周五上午 KST 09:00 决议 + 11:00 行长记者会。当前利率 2.75%,2025 年已累计降息 75bp。BOK 鸽于 Fed → 韩元贬值 → 出口大盘(三星/现代/SK 海力士)受益。",
+"hook": "韩元方向 = 出口板块直接定价",
+"angle": "BOK 决议联动\"韩元贬值利好出口股\"叙事,做\"BOK vs Fed 利差变化 → 韩元 → 三星/现代利润\"传导链科普,引导 SG 用户用 EWY ETF + 005930 单股双管道布局",
+"jargon": [
+{
+"t": "BOK",
+"d": "Bank of Korea 韩国央行"
+},
+{
+"t": "韩元贬值",
+"d": "出口股利好,进口/航空利空"
+}
+],
+"push": {
+"title": "BOK 决议,韩元方向定出口股",
+"body": "BOK 鸽 → 韩元贬 → 三星/现代利润 +。打开 moomoo 富途自选 EWY,1 张 EWY 看涨期权押韩元贬值,期权首单 0 佣金,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "Bank of Korea",
+"url": "https://www.bok.or.kr/eng/main/main.do"
 }
 },
 {
@@ -418,7 +699,7 @@
 "summary": "9月 FOMC 前最关键通胀",
 "background": "8:30 ET 由 BEA 公布。9月 SEP 会议前最后一次核心 PCE,直接影响新点阵图中位数。",
 "hook": "9月点阵图前最后通胀读数",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"7 月 PCE 验证 Powell JH 演讲\"图——JH 后第一份 PCE,定调 9 月 FOMC 降息节奏",
+"angle": "做\"7 月 PCE 验证 Powell JH 演讲\"图——JH 后第一份 PCE,定调 9 月 FOMC 降息节奏",
 "jargon": [
 {
 "t": "点阵图",

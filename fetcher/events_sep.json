@@ -19,7 +19,7 @@
 "summary": "Q3 末段工业景气",
 "background": "10:00 ET 由 ISM 公布。Q3 即将收官,8月 PMI 是工业股 Q3 业绩的领先验证。",
 "hook": "Q3 末工业脉搏,XLI 业绩前瞻",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"PMI 拐点 + 9 月季节性\"图——9 月历史是 SPX 表现最差月,PMI 偏弱 + 季节性叠加,XLI Put 教育示例",
+"angle": "做\"PMI 拐点 + 9 月季节性\"图——9 月历史是 SPX 表现最差月,PMI 偏弱 + 季节性叠加,XLI Put 教育示例",
 "jargon": [
 {
 "t": "新订单",
@@ -54,7 +54,7 @@
 "summary": "NFP 前夕劳动力数据",
 "background": "10:00 ET 由 BLS 公布。NFP 前一天发布,V/U 比是 9月 SEP 前重要参考。",
 "hook": "NFP 前夕信号,TLT 短线脉冲",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"JOLTS 辞职率拐点 + 9 月降息概率\"图——FOMC 前第一份 JOLTS,TLT 期权前置布局",
+"angle": "做\"JOLTS 辞职率拐点 + 9 月降息概率\"图——FOMC 前第一份 JOLTS,TLT 期权前置布局",
 "jargon": [
 {
 "t": "V/U",
@@ -91,7 +91,7 @@
 "summary": "9月 SEP 会议核心数据",
 "background": "8:30 ET 由 BLS 公布。9月 16/17 FOMC 会前最后一份就业,直接定 25/50bp 降息。",
 "hook": "9月 50bp 降息押注高峰",
-"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"FOMC 前最重磅非农\"特别图——9 月降息概率最关键变量,SPY/TLT 单日 ATM straddle 隐含 1.5%+",
+"angle": "做\"FOMC 前最重磅非农\"特别图——9 月降息概率最关键变量,SPY/TLT 单日 ATM straddle 隐含 1.5%+",
 "jargon": [
 {
 "t": "AHE",
@@ -123,7 +123,7 @@
 "summary": "Labor Day observed",
 "background": "美国劳动节,股市/债市全天休市。9月本就是历史最弱月,休市后通常有\"Labor Day 魔咒\"开盘下跌。",
 "hook": "9月最弱月开局,防御股需求升温",
-"angle": "[KPI=唤醒沉默·TA=TA1] 节假日页 + 长周末持仓盘点,推送 30 天未登录用户——劳动节是 SG 用户秋季节奏开始的天然唤醒点",
+"angle": "节假日页 + 长周末持仓盘点,推送 30 天未登录用户——劳动节是 SG 用户秋季节奏开始的天然唤醒点",
 "jargon": [
 {
 "t": "9月效应",
@@ -162,7 +162,7 @@
 "summary": "AI 芯片独角兽 IPO 重启传闻",
 "background": "Cerebras 2024 年 9 月已递 S-1,但因 CFIUS(美国外资投资委员会)审查 G42 投资关系一度搁置。2026 年市场预期 G42 持股结构调整后 IPO 可能重启。Cerebras 主打 wafer-scale AI 芯片,与 NVDA H100/B200 直接竞争。一旦上市,AI 芯片板块 NVDA/AMD/AVGO 估值可能重定价。",
 "hook": "AI 芯片板块第一大 IPO,NVDA 同业竞争白热化",
-"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"Cerebras WSE-3 vs NVDA H100 性能对比\"图,AI 芯片是 SG 用户最热门主题,落期权投教 + NVDA 期权链解读",
+"angle": "做\"Cerebras WSE-3 vs NVDA H100 性能对比\"图,AI 芯片是 SG 用户最热门主题,落期权投教 + NVDA 期权链解读",
 "jargon": [
 {
 "t": "Wafer-scale",
@@ -204,7 +204,7 @@
 "summary": "欧央行 9月会议",
 "background": "13:15 法兰克福时间(CET)决议+声明,13:45 Lagarde 记者会。看是否再降息 25bp,以及对增长/能源价格的评估。",
 "hook": "欧元/美元汇率拐点,跨境资金流",
-"angle": "[KPI=促CDP转仓+促期权首交·TA=TA2+TA3] 做\"ECB vs Fed 9 月分化\"图——TA2 中老年关注 HSBC 通过 CDP 直连转仓,TA3 用 FXE 期权",
+"angle": "做\"ECB vs Fed 9 月分化\"图——TA2 中老年关注 HSBC 通过 CDP 直连转仓,TA3 用 FXE 期权",
 "jargon": [
 {
 "t": "deposit rate",
@@ -241,7 +241,7 @@
 "summary": "9月 FOMC 决议前最后通胀",
 "background": "8:30 ET 由 BLS 公布。9/16 FOMC 前最后一份核心 CPI,与 NFP 共同决定降息 25 还是 50bp。",
 "hook": "FOMC 前最后通胀,锁定降息幅度",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"FOMC 前最后 CPI + 关税传导成熟期\"图——9/16 FOMC 前最后高权重通胀,QQQ 跨式期权",
+"angle": "做\"FOMC 前最后 CPI + 关税传导成熟期\"图——9/16 FOMC 前最后高权重通胀,QQQ 跨式期权",
 "jargon": [
 {
 "t": "super core",
@@ -277,7 +277,7 @@
 "summary": "开学季消费验证",
 "background": "8:30 ET 由 Census 公布。开学季消费(Back-to-School)是 Q3 GDP 重要拼图,服装/电子/百货影响最大。",
 "hook": "开学季消费成色,XLY/XRT 业绩前瞻",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"FOMC 前零售控制组\"图——消费温度计,XRT/XLY 期权链是 TA3 高频教学示例",
+"angle": "做\"FOMC 前零售控制组\"图——消费温度计,XRT/XLY 期权链是 TA3 高频教学示例",
 "jargon": [
 {
 "t": "控制组",
@@ -315,7 +315,7 @@
 "summary": "年度最关键 FOMC",
 "background": "14:00 ET 决议+声明+SEP+点阵图,14:30 ET Powell 记者会。市场预期 25bp 降息,焦点是点阵图终点利率与 2027 路径。",
 "hook": "年度最关键决议,所有资产联动",
-"angle": "[KPI=促期权首交+促有效PC+拉新NUP·TA=TA3] 做\"9 月点阵图 4 看 + 降息路径全图\"——年内最大 FOMC 之夜,赚效活动页 + 期权投教 + NUP 三触发",
+"angle": "做\"9 月点阵图 4 看 + 降息路径全图\"——年内最大 FOMC 之夜,赚效活动页 + 期权投教 + NUP 三触发",
 "jargon": [
 {
 "t": "SEP",
@@ -357,7 +357,7 @@
 "summary": "日本央行 9月会议",
 "background": "日本时间会后(无固定时,通常 12:00 JST 后)发布。Ueda 是否进一步加息、JGB 收益率上限调整、日元走向是三大焦点。",
 "hook": "日元 carry trade 拐点风险",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"BOJ 后 FOMC 24 小时双央行\"图——日元套利交易解除风险,QQQ 防御 Put 教学示例",
+"angle": "做\"BOJ 后 FOMC 24 小时双央行\"图——日元套利交易解除风险,QQQ 防御 Put 教学示例",
 "jargon": [
 {
 "t": "YCC",
@@ -398,7 +398,7 @@
 "summary": "季度衍生品到期+指数调仓",
 "background": "季度末四巫日(指数期货/期权 + 个股期货/期权同日到期)叠加 S&P/Nasdaq 季度成分股调整,成交量与波动率均放大。",
 "hook": "季末超级流动日,GEX 翻盘",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"四巫日 + S&P 季度调整\"双线图——成交量翻 3 倍 + 期权交割集中,Pin Risk 教学最佳示例",
+"angle": "做\"四巫日 + S&P 季度调整\"双线图——成交量翻 3 倍 + 期权交割集中,Pin Risk 教学最佳示例",
 "jargon": [
 {
 "t": "四巫日",
@@ -416,6 +416,46 @@
 "source": {
 "name": "S&P DJI",
 "url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/#overview"
+}
+},
+{
+"id": "0918stirebal",
+"date": "2026-09-18",
+"weekday": "五",
+"month": 9,
+"market": "SG",
+"title": "STI 半年度成份股调整生效",
+"cats": [
+"index"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"STI",
+"ES3.SI",
+"G3B.SI"
+],
+"summary": "海峡时报指数 9 月再平衡生效日",
+"background": "STI 由 FTSE Russell + SGX 联合管理,每年 3 月/9 月各一次半年度成份股审核,通常 9 月第三个周五收市后生效。被纳入/剔除的股票当日成交量常翻 5-10 倍,被动 ETF(ES3.SI / G3B.SI)集中调仓。",
+"hook": "STI 调仓日 + 被动资金集中冲量",
+"angle": "调仓夜推送 SG 居民中老年客群——他们大多通过 CDP 持有 ES3.SI(STI ETF),调仓直接影响他们的被动配置;做\"STI 调仓影响 + 中老年资产跟进策略\"内容,引导 TA2 看 CDP 直连看完整持仓",
+"jargon": [
+{
+"t": "再平衡",
+"d": "指数半年度调整成份股权重"
+},
+{
+"t": "ES3.SI",
+"d": "STI ETF 最大被动跟踪基金"
+}
+],
+"push": {
+"title": "STI 9 月调仓,被动资金大冲量",
+"body": "STI 调仓夜 ES3.SI 成交翻 5 倍,你的 CDP 持仓在被动重写。CDP 直连转仓 T+1 看完整持仓,首次转入最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "FTSE Russell · STI",
+"url": "https://www.ftserussell.com/products/indices/sti"
 }
 },
 {
@@ -440,7 +480,7 @@
 "summary": "快时尚巨头转战伦敦 IPO 时间窗口",
 "background": "SHEIN 2024 年放弃纽交所 IPO 改投伦交所(LSE),受英国 FCA 审查。新加坡是 SHEIN 总部地之一,SG 用户对该 IPO 关注度极高。一旦上市,跨境电商板块(PDD/BABA)+ 欧洲服装(ZAL.DE)同步重定价。",
 "hook": "新加坡总部公司 IPO,SG 用户最高关注度",
-"angle": "[KPI=拉新NUP+促首笔交易·TA=TA1+TA2] SHEIN 总部在 SG,本地话题度最高,做\"SHEIN 伦敦 IPO 全流程\"科普,落 NUP 新客拉新 + 引导首笔交易购买对标股",
+"angle": "SHEIN 总部在 SG,本地话题度最高,做\"SHEIN 伦敦 IPO 全流程\"科普,落 NUP 新客拉新 + 引导首笔交易购买对标股",
 "jargon": [
 {
 "t": "FCA",
@@ -458,6 +498,38 @@
 "source": {
 "name": "London Stock Exchange",
 "url": "https://www.londonstockexchange.com/raise-finance/equity"
+}
+},
+{
+"id": "0925midautumn",
+"date": "2026-09-25",
+"weekday": "五",
+"month": 9,
+"market": "HK",
+"title": "中秋节前夕 港股半日市",
+"cats": [
+"holiday"
+],
+"imp": 1,
+"confirmed": true,
+"tickers": [],
+"summary": "港股 9/25 半日市,9/26-28 连放 3 天",
+"background": "2026 年中秋节为周六 9/26,港股周五 9/25 半日市(上午开盘,中午 12:00 收市),周一 9/28 中秋节翌日补假休市。SG 同步过中秋,本地华人氛围浓厚,营销窗口黄金日。",
+"hook": "节日 + 半日市 + SG 华人黄金窗口",
+"angle": "把港股 9/25 半日市做成\"中秋限时仓位整理\"主题页,推 SG 华人客群:节前用 CDP 转仓把竞品持仓搬过来过节,文案配中秋元素;同步上线\"中秋赚效页\"叠加月饼/灯笼/旅游受益股(美高梅/银河/利福国际)清单",
+"jargon": [
+{
+"t": "半日市",
+"d": "港股仅上午交易,12:00 收市"
+}
+],
+"push": {
+"title": "中秋港股半日市,节日仓位整理",
+"body": "9/25 港股 12 点收市,周末连放 3 天。CDP 直连转仓节前完成,中秋赚效页同步上线,首次转入最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "HKEX",
+"url": "https://www.hkex.com.hk/Services/Trading-hours-and-Severe-Weather-Arrangements/Trading-Hours/Securities-Market"
 }
 },
 {
@@ -481,7 +553,7 @@
 "summary": "FOMC 后首份 PCE",
 "background": "8:30 ET 由 BEA 公布。9/16 FOMC 后首份 PCE,验证联储路径假设是否成立,影响 10/29 会议押注。",
 "hook": "FOMC 路径验证,10月会议预演",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"FOMC 后第一份 PCE 验证降息节奏\"图——9 月 FOMC 决议后核心通胀验证,TLT 期权直接重写",
+"angle": "做\"FOMC 后第一份 PCE 验证降息节奏\"图——9 月 FOMC 决议后核心通胀验证,TLT 期权直接重写",
 "jargon": [
 {
 "t": "3M 年化",
@@ -522,7 +594,7 @@
 "summary": "季末机构调仓",
 "background": "Q3 最后一个交易日。养老基金/共同基金季末再平衡,股债跷跷板效应明显,VIX 收盘前后异动概率高。",
 "hook": "季末再平衡,股债跷跷板",
-"angle": "[KPI=提AUM+促CDP转仓·TA=TA2] 做\"Q3 涨跌幅榜 + Q4 三大主线\"复盘——TA2 中老年长配视角,季末是 CDP 转仓 + AUM 加码最佳窗口",
+"angle": "做\"Q3 涨跌幅榜 + Q4 三大主线\"复盘——TA2 中老年长配视角,季末是 CDP 转仓 + AUM 加码最佳窗口",
 "jargon": [
 {
 "t": "再平衡",

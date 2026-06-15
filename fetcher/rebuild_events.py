@@ -108,8 +108,10 @@ function renderListFilters(){
   const markets=[
     {k:'all',label:'全部市场'},
     {k:'US',label:'美股'},
-    {k:'CN',label:'中国'},
-    {k:'JP',label:'日本'},
+    {k:'HK',label:'港股'},
+    {k:'SG',label:'星股'},
+    {k:'JP',label:'日股'},
+    {k:'KR',label:'韩股'},
     {k:'EU',label:'欧洲'},
     {k:'GLOBAL',label:'全球'}
   ];
@@ -161,7 +163,7 @@ const PUSH_LIBRARY=EVENTS.filter(e=>e.push&&(e.push.title||e.push.body)).map((e,
 let libSearch='';
 let libMarket='all';
 function renderLibFilters(){
-  const markets=[{k:'all',label:'全部'},{k:'US',label:'美股'},{k:'CN',label:'中国'},{k:'JP',label:'日本'},{k:'EU',label:'欧洲'},{k:'GLOBAL',label:'全球'}];
+  const markets=[{k:'all',label:'全部'},{k:'US',label:'美股'},{k:'HK',label:'港股'},{k:'SG',label:'星股'},{k:'JP',label:'日股'},{k:'KR',label:'韩股'},{k:'EU',label:'欧洲'},{k:'GLOBAL',label:'全球'}];
   const wrap=$('#lib-filters');
   if(!wrap)return;
   wrap.innerHTML=markets.map(m=>`<button class="filter-btn ${m.k===libMarket?'active':''}" data-m="${m.k}">${m.label}</button>`).join('');
@@ -194,10 +196,10 @@ function renderLibTable(){
 markets_and_css = r"""
 const MARKETS={
   US:{label:'美股',cls:'mkt-us'},
-  CN:{label:'中国',cls:'mkt-cn'},
-  JP:{label:'日本',cls:'mkt-jp'},
-  KR:{label:'韩国',cls:'mkt-kr'},
-  HK:{label:'香港',cls:'mkt-hk'},
+  HK:{label:'港股',cls:'mkt-hk'},
+  SG:{label:'星股',cls:'mkt-sg'},
+  JP:{label:'日股',cls:'mkt-jp'},
+  KR:{label:'韩股',cls:'mkt-kr'},
   EU:{label:'欧洲',cls:'mkt-eu'},
   GLOBAL:{label:'全球',cls:'mkt-global'}
 };
@@ -206,10 +208,10 @@ const MARKETS={
 extra_css = """
 .mkt-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600;letter-spacing:.02em}
 .mkt-us{background:rgba(0,113,227,.12);color:#0071e3}
-.mkt-cn{background:rgba(255,69,58,.12);color:#c2261d}
+.mkt-hk{background:rgba(255,159,10,.14);color:#a05a00}
+.mkt-sg{background:rgba(255,69,58,.12);color:#c2261d}
 .mkt-jp{background:rgba(175,82,222,.12);color:#7d3acf}
 .mkt-kr{background:rgba(48,176,199,.12);color:#1f8a9e}
-.mkt-hk{background:rgba(255,159,10,.14);color:#a05a00}
 .mkt-eu{background:rgba(52,199,89,.12);color:#1f7d35}
 .mkt-global{background:rgba(142,142,147,.16);color:#555}
 .mkt-other{background:rgba(142,142,147,.12);color:#888}
@@ -309,12 +311,13 @@ src = re.sub(
 # Actually a cleaner approach: use a more aggressive replacement. Re-do it.
 src = src.replace("function __libNoop(){", "function __libNoopOld(){")
 
-# 7f. Insert MARKETS registry before EVENTS
-src = src.replace(
-    "const TODAY=(()=>",
-    markets_and_css.strip() + "\nconst TODAY=(()=>",
-    1,
-)
+# 7f. Insert MARKETS registry before EVENTS (idempotent — skip if already present)
+if "const MARKETS=" not in src:
+    src = src.replace(
+        "const TODAY=(()=>",
+        markets_and_css.strip() + "\nconst TODAY=(()=>",
+        1,
+    )
 
 # 7g. Inject extra CSS before </style>
 src = src.replace("</style>", extra_css + "\n</style>", 1)

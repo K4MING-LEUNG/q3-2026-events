@@ -1,5 +1,41 @@
 [
 {
+"id": "0701hkhol",
+"date": "2026-07-01",
+"weekday": "三",
+"month": 7,
+"market": "HK",
+"title": "香港回归纪念日 港股全天休市",
+"cats": [
+"holiday"
+],
+"imp": 1,
+"confirmed": true,
+"tickers": [],
+"summary": "港股全天休市,A 股/美股 ADR 正常",
+"background": "7/1 是香港特别行政区成立纪念日,法定公众假期。HKEX 全天休市,沪深港通南北向交易暂停。但腾讯/阿里/美团等的美股 ADR 正常交易,可作为夜盘对冲口径。",
+"hook": "港股休市,ADR 是唯一价格发现窗口",
+"angle": "假期前一晚把 BABA/JD/PDD/BIDU 等美股 ADR 加入富途自选,休市当晚 ADR 异动直接预演周四开盘 Gap;借\"港股休市单一价格发现\"的稀缺性做新客拉新内容,推到 SG 华人圈层",
+"jargon": [
+{
+"t": "ADR",
+"d": "美国存托凭证,中概股美股版"
+},
+{
+"t": "南北向",
+"d": "沪深港通跨境交易"
+}
+],
+"push": {
+"title": "港股 7/1 休市,ADR 是唯一窗口",
+"body": "港股休市当晚,BABA/JD/PDD 美股 ADR 是唯一价格信号。打开 moomoo 富途自选添加,夜盘异动手机直推,新客首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "HKEX",
+"url": "https://www.hkex.com.hk/Services/Trading-hours-and-Severe-Weather-Arrangements/Trading-Hours/Securities-Market"
+}
+},
+{
 "id": "0701ism",
 "date": "2026-07-01",
 "weekday": "三",
@@ -20,7 +56,7 @@
 "summary": "Q3 首个工业景气读数",
 "background": "10:00 ET 由 ISM 公布。新订单/就业/价格三个分项是关键,价格付出指数对通胀路径有领先作用。",
 "hook": "Q3 首个高频工业指标,关注 XLI 走向",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"PMI 拐点信号 + XLI 期权链\"图,落期权投教——制造业 PMI 是衰退最早预警,XLI Put 是教育用户对冲的高频示例",
+"angle": "做\"PMI 拐点信号 + XLI 期权链\"图,落期权投教——制造业 PMI 是衰退最早预警,XLI Put 是教育用户对冲的高频示例",
 "jargon": [
 {
 "t": "ISM PMI",
@@ -61,7 +97,7 @@
 "summary": "独立日前 BLS 提前发布",
 "background": "因 7/3 独立日休市,BLS 把 6月 NFP 提前到 7/2 8:30 ET。新增就业/失业率/平均时薪三件套同时发布。",
 "hook": "假期前最后一份就业数据,定调 7月 FOMC",
-"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"独立日提前一天的非农\"特别图——节前流动性低 + 高 IV,SPY 跨式杠杆效率最高,转化期权户黄金日",
+"angle": "做\"独立日提前一天的非农\"特别图——节前流动性低 + 高 IV,SPY 跨式杠杆效率最高,转化期权户黄金日",
 "jargon": [
 {
 "t": "NFP",
@@ -97,7 +133,7 @@
 "summary": "Independence Day observed",
 "background": "7/4 独立日落在周六,美股按惯例 7/3 周五休市一天。债市 7/2 提前 14:00 ET 收盘。",
 "hook": "周末长假休市,期权时间价值衰减加速",
-"angle": "[KPI=唤醒沉默·TA=TA1] 节假日提醒 + 长周末持仓盘点页,推送 30 天未登录沉默用户——独立日是 SG 用户夜间习惯打断的天然契机,Moo 庄园打卡触发签到",
+"angle": "节假日提醒 + 长周末持仓盘点页,推送 30 天未登录沉默用户——独立日是 SG 用户夜间习惯打断的天然契机,Moo 庄园打卡触发签到",
 "jargon": [
 {
 "t": "IV crush",
@@ -111,6 +147,46 @@
 "source": {
 "name": "NYSE",
 "url": "https://www.nyse.com/markets/hours-calendars"
+}
+},
+{
+"id": "0707samsung",
+"date": "2026-07-07",
+"weekday": "二",
+"month": 7,
+"market": "KR",
+"title": "三星电子 Samsung (005930.KS) Q2 业绩 Guidance",
+"cats": [
+"earnings"
+],
+"imp": 2,
+"confirmed": true,
+"tickers": [
+"005930.KS",
+"EWY",
+"FLKR"
+],
+"summary": "三星季度业绩预告(完整业绩月底),HBM/Foundry 信号",
+"background": "三星 2026 年 Q2 业绩 Guidance(预告)韩国时间盘后发布,通常仅披露营收 + 营业利润总数,完整分项 7 月底正式财报。市场重点解读 HBM(高带宽内存,AI 芯片关键)+ Foundry(代工)是否扭亏。三星一只占 KOSPI 权重 25%+,Guidance 单日 KOSPI 波动常 1.5%+。",
+"hook": "AI 内存板块第一信号 + KOSPI 权重大佬",
+"angle": "三星 HBM 信号直接联动美股 NVDA/MU/SK Hynix——做\"AI 内存供应链拆解\"图(NVDA H100 → SK Hynix 60% + Samsung 30% + Micron 10%),引导 SG 用户用 EWY 韩股 ETF 一键暴露,免去单股选择",
+"jargon": [
+{
+"t": "HBM",
+"d": "高带宽内存,AI 芯片必需"
+},
+{
+"t": "Foundry",
+"d": "晶圆代工,三星追赶 TSMC"
+}
+],
+"push": {
+"title": "三星 Guidance,AI 内存第一信号",
+"body": "三星 HBM 信号直接联动 NVDA/MU,KOSPI 单日波动 1.5%+。打开 moomoo 富途自选 EWY/MU/SK Hynix ADR,新客美股佣金 0,首次入金最高 S$[奖励金额*]。"
+},
+"source": {
+"name": "Samsung IR",
+"url": "https://www.samsung.com/global/ir/financial-information/earnings-release/"
 }
 },
 {
@@ -133,7 +209,7 @@
 "summary": "6/17 FOMC 详细讨论披露",
 "background": "14:00 ET 公布。重点看委员对核心 PCE/就业的内部分歧,以及缩表节奏(QT)的措辞变化。",
 "hook": "6月会议幕后细节,降息分歧曝光",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"6 月 FOMC 内部分歧拆解 + 措辞变化\"图——纪要常出鸽派或鹰派意外,SPY/TLT 单日波动易超 1%",
+"angle": "做\"6 月 FOMC 内部分歧拆解 + 措辞变化\"图——纪要常出鸽派或鹰派意外,SPY/TLT 单日波动易超 1%",
 "jargon": [
 {
 "t": "FOMC Minutes",
@@ -176,7 +252,7 @@
 "summary": "支付独角兽 IPO 时间窗口持续被市场炒作",
 "background": "Stripe 一级估值 $91.5B(2024 tender),Collison 兄弟多次表示 IPO 不在短期议程,但每次员工流动性事件都引发 IPO 时间表猜测。SEC EDGAR 一旦出现 Stripe S-1,即立即被市场捕捉。受益对照组:PYPL/SQ/ADYEY 上市同业估值锚。SG 用户中 TA3 Trader 对支付科技板块兴趣度高。",
 "hook": "支付科技 IPO 第一梯队,情绪股集体催化",
-"angle": "[KPI=促期权首交·TA=TA3] Stripe 一旦递表,PYPL/SQ 同业即重定价。做\"Stripe vs PYPL/SQ 估值倍数对比\"图,落期权投教转化(SG 期权渗透率仅 8%,缺口最大)",
+"angle": "Stripe 一旦递表,PYPL/SQ 同业即重定价。做\"Stripe vs PYPL/SQ 估值倍数对比\"图,落期权投教转化(SG 期权渗透率仅 8%,缺口最大)",
 "jargon": [
 {
 "t": "Tender Offer",
@@ -217,7 +293,7 @@
 "summary": "7月 FOMC 前最关键通胀",
 "background": "8:30 ET 由 BLS 公布。核心 CPI 月环比是市场最敏感读数,>0.3% 鹰派、0.2% 中性、≤0.1% 鸽派。",
 "hook": "7月会议前最后一份核心通胀",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"CPI 关税传导 + 服务通胀粘性\"图,QQQ 跨式期权——CPI 日 IV 翻倍最适合教 TA3 期权杠杆",
+"angle": "做\"CPI 关税传导 + 服务通胀粘性\"图,QQQ 跨式期权——CPI 日 IV 翻倍最适合教 TA3 期权杠杆",
 "jargon": [
 {
 "t": "核心 CPI",
@@ -259,7 +335,7 @@
 "summary": "大行 Q2 业绩开启财报季",
 "background": "盘前公布。关注 NII 净息差走向、信用卡坏账、IB 投行业务复苏度,Dimon 电话会措辞最受关注。",
 "hook": "财报季首发,银行业景气定调",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"大行净息差 + 投行收入分项\"图,XLF 期权布局——财报季首发周,JPM 信号决定整个金融板块基调",
+"angle": "做\"大行净息差 + 投行收入分项\"图,XLF 期权布局——财报季首发周,JPM 信号决定整个金融板块基调",
 "jargon": [
 {
 "t": "NII",
@@ -301,7 +377,7 @@
 "summary": "全球芯片代工龙头业绩",
 "background": "盘前 ADR/同日台北。看 HPC/AI 营收占比、CoWoS 产能爬坡进度、3nm/2nm 节点收入贡献。是 NVDA Q2 业绩的领先指标。",
 "hook": "AI 算力链最重要的中报",
-"angle": "[KPI=促期权首交+拉新NUP·TA=TA3] 做\"TSMC 资本开支 vs NVDA/AMD 营收\"图——TSMC 是全球 AI 芯片晶圆代工垄断者,赚效活动页+期权投教双触发",
+"angle": "做\"TSMC 资本开支 vs NVDA/AMD 营收\"图——TSMC 是全球 AI 芯片晶圆代工垄断者,赚效活动页+期权投教双触发",
 "jargon": [
 {
 "t": "CoWoS",
@@ -344,7 +420,7 @@
 "summary": "MetLife 体育场总决赛",
 "background": "美东时间晚上,MetLife Stadium(新泽西)。预计全球收视超 15 亿,直播版权、赌球流水、赞助露出三大变现峰值。",
 "hook": "全球收视巅峰,消费/广告/支付板块联动",
-"angle": "[KPI=拉新NUP+促Referral裂变·TA=TA1] 世界杯决赛是赚效活动页收官 + 裂变邀请高峰,做\"全球收视 vs 受益股榜\"图,Referral 裂变中心同步推奖",
+"angle": "世界杯决赛是赚效活动页收官 + 裂变邀请高峰,做\"全球收视 vs 受益股榜\"图,Referral 裂变中心同步推奖",
 "jargon": [
 {
 "t": "GMS",
@@ -385,7 +461,7 @@
 "summary": "Mag7 双雄盘后",
 "background": "盘后公布。GOOG 看 Search 广告 vs AI 替代风险、Cloud 增速;TSLA 看交付指引、Robotaxi 商业化时间表、Cybertruck 利润率。",
 "hook": "Mag7 财报开启,QQQ 短线波动放大",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"GOOG 云 + AI 资本开支拆解 + TSLA 交付指引\"图——双 Mag7 财报夜,QQQ 期权 IV 翻倍",
+"angle": "做\"GOOG 云 + AI 资本开支拆解 + TSLA 交付指引\"图——双 Mag7 财报夜,QQQ 期权 IV 翻倍",
 "jargon": [
 {
 "t": "TAC",
@@ -426,7 +502,7 @@
 "summary": "AI 资本开支双锚定",
 "background": "盘后公布。META 看广告 ROAS、Reality Labs 亏损、AI capex 指引;MSFT 看 Azure 增速、Copilot 货币化、AI 资本开支占营收比重。",
 "hook": "AI capex 指引,直接定价 NVDA 后市",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"META AI 资本开支 + MSFT Azure/Copilot 收入\"图——AI 主线两大权重股财报,期权 IV Crush 教育最佳示例",
+"angle": "做\"META AI 资本开支 + MSFT Azure/Copilot 收入\"图——AI 主线两大权重股财报,期权 IV Crush 教育最佳示例",
 "jargon": [
 {
 "t": "capex",
@@ -467,7 +543,7 @@
 "summary": "7月会议无点阵图更新",
 "background": "14:00 ET 决议+声明,14:30 ET 鲍威尔记者会。无 SEP 更新,焦点是声明措辞变化(\"appropriate\" vs \"some time\")和 Powell 对 9月降息的暗示。",
 "hook": "9月降息预期最后定调",
-"angle": "[KPI=促期权首交+促有效PC·TA=TA3] 做\"无 SEP 的 FOMC vs 带 SEP\"对比图——这次仅声明 + Powell,SPY 波动相对小,适合教 TA3 调整仓位",
+"angle": "做\"无 SEP 的 FOMC vs 带 SEP\"对比图——这次仅声明 + Powell,SPY 波动相对小,适合教 TA3 调整仓位",
 "jargon": [
 {
 "t": "SEP",
@@ -508,7 +584,7 @@
 "summary": "消费+云双子星",
 "background": "盘后公布。AAPL 看 iPhone 需求、Services 增速、China 营收、Vision Pro 出货;AMZN 看 AWS 增速、广告业务、零售运营利润率。",
 "hook": "消费电子+云服务双锚同夜出炉",
-"angle": "[KPI=促期权首交+拉新NUP·TA=TA3] 做\"AAPL iPhone 周期 + AMZN AWS 增速\"图——双 Mag7 财报,SG 用户对苹果热度最高,期权投教 + 赚效页双触发",
+"angle": "做\"AAPL iPhone 周期 + AMZN AWS 增速\"图——双 Mag7 财报,SG 用户对苹果热度最高,期权投教 + 赚效页双触发",
 "jargon": [
 {
 "t": "Services",
@@ -549,7 +625,7 @@
 "summary": "联储最看重的通胀指标",
 "background": "8:30 ET 由 BEA 公布。核心 PCE 同比是 Fed 2% 通胀目标的口径锚,3 个月年化更敏感于近期趋势。",
 "hook": "Fed 最看重的通胀,定 9月降息",
-"angle": "[KPI=促期权首交·TA=TA3] 做\"6 月 PCE vs CPI 差异 + Fed 9 月降息概率重估\"图——FOMC 后第一份 PCE,验证 Powell 措辞",
+"angle": "做\"6 月 PCE vs CPI 差异 + Fed 9 月降息概率重估\"图——FOMC 后第一份 PCE,验证 Powell 措辞",
 "jargon": [
 {
 "t": "核心 PCE",
